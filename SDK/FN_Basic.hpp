@@ -501,7 +501,7 @@ class TPersistentObjectPtr
 {
 public:
 	FWeakObjectPtr WeakPtr;
-	int32_t TagAtLastTest;
+	int64_t TagAtLastTest;
 	TObjectID ObjectID;
 };
 
