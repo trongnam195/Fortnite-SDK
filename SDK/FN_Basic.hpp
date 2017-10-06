@@ -415,7 +415,7 @@ struct FText {
 
 struct FScriptDelegate
 {
-	char UnknownData[10];
+	char UnknownData[16];
 };
 
 struct FScriptMulticastDelegate
