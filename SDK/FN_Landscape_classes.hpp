@@ -50,7 +50,7 @@ public:
 	struct FVector4                                    HeightmapScaleBias;                                       // 0x06F0(0x0010) (CPF_IsPlainOldData)
 	class UTexture2D*                                  HeightmapTexture;                                         // 0x0700(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	struct FBox                                        CachedLocalBox;                                           // 0x0708(0x001C) (CPF_IsPlainOldData)
-	TLazyObjectPtr<class ULandscapeHeightfieldCollisionComponent> CollisionComponent;                                       // 0x0724(0x001C) (CPF_ExportObject, CPF_InstancedReference, CPF_IsPlainOldData)
+	TLazyObjectPtr<class ULandscapeHeightfieldCollisionComponent> CollisionComponent;                                       // 0x0724(0x0020) (CPF_ExportObject, CPF_InstancedReference, CPF_IsPlainOldData)
 	struct FGuid                                       MapBuildDataId;                                           // 0x0740(0x0010) (CPF_IsPlainOldData)
 	TArray<struct FGuid>                               IrrelevantLights;                                         // 0x0750(0x0010) (CPF_ZeroConstructor, CPF_Deprecated)
 	int                                                CollisionMipLevel;                                        // 0x0760(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
@@ -164,7 +164,7 @@ public:
 	TArray<unsigned char>                              CollisionQuadFlags;                                       // 0x0698(0x0010) (CPF_ZeroConstructor)
 	struct FGuid                                       HeightfieldGuid;                                          // 0x06A8(0x0010) (CPF_IsPlainOldData)
 	struct FBox                                        CachedLocalBox;                                           // 0x06B8(0x001C) (CPF_IsPlainOldData)
-	TLazyObjectPtr<class ULandscapeComponent>          RenderComponent;                                          // 0x06D4(0x001C) (CPF_ExportObject, CPF_InstancedReference, CPF_IsPlainOldData)
+	TLazyObjectPtr<class ULandscapeComponent>          RenderComponent;                                          // 0x06D4(0x0020) (CPF_ExportObject, CPF_InstancedReference, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData01[0x10];                                      // 0x06F0(0x0010) MISSED OFFSET
 	TArray<class UPhysicalMaterial*>                   CookedPhysicalMaterials;                                  // 0x0700(0x0010) (CPF_ZeroConstructor)
 	unsigned char                                      UnknownData02[0x40];                                      // 0x0710(0x0040) MISSED OFFSET
@@ -200,7 +200,7 @@ public:
 class ULandscapeInfo : public UObject
 {
 public:
-	TLazyObjectPtr<class ALandscape>                   LandscapeActor;                                           // 0x0028(0x001C) (CPF_IsPlainOldData)
+	TLazyObjectPtr<class ALandscape>                   LandscapeActor;                                           // 0x0028(0x0020) (CPF_IsPlainOldData)
 	struct FGuid                                       LandscapeGuid;                                            // 0x0044(0x0010) (CPF_IsPlainOldData)
 	int                                                ComponentSizeQuads;                                       // 0x0054(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	int                                                SubsectionSizeQuads;                                      // 0x0058(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)

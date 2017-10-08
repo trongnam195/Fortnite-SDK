@@ -42251,6 +42251,24 @@ void UFortCheatManager::TestDisconnect()
 }
 
 
+// Function FortniteGame.FortCheatManager.TestCheckBansAtMatchStart
+// (FUNC_Final, FUNC_Exec, FUNC_Native, FUNC_Public)
+
+void UFortCheatManager::TestCheckBansAtMatchStart()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortCheatManager.TestCheckBansAtMatchStart");
+
+	UFortCheatManager_TestCheckBansAtMatchStart_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function FortniteGame.FortCheatManager.TestChangePartySize
 // (FUNC_Final, FUNC_Exec, FUNC_Native, FUNC_Public)
 // Parameters:
