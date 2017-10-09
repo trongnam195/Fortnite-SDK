@@ -6,6 +6,8 @@
 #pragma pack(push, 0x8)
 #endif
 
+#define CHECK_VALID( _v ) 0
+
 namespace SDK
 {
 	//---------------------------------------------------------------------------
@@ -286,11 +288,11 @@ namespace SDK
 
 		inline FVector(float x, float y, float z)
 			: X(x),
-			  Y(y),
-			  Z(z)
+			Y(y),
+			Z(z)
 		{ }
 
-		inline FVector FVector::operator-(const FVector& V)
+		FORCEINLINE FVector FVector::operator-(const FVector& V)
 		{
 			return FVector(X - V.X, Y - V.Y, Z - V.Z);
 		}
@@ -383,7 +385,7 @@ namespace SDK
 			return (src.X == X) && (src.Y == Y) && (src.Z == Z);
 		}
 
-		inline bool FVector::operator!=(const FVector& src) const
+		FORCEINLINE bool FVector::operator!=(const FVector& src) const
 		{
 			CHECK_VALID(src);
 			CHECK_VALID(*this);
@@ -460,10 +462,10 @@ namespace SDK
 
 		inline FVector2D(float x, float y)
 			: X(x),
-			  Y(y)
+			Y(y)
 		{ }
 
-		inline FVector2D FVector2D::operator-(const FVector2D& V)
+		FORCEINLINE FVector2D FVector2D::operator-(const FVector2D& V)
 		{
 			return FVector2D(X - V.X, Y - V.Y);
 		}
@@ -552,7 +554,7 @@ namespace SDK
 			return (src.X == X) && (src.Y == Y);
 		}
 
-		inline bool FVector2D::operator!=(const FVector2D& src) const
+		FORCEINLINE bool FVector2D::operator!=(const FVector2D& src) const
 		{
 			CHECK_VALID(src);
 			CHECK_VALID(*this);
@@ -563,7 +565,7 @@ namespace SDK
 		{
 			return sqrt(X*X + Y*Y);
 		}
-		
+
 		FORCEINLINE float FVector2D::SizeSquared() const
 		{
 			return X*X + Y*Y;
@@ -622,16 +624,16 @@ namespace SDK
 
 		inline FRotator(float x, float y, float z)
 			: Pitch(x),
-			  Yaw(y),
-			  Roll(z)
+			Yaw(y),
+			Roll(z)
 		{ }
 
-		inline FRotator FRotator::operator+(const FRotator& V)
+		FORCEINLINE FRotator FRotator::operator+(const FRotator& V)
 		{
 			return FRotator(Pitch + V.Pitch, Yaw + V.Yaw, Roll + V.Roll);
 		}
 
-		inline FRotator FRotator::operator-(const FRotator& V)
+		FORCEINLINE FRotator FRotator::operator-(const FRotator& V)
 		{
 			return FRotator(Pitch - V.Pitch, Yaw - V.Yaw, Roll - V.Roll);
 		}
@@ -724,7 +726,7 @@ namespace SDK
 			return (src.Pitch == Pitch) && (src.Yaw == Yaw) && (src.Roll == Roll);
 		}
 
-		inline bool FRotator::operator!=(const FRotator& src) const
+		FORCEINLINE bool FRotator::operator!=(const FRotator& src) const
 		{
 			CHECK_VALID(src);
 			CHECK_VALID(*this);
@@ -765,29 +767,24 @@ namespace SDK
 
 		FORCEINLINE float FRotator::NormalizeAxis(float Angle)
 		{
-			// returns Angle in the range [0,360)
-			Angle = ClampAxis(Angle);
-
-			while (Angle > 180.f)
+			if (!isfinite(Angle))
 			{
-				// shift to (-180,180]
-				Angle -= 360.f;
+				return 0.0f;
 			}
 
-			return Angle;
+			return std::remainder(Angle, 360.0f);;
 		}
 
-		FORCEINLINE void FRotator::Normalize()
+		FORCEINLINE void FRotator::Clamp()
 		{
-			Pitch = NormalizeAxis(Pitch);
+			Pitch = max(-89.0f, min(89.0f, NormalizeAxis(Pitch)));
 			Yaw = NormalizeAxis(Yaw);
-			Roll = NormalizeAxis(Roll);
 		}
 
-		FORCEINLINE FRotator FRotator::GetNormalized() const
+		FORCEINLINE FRotator FRotator::GetClamped() const
 		{
 			FRotator Rot = *this;
-			Rot.Normalize();
+			Rot.Clamp();
 			return Rot;
 		}
 	};
@@ -869,9 +866,9 @@ namespace SDK
 
 		inline FLinearColor(float r, float g, float b, float a)
 			: R(r),
-			  G(g),
-			  B(b),
-			  A(a)
+			G(g),
+			B(b),
+			A(a)
 		{ }
 
 	};
