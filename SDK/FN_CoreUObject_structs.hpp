@@ -751,7 +751,7 @@ namespace SDK
 			return (a.Pitch * vOther.Pitch + a.Yaw * vOther.Yaw + a.Roll * vOther.Roll);
 		}
 
-		FORCEINLINE float FRotator::ClampAxis(float Angle)
+				FORCEINLINE float FRotator::ClampAxis(float Angle)
 		{
 			// returns Angle in the range (-360,360)
 			Angle = fmod(Angle, 360.f);
@@ -767,24 +767,29 @@ namespace SDK
 
 		FORCEINLINE float FRotator::NormalizeAxis(float Angle)
 		{
-			if (!isfinite(Angle))
+			// returns Angle in the range [0,360)
+			Angle = ClampAxis(Angle);
+
+			if (Angle > 180.f)
 			{
-				return 0.0f;
+				// shift to (-180,180]
+				Angle -= 360.f;
 			}
 
-			return std::remainder(Angle, 360.0f);;
+			return Angle;
 		}
 
-		FORCEINLINE void FRotator::Clamp()
+		FORCEINLINE void FRotator::Normalize()
 		{
-			Pitch = max(-89.0f, min(89.0f, NormalizeAxis(Pitch)));
+			Pitch = NormalizeAxis(Pitch);
 			Yaw = NormalizeAxis(Yaw);
+			Roll = NormalizeAxis(Roll);
 		}
 
-		FORCEINLINE FRotator FRotator::GetClamped() const
+		FORCEINLINE FRotator FRotator::GetNormalized() const
 		{
 			FRotator Rot = *this;
-			Rot.Clamp();
+			Rot.Normalize();
 			return Rot;
 		}
 	};
