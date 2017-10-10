@@ -7,7 +7,6 @@
 #endif
 
 #define CHECK_VALID( _v ) 0
-#include <winnt.h>
 
 namespace SDK
 {
@@ -293,53 +292,53 @@ namespace SDK
 			Z(z)
 		{ }
 
-		FORCEINLINE FVector FVector::operator-(const FVector& V)
+		__forceinline FVector FVector::operator-(const FVector& V)
 		{
 			return FVector(X - V.X, Y - V.Y, Z - V.Z);
 		}
 
-		FORCEINLINE FVector FVector::operator*(float Scale) const
+		__forceinline FVector FVector::operator*(float Scale) const
 		{
 			return FVector(X * Scale, Y * Scale, Z * Scale);
 		}
 
-		FORCEINLINE FVector FVector::operator/(float Scale) const
+		__forceinline FVector FVector::operator/(float Scale) const
 		{
 			const float RScale = 1.f / Scale;
 			return FVector(X * RScale, Y * RScale, Z * RScale);
 		}
 
-		FORCEINLINE FVector FVector::operator+(float A) const
+		__forceinline FVector FVector::operator+(float A) const
 		{
 			return FVector(X + A, Y + A, Z + A);
 		}
 
-		FORCEINLINE FVector FVector::operator-(float A) const
+		__forceinline FVector FVector::operator-(float A) const
 		{
 			return FVector(X - A, Y - A, Z - A);
 		}
 
-		FORCEINLINE FVector FVector::operator*(const FVector& V) const
+		__forceinline FVector FVector::operator*(const FVector& V) const
 		{
 			return FVector(X * V.X, Y * V.Y, Z * V.Z);
 		}
 
-		FORCEINLINE FVector FVector::operator/(const FVector& V) const
+		__forceinline FVector FVector::operator/(const FVector& V) const
 		{
 			return FVector(X / V.X, Y / V.Y, Z / V.Z);
 		}
 
-		FORCEINLINE float FVector::operator|(const FVector& V) const
+		__forceinline float FVector::operator|(const FVector& V) const
 		{
 			return X*V.X + Y*V.Y + Z*V.Z;
 		}
 
-		FORCEINLINE float FVector::operator^(const FVector& V) const
+		__forceinline float FVector::operator^(const FVector& V) const
 		{
 			return X*V.Y - Y*V.X - Z*V.Z;
 		}
 
-		FORCEINLINE FVector& FVector::operator+=(const FVector& v)
+		__forceinline FVector& FVector::operator+=(const FVector& v)
 		{
 			CHECK_VALID(*this);
 			CHECK_VALID(v);
@@ -349,7 +348,7 @@ namespace SDK
 			return *this;
 		}
 
-		FORCEINLINE FVector& FVector::operator-=(const FVector& v)
+		__forceinline FVector& FVector::operator-=(const FVector& v)
 		{
 			CHECK_VALID(*this);
 			CHECK_VALID(v);
@@ -359,7 +358,7 @@ namespace SDK
 			return *this;
 		}
 
-		FORCEINLINE FVector& FVector::operator*=(const FVector& v)
+		__forceinline FVector& FVector::operator*=(const FVector& v)
 		{
 			CHECK_VALID(*this);
 			CHECK_VALID(v);
@@ -369,7 +368,7 @@ namespace SDK
 			return *this;
 		}
 
-		FORCEINLINE FVector& FVector::operator/=(const FVector& v)
+		__forceinline FVector& FVector::operator/=(const FVector& v)
 		{
 			CHECK_VALID(*this);
 			CHECK_VALID(v);
@@ -379,48 +378,48 @@ namespace SDK
 			return *this;
 		}
 
-		FORCEINLINE bool FVector::operator==(const FVector& src) const
+		__forceinline bool FVector::operator==(const FVector& src) const
 		{
 			CHECK_VALID(src);
 			CHECK_VALID(*this);
 			return (src.X == X) && (src.Y == Y) && (src.Z == Z);
 		}
 
-		FORCEINLINE bool FVector::operator!=(const FVector& src) const
+		__forceinline bool FVector::operator!=(const FVector& src) const
 		{
 			CHECK_VALID(src);
 			CHECK_VALID(*this);
 			return (src.X != X) || (src.Y != Y) || (src.Z != Z);
 		}
 
-		FORCEINLINE float FVector::Size() const
+		__forceinline float FVector::Size() const
 		{
 			return sqrt(X*X + Y*Y + Z*Z);
 		}
 
-		FORCEINLINE float FVector::Size2D() const
+		__forceinline float FVector::Size2D() const
 		{
 			return sqrt(X*X + Y*Y);
 		}
 
-		FORCEINLINE float FVector::SizeSquared() const
+		__forceinline float FVector::SizeSquared() const
 		{
 			return X*X + Y*Y + Z*Z;
 		}
 
-		FORCEINLINE float FVector::SizeSquared2D() const
+		__forceinline float FVector::SizeSquared2D() const
 		{
 			return X*X + Y*Y;
 		}
 
-		FORCEINLINE float FVector::Dot(const FVector& vOther) const
+		__forceinline float FVector::Dot(const FVector& vOther) const
 		{
 			const FVector& a = *this;
 
 			return (a.X * vOther.X + a.Y * vOther.Y + a.Z * vOther.Z);
 		}
 
-		FORCEINLINE FVector FVector::Normalize()
+		__forceinline FVector FVector::Normalize()
 		{
 			FVector vector;
 			float length = this->Size();
@@ -466,53 +465,53 @@ namespace SDK
 			Y(y)
 		{ }
 
-		FORCEINLINE FVector2D FVector2D::operator-(const FVector2D& V)
+		__forceinline FVector2D FVector2D::operator-(const FVector2D& V)
 		{
 			return FVector2D(X - V.X, Y - V.Y);
 		}
 
-		FORCEINLINE FVector2D FVector2D::operator*(float Scale) const
+		__forceinline FVector2D FVector2D::operator*(float Scale) const
 		{
 			return FVector2D(X * Scale, Y * Scale);
 		}
 
-		FORCEINLINE FVector2D FVector2D::operator/(float Scale) const
+		__forceinline FVector2D FVector2D::operator/(float Scale) const
 		{
 			const float RScale = 1.f / Scale;
 			return FVector2D(X * RScale, Y * RScale);
 		}
 
-		FORCEINLINE FVector2D FVector2D::operator+(float A) const
+		__forceinline FVector2D FVector2D::operator+(float A) const
 		{
 			return FVector2D(X + A, Y + A);
 		}
 
-		FORCEINLINE FVector2D FVector2D::operator-(float A) const
+		__forceinline FVector2D FVector2D::operator-(float A) const
 		{
 			return FVector2D(X - A, Y - A);
 		}
 
-		FORCEINLINE FVector2D FVector2D::operator*(const FVector2D& V) const
+		__forceinline FVector2D FVector2D::operator*(const FVector2D& V) const
 		{
 			return FVector2D(X * V.X, Y * V.Y);
 		}
 
-		FORCEINLINE FVector2D FVector2D::operator/(const FVector2D& V) const
+		__forceinline FVector2D FVector2D::operator/(const FVector2D& V) const
 		{
 			return FVector2D(X / V.X, Y / V.Y);
 		}
 
-		FORCEINLINE float FVector2D::operator|(const FVector2D& V) const
+		__forceinline float FVector2D::operator|(const FVector2D& V) const
 		{
 			return X*V.X + Y*V.Y;
 		}
 
-		FORCEINLINE float FVector2D::operator^(const FVector2D& V) const
+		__forceinline float FVector2D::operator^(const FVector2D& V) const
 		{
 			return X*V.Y - Y*V.X;
 		}
 
-		FORCEINLINE FVector2D& FVector2D::operator+=(const FVector2D& v)
+		__forceinline FVector2D& FVector2D::operator+=(const FVector2D& v)
 		{
 			CHECK_VALID(*this);
 			CHECK_VALID(v);
@@ -521,7 +520,7 @@ namespace SDK
 			return *this;
 		}
 
-		FORCEINLINE FVector2D& FVector2D::operator-=(const FVector2D& v)
+		__forceinline FVector2D& FVector2D::operator-=(const FVector2D& v)
 		{
 			CHECK_VALID(*this);
 			CHECK_VALID(v);
@@ -530,7 +529,7 @@ namespace SDK
 			return *this;
 		}
 
-		FORCEINLINE FVector2D& FVector2D::operator*=(const FVector2D& v)
+		__forceinline FVector2D& FVector2D::operator*=(const FVector2D& v)
 		{
 			CHECK_VALID(*this);
 			CHECK_VALID(v);
@@ -539,7 +538,7 @@ namespace SDK
 			return *this;
 		}
 
-		FORCEINLINE FVector2D& FVector2D::operator/=(const FVector2D& v)
+		__forceinline FVector2D& FVector2D::operator/=(const FVector2D& v)
 		{
 			CHECK_VALID(*this);
 			CHECK_VALID(v);
@@ -548,38 +547,38 @@ namespace SDK
 			return *this;
 		}
 
-		FORCEINLINE bool FVector2D::operator==(const FVector2D& src) const
+		__forceinline bool FVector2D::operator==(const FVector2D& src) const
 		{
 			CHECK_VALID(src);
 			CHECK_VALID(*this);
 			return (src.X == X) && (src.Y == Y);
 		}
 
-		FORCEINLINE bool FVector2D::operator!=(const FVector2D& src) const
+		__forceinline bool FVector2D::operator!=(const FVector2D& src) const
 		{
 			CHECK_VALID(src);
 			CHECK_VALID(*this);
 			return (src.X != X) || (src.Y != Y);
 		}
 
-		FORCEINLINE float FVector2D::Size() const
+		__forceinline float FVector2D::Size() const
 		{
 			return sqrt(X*X + Y*Y);
 		}
 
-		FORCEINLINE float FVector2D::SizeSquared() const
+		__forceinline float FVector2D::SizeSquared() const
 		{
 			return X*X + Y*Y;
 		}
 
-		FORCEINLINE float FVector2D::Dot(const FVector2D& vOther) const
+		__forceinline float FVector2D::Dot(const FVector2D& vOther) const
 		{
 			const FVector2D& a = *this;
 
 			return (a.X * vOther.X + a.Y * vOther.Y);
 		}
 
-		FORCEINLINE FVector2D FVector2D::Normalize()
+		__forceinline FVector2D FVector2D::Normalize()
 		{
 			FVector2D vector;
 			float length = this->Size();
@@ -629,53 +628,53 @@ namespace SDK
 			Roll(z)
 		{ }
 
-		FORCEINLINE FRotator FRotator::operator+(const FRotator& V)
+		__forceinline FRotator FRotator::operator+(const FRotator& V)
 		{
 			return FRotator(Pitch + V.Pitch, Yaw + V.Yaw, Roll + V.Roll);
 		}
 
-		FORCEINLINE FRotator FRotator::operator-(const FRotator& V)
+		__forceinline FRotator FRotator::operator-(const FRotator& V)
 		{
 			return FRotator(Pitch - V.Pitch, Yaw - V.Yaw, Roll - V.Roll);
 		}
 
-		FORCEINLINE FRotator FRotator::operator*(float Scale) const
+		__forceinline FRotator FRotator::operator*(float Scale) const
 		{
 			return FRotator(Pitch * Scale, Yaw * Scale, Roll * Scale);
 		}
 
-		FORCEINLINE FRotator FRotator::operator/(float Scale) const
+		__forceinline FRotator FRotator::operator/(float Scale) const
 		{
 			const float RScale = 1.f / Scale;
 			return FRotator(Pitch * RScale, Yaw * RScale, Roll * RScale);
 		}
 
-		FORCEINLINE FRotator FRotator::operator+(float A) const
+		__forceinline FRotator FRotator::operator+(float A) const
 		{
 			return FRotator(Pitch + A, Yaw + A, Roll + A);
 		}
 
-		FORCEINLINE FRotator FRotator::operator-(float A) const
+		__forceinline FRotator FRotator::operator-(float A) const
 		{
 			return FRotator(Pitch - A, Yaw - A, Roll - A);
 		}
 
-		FORCEINLINE FRotator FRotator::operator*(const FRotator& V) const
+		__forceinline FRotator FRotator::operator*(const FRotator& V) const
 		{
 			return FRotator(Pitch * V.Pitch, Yaw * V.Yaw, Roll * V.Roll);
 		}
 
-		FORCEINLINE FRotator FRotator::operator/(const FRotator& V) const
+		__forceinline FRotator FRotator::operator/(const FRotator& V) const
 		{
 			return FRotator(Pitch / V.Pitch, Yaw / V.Yaw, Roll / V.Roll);
 		}
 
-		FORCEINLINE float FRotator::operator|(const FRotator& V) const
+		__forceinline float FRotator::operator|(const FRotator& V) const
 		{
 			return Pitch*V.Pitch + Yaw*V.Yaw + Roll*V.Roll;
 		}
 
-		FORCEINLINE FRotator& FRotator::operator+=(const FRotator& v)
+		__forceinline FRotator& FRotator::operator+=(const FRotator& v)
 		{
 			CHECK_VALID(*this);
 			CHECK_VALID(v);
@@ -685,7 +684,7 @@ namespace SDK
 			return *this;
 		}
 
-		FORCEINLINE FRotator& FRotator::operator-=(const FRotator& v)
+		__forceinline FRotator& FRotator::operator-=(const FRotator& v)
 		{
 			CHECK_VALID(*this);
 			CHECK_VALID(v);
@@ -695,7 +694,7 @@ namespace SDK
 			return *this;
 		}
 
-		FORCEINLINE FRotator& FRotator::operator*=(const FRotator& v)
+		__forceinline FRotator& FRotator::operator*=(const FRotator& v)
 		{
 			CHECK_VALID(*this);
 			CHECK_VALID(v);
@@ -705,7 +704,7 @@ namespace SDK
 			return *this;
 		}
 
-		FORCEINLINE FRotator& FRotator::operator/=(const FRotator& v)
+		__forceinline FRotator& FRotator::operator/=(const FRotator& v)
 		{
 			CHECK_VALID(*this);
 			CHECK_VALID(v);
@@ -715,44 +714,43 @@ namespace SDK
 			return *this;
 		}
 
-		FORCEINLINE float FRotator::operator^(const FRotator& V) const
+		__forceinline float FRotator::operator^(const FRotator& V) const
 		{
 			return Pitch*V.Yaw - Yaw*V.Pitch - Roll*V.Roll;
 		}
 
-		FORCEINLINE bool FRotator::operator==(const FRotator& src) const
+		__forceinline bool FRotator::operator==(const FRotator& src) const
 		{
 			CHECK_VALID(src);
 			CHECK_VALID(*this);
 			return (src.Pitch == Pitch) && (src.Yaw == Yaw) && (src.Roll == Roll);
 		}
 
-		FORCEINLINE bool FRotator::operator!=(const FRotator& src) const
+		__forceinline bool FRotator::operator!=(const FRotator& src) const
 		{
 			CHECK_VALID(src);
 			CHECK_VALID(*this);
 			return (src.Pitch != Pitch) || (src.Yaw != Yaw) || (src.Roll != Roll);
 		}
 
-		FORCEINLINE float FRotator::Size() const
+		__forceinline float FRotator::Size() const
 		{
 			return sqrt(Pitch*Pitch + Yaw* Yaw + Roll*Roll);
 		}
 
-
-		FORCEINLINE float FRotator::SizeSquared() const
+		__forceinline float FRotator::SizeSquared() const
 		{
 			return Pitch*Pitch + Yaw* Yaw + Roll*Roll;
 		}
 
-		FORCEINLINE float FRotator::Dot(const FRotator& vOther) const
+		__forceinline float FRotator::Dot(const FRotator& vOther) const
 		{
 			const FRotator& a = *this;
 
 			return (a.Pitch * vOther.Pitch + a.Yaw * vOther.Yaw + a.Roll * vOther.Roll);
 		}
 
-				FORCEINLINE float FRotator::ClampAxis(float Angle)
+				__forceinline float FRotator::ClampAxis(float Angle)
 		{
 			// returns Angle in the range (-360,360)
 			Angle = fmod(Angle, 360.f);
@@ -766,7 +764,7 @@ namespace SDK
 			return Angle;
 		}
 
-		FORCEINLINE float FRotator::NormalizeAxis(float Angle)
+		__forceinline float FRotator::NormalizeAxis(float Angle)
 		{
 			// returns Angle in the range [0,360)
 			Angle = ClampAxis(Angle);
@@ -780,14 +778,14 @@ namespace SDK
 			return Angle;
 		}
 
-		FORCEINLINE void FRotator::Normalize()
+		__forceinline void FRotator::Normalize()
 		{
 			Pitch = NormalizeAxis(Pitch);
 			Yaw = NormalizeAxis(Yaw);
 			Roll = NormalizeAxis(Roll);
 		}
 
-		FORCEINLINE FRotator FRotator::GetNormalized() const
+		__forceinline FRotator FRotator::GetNormalized() const
 		{
 			FRotator Rot = *this;
 			Rot.Normalize();
