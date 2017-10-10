@@ -7,6 +7,7 @@
 #endif
 
 #define CHECK_VALID( _v ) 0
+#include <winnt.h>
 
 namespace SDK
 {
