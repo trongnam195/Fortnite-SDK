@@ -202,11 +202,46 @@ struct UAthenaInventoryPanelBase_AdvanceSelection_Params
 {
 };
 
-// Function FortniteUI.AthenaLeaderboardScreenBase.UpdateRowProxies
-struct UAthenaLeaderboardScreenBase_UpdateRowProxies_Params
+// Function FortniteUI.AthenaLeaderboardScreenBase.OnUpdateUIForQuery
+struct UAthenaLeaderboardScreenBase_OnUpdateUIForQuery_Params
 {
-	int                                                Start;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                Count;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bQueryInProgress;                                         // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function FortniteUI.AthenaLeaderboardScreenBase.OnUpdateTabButtonText
+struct UAthenaLeaderboardScreenBase_OnUpdateTabButtonText_Params
+{
+	class UCommonButton*                               Button;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	struct FAthenaPlaylistLeaderboardData              PlaylistTabData;                                          // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+};
+
+// Function FortniteUI.AthenaLeaderboardScreenBase.OnUpdateListHeader
+struct UAthenaLeaderboardScreenBase_OnUpdateListHeader_Params
+{
+	struct FAthenaPlaylistLeaderboardData              PlaylistTabData;                                          // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+};
+
+// Function FortniteUI.AthenaLeaderboardScreenBase.OnUpdateLeaderboardListUI
+struct UAthenaLeaderboardScreenBase_OnUpdateLeaderboardListUI_Params
+{
+};
+
+// Function FortniteUI.AthenaLeaderboardScreenBase.OnMatchTypeChanged
+struct UAthenaLeaderboardScreenBase_OnMatchTypeChanged_Params
+{
+	int                                                MatchTypeIndex;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function FortniteUI.AthenaLeaderboardScreenBase.OnFriendsFilterChanged
+struct UAthenaLeaderboardScreenBase_OnFriendsFilterChanged_Params
+{
+	int                                                FriendsFilterIndex;                                       // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function FortniteUI.AthenaLeaderboardScreenBase.OnActiveLeaderboardTabChanged
+struct UAthenaLeaderboardScreenBase_OnActiveLeaderboardTabChanged_Params
+{
+	int                                                ActiveWidgetIndex;                                        // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function FortniteUI.AthenaLobbyBase.OnPlayerClicked
@@ -241,6 +276,83 @@ struct UAthenaLobbyBase_OnBeginCursorOverPlayer_Params
 struct UAthenaMatchReadyDesktopPopup_UserDismissedDialog_Params
 {
 	bool                                               bBringToFront;                                            // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function FortniteUI.AthenaStatsScreenBase.OnTabSelected
+struct UAthenaStatsScreenBase_OnTabSelected_Params
+{
+	struct FName                                       TabName;                                                  // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function FortniteUI.AthenaStatsScreenBase.OnQueryStarted
+struct UAthenaStatsScreenBase_OnQueryStarted_Params
+{
+};
+
+// Function FortniteUI.AthenaStatsScreenBase.OnQueryFinished
+struct UAthenaStatsScreenBase_OnQueryFinished_Params
+{
+	bool                                               bWasSuccessful;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function FortniteUI.AthenaStatsScreenBase.GetWinsTag
+struct UAthenaStatsScreenBase_GetWinsTag_Params
+{
+	struct FString                                     ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
+};
+
+// Function FortniteUI.AthenaStatsScreenBase.GetThirdTierPlaceTag
+struct UAthenaStatsScreenBase_GetThirdTierPlaceTag_Params
+{
+	struct FString                                     ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
+};
+
+// Function FortniteUI.AthenaStatsScreenBase.GetStatValue
+struct UAthenaStatsScreenBase_GetStatValue_Params
+{
+	struct FString                                     BaseGameplayTag;                                          // (CPF_Parm, CPF_ZeroConstructor)
+	int                                                ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function FortniteUI.AthenaStatsScreenBase.GetStatGameplayTag
+struct UAthenaStatsScreenBase_GetStatGameplayTag_Params
+{
+	struct FString                                     BaseStatName;                                             // (CPF_Parm, CPF_ZeroConstructor)
+	struct FString                                     ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
+};
+
+// Function FortniteUI.AthenaStatsScreenBase.GetSecondTierPlaceTag
+struct UAthenaStatsScreenBase_GetSecondTierPlaceTag_Params
+{
+	struct FString                                     ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
+};
+
+// Function FortniteUI.AthenaStatsScreenBase.GetLastUpdateTime
+struct UAthenaStatsScreenBase_GetLastUpdateTime_Params
+{
+	struct FText                                       ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ReturnParm)
+};
+
+// Function FortniteUI.AthenaStatsScreenBase.FormatStatValueAsElapsedTime
+struct UAthenaStatsScreenBase_FormatStatValueAsElapsedTime_Params
+{
+	struct FTimespan                                   ValueAsTimespan;                                          // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+	struct FText                                       ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ReturnParm)
+};
+
+// Function FortniteUI.FortAbilitySystemContext.RemoveDelegatesFromWidget
+struct UFortAbilitySystemContext_RemoveDelegatesFromWidget_Params
+{
+	class UWidget*                                     Widget;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+};
+
+// Function FortniteUI.FortAbilitySystemContext.RegisterForAttributeChanged
+struct UFortAbilitySystemContext_RegisterForAttributeChanged_Params
+{
+	class UWidget*                                     Widget;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UAbilitySystemComponent*                     ASC;                                                      // (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	struct FGameplayAttribute                          Attribute;                                                // (CPF_Parm)
+	struct FScriptDelegate                             Callback;                                                 // (CPF_Parm, CPF_ZeroConstructor)
 };
 
 // Function FortniteUI.FortAccountStatsContext.CanShowAccountStats
@@ -1441,6 +1553,12 @@ struct UFortGlobalUIContext_IsUIVisible_Params
 	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
 };
 
+// Function FortniteUI.FortGlobalUIContext.IsSquadQueueEnabled
+struct UFortGlobalUIContext_IsSquadQueueEnabled_Params
+{
+	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
 // Function FortniteUI.FortGlobalUIContext.IsPendingLogout
 struct UFortGlobalUIContext_IsPendingLogout_Params
 {
@@ -1473,6 +1591,12 @@ struct UFortGlobalUIContext_IsHUDVisible_Params
 
 // Function FortniteUI.FortGlobalUIContext.IsGamepadAttached
 struct UFortGlobalUIContext_IsGamepadAttached_Params
+{
+	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function FortniteUI.FortGlobalUIContext.IsDuoQueueEnabled
+struct UFortGlobalUIContext_IsDuoQueueEnabled_Params
 {
 	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
 };
@@ -6563,10 +6687,21 @@ struct UFortJournalQuestProgressBar_GetProgressDetails_Params
 	float                                              OutFraction;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
+// Function FortniteUI.FortLeaderboardContext.CanShowStats
+struct UFortLeaderboardContext_CanShowStats_Params
+{
+	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
 // Function FortniteUI.FortLeaderboardContext.CanShowLeaderboards
 struct UFortLeaderboardContext_CanShowLeaderboards_Params
 {
 	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function FortniteUI.FortLeaderboardEntryWidget.OnLeaderboardEntryDataSet
+struct UFortLeaderboardEntryWidget_OnLeaderboardEntryDataSet_Params
+{
 };
 
 // Function FortniteUI.FortLegacySlateBridgeWidget.UpdateSlateWidget
@@ -7258,6 +7393,12 @@ struct UFortGameOptions_SafeZoneChanged_Params
 	float                                              NewValue;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
+// Function FortniteUI.FortGameOptions.RegionChanged
+struct UFortGameOptions_RegionChanged_Params
+{
+	int                                                NewRegion;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function FortniteUI.FortGameOptions.OnForceFeedbackChanged
 struct UFortGameOptions_OnForceFeedbackChanged_Params
 {
@@ -7316,6 +7457,12 @@ struct UFortGameOptions_GetSprintCancelsReloadState_Params
 struct UFortGameOptions_GetSafeZoneValue_Params
 {
 	float                                              ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function FortniteUI.FortGameOptions.GetRegionDisplayNames
+struct UFortGameOptions_GetRegionDisplayNames_Params
+{
+	TArray<struct FText>                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
 };
 
 // Function FortniteUI.FortGameOptions.GetPossibleLanguages
@@ -7384,6 +7531,12 @@ struct UFortGameOptions_GetFirstPersonCameraState_Params
 struct UFortGameOptions_GetDefaultGammaSettings_Params
 {
 	float                                              ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function FortniteUI.FortGameOptions.GetCurrentRegion
+struct UFortGameOptions_GetCurrentRegion_Params
+{
+	int                                                ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
 };
 
 // Function FortniteUI.FortGameOptions.GetCurrentLanguage
@@ -9266,8 +9419,13 @@ struct UFortSurvivorSquadStatMatchesBase_AddStatMatch_Params
 	class UFortSurvivorSquadStatMatchBase*             SetBonus;                                                 // (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
 };
 
-// Function FortniteUI.FortSquadStatsWidgetBase.UpdateStats
-struct UFortSquadStatsWidgetBase_UpdateStats_Params
+// Function FortniteUI.FortSquadStatsWidgetBase.RequestStatsUpdate
+struct UFortSquadStatsWidgetBase_RequestStatsUpdate_Params
+{
+};
+
+// Function FortniteUI.FortSquadStatsWidgetBase.RequestShowPreviewStats
+struct UFortSquadStatsWidgetBase_RequestShowPreviewStats_Params
 {
 };
 
@@ -9280,11 +9438,6 @@ struct UFortSquadStatsWidgetBase_HandleSquadSlottingPreviewStateChanged_Params
 struct UFortSquadStatsWidgetBase_GetLocalPlayerId_Params
 {
 	struct FUniqueNetIdRepl                            ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ReturnParm)
-};
-
-// Function FortniteUI.FortSquadStatsWidgetBase.AttemptShowPreviewStats
-struct UFortSquadStatsWidgetBase_AttemptShowPreviewStats_Params
-{
 };
 
 // Function FortniteUI.FortSquadStatValueWithIcon.HandleDifferentAttributeSetBP
@@ -9631,6 +9784,13 @@ struct UFortTooltipUIContext_GetTooltipStat_Params
 	struct FGameplayTag                                Token;                                                    // (CPF_ConstParm, CPF_Parm)
 	struct FFortDisplayAttribute                       OutDisplayAttribute;                                      // (CPF_Parm, CPF_OutParm)
 	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+};
+
+// Function FortniteUI.FortTooltipUIContext.GetTooltipAttributes
+struct UFortTooltipUIContext_GetTooltipAttributes_Params
+{
+	class UObject*                                     Object;                                                   // (CPF_ConstParm, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<struct FGameplayAttribute>                  ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
 };
 
 // Function FortniteUI.FortTooltipUIContext.GetDisplayNameAndMultiBrushForTag

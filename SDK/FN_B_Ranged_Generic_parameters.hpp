@@ -129,22 +129,6 @@ struct AB_Ranged_Generic_C_OnPlayReloadFX_Params
 	TEnumAsByte<EFortReloadFXState>*                   ReloadStage;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
-// Function B_Ranged_Generic.B_Ranged_Generic_C.OnSetTargeting
-struct AB_Ranged_Generic_C_OnSetTargeting_Params
-{
-	bool*                                              bNewIsTargeting;                                          // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-};
-
-// Function B_Ranged_Generic.B_Ranged_Generic_C.K2_OnUnEquip
-struct AB_Ranged_Generic_C_K2_OnUnEquip_Params
-{
-};
-
-// Function B_Ranged_Generic.B_Ranged_Generic_C.InitializeScopeVariables
-struct AB_Ranged_Generic_C_InitializeScopeVariables_Params
-{
-};
-
 // Function B_Ranged_Generic.B_Ranged_Generic_C.Update Enemy Custom Depths
 struct AB_Ranged_Generic_C_Update_Enemy_Custom_Depths_Params
 {
@@ -192,6 +176,22 @@ struct AB_Ranged_Generic_C_SetWeaponPierceThrough_ClientRep_Params
 {
 	bool                                               Enable;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	int                                                TargetLimit;                                              // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.InitializeScopeVariables
+struct AB_Ranged_Generic_C_InitializeScopeVariables_Params
+{
+};
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.OnSetTargeting
+struct AB_Ranged_Generic_C_OnSetTargeting_Params
+{
+	bool*                                              bNewIsTargeting;                                          // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.K2_OnUnEquip
+struct AB_Ranged_Generic_C_K2_OnUnEquip_Params
+{
 };
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.ExecuteUbergraph_B_Ranged_Generic

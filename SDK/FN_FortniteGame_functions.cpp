@@ -19671,6 +19671,58 @@ void AFortPawn::StartPushMomentum(const struct FVector& NewPushMomentum, float D
 }
 
 
+// Function FortniteGame.FortPawn.SpawnCameraLensEffectDirectional
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
+// Parameters:
+// class UClass*                  LensEffectEmitterClass         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class AFortPawn*               DamageDealer                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FHitResult              HitInfo                        (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+// class AFortEmitterCameraLensEffectDirectional* ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class AFortEmitterCameraLensEffectDirectional* AFortPawn::SpawnCameraLensEffectDirectional(class UClass* LensEffectEmitterClass, class AFortPawn* DamageDealer, const struct FHitResult& HitInfo)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPawn.SpawnCameraLensEffectDirectional");
+
+	AFortPawn_SpawnCameraLensEffectDirectional_Params params;
+	params.LensEffectEmitterClass = LensEffectEmitterClass;
+	params.DamageDealer = DamageDealer;
+	params.HitInfo = HitInfo;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteGame.FortPawn.SpawnCameraLensEffect
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UClass*                  LensEffectEmitterClass         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class AEmitterCameraLensEffectBase* ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class AEmitterCameraLensEffectBase* AFortPawn::SpawnCameraLensEffect(class UClass* LensEffectEmitterClass)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPawn.SpawnCameraLensEffect");
+
+	AFortPawn_SpawnCameraLensEffect_Params params;
+	params.LensEffectEmitterClass = LensEffectEmitterClass;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function FortniteGame.FortPawn.SetSpawnSpot
 // (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
 // Parameters:
@@ -21248,6 +21300,28 @@ float AFortPawn::GetMaxControlResistance()
 	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPawn.GetMaxControlResistance");
 
 	AFortPawn_GetMaxControlResistance_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteGame.FortPawn.GetLocalViewingPlayerController
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// class APlayerController*       ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class APlayerController* AFortPawn::GetLocalViewingPlayerController()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPawn.GetLocalViewingPlayerController");
+
+	AFortPawn_GetLocalViewingPlayerController_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -27228,6 +27302,24 @@ void AFortPlayerPawn::RandomizeCharacter(const struct FString& GenderString)
 }
 
 
+// Function FortniteGame.FortPlayerPawn.OnRep_IsTargeting
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+
+void AFortPlayerPawn::OnRep_IsTargeting()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerPawn.OnRep_IsTargeting");
+
+	AFortPlayerPawn_OnRep_IsTargeting_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function FortniteGame.FortPlayerPawn.OnRep_IsDBNO
 // (FUNC_Native, FUNC_Protected)
 
@@ -31536,6 +31628,26 @@ bool AFortWindManager::SetWindImpulse(const struct FFortWindImpulseHandle& Impul
 }
 
 
+// Function FortniteGame.FortWindManager.RemoveWindParticleSystemComponent
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UParticleSystemComponent* ParticleSystemComponent        (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void AFortWindManager::RemoveWindParticleSystemComponent(class UParticleSystemComponent* ParticleSystemComponent)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortWindManager.RemoveWindParticleSystemComponent");
+
+	AFortWindManager_RemoveWindParticleSystemComponent_Params params;
+	params.ParticleSystemComponent = ParticleSystemComponent;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function FortniteGame.FortWindManager.RemoveWindImpulse
 // (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
 // Parameters:
@@ -32058,6 +32170,26 @@ void AFortWindManager::STATIC_BreakWindImpulseCylinder(const struct FFortWindImp
 		*ImpulseMagnitude = params.ImpulseMagnitude;
 	if (ImpulseDirection != nullptr)
 		*ImpulseDirection = params.ImpulseDirection;
+}
+
+
+// Function FortniteGame.FortWindManager.AddWindParticleSystemComponent
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UParticleSystemComponent* ParticleSystemComponent        (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void AFortWindManager::AddWindParticleSystemComponent(class UParticleSystemComponent* ParticleSystemComponent)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortWindManager.AddWindParticleSystemComponent");
+
+	AFortWindManager_AddWindParticleSystemComponent_Params params;
+	params.ParticleSystemComponent = ParticleSystemComponent;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
 }
 
 
@@ -37211,34 +37343,6 @@ bool AFortPlayerController::StartReadyCheck(const struct FText& QueryText, const
 }
 
 
-// Function FortniteGame.FortPlayerController.SpawnCameraLensEffectDirectional
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
-// Parameters:
-// class UClass*                  LensEffectEmitterClass         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class AFortPawn*               DamageDealer                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FHitResult              HitInfo                        (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
-// class AFortEmitterCameraLensEffectDirectional* ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-class AFortEmitterCameraLensEffectDirectional* AFortPlayerController::SpawnCameraLensEffectDirectional(class UClass* LensEffectEmitterClass, class AFortPawn* DamageDealer, const struct FHitResult& HitInfo)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerController.SpawnCameraLensEffectDirectional");
-
-	AFortPlayerController_SpawnCameraLensEffectDirectional_Params params;
-	params.LensEffectEmitterClass = LensEffectEmitterClass;
-	params.DamageDealer = DamageDealer;
-	params.HitInfo = HitInfo;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
 // Function FortniteGame.FortPlayerController.SetRotatePawnToCamera
 // (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
 // Parameters:
@@ -38403,6 +38507,29 @@ void AFortPlayerController::ServerGiftInventoryItemToOtherPlayer(const struct FG
 	params.ItemGuid = ItemGuid;
 	params.PlayerID = PlayerID;
 	params.Quantity = Quantity;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteGame.FortPlayerController.ServerFinishedInteractionInZoneReport
+// (FUNC_Net, FUNC_NetReliable, FUNC_Native, FUNC_Event, FUNC_Public, FUNC_NetServer, FUNC_NetValidate)
+// Parameters:
+// int                            FinishedInteractionState       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// TArray<uint64_t>               FinishedInteractionReport      (CPF_ConstParm, CPF_Parm, CPF_ZeroConstructor, CPF_ReferenceParm)
+
+void AFortPlayerController::ServerFinishedInteractionInZoneReport(int FinishedInteractionState, TArray<uint64_t> FinishedInteractionReport)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerController.ServerFinishedInteractionInZoneReport");
+
+	AFortPlayerController_ServerFinishedInteractionInZoneReport_Params params;
+	params.FinishedInteractionState = FinishedInteractionState;
+	params.FinishedInteractionReport = FinishedInteractionReport;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -39661,6 +39788,28 @@ bool AFortPlayerController::GetRotatePawnToCamera()
 	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerController.GetRotatePawnToCamera");
 
 	AFortPlayerController_GetRotatePawnToCamera_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteGame.FortPlayerController.GetRegisteredPlayerInfo
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// class UFortRegisteredPlayerInfo* ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class UFortRegisteredPlayerInfo* AFortPlayerController::GetRegisteredPlayerInfo()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortPlayerController.GetRegisteredPlayerInfo");
+
+	AFortPlayerController_GetRegisteredPlayerInfo_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -67776,6 +67925,43 @@ void UFortKismetLibrary::STATIC_BroadcastSound(class UObject* WorldContextObject
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteGame.FortKismetLibrary.BroadcastPlayerImpactAtLocation
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// class UObject*                 WorldContextObject             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class APlayerController*       Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FVector                 Position                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+// float                          Loudness                       (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float                          Duration                       (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           bRelativePosition              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UFortKismetLibrary::STATIC_BroadcastPlayerImpactAtLocation(class UObject* WorldContextObject, class APlayerController* Player, const struct FVector& Position, bool bRelativePosition, float* Loudness, float* Duration)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteGame.FortKismetLibrary.BroadcastPlayerImpactAtLocation");
+
+	UFortKismetLibrary_BroadcastPlayerImpactAtLocation_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.Player = Player;
+	params.Position = Position;
+	params.bRelativePosition = bRelativePosition;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (Loudness != nullptr)
+		*Loudness = params.Loudness;
+	if (Duration != nullptr)
+		*Duration = params.Duration;
+
+	return params.ReturnValue;
 }
 
 

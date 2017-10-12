@@ -24,8 +24,8 @@ public:
 	class UPostProcessComponent*                       DownScopePostProcess;                                     // 0x0CC0(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	class UStaticMeshComponent*                        ScopeMesh1P;                                              // 0x0CC8(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	class UParticleSystemComponent*                    Muzzle_Empty_;                                            // 0x0CD0(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              AnimateScopePostProcess_DownSightPostProcessAmount_393D8BA5486879173797EF8C9B8D4642;// 0x0CD8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TEnumAsByte<ETimelineDirection>                    AnimateScopePostProcess__Direction_393D8BA5486879173797EF8C9B8D4642;// 0x0CDC(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              AnimateScopePostProcess_DownSightPostProcessAmount_DA5AC2EC4201B24ECDEFF3A15125235A;// 0x0CD8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TEnumAsByte<ETimelineDirection>                    AnimateScopePostProcess__Direction_DA5AC2EC4201B24ECDEFF3A15125235A;// 0x0CDC(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0CDD(0x0003) MISSED OFFSET
 	class UTimelineComponent*                          AnimateScopePostProcess;                                  // 0x0CE0(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	class UParticleSystem*                             MuzzleParticleSystem;                                     // 0x0CE8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
@@ -103,9 +103,6 @@ public:
 	void OnPlayWeaponFireFX(bool* bPersistentFire, bool* bSecondaryFire);
 	void OnStopWeaponFireFX();
 	void OnPlayReloadFX(TEnumAsByte<EFortReloadFXState>* ReloadStage);
-	void OnSetTargeting(bool* bNewIsTargeting);
-	void K2_OnUnEquip();
-	void InitializeScopeVariables();
 	void Update_Enemy_Custom_Depths(bool Enable_Or_Disable, int StencilBufferValue);
 	void OnWeaponAttached();
 	void OnInitAlteration(class UFortAlterationItemDefinition** NewAlteration);
@@ -114,6 +111,9 @@ public:
 	void OnEquippedWeaponDestory();
 	void SetWeaponPierceThrough(bool Enable, int TargetLimit);
 	void SetWeaponPierceThrough_ClientRep(bool Enable, int TargetLimit);
+	void InitializeScopeVariables();
+	void OnSetTargeting(bool* bNewIsTargeting);
+	void K2_OnUnEquip();
 	void ExecuteUbergraph_B_Ranged_Generic(int EntryPoint);
 };
 

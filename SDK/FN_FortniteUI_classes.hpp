@@ -168,11 +168,16 @@ public:
 
 
 // Class FortniteUI.AthenaLeaderboardScreenBase
-// 0x0010 (0x03F0 - 0x03E0)
+// 0x0300 (0x06E0 - 0x03E0)
 class UAthenaLeaderboardScreenBase : public UCommonActivatablePanel
 {
 public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x03E0(0x0010) MISSED OFFSET
+	class UCommonRotator*                              MatchRotator;                                             // 0x03E0(0x0008) (CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UCommonRotator*                              FriendsRotator;                                           // 0x03E8(0x0008) (CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class UDataTable*                                  LeaderboardDisplayData;                                   // 0x03F0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	TMap<struct FName, class UCommonButton*>           ActiveTabButtons;                                         // 0x03F8(0x0050) (CPF_BlueprintVisible, CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient)
+	TArray<class UFortLeaderboardRowProxyInstance*>    RowProxies;                                               // 0x0448(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_Transient)
+	unsigned char                                      UnknownData00[0x288];                                     // 0x0458(0x0288) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -181,7 +186,13 @@ public:
 	}
 
 
-	void UpdateRowProxies(int Start, int Count);
+	void OnUpdateUIForQuery(bool bQueryInProgress);
+	void OnUpdateTabButtonText(class UCommonButton* Button, const struct FAthenaPlaylistLeaderboardData& PlaylistTabData);
+	void OnUpdateListHeader(const struct FAthenaPlaylistLeaderboardData& PlaylistTabData);
+	void OnUpdateLeaderboardListUI();
+	void OnMatchTypeChanged(int MatchTypeIndex);
+	void OnFriendsFilterChanged(int FriendsFilterIndex);
+	void OnActiveLeaderboardTabChanged(int ActiveWidgetIndex);
 };
 
 
@@ -243,10 +254,13 @@ public:
 
 
 // Class FortniteUI.AthenaStatsScreenBase
-// 0x0000 (0x03E0 - 0x03E0)
+// 0x0080 (0x0460 - 0x03E0)
 class UAthenaStatsScreenBase : public UCommonActivatablePanel
 {
 public:
+	int                                                CurrentPlaylistId;                                        // 0x03E0(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	bool                                               bWasLastQuerySuccessful;                                  // 0x03E4(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7B];                                      // 0x03E5(0x007B) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -254,6 +268,36 @@ public:
 		return ptr;
 	}
 
+
+	void OnTabSelected(const struct FName& TabName);
+	void OnQueryStarted();
+	void OnQueryFinished(bool bWasSuccessful);
+	struct FString GetWinsTag();
+	struct FString GetThirdTierPlaceTag();
+	int GetStatValue(const struct FString& BaseGameplayTag);
+	struct FString GetStatGameplayTag(const struct FString& BaseStatName);
+	struct FString GetSecondTierPlaceTag();
+	struct FText GetLastUpdateTime();
+	struct FText FormatStatValueAsElapsedTime(const struct FTimespan& ValueAsTimespan);
+};
+
+
+// Class FortniteUI.FortAbilitySystemContext
+// 0x0050 (0x0078 - 0x0028)
+class UFortAbilitySystemContext : public UBlueprintContextBase
+{
+public:
+	unsigned char                                      UnknownData00[0x50];                                      // 0x0028(0x0050) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("Class FortniteUI.FortAbilitySystemContext");
+		return ptr;
+	}
+
+
+	void RemoveDelegatesFromWidget(class UWidget* Widget);
+	void RegisterForAttributeChanged(class UWidget* Widget, class UAbilitySystemComponent* ASC, const struct FGameplayAttribute& Attribute, const struct FScriptDelegate& Callback);
 };
 
 
@@ -1488,12 +1532,14 @@ public:
 	void Logout();
 	bool IsUsingGamepad();
 	bool IsUIVisible();
+	bool IsSquadQueueEnabled();
 	bool IsPendingLogout();
 	bool IsMobileApp();
 	bool IsInZone();
 	bool IsInOutpostZone();
 	bool IsHUDVisible();
 	bool IsGamepadAttached();
+	bool IsDuoQueueEnabled();
 	bool IsDesktopPlatform();
 	bool IsBluGloEnabled();
 	bool IsAllContentInstalled();
@@ -5212,6 +5258,7 @@ public:
 	}
 
 
+	bool CanShowStats();
 	bool CanShowLeaderboards();
 };
 
@@ -5230,6 +5277,8 @@ public:
 		return ptr;
 	}
 
+
+	void OnLeaderboardEntryDataSet();
 };
 
 
@@ -5975,6 +6024,7 @@ public:
 	bool ShouldShowSafeZoneOption();
 	void SetControllerPlatform(const struct FString& InControllerPlatform);
 	void SafeZoneChanged(float NewValue);
+	void RegionChanged(int NewRegion);
 	void OnForceFeedbackChanged(bool bInChecked);
 	void OnFocusOnFirstBuildingPieceWhenQuickbarSwappedChanged(bool bInChecked);
 	void MouseSensitivityChanged(float NewValue);
@@ -5985,6 +6035,7 @@ public:
 	bool GetSprintToggleState();
 	bool GetSprintCancelsReloadState();
 	float GetSafeZoneValue();
+	TArray<struct FText> GetRegionDisplayNames();
 	TArray<struct FText> GetPossibleLanguages();
 	float GetMouseSensitivityValue();
 	bool GetLookInversionState();
@@ -5996,6 +6047,7 @@ public:
 	bool GetFocusOnFirstBuildingPieceWhenQuickbarSwappedState();
 	bool GetFirstPersonCameraState();
 	float GetDefaultGammaSettings();
+	int GetCurrentRegion();
 	int GetCurrentLanguage();
 	struct FString GetControllerPlatform();
 	bool GetAutoEquipState();
@@ -7520,13 +7572,13 @@ public:
 
 
 // Class FortniteUI.FortSquadStatsWidgetBase
-// 0x0030 (0x0268 - 0x0238)
+// 0x0038 (0x0270 - 0x0238)
 class UFortSquadStatsWidgetBase : public UCommonUserWidget
 {
 public:
 	TArray<class UFortAttributeListItem_NUI*>          OverviewStats;                                            // 0x0238(0x0010) (CPF_BlueprintVisible, CPF_ExportObject, CPF_ZeroConstructor)
 	class UFortAttributeList_NUI*                      DetailedStats;                                            // 0x0248(0x0008) (CPF_BlueprintVisible, CPF_ExportObject, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x18];                                      // 0x0250(0x0018) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x20];                                      // 0x0250(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -7535,10 +7587,10 @@ public:
 	}
 
 
-	void UpdateStats();
+	void RequestStatsUpdate();
+	void RequestShowPreviewStats();
 	void HandleSquadSlottingPreviewStateChanged();
 	struct FUniqueNetIdRepl GetLocalPlayerId();
-	void AttemptShowPreviewStats();
 };
 
 
@@ -7843,6 +7895,7 @@ public:
 	bool GetUIDataForTag(const struct FGameplayTag& Tag, struct FFortTagUIData* OutData);
 	TArray<struct FFortDisplayAttribute> GetTooltipStats(class UObject* Object, class UFortTooltipContext* TooltipContext);
 	bool GetTooltipStat(class UObject* Object, class UFortTooltipContext* TooltipContext, const struct FGameplayTag& Token, struct FFortDisplayAttribute* OutDisplayAttribute);
+	TArray<struct FGameplayAttribute> GetTooltipAttributes(class UObject* Object);
 	bool GetDisplayNameAndMultiBrushForTag(const struct FGameplayTag& Tag, struct FText* OutDisplayName, struct FFortMultiSizeBrush* OutBrush);
 	bool GetDescription(class UObject* Object, class UFortTooltipContext* TooltipContext, TArray<struct FText>* OutDescription);
 	TArray<struct FFortDisplayAttribute> GetComparisonStats(class UObject* Object, class UObject* ComparisonObject, class UFortTooltipContext* TooltipContext);

@@ -310,13 +310,14 @@ enum class EAthenaGamePhaseStep : uint8_t
 	None                           = 0,
 	Setup                          = 1,
 	Warmup                         = 2,
-	BusLocked                      = 3,
-	BusFlying                      = 4,
-	StormForming                   = 5,
-	StormHolding                   = 6,
-	StormShrinking                 = 7,
-	EndGame                        = 8,
-	EAthenaGamePhaseStep_MAX       = 9
+	GetReady                       = 3,
+	BusLocked                      = 4,
+	BusFlying                      = 5,
+	StormForming                   = 6,
+	StormHolding                   = 7,
+	StormShrinking                 = 8,
+	EndGame                        = 9,
+	EAthenaGamePhaseStep_MAX       = 10
 };
 
 
@@ -3336,6 +3337,17 @@ enum class EFortSocialItemType : uint8_t
 	RecentPlayer                   = 3,
 	Max                            = 4,
 	EFortSocialItemType_MAX        = 5
+};
+
+
+// Enum FortniteGame.EMcpLeaderboardTimeWindow
+enum class EMcpLeaderboardTimeWindow : uint8_t
+{
+	Daily                          = 0,
+	Weekly                         = 1,
+	Monthly                        = 2,
+	AllTime                        = 3,
+	EMcpLeaderboardTimeWindow_MAX  = 4
 };
 
 
@@ -9108,6 +9120,14 @@ struct FVisibiltyInfoArray : public FFastArraySerializer
 	TArray<struct FVisibilityInfo>                     VisibilityInfoArray;                                      // 0x00B0(0x0010) (CPF_ZeroConstructor)
 };
 
+// ScriptStruct FortniteGame.BCActionInfo
+// 0x0008
+struct FBCActionInfo
+{
+	int                                                Type;                                                     // 0x0000(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Action;                                                   // 0x0004(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // ScriptStruct FortniteGame.FortPlacedBuilding
 // 0x0020
 struct FFortPlacedBuilding
@@ -9655,6 +9675,20 @@ struct FFortMeleeWeaponStats : public FFortBaseWeaponStats
 	float                                              RangeVSWeakSpots;                                         // 0x0144(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
+// ScriptStruct FortniteGame.LeaderboardRowData
+// 0x0040
+struct FLeaderboardRowData
+{
+	int                                                Rank;                                                     // 0x0000(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x0004(0x0004) MISSED OFFSET
+	struct FString                                     User;                                                     // 0x0008(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	int                                                Value;                                                    // 0x0018(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
+	struct FUniqueNetIdRepl                            UserId;                                                   // 0x0020(0x0018) (CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	bool                                               bIsFriend;                                                // 0x0038(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x7];                                       // 0x0039(0x0007) MISSED OFFSET
+};
+
 // ScriptStruct FortniteGame.MatchmakingParams
 // 0x0098
 struct FMatchmakingParams
@@ -9867,14 +9901,14 @@ struct FAthenaJumpPenalty
 };
 
 // ScriptStruct FortniteGame.AirControlParams
-// 0x0014
+// 0x00C8
 struct FAirControlParams
 {
-	float                                              MaxAcceleration;                                          // 0x0000(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              LateralFriction;                                          // 0x0004(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              MaxLateralSpeed;                                          // 0x0008(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              TerminalVelocity;                                         // 0x000C(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              GravityScalar;                                            // 0x0010(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FScalableFloat                              MaxAcceleration;                                          // 0x0000(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FScalableFloat                              LateralFriction;                                          // 0x0028(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FScalableFloat                              MaxLateralSpeed;                                          // 0x0050(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FScalableFloat                              TerminalVelocity;                                         // 0x0078(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FScalableFloat                              GravityScalar;                                            // 0x00A0(0x0028) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
 };
 
 // ScriptStruct FortniteGame.FortNavLinkPattern
@@ -11273,6 +11307,35 @@ struct FGeneralChatRecommendations
 	bool                                               bIsFounderChatDisabled;                                   // 0x0023(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               bIsSubGameGlobalChatDisabled;                             // 0x0024(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0025(0x0003) MISSED OFFSET
+};
+
+// ScriptStruct FortniteGame.McpLeaderboardResultRow
+// 0x0020
+struct FMcpLeaderboardResultRow
+{
+	struct FUniqueNetIdRepl                            PlayerUniqueNetId;                                        // 0x0000(0x0018) (CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	int                                                Rank;                                                     // 0x0018(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                Value;                                                    // 0x001C(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// ScriptStruct FortniteGame.McpLeaderboardResult
+// 0x0030
+struct FMcpLeaderboardResult
+{
+	struct FString                                     StatName;                                                 // 0x0000(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	EMcpLeaderboardTimeWindow                          TimeWindow;                                               // 0x0010(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0011(0x0007) MISSED OFFSET
+	TArray<struct FMcpLeaderboardResultRow>            LeaderboardData;                                          // 0x0018(0x0010) (CPF_ZeroConstructor)
+	struct FDateTime                                   RequestTime;                                              // 0x0028(0x0008)
+};
+
+// ScriptStruct FortniteGame.McpPlayerStatsResult
+// 0x0070
+struct FMcpPlayerStatsResult
+{
+	struct FUniqueNetIdRepl                            PlayerUniqueNetId;                                        // 0x0000(0x0018) (CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	TMap<struct FString, int>                          StatData;                                                 // 0x0018(0x0050) (CPF_ZeroConstructor)
+	struct FDateTime                                   RequestTime;                                              // 0x0068(0x0008)
 };
 
 // ScriptStruct FortniteGame.QueryXboxUserXUIDParams

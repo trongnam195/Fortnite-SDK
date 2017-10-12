@@ -656,19 +656,138 @@ void UAthenaInventoryPanelBase::AdvanceSelection()
 }
 
 
-// Function FortniteUI.AthenaLeaderboardScreenBase.UpdateRowProxies
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Function FortniteUI.AthenaLeaderboardScreenBase.OnUpdateUIForQuery
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
 // Parameters:
-// int                            Start                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// int                            Count                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           bQueryInProgress               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void UAthenaLeaderboardScreenBase::UpdateRowProxies(int Start, int Count)
+void UAthenaLeaderboardScreenBase::OnUpdateUIForQuery(bool bQueryInProgress)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaLeaderboardScreenBase.UpdateRowProxies");
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaLeaderboardScreenBase.OnUpdateUIForQuery");
 
-	UAthenaLeaderboardScreenBase_UpdateRowProxies_Params params;
-	params.Start = Start;
-	params.Count = Count;
+	UAthenaLeaderboardScreenBase_OnUpdateUIForQuery_Params params;
+	params.bQueryInProgress = bQueryInProgress;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteUI.AthenaLeaderboardScreenBase.OnUpdateTabButtonText
+// (FUNC_Event, FUNC_Protected, FUNC_HasOutParms, FUNC_BlueprintEvent)
+// Parameters:
+// class UCommonButton*           Button                         (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+// struct FAthenaPlaylistLeaderboardData PlaylistTabData                (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+
+void UAthenaLeaderboardScreenBase::OnUpdateTabButtonText(class UCommonButton* Button, const struct FAthenaPlaylistLeaderboardData& PlaylistTabData)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaLeaderboardScreenBase.OnUpdateTabButtonText");
+
+	UAthenaLeaderboardScreenBase_OnUpdateTabButtonText_Params params;
+	params.Button = Button;
+	params.PlaylistTabData = PlaylistTabData;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteUI.AthenaLeaderboardScreenBase.OnUpdateListHeader
+// (FUNC_Event, FUNC_Protected, FUNC_HasOutParms, FUNC_BlueprintEvent)
+// Parameters:
+// struct FAthenaPlaylistLeaderboardData PlaylistTabData                (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+
+void UAthenaLeaderboardScreenBase::OnUpdateListHeader(const struct FAthenaPlaylistLeaderboardData& PlaylistTabData)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaLeaderboardScreenBase.OnUpdateListHeader");
+
+	UAthenaLeaderboardScreenBase_OnUpdateListHeader_Params params;
+	params.PlaylistTabData = PlaylistTabData;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteUI.AthenaLeaderboardScreenBase.OnUpdateLeaderboardListUI
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UAthenaLeaderboardScreenBase::OnUpdateLeaderboardListUI()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaLeaderboardScreenBase.OnUpdateLeaderboardListUI");
+
+	UAthenaLeaderboardScreenBase_OnUpdateLeaderboardListUI_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteUI.AthenaLeaderboardScreenBase.OnMatchTypeChanged
+// (FUNC_Final, FUNC_Native, FUNC_Protected, FUNC_BlueprintCallable)
+// Parameters:
+// int                            MatchTypeIndex                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UAthenaLeaderboardScreenBase::OnMatchTypeChanged(int MatchTypeIndex)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaLeaderboardScreenBase.OnMatchTypeChanged");
+
+	UAthenaLeaderboardScreenBase_OnMatchTypeChanged_Params params;
+	params.MatchTypeIndex = MatchTypeIndex;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteUI.AthenaLeaderboardScreenBase.OnFriendsFilterChanged
+// (FUNC_Final, FUNC_Native, FUNC_Protected, FUNC_BlueprintCallable)
+// Parameters:
+// int                            FriendsFilterIndex             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UAthenaLeaderboardScreenBase::OnFriendsFilterChanged(int FriendsFilterIndex)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaLeaderboardScreenBase.OnFriendsFilterChanged");
+
+	UAthenaLeaderboardScreenBase_OnFriendsFilterChanged_Params params;
+	params.FriendsFilterIndex = FriendsFilterIndex;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteUI.AthenaLeaderboardScreenBase.OnActiveLeaderboardTabChanged
+// (FUNC_Final, FUNC_Native, FUNC_Protected, FUNC_BlueprintCallable)
+// Parameters:
+// int                            ActiveWidgetIndex              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UAthenaLeaderboardScreenBase::OnActiveLeaderboardTabChanged(int ActiveWidgetIndex)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaLeaderboardScreenBase.OnActiveLeaderboardTabChanged");
+
+	UAthenaLeaderboardScreenBase_OnActiveLeaderboardTabChanged_Params params;
+	params.ActiveWidgetIndex = ActiveWidgetIndex;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -784,6 +903,272 @@ void UAthenaMatchReadyDesktopPopup::UserDismissedDialog(bool bBringToFront)
 
 	UAthenaMatchReadyDesktopPopup_UserDismissedDialog_Params params;
 	params.bBringToFront = bBringToFront;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteUI.AthenaStatsScreenBase.OnTabSelected
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FName                   TabName                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UAthenaStatsScreenBase::OnTabSelected(const struct FName& TabName)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaStatsScreenBase.OnTabSelected");
+
+	UAthenaStatsScreenBase_OnTabSelected_Params params;
+	params.TabName = TabName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteUI.AthenaStatsScreenBase.OnQueryStarted
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void UAthenaStatsScreenBase::OnQueryStarted()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaStatsScreenBase.OnQueryStarted");
+
+	UAthenaStatsScreenBase_OnQueryStarted_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteUI.AthenaStatsScreenBase.OnQueryFinished
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           bWasSuccessful                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UAthenaStatsScreenBase::OnQueryFinished(bool bWasSuccessful)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaStatsScreenBase.OnQueryFinished");
+
+	UAthenaStatsScreenBase_OnQueryFinished_Params params;
+	params.bWasSuccessful = bWasSuccessful;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteUI.AthenaStatsScreenBase.GetWinsTag
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// struct FString                 ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
+
+struct FString UAthenaStatsScreenBase::GetWinsTag()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaStatsScreenBase.GetWinsTag");
+
+	UAthenaStatsScreenBase_GetWinsTag_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteUI.AthenaStatsScreenBase.GetThirdTierPlaceTag
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// struct FString                 ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
+
+struct FString UAthenaStatsScreenBase::GetThirdTierPlaceTag()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaStatsScreenBase.GetThirdTierPlaceTag");
+
+	UAthenaStatsScreenBase_GetThirdTierPlaceTag_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteUI.AthenaStatsScreenBase.GetStatValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FString                 BaseGameplayTag                (CPF_Parm, CPF_ZeroConstructor)
+// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+int UAthenaStatsScreenBase::GetStatValue(const struct FString& BaseGameplayTag)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaStatsScreenBase.GetStatValue");
+
+	UAthenaStatsScreenBase_GetStatValue_Params params;
+	params.BaseGameplayTag = BaseGameplayTag;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteUI.AthenaStatsScreenBase.GetStatGameplayTag
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// struct FString                 BaseStatName                   (CPF_Parm, CPF_ZeroConstructor)
+// struct FString                 ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
+
+struct FString UAthenaStatsScreenBase::GetStatGameplayTag(const struct FString& BaseStatName)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaStatsScreenBase.GetStatGameplayTag");
+
+	UAthenaStatsScreenBase_GetStatGameplayTag_Params params;
+	params.BaseStatName = BaseStatName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteUI.AthenaStatsScreenBase.GetSecondTierPlaceTag
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// struct FString                 ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
+
+struct FString UAthenaStatsScreenBase::GetSecondTierPlaceTag()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaStatsScreenBase.GetSecondTierPlaceTag");
+
+	UAthenaStatsScreenBase_GetSecondTierPlaceTag_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteUI.AthenaStatsScreenBase.GetLastUpdateTime
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FText                   ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm)
+
+struct FText UAthenaStatsScreenBase::GetLastUpdateTime()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaStatsScreenBase.GetLastUpdateTime");
+
+	UAthenaStatsScreenBase_GetLastUpdateTime_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteUI.AthenaStatsScreenBase.FormatStatValueAsElapsedTime
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable)
+// Parameters:
+// struct FTimespan               ValueAsTimespan                (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+// struct FText                   ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm)
+
+struct FText UAthenaStatsScreenBase::FormatStatValueAsElapsedTime(const struct FTimespan& ValueAsTimespan)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.AthenaStatsScreenBase.FormatStatValueAsElapsedTime");
+
+	UAthenaStatsScreenBase_FormatStatValueAsElapsedTime_Params params;
+	params.ValueAsTimespan = ValueAsTimespan;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteUI.FortAbilitySystemContext.RemoveDelegatesFromWidget
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UWidget*                 Widget                         (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void UFortAbilitySystemContext::RemoveDelegatesFromWidget(class UWidget* Widget)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortAbilitySystemContext.RemoveDelegatesFromWidget");
+
+	UFortAbilitySystemContext_RemoveDelegatesFromWidget_Params params;
+	params.Widget = Widget;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteUI.FortAbilitySystemContext.RegisterForAttributeChanged
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UWidget*                 Widget                         (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+// class UAbilitySystemComponent* ASC                            (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+// struct FGameplayAttribute      Attribute                      (CPF_Parm)
+// struct FScriptDelegate         Callback                       (CPF_Parm, CPF_ZeroConstructor)
+
+void UFortAbilitySystemContext::RegisterForAttributeChanged(class UWidget* Widget, class UAbilitySystemComponent* ASC, const struct FGameplayAttribute& Attribute, const struct FScriptDelegate& Callback)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortAbilitySystemContext.RegisterForAttributeChanged");
+
+	UFortAbilitySystemContext_RegisterForAttributeChanged_Params params;
+	params.Widget = Widget;
+	params.ASC = ASC;
+	params.Attribute = Attribute;
+	params.Callback = Callback;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -4922,6 +5307,28 @@ bool UFortGlobalUIContext::IsUIVisible()
 }
 
 
+// Function FortniteUI.FortGlobalUIContext.IsSquadQueueEnabled
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UFortGlobalUIContext::IsSquadQueueEnabled()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortGlobalUIContext.IsSquadQueueEnabled");
+
+	UFortGlobalUIContext_IsSquadQueueEnabled_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function FortniteUI.FortGlobalUIContext.IsPendingLogout
 // (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
 // Parameters:
@@ -5042,6 +5449,28 @@ bool UFortGlobalUIContext::IsGamepadAttached()
 	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortGlobalUIContext.IsGamepadAttached");
 
 	UFortGlobalUIContext_IsGamepadAttached_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteUI.FortGlobalUIContext.IsDuoQueueEnabled
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UFortGlobalUIContext::IsDuoQueueEnabled()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortGlobalUIContext.IsDuoQueueEnabled");
+
+	UFortGlobalUIContext_IsDuoQueueEnabled_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -22701,6 +23130,28 @@ void UFortJournalQuestProgressBar::GetProgressDetails(struct FText* OutNumerator
 }
 
 
+// Function FortniteUI.FortLeaderboardContext.CanShowStats
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UFortLeaderboardContext::CanShowStats()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortLeaderboardContext.CanShowStats");
+
+	UFortLeaderboardContext_CanShowStats_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
 // Function FortniteUI.FortLeaderboardContext.CanShowLeaderboards
 // (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
 // Parameters:
@@ -22720,6 +23171,23 @@ bool UFortLeaderboardContext::CanShowLeaderboards()
 	fn->FunctionFlags = flags;
 
 	return params.ReturnValue;
+}
+
+
+// Function FortniteUI.FortLeaderboardEntryWidget.OnLeaderboardEntryDataSet
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void UFortLeaderboardEntryWidget::OnLeaderboardEntryDataSet()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortLeaderboardEntryWidget.OnLeaderboardEntryDataSet");
+
+	UFortLeaderboardEntryWidget_OnLeaderboardEntryDataSet_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
 }
 
 
@@ -25139,6 +25607,27 @@ void UFortGameOptions::SafeZoneChanged(float NewValue)
 }
 
 
+// Function FortniteUI.FortGameOptions.RegionChanged
+// (FUNC_Final, FUNC_Native, FUNC_Private, FUNC_BlueprintCallable)
+// Parameters:
+// int                            NewRegion                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UFortGameOptions::RegionChanged(int NewRegion)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortGameOptions.RegionChanged");
+
+	UFortGameOptions_RegionChanged_Params params;
+	params.NewRegion = NewRegion;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function FortniteUI.FortGameOptions.OnForceFeedbackChanged
 // (FUNC_Final, FUNC_Native, FUNC_Private, FUNC_BlueprintCallable)
 // Parameters:
@@ -25342,6 +25831,28 @@ float UFortGameOptions::GetSafeZoneValue()
 	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortGameOptions.GetSafeZoneValue");
 
 	UFortGameOptions_GetSafeZoneValue_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteUI.FortGameOptions.GetRegionDisplayNames
+// (FUNC_Final, FUNC_Native, FUNC_Private, FUNC_BlueprintCallable)
+// Parameters:
+// TArray<struct FText>           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
+
+TArray<struct FText> UFortGameOptions::GetRegionDisplayNames()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortGameOptions.GetRegionDisplayNames");
+
+	UFortGameOptions_GetRegionDisplayNames_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -25588,6 +26099,28 @@ float UFortGameOptions::GetDefaultGammaSettings()
 	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortGameOptions.GetDefaultGammaSettings");
 
 	UFortGameOptions_GetDefaultGammaSettings_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteUI.FortGameOptions.GetCurrentRegion
+// (FUNC_Final, FUNC_Native, FUNC_Private, FUNC_BlueprintCallable)
+// Parameters:
+// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+int UFortGameOptions::GetCurrentRegion()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortGameOptions.GetCurrentRegion");
+
+	UFortGameOptions_GetCurrentRegion_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -32209,14 +32742,32 @@ void UFortSurvivorSquadStatMatchesBase::AddStatMatch(class UFortSurvivorSquadSta
 }
 
 
-// Function FortniteUI.FortSquadStatsWidgetBase.UpdateStats
+// Function FortniteUI.FortSquadStatsWidgetBase.RequestStatsUpdate
 // (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
 
-void UFortSquadStatsWidgetBase::UpdateStats()
+void UFortSquadStatsWidgetBase::RequestStatsUpdate()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortSquadStatsWidgetBase.UpdateStats");
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortSquadStatsWidgetBase.RequestStatsUpdate");
 
-	UFortSquadStatsWidgetBase_UpdateStats_Params params;
+	UFortSquadStatsWidgetBase_RequestStatsUpdate_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortniteUI.FortSquadStatsWidgetBase.RequestShowPreviewStats
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void UFortSquadStatsWidgetBase::RequestShowPreviewStats()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortSquadStatsWidgetBase.RequestShowPreviewStats");
+
+	UFortSquadStatsWidgetBase_RequestShowPreviewStats_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -32263,24 +32814,6 @@ struct FUniqueNetIdRepl UFortSquadStatsWidgetBase::GetLocalPlayerId()
 	fn->FunctionFlags = flags;
 
 	return params.ReturnValue;
-}
-
-
-// Function FortniteUI.FortSquadStatsWidgetBase.AttemptShowPreviewStats
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void UFortSquadStatsWidgetBase::AttemptShowPreviewStats()
-{
-	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortSquadStatsWidgetBase.AttemptShowPreviewStats");
-
-	UFortSquadStatsWidgetBase_AttemptShowPreviewStats_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
 }
 
 
@@ -33498,6 +34031,30 @@ bool UFortTooltipUIContext::GetTooltipStat(class UObject* Object, class UFortToo
 
 	if (OutDisplayAttribute != nullptr)
 		*OutDisplayAttribute = params.OutDisplayAttribute;
+
+	return params.ReturnValue;
+}
+
+
+// Function FortniteUI.FortTooltipUIContext.GetTooltipAttributes
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UObject*                 Object                         (CPF_ConstParm, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// TArray<struct FGameplayAttribute> ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
+
+TArray<struct FGameplayAttribute> UFortTooltipUIContext::GetTooltipAttributes(class UObject* Object)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function FortniteUI.FortTooltipUIContext.GetTooltipAttributes");
+
+	UFortTooltipUIContext_GetTooltipAttributes_Params params;
+	params.Object = Object;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
 
 	return params.ReturnValue;
 }
