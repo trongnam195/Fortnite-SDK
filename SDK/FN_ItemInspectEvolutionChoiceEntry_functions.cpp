@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemInspectEvolutionChoiceEntry_C::UnselectEvolutionChoice()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.UnselectEvolutionChoice");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf4ee4500);
 
 	UItemInspectEvolutionChoiceEntry_C_UnselectEvolutionChoice_Params params;
 
@@ -34,7 +35,8 @@ void UItemInspectEvolutionChoiceEntry_C::UnselectEvolutionChoice()
 
 void UItemInspectEvolutionChoiceEntry_C::SelectEvolutionChoice()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.SelectEvolutionChoice");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbece987b);
 
 	UItemInspectEvolutionChoiceEntry_C_SelectEvolutionChoice_Params params;
 
@@ -51,7 +53,8 @@ void UItemInspectEvolutionChoiceEntry_C::SelectEvolutionChoice()
 
 void UItemInspectEvolutionChoiceEntry_C::DoDesignTimeRandomization()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.DoDesignTimeRandomization");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa62a9338);
 
 	UItemInspectEvolutionChoiceEntry_C_DoDesignTimeRandomization_Params params;
 
@@ -72,7 +75,8 @@ void UItemInspectEvolutionChoiceEntry_C::DoDesignTimeRandomization()
 
 void UItemInspectEvolutionChoiceEntry_C::SetItemToRepresent(class UFortItem* Item, int RecipeIndex, bool EnabledChoice)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.SetItemToRepresent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4b5800fd);
 
 	UItemInspectEvolutionChoiceEntry_C_SetItemToRepresent_Params params;
 	params.Item = Item;
@@ -94,7 +98,8 @@ void UItemInspectEvolutionChoiceEntry_C::SetItemToRepresent(class UFortItem* Ite
 
 void UItemInspectEvolutionChoiceEntry_C::BndEvt__PanelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.BndEvt__PanelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4b6f44e7);
 
 	UItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -114,7 +119,8 @@ void UItemInspectEvolutionChoiceEntry_C::BndEvt__PanelButton_K2Node_ComponentBou
 
 void UItemInspectEvolutionChoiceEntry_C::BndEvt__PanelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.BndEvt__PanelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5b612eb6);
 
 	UItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -134,7 +140,8 @@ void UItemInspectEvolutionChoiceEntry_C::BndEvt__PanelButton_K2Node_ComponentBou
 
 void UItemInspectEvolutionChoiceEntry_C::BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x76a74bc1);
 
 	UItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -154,7 +161,8 @@ void UItemInspectEvolutionChoiceEntry_C::BndEvt__PanelButton_K2Node_ComponentBou
 
 void UItemInspectEvolutionChoiceEntry_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x603b6491);
 
 	UItemInspectEvolutionChoiceEntry_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -174,7 +182,8 @@ void UItemInspectEvolutionChoiceEntry_C::PreConstruct(bool* IsDesignTime)
 
 void UItemInspectEvolutionChoiceEntry_C::BndEvt__PanelButton_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.BndEvt__PanelButton_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38998dc8);
 
 	UItemInspectEvolutionChoiceEntry_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -194,7 +203,8 @@ void UItemInspectEvolutionChoiceEntry_C::BndEvt__PanelButton_K2Node_ComponentBou
 
 void UItemInspectEvolutionChoiceEntry_C::ExecuteUbergraph_ItemInspectEvolutionChoiceEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.ExecuteUbergraph_ItemInspectEvolutionChoiceEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd21bd19c);
 
 	UItemInspectEvolutionChoiceEntry_C_ExecuteUbergraph_ItemInspectEvolutionChoiceEntry_Params params;
 	params.EntryPoint = EntryPoint;
@@ -215,7 +225,8 @@ void UItemInspectEvolutionChoiceEntry_C::ExecuteUbergraph_ItemInspectEvolutionCh
 
 void UItemInspectEvolutionChoiceEntry_C::OnEvolutionChoiceSelected__DelegateSignature(class UFortItem* Item, int RecipeIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.OnEvolutionChoiceSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x15bd098);
 
 	UItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceSelected__DelegateSignature_Params params;
 	params.Item = Item;
@@ -236,7 +247,8 @@ void UItemInspectEvolutionChoiceEntry_C::OnEvolutionChoiceSelected__DelegateSign
 
 void UItemInspectEvolutionChoiceEntry_C::OnEvolutionChoiceUnhovered__DelegateSignature(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.OnEvolutionChoiceUnhovered__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfe47e07f);
 
 	UItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceUnhovered__DelegateSignature_Params params;
 	params.Item = Item;
@@ -257,7 +269,8 @@ void UItemInspectEvolutionChoiceEntry_C::OnEvolutionChoiceUnhovered__DelegateSig
 
 void UItemInspectEvolutionChoiceEntry_C::OnEvolutionChoiceHovered__DelegateSignature(class UFortItem* Item, int RecipeIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.OnEvolutionChoiceHovered__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a552b2e);
 
 	UItemInspectEvolutionChoiceEntry_C_OnEvolutionChoiceHovered__DelegateSignature_Params params;
 	params.Item = Item;

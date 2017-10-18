@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass MissionGen_T2_R5_EtSurvivors.MissionGen_T2_R5_EtSurvivors_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x240f5a59);
 		return ptr;
 	}
 

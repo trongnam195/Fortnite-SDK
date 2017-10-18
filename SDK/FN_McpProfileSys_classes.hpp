@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class McpProfileSys.McpItemDefinitionBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x57321ecc);
 		return ptr;
 	}
 
@@ -51,7 +52,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class McpProfileSys.McpProfile");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbd4611b0);
 		return ptr;
 	}
 
@@ -72,7 +74,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class McpProfileSys.McpItemAware");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa8345de2);
 		return ptr;
 	}
 
@@ -113,7 +116,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class McpProfileSys.McpProfileGroup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5eb509a9);
 		return ptr;
 	}
 
@@ -131,7 +135,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class McpProfileSys.McpProfileManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2afeb57d);
 		return ptr;
 	}
 

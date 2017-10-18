@@ -17,7 +17,8 @@ namespace SDK
 
 void UMtxOffersList_2_C::PlayMtxOfferAnimation_MouseLeave()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MtxOffersList_3.MtxOffersList_2_C.PlayMtxOfferAnimation_MouseLeave");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x67a8444c);
 
 	UMtxOffersList_2_C_PlayMtxOfferAnimation_MouseLeave_Params params;
 
@@ -34,7 +35,8 @@ void UMtxOffersList_2_C::PlayMtxOfferAnimation_MouseLeave()
 
 void UMtxOffersList_2_C::PlayMtxOfferAnimation_MouseEnter()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MtxOffersList_3.MtxOffersList_2_C.PlayMtxOfferAnimation_MouseEnter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x966f9ea3);
 
 	UMtxOffersList_2_C_PlayMtxOfferAnimation_MouseEnter_Params params;
 
@@ -51,7 +53,8 @@ void UMtxOffersList_2_C::PlayMtxOfferAnimation_MouseEnter()
 
 void UMtxOffersList_2_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MtxOffersList_3.MtxOffersList_2_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c72ceb7);
 
 	UMtxOffersList_2_C_Construct_Params params;
 
@@ -70,7 +73,8 @@ void UMtxOffersList_2_C::Construct()
 
 void UMtxOffersList_2_C::OnPackagesListed(TArray<struct FMtxPackage> Offers)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MtxOffersList_3.MtxOffersList_2_C.OnPackagesListed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x160707f7);
 
 	UMtxOffersList_2_C_OnPackagesListed_Params params;
 	params.Offers = Offers;
@@ -90,7 +94,8 @@ void UMtxOffersList_2_C::OnPackagesListed(TArray<struct FMtxPackage> Offers)
 
 void UMtxOffersList_2_C::OnBuyItem(const struct FString& OfferId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MtxOffersList_3.MtxOffersList_2_C.OnBuyItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaf33b8f0);
 
 	UMtxOffersList_2_C_OnBuyItem_Params params;
 	params.OfferId = OfferId;
@@ -110,7 +115,8 @@ void UMtxOffersList_2_C::OnBuyItem(const struct FString& OfferId)
 
 void UMtxOffersList_2_C::OnPurchaseComplete(bool bSuccess)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MtxOffersList_3.MtxOffersList_2_C.OnPurchaseComplete");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81b89a9f);
 
 	UMtxOffersList_2_C_OnPurchaseComplete_Params params;
 	params.bSuccess = bSuccess;
@@ -128,7 +134,8 @@ void UMtxOffersList_2_C::OnPurchaseComplete(bool bSuccess)
 
 void UMtxOffersList_2_C::CustomEvent_1()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MtxOffersList_3.MtxOffersList_2_C.CustomEvent_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd26be6f3);
 
 	UMtxOffersList_2_C_CustomEvent_1_Params params;
 
@@ -145,7 +152,8 @@ void UMtxOffersList_2_C::CustomEvent_1()
 
 void UMtxOffersList_2_C::CustomEvent_0_Copy()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MtxOffersList_3.MtxOffersList_2_C.CustomEvent_0_Copy");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ce71cbe);
 
 	UMtxOffersList_2_C_CustomEvent_0_Copy_Params params;
 
@@ -164,7 +172,8 @@ void UMtxOffersList_2_C::CustomEvent_0_Copy()
 
 void UMtxOffersList_2_C::ExecuteUbergraph_MtxOffersList_3(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MtxOffersList_3.MtxOffersList_2_C.ExecuteUbergraph_MtxOffersList_3");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xef8274dc);
 
 	UMtxOffersList_2_C_ExecuteUbergraph_MtxOffersList_3_Params params;
 	params.EntryPoint = EntryPoint;
@@ -184,7 +193,8 @@ void UMtxOffersList_2_C::ExecuteUbergraph_MtxOffersList_3(int EntryPoint)
 
 void UMtxOffersList_2_C::PurchaseComplete__DelegateSignature(bool bSuccess)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MtxOffersList_3.MtxOffersList_2_C.PurchaseComplete__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9bfbb99b);
 
 	UMtxOffersList_2_C_PurchaseComplete__DelegateSignature_Params params;
 	params.bSuccess = bSuccess;

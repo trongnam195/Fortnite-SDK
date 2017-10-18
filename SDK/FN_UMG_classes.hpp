@@ -22,7 +22,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.AsyncTaskDownloadImage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7c849cfc);
 		return ptr;
 	}
 
@@ -49,7 +50,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.DragDropOperation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7328680e);
 		return ptr;
 	}
 
@@ -72,7 +74,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.MovieScene2DTransformSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa8f94465);
 		return ptr;
 	}
 
@@ -87,7 +90,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.MovieScene2DTransformTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf86e06b5);
 		return ptr;
 	}
 
@@ -106,7 +110,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.MovieSceneMarginSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf835071);
 		return ptr;
 	}
 
@@ -121,7 +126,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.MovieSceneMarginTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xccc0f79);
 		return ptr;
 	}
 
@@ -138,7 +144,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.MovieSceneWidgetMaterialTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd805710e);
 		return ptr;
 	}
 
@@ -153,7 +160,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.NamedSlotInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf6f6340e);
 		return ptr;
 	}
 
@@ -171,7 +179,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.PropertyBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x84f91b78);
 		return ptr;
 	}
 
@@ -186,7 +195,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.BoolBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4aa702b9);
 		return ptr;
 	}
 
@@ -204,7 +214,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.BrushBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf9d0f9dd);
 		return ptr;
 	}
 
@@ -222,7 +233,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.CheckedStateBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4ea67b7);
 		return ptr;
 	}
 
@@ -240,7 +252,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.ColorBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x29643dc6);
 		return ptr;
 	}
 
@@ -258,7 +271,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.FloatBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xafaf6463);
 		return ptr;
 	}
 
@@ -275,7 +289,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.Int32Binding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcac6a429);
 		return ptr;
 	}
 
@@ -292,7 +307,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.MouseCursorBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xae9e9abc);
 		return ptr;
 	}
 
@@ -310,7 +326,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.TextBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5c802baa);
 		return ptr;
 	}
 
@@ -328,7 +345,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.VisibilityBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6c31d745);
 		return ptr;
 	}
 
@@ -345,7 +363,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WidgetBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa0d13e59);
 		return ptr;
 	}
 
@@ -365,7 +384,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.RichTextBlockDecorator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x34056667);
 		return ptr;
 	}
 
@@ -380,7 +400,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.SlateBlueprintLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x28c4e7b7);
 		return ptr;
 	}
 
@@ -408,7 +429,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.SlateDataSheet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x848dddae);
 		return ptr;
 	}
 
@@ -428,7 +450,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.SlateVectorArtData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xeff3a113);
 		return ptr;
 	}
 
@@ -443,7 +466,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.Visual");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe552069a);
 		return ptr;
 	}
 
@@ -484,7 +508,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.Widget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4982d97a);
 		return ptr;
 	}
 
@@ -560,7 +585,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WidgetBlueprintGeneratedClass");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5b4f5eca);
 		return ptr;
 	}
 
@@ -598,7 +624,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.UserWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9139632f);
 		return ptr;
 	}
 
@@ -693,7 +720,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.UMGSequencePlayer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7e05666f);
 		return ptr;
 	}
 
@@ -710,7 +738,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.PanelSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2b5a9f4);
 		return ptr;
 	}
 
@@ -729,7 +758,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.BackgroundBlurSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x49fabbbd);
 		return ptr;
 	}
 
@@ -752,7 +782,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.BorderSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x64a6867c);
 		return ptr;
 	}
 
@@ -775,7 +806,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.ButtonSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x51ea951a);
 		return ptr;
 	}
 
@@ -799,7 +831,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.CanvasPanelSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf0115998);
 		return ptr;
 	}
 
@@ -844,7 +877,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.GridSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x838a2eea);
 		return ptr;
 	}
 
@@ -873,7 +907,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.HorizontalBoxSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd9f5d705);
 		return ptr;
 	}
 
@@ -897,7 +932,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.OverlaySlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf5780202);
 		return ptr;
 	}
 
@@ -923,7 +959,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.SafeZoneSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x24dd96eb);
 		return ptr;
 	}
 
@@ -942,7 +979,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.ScaleBoxSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x98a865bf);
 		return ptr;
 	}
 
@@ -964,7 +1002,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.ScrollBoxSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xac8492d0);
 		return ptr;
 	}
 
@@ -986,7 +1025,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.SizeBoxSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x97a2a200);
 		return ptr;
 	}
 
@@ -1011,7 +1051,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.UniformGridSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3dbb7376);
 		return ptr;
 	}
 
@@ -1036,7 +1077,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.VerticalBoxSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6bf963cf);
 		return ptr;
 	}
 
@@ -1060,7 +1102,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WidgetSwitcherSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbe492d6f);
 		return ptr;
 	}
 
@@ -1081,7 +1124,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.PanelWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9b9e2774);
 		return ptr;
 	}
 
@@ -1106,7 +1150,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.ContentWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9c372f21);
 		return ptr;
 	}
 
@@ -1126,7 +1171,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WindowTitleBarArea");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc7b34154);
 		return ptr;
 	}
 
@@ -1149,7 +1195,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WindowTitleBarAreaSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf680590);
 		return ptr;
 	}
 
@@ -1175,7 +1222,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WrapBoxSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc70efb5d);
 		return ptr;
 	}
 
@@ -1204,7 +1252,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.CircularThrobber");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb1429af5);
 		return ptr;
 	}
 
@@ -1227,7 +1276,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.ComboBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa95bf55f);
 		return ptr;
 	}
 
@@ -1259,7 +1309,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.ComboBoxString");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe7ffb8c8);
 		return ptr;
 	}
 
@@ -1296,7 +1347,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.TextLayoutWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x805399b9);
 		return ptr;
 	}
 
@@ -1338,7 +1390,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.EditableText");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x639f74bb);
 		return ptr;
 	}
 
@@ -1388,7 +1441,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.EditableTextBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2124082);
 		return ptr;
 	}
 
@@ -1424,7 +1478,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.ExpandableArea");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x51b47fd);
 		return ptr;
 	}
 
@@ -1450,7 +1505,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.Image");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x980dabd5);
 		return ptr;
 	}
 
@@ -1484,7 +1540,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.InputKeySelector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7f46134c);
 		return ptr;
 	}
 
@@ -1507,7 +1564,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.NativeWidgetHost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1fa464f5);
 		return ptr;
 	}
 
@@ -1523,7 +1581,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.CanvasPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x620c1b3c);
 		return ptr;
 	}
 
@@ -1551,7 +1610,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.BackgroundBlur");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x83332c59);
 		return ptr;
 	}
 
@@ -1593,7 +1653,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.Border");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7f691ad8);
 		return ptr;
 	}
 
@@ -1634,7 +1695,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.Button");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbbcf128e);
 		return ptr;
 	}
 
@@ -1677,7 +1739,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.CheckBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3222405d);
 		return ptr;
 	}
 
@@ -1701,7 +1764,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.InvalidationBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4e7321ad);
 		return ptr;
 	}
 
@@ -1728,7 +1792,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.MenuAnchor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf1d8d4c);
 		return ptr;
 	}
 
@@ -1752,7 +1817,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.NamedSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb5e5bf61);
 		return ptr;
 	}
 
@@ -1772,7 +1838,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.RetainerBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb81b4c17);
 		return ptr;
 	}
 
@@ -1796,7 +1863,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.SafeZone");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7e7c3267);
 		return ptr;
 	}
 
@@ -1819,7 +1887,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.ScaleBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x498e0373);
 		return ptr;
 	}
 
@@ -1855,7 +1924,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.SizeBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x61c15904);
 		return ptr;
 	}
 
@@ -1887,7 +1957,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.Viewport");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6fd2e5ec);
 		return ptr;
 	}
 
@@ -1912,7 +1983,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.GridPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc73d4288);
 		return ptr;
 	}
 
@@ -1930,7 +2002,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.HorizontalBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x16e07d01);
 		return ptr;
 	}
 
@@ -1948,7 +2021,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.Overlay");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x36502936);
 		return ptr;
 	}
 
@@ -1979,7 +2053,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.ScrollBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x30177794);
 		return ptr;
 	}
 
@@ -2004,7 +2079,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.UniformGridPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd933ba0c);
 		return ptr;
 	}
 
@@ -2025,7 +2101,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.VerticalBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4b3b6a43);
 		return ptr;
 	}
 
@@ -2044,7 +2121,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WidgetSwitcher");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe8315a3);
 		return ptr;
 	}
 
@@ -2069,7 +2147,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WrapBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc58d4c39);
 		return ptr;
 	}
 
@@ -2100,7 +2179,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.ProgressBar");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4ef39476);
 		return ptr;
 	}
 
@@ -2126,7 +2206,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.ScrollBar");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4b636dec);
 		return ptr;
 	}
 
@@ -2163,7 +2244,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.Slider");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x15a8773d);
 		return ptr;
 	}
 
@@ -2188,7 +2270,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.Spacer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x112a3efe);
 		return ptr;
 	}
 
@@ -2232,7 +2315,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.SpinBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3401d605);
 		return ptr;
 	}
 
@@ -2266,7 +2350,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.TableViewBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7b9f680e);
 		return ptr;
 	}
 
@@ -2290,7 +2375,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.ListView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4b210dd);
 		return ptr;
 	}
 
@@ -2312,7 +2398,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.TileView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7e9fc3a5);
 		return ptr;
 	}
 
@@ -2341,7 +2428,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.MultiLineEditableText");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x295e9432);
 		return ptr;
 	}
 
@@ -2376,7 +2464,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.MultiLineEditableTextBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7397d4c9);
 		return ptr;
 	}
 
@@ -2403,7 +2492,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.RichTextBlock");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6eb38108);
 		return ptr;
 	}
 
@@ -2429,7 +2519,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.TextBlock");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1939210a);
 		return ptr;
 	}
 
@@ -2462,7 +2553,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.Throbber");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1a14ea2e);
 		return ptr;
 	}
 
@@ -2486,7 +2578,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WidgetAnimation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x882998c4);
 		return ptr;
 	}
 
@@ -2504,7 +2597,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WidgetBlueprintLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5dfa2f84);
 		return ptr;
 	}
 
@@ -2612,7 +2706,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WidgetComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5f555477);
 		return ptr;
 	}
 
@@ -2660,7 +2755,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WidgetInteractionComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8548d7cf);
 		return ptr;
 	}
 
@@ -2690,7 +2786,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WidgetLayoutLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8f52c39);
 		return ptr;
 	}
 
@@ -2724,7 +2821,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WidgetNavigation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x414a52bc);
 		return ptr;
 	}
 
@@ -2741,7 +2839,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class UMG.WidgetTree");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9b8fcfa6);
 		return ptr;
 	}
 

@@ -19,7 +19,8 @@ namespace SDK
 
 void UMissionObjectiveProgress_C::GetHeightEstimate(float* Height)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveProgress.MissionObjectiveProgress_C.GetHeightEstimate");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x75c668a2);
 
 	UMissionObjectiveProgress_C_GetHeightEstimate_Params params;
 
@@ -42,7 +43,8 @@ void UMissionObjectiveProgress_C::GetHeightEstimate(float* Height)
 
 void UMissionObjectiveProgress_C::Update(class AFortObjectiveBase* Objective, int BarIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveProgress.MissionObjectiveProgress_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaffe0d44);
 
 	UMissionObjectiveProgress_C_Update_Params params;
 	params.Objective = Objective;
@@ -61,7 +63,8 @@ void UMissionObjectiveProgress_C::Update(class AFortObjectiveBase* Objective, in
 
 void UMissionObjectiveProgress_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveProgress.MissionObjectiveProgress_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x520678ce);
 
 	UMissionObjectiveProgress_C_Construct_Params params;
 
@@ -80,7 +83,8 @@ void UMissionObjectiveProgress_C::Construct()
 
 void UMissionObjectiveProgress_C::ExecuteUbergraph_MissionObjectiveProgress(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MissionObjectiveProgress.MissionObjectiveProgress_C.ExecuteUbergraph_MissionObjectiveProgress");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xff64ef7d);
 
 	UMissionObjectiveProgress_C_ExecuteUbergraph_MissionObjectiveProgress_Params params;
 	params.EntryPoint = EntryPoint;

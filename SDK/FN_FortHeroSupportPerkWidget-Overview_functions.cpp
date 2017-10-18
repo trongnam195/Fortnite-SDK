@@ -17,7 +17,8 @@ namespace SDK
 
 void UFortHeroSupportPerkWidget_Overview_C::OnHeroUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortHeroSupportPerkWidget-Overview.FortHeroSupportPerkWidget-Overview_C.OnHeroUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd7280d45);
 
 	UFortHeroSupportPerkWidget_Overview_C_OnHeroUpdated_Params params;
 
@@ -34,7 +35,8 @@ void UFortHeroSupportPerkWidget_Overview_C::OnHeroUpdated()
 
 void UFortHeroSupportPerkWidget_Overview_C::OnSupportTypeUpdated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortHeroSupportPerkWidget-Overview.FortHeroSupportPerkWidget-Overview_C.OnSupportTypeUpdated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x96bb6ca2);
 
 	UFortHeroSupportPerkWidget_Overview_C_OnSupportTypeUpdated_Params params;
 
@@ -53,7 +55,8 @@ void UFortHeroSupportPerkWidget_Overview_C::OnSupportTypeUpdated()
 
 void UFortHeroSupportPerkWidget_Overview_C::ExecuteUbergraph_FortHeroSupportPerkWidget_Overview(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortHeroSupportPerkWidget-Overview.FortHeroSupportPerkWidget-Overview_C.ExecuteUbergraph_FortHeroSupportPerkWidget-Overview");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa9aee3bb);
 
 	UFortHeroSupportPerkWidget_Overview_C_ExecuteUbergraph_FortHeroSupportPerkWidget_Overview_Params params;
 	params.EntryPoint = EntryPoint;

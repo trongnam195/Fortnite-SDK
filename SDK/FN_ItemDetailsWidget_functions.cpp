@@ -20,7 +20,8 @@ namespace SDK
 
 void UItemDetailsWidget_C::ItemHasStats(class UFortItem* Item, bool* Stats)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsWidget.ItemDetailsWidget_C.ItemHasStats");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6e5f44af);
 
 	UItemDetailsWidget_C_ItemHasStats_Params params;
 	params.Item = Item;
@@ -41,7 +42,8 @@ void UItemDetailsWidget_C::ItemHasStats(class UFortItem* Item, bool* Stats)
 
 void UItemDetailsWidget_C::ShowUpgradeComparison()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsWidget.ItemDetailsWidget_C.ShowUpgradeComparison");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x96d0bb9b);
 
 	UItemDetailsWidget_C_ShowUpgradeComparison_Params params;
 
@@ -58,7 +60,8 @@ void UItemDetailsWidget_C::ShowUpgradeComparison()
 
 void UItemDetailsWidget_C::PopulateAttributeList()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsWidget.ItemDetailsWidget_C.PopulateAttributeList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb0b15557);
 
 	UItemDetailsWidget_C_PopulateAttributeList_Params params;
 
@@ -75,7 +78,8 @@ void UItemDetailsWidget_C::PopulateAttributeList()
 
 void UItemDetailsWidget_C::HandleDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsWidget.ItemDetailsWidget_C.HandleDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3634aaf);
 
 	UItemDetailsWidget_C_HandleDifferentItemToDetailSet_Params params;
 
@@ -92,7 +96,8 @@ void UItemDetailsWidget_C::HandleDifferentItemToDetailSet()
 
 void UItemDetailsWidget_C::HandleDifferentItemToCompareSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsWidget.ItemDetailsWidget_C.HandleDifferentItemToCompareSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2935a0a9);
 
 	UItemDetailsWidget_C_HandleDifferentItemToCompareSet_Params params;
 
@@ -111,7 +116,8 @@ void UItemDetailsWidget_C::HandleDifferentItemToCompareSet()
 
 void UItemDetailsWidget_C::ExecuteUbergraph_ItemDetailsWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsWidget.ItemDetailsWidget_C.ExecuteUbergraph_ItemDetailsWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7400298);
 
 	UItemDetailsWidget_C_ExecuteUbergraph_ItemDetailsWidget_Params params;
 	params.EntryPoint = EntryPoint;

@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass Border-StatRow-AffectedStatRowHighlight.Border-StatRow-AffectedStatRowHighlight_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x51c6d5d5);
 		return ptr;
 	}
 

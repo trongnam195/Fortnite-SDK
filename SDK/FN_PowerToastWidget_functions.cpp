@@ -17,7 +17,8 @@ namespace SDK
 
 void UPowerToastWidget_C::StartIntro()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.StartIntro");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe5f6f889);
 
 	UPowerToastWidget_C_StartIntro_Params params;
 
@@ -37,7 +38,8 @@ void UPowerToastWidget_C::StartIntro()
 
 void UPowerToastWidget_C::ShowText(const struct FText& Text, class UCommonTextBlock* TextBlock)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.ShowText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81792d9);
 
 	UPowerToastWidget_C_ShowText_Params params;
 	params.Text = Text;
@@ -58,7 +60,8 @@ void UPowerToastWidget_C::ShowText(const struct FText& Text, class UCommonTextBl
 
 void UPowerToastWidget_C::SetToast(class UFortUINotification* Toast)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.SetToast");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb77bfdc6);
 
 	UPowerToastWidget_C_SetToast_Params params;
 	params.Toast = Toast;
@@ -76,7 +79,8 @@ void UPowerToastWidget_C::SetToast(class UFortUINotification* Toast)
 
 void UPowerToastWidget_C::HandleIntroFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.HandleIntroFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3bf13313);
 
 	UPowerToastWidget_C_HandleIntroFinished_Params params;
 
@@ -93,7 +97,8 @@ void UPowerToastWidget_C::HandleIntroFinished()
 
 void UPowerToastWidget_C::HandleOutroFinished()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.HandleOutroFinished");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b482a18);
 
 	UPowerToastWidget_C_HandleOutroFinished_Params params;
 
@@ -110,7 +115,8 @@ void UPowerToastWidget_C::HandleOutroFinished()
 
 void UPowerToastWidget_C::HandleAnimationDelay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.HandleAnimationDelay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaae8a196);
 
 	UPowerToastWidget_C_HandleAnimationDelay_Params params;
 
@@ -130,7 +136,8 @@ void UPowerToastWidget_C::HandleAnimationDelay()
 
 void UPowerToastWidget_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.OnMouseEnter");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x69378505);
 
 	UPowerToastWidget_C_OnMouseEnter_Params params;
 	params.MyGeometry = MyGeometry;
@@ -151,7 +158,8 @@ void UPowerToastWidget_C::OnMouseEnter(struct FGeometry* MyGeometry, struct FPoi
 
 void UPowerToastWidget_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.OnMouseLeave");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3ba5042);
 
 	UPowerToastWidget_C_OnMouseLeave_Params params;
 	params.MouseEvent = MouseEvent;
@@ -171,7 +179,8 @@ void UPowerToastWidget_C::OnMouseLeave(struct FPointerEvent* MouseEvent)
 
 void UPowerToastWidget_C::BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5fe9a4dc);
 
 	UPowerToastWidget_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -191,7 +200,8 @@ void UPowerToastWidget_C::BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_Common
 
 void UPowerToastWidget_C::OnPlayerInfoChanged(struct FFortTeamMemberInfo* NewInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.OnPlayerInfoChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5bd7e09);
 
 	UPowerToastWidget_C_OnPlayerInfoChanged_Params params;
 	params.NewInfo = NewInfo;
@@ -209,7 +219,8 @@ void UPowerToastWidget_C::OnPlayerInfoChanged(struct FFortTeamMemberInfo* NewInf
 
 void UPowerToastWidget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc8b302ee);
 
 	UPowerToastWidget_C_Construct_Params params;
 
@@ -226,7 +237,8 @@ void UPowerToastWidget_C::Construct()
 
 void UPowerToastWidget_C::BndEvt__Intro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.BndEvt__Intro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x65d9aecd);
 
 	UPowerToastWidget_C_BndEvt__Intro_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -243,7 +255,8 @@ void UPowerToastWidget_C::BndEvt__Intro_K2Node_ComponentBoundEvent_0_OnWidgetAni
 
 void UPowerToastWidget_C::BndEvt__Outro_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.BndEvt__Outro_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x17730e2d);
 
 	UPowerToastWidget_C_BndEvt__Outro_K2Node_ComponentBoundEvent_1_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params params;
 
@@ -262,7 +275,8 @@ void UPowerToastWidget_C::BndEvt__Outro_K2Node_ComponentBoundEvent_1_OnWidgetAni
 
 void UPowerToastWidget_C::OnTeamMemberFinishedSynchronizing_Event_1(const struct FUniqueNetIdRepl& NewTeamMemberId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.OnTeamMemberFinishedSynchronizing_Event_1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc3ad288f);
 
 	UPowerToastWidget_C_OnTeamMemberFinishedSynchronizing_Event_1_Params params;
 	params.NewTeamMemberId = NewTeamMemberId;
@@ -282,7 +296,8 @@ void UPowerToastWidget_C::OnTeamMemberFinishedSynchronizing_Event_1(const struct
 
 void UPowerToastWidget_C::ExecuteUbergraph_PowerToastWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.ExecuteUbergraph_PowerToastWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa25c35ab);
 
 	UPowerToastWidget_C_ExecuteUbergraph_PowerToastWidget_Params params;
 	params.EntryPoint = EntryPoint;
@@ -300,7 +315,8 @@ void UPowerToastWidget_C::ExecuteUbergraph_PowerToastWidget(int EntryPoint)
 
 void UPowerToastWidget_C::OnFinishedToast__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerToastWidget.PowerToastWidget_C.OnFinishedToast__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xddcde0fe);
 
 	UPowerToastWidget_C_OnFinishedToast__DelegateSignature_Params params;
 

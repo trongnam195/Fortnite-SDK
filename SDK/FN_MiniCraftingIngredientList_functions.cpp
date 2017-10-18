@@ -19,7 +19,8 @@ namespace SDK
 
 void UMiniCraftingIngredientList_C::AddListEntry(class UFortItemQuantityListEntryBase** ListEntry)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniCraftingIngredientList.MiniCraftingIngredientList_C.AddListEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf61d6df0);
 
 	UMiniCraftingIngredientList_C_AddListEntry_Params params;
 	params.ListEntry = ListEntry;
@@ -39,7 +40,8 @@ void UMiniCraftingIngredientList_C::AddListEntry(class UFortItemQuantityListEntr
 
 void UMiniCraftingIngredientList_C::ExecuteUbergraph_MiniCraftingIngredientList(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function MiniCraftingIngredientList.MiniCraftingIngredientList_C.ExecuteUbergraph_MiniCraftingIngredientList");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc6d10869);
 
 	UMiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,8 @@ namespace SDK
 
 void UPlayerBanner_C::ClearBannerState()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerBanner.PlayerBanner_C.ClearBannerState");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x67db4ad);
 
 	UPlayerBanner_C_ClearBannerState_Params params;
 
@@ -36,7 +37,8 @@ void UPlayerBanner_C::ClearBannerState()
 
 void UPlayerBanner_C::OnBannerIconLoaded(class UObject* LoadedObject)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerBanner.PlayerBanner_C.OnBannerIconLoaded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3a3a6cb0);
 
 	UPlayerBanner_C_OnBannerIconLoaded_Params params;
 	params.LoadedObject = LoadedObject;
@@ -56,7 +58,8 @@ void UPlayerBanner_C::OnBannerIconLoaded(class UObject* LoadedObject)
 
 void UPlayerBanner_C::GetBannerMID(class UMaterialInstanceDynamic** BannerMID)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerBanner.PlayerBanner_C.GetBannerMID");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x73657dd1);
 
 	UPlayerBanner_C_GetBannerMID_Params params;
 
@@ -78,7 +81,8 @@ void UPlayerBanner_C::GetBannerMID(class UMaterialInstanceDynamic** BannerMID)
 
 void UPlayerBanner_C::SetBannerOwner(const struct FUniqueNetIdRepl& OwnerId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerBanner.PlayerBanner_C.SetBannerOwner");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfd6b4f4a);
 
 	UPlayerBanner_C_SetBannerOwner_Params params;
 	params.OwnerId = OwnerId;
@@ -98,7 +102,8 @@ void UPlayerBanner_C::SetBannerOwner(const struct FUniqueNetIdRepl& OwnerId)
 
 void UPlayerBanner_C::SetBannerColorId(const struct FName& InBannerColorId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerBanner.PlayerBanner_C.SetBannerColorId");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x48dbb885);
 
 	UPlayerBanner_C_SetBannerColorId_Params params;
 	params.InBannerColorId = InBannerColorId;
@@ -118,7 +123,8 @@ void UPlayerBanner_C::SetBannerColorId(const struct FName& InBannerColorId)
 
 void UPlayerBanner_C::SetBannerIconId(const struct FName& InBannerIconId)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerBanner.PlayerBanner_C.SetBannerIconId");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x56616bf5);
 
 	UPlayerBanner_C_SetBannerIconId_Params params;
 	params.InBannerIconId = InBannerIconId;
@@ -139,7 +145,8 @@ void UPlayerBanner_C::SetBannerIconId(const struct FName& InBannerIconId)
 
 void UPlayerBanner_C::SetBannerImage(const struct FFortHomeBaseInfo& Image_info, bool* Success)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerBanner.PlayerBanner_C.SetBannerImage");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa9b37f90);
 
 	UPlayerBanner_C_SetBannerImage_Params params;
 	params.Image_info = Image_info;
@@ -162,7 +169,8 @@ void UPlayerBanner_C::SetBannerImage(const struct FFortHomeBaseInfo& Image_info,
 
 void UPlayerBanner_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerBanner.PlayerBanner_C.OnTeamMemberStateChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xff8d267e);
 
 	UPlayerBanner_C_OnTeamMemberStateChanged_Params params;
 	params.TeamMemberInfo = TeamMemberInfo;
@@ -182,7 +190,8 @@ void UPlayerBanner_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo&
 
 void UPlayerBanner_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerBanner.PlayerBanner_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2c64985b);
 
 	UPlayerBanner_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -202,7 +211,8 @@ void UPlayerBanner_C::PreConstruct(bool* IsDesignTime)
 
 void UPlayerBanner_C::ExecuteUbergraph_PlayerBanner(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerBanner.PlayerBanner_C.ExecuteUbergraph_PlayerBanner");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x82e9d894);
 
 	UPlayerBanner_C_ExecuteUbergraph_PlayerBanner_Params params;
 	params.EntryPoint = EntryPoint;

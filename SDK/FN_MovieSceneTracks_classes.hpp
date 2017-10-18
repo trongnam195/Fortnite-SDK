@@ -21,7 +21,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieScene3DConstraintSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x82ac6d54);
 		return ptr;
 	}
 
@@ -44,7 +45,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieScene3DAttachSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9e748086);
 		return ptr;
 	}
 
@@ -67,7 +69,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieScene3DPathSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xeb04a6b4);
 		return ptr;
 	}
 
@@ -83,7 +86,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieScene3DConstraintTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x810ca164);
 		return ptr;
 	}
 
@@ -98,7 +102,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieScene3DAttachTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xeedf98a2);
 		return ptr;
 	}
 
@@ -113,7 +118,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieScene3DPathTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7c2b7ac4);
 		return ptr;
 	}
 
@@ -131,7 +137,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieScene3DTransformSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1e46f97b);
 		return ptr;
 	}
 
@@ -149,7 +156,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneActorReferenceSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x342b4e42);
 		return ptr;
 	}
 
@@ -172,7 +180,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneAudioSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe0e4e68c);
 		return ptr;
 	}
 
@@ -188,7 +197,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneAudioTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xadf3781c);
 		return ptr;
 	}
 
@@ -207,7 +217,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneBoolSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa88c7908);
 		return ptr;
 	}
 
@@ -222,7 +233,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneSpawnSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbef133b9);
 		return ptr;
 	}
 
@@ -238,7 +250,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneByteSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8e048572);
 		return ptr;
 	}
 
@@ -261,7 +274,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneCameraAnimSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x582b7c2a);
 		return ptr;
 	}
 
@@ -277,7 +291,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneCameraAnimTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7c80530e);
 		return ptr;
 	}
 
@@ -293,7 +308,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneCameraCutSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2a18d337);
 		return ptr;
 	}
 
@@ -309,7 +325,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneCameraCutTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf8e18213);
 		return ptr;
 	}
 
@@ -331,7 +348,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneCameraShakeSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xeaef7991);
 		return ptr;
 	}
 
@@ -347,7 +365,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneCameraShakeTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9b8f1599);
 		return ptr;
 	}
 
@@ -366,7 +385,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneColorSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe71e3d91);
 		return ptr;
 	}
 
@@ -382,7 +402,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneEnumSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2e8db29);
 		return ptr;
 	}
 
@@ -400,7 +421,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneEventSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x82b1e22);
 		return ptr;
 	}
 
@@ -418,7 +440,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneSpawnTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3172d721);
 		return ptr;
 	}
 
@@ -434,7 +457,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneEventTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe5e927e6);
 		return ptr;
 	}
 
@@ -450,7 +474,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneFloatSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x903dead0);
 		return ptr;
 	}
 
@@ -468,7 +493,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneFadeSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6c39405e);
 		return ptr;
 	}
 
@@ -483,7 +509,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneSlomoSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc70048e6);
 		return ptr;
 	}
 
@@ -499,7 +526,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneIntegerSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcb1aa9f8);
 		return ptr;
 	}
 
@@ -515,7 +543,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneLevelVisibilitySection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x80c588b8);
 		return ptr;
 	}
 
@@ -532,7 +561,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieScenePropertyTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd85c65a1);
 		return ptr;
 	}
 
@@ -548,7 +578,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneLevelVisibilityTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf0765620);
 		return ptr;
 	}
 
@@ -567,7 +598,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneParameterSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa12d5071);
 		return ptr;
 	}
 
@@ -583,7 +615,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneMaterialTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb722f981);
 		return ptr;
 	}
 
@@ -598,7 +631,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneComponentMaterialTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x42919d0c);
 		return ptr;
 	}
 
@@ -614,7 +648,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneParticleParameterTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2ccf3f03);
 		return ptr;
 	}
 
@@ -630,7 +665,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneParticleSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xba5d1d0a);
 		return ptr;
 	}
 
@@ -646,7 +682,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneParticleTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaa84aeee);
 		return ptr;
 	}
 
@@ -661,7 +698,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieScene3DTransformTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdf2ff3ff);
 		return ptr;
 	}
 
@@ -676,7 +714,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneActorReferenceTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x81911006);
 		return ptr;
 	}
 
@@ -691,7 +730,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneBoolTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xda8d53f0);
 		return ptr;
 	}
 
@@ -706,7 +746,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneVisibilityTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa0322d58);
 		return ptr;
 	}
 
@@ -723,7 +764,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneByteTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf39cd8b6);
 		return ptr;
 	}
 
@@ -740,7 +782,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneColorTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x17c73999);
 		return ptr;
 	}
 
@@ -757,7 +800,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneEnumTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbf7597d1);
 		return ptr;
 	}
 
@@ -772,7 +816,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneFloatTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x46b2b638);
 		return ptr;
 	}
 
@@ -787,7 +832,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneFadeTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf00c583a);
 		return ptr;
 	}
 
@@ -802,7 +848,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneSlomoTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2dc8b602);
 		return ptr;
 	}
 
@@ -817,7 +864,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneIntegerTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x42b17060);
 		return ptr;
 	}
 
@@ -832,7 +880,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneStringTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xde6125a1);
 		return ptr;
 	}
 
@@ -849,7 +898,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneVectorTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa59f1d9f);
 		return ptr;
 	}
 
@@ -873,7 +923,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneSkeletalAnimationSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x74cf56ed);
 		return ptr;
 	}
 
@@ -889,7 +940,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneSkeletalAnimationTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3b7713fd);
 		return ptr;
 	}
 
@@ -906,7 +958,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneStringSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdb186639);
 		return ptr;
 	}
 
@@ -931,7 +984,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneSubSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x56668ae8);
 		return ptr;
 	}
 
@@ -948,7 +1002,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneCinematicShotSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbc44d87);
 		return ptr;
 	}
 
@@ -964,7 +1019,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneSubTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x31c8acd0);
 		return ptr;
 	}
 
@@ -979,7 +1035,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneCinematicShotTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7ed84923);
 		return ptr;
 	}
 
@@ -997,7 +1054,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieSceneTracks.MovieSceneVectorSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9d01a81b);
 		return ptr;
 	}
 

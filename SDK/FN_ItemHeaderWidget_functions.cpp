@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemHeaderWidget_C::Show_Power_Block(bool Show)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemHeaderWidget.ItemHeaderWidget_C.Show Power Block");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2d214df0);
 
 	UItemHeaderWidget_C_Show_Power_Block_Params params;
 	params.Show = Show;
@@ -39,7 +40,8 @@ void UItemHeaderWidget_C::Show_Power_Block(bool Show)
 
 void UItemHeaderWidget_C::Show_Tier_and_Level(bool Show)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemHeaderWidget.ItemHeaderWidget_C.Show Tier and Level");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x76faf581);
 
 	UItemHeaderWidget_C_Show_Tier_and_Level_Params params;
 	params.Show = Show;
@@ -57,7 +59,8 @@ void UItemHeaderWidget_C::Show_Tier_and_Level(bool Show)
 
 void UItemHeaderWidget_C::UpdateCategoryIndicators()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemHeaderWidget.ItemHeaderWidget_C.UpdateCategoryIndicators");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x469b91be);
 
 	UItemHeaderWidget_C_UpdateCategoryIndicators_Params params;
 
@@ -74,7 +77,8 @@ void UItemHeaderWidget_C::UpdateCategoryIndicators()
 
 void UItemHeaderWidget_C::UpdateHeaderColor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemHeaderWidget.ItemHeaderWidget_C.UpdateHeaderColor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe52d7ab4);
 
 	UItemHeaderWidget_C_UpdateHeaderColor_Params params;
 
@@ -91,7 +95,8 @@ void UItemHeaderWidget_C::UpdateHeaderColor()
 
 void UItemHeaderWidget_C::UpdatePowerRatingComparison()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemHeaderWidget.ItemHeaderWidget_C.UpdatePowerRatingComparison");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ac52e93);
 
 	UItemHeaderWidget_C_UpdatePowerRatingComparison_Params params;
 
@@ -108,7 +113,8 @@ void UItemHeaderWidget_C::UpdatePowerRatingComparison()
 
 void UItemHeaderWidget_C::HandleDifferentItemToCompareSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemHeaderWidget.ItemHeaderWidget_C.HandleDifferentItemToCompareSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc6cc2159);
 
 	UItemHeaderWidget_C_HandleDifferentItemToCompareSet_Params params;
 
@@ -127,7 +133,8 @@ void UItemHeaderWidget_C::HandleDifferentItemToCompareSet()
 
 void UItemHeaderWidget_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemHeaderWidget.ItemHeaderWidget_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c379755);
 
 	UItemHeaderWidget_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -145,7 +152,8 @@ void UItemHeaderWidget_C::PreConstruct(bool* IsDesignTime)
 
 void UItemHeaderWidget_C::HandleDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemHeaderWidget.ItemHeaderWidget_C.HandleDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x68dc7d1f);
 
 	UItemHeaderWidget_C_HandleDifferentItemToDetailSet_Params params;
 
@@ -162,7 +170,8 @@ void UItemHeaderWidget_C::HandleDifferentItemToDetailSet()
 
 void UItemHeaderWidget_C::ResetDisplay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemHeaderWidget.ItemHeaderWidget_C.ResetDisplay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe741a82);
 
 	UItemHeaderWidget_C_ResetDisplay_Params params;
 
@@ -181,7 +190,8 @@ void UItemHeaderWidget_C::ResetDisplay()
 
 void UItemHeaderWidget_C::ExecuteUbergraph_ItemHeaderWidget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemHeaderWidget.ItemHeaderWidget_C.ExecuteUbergraph_ItemHeaderWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55b9e985);
 
 	UItemHeaderWidget_C_ExecuteUbergraph_ItemHeaderWidget_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,8 @@ namespace SDK
 
 void UAthenaTeamMemberIndicator_C::On_Team_Reviving_Changed(TArray<bool>* Team_Reviving)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.On Team Reviving Changed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc4c8f91b);
 
 	UAthenaTeamMemberIndicator_C_On_Team_Reviving_Changed_Params params;
 
@@ -41,7 +42,8 @@ void UAthenaTeamMemberIndicator_C::On_Team_Reviving_Changed(TArray<bool>* Team_R
 
 void UAthenaTeamMemberIndicator_C::On_Team_DBNO_Changed(TArray<bool>* DBNOStates)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.On Team DBNO Changed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd0e2764a);
 
 	UAthenaTeamMemberIndicator_C_On_Team_DBNO_Changed_Params params;
 
@@ -61,7 +63,8 @@ void UAthenaTeamMemberIndicator_C::On_Team_DBNO_Changed(TArray<bool>* DBNOStates
 
 void UAthenaTeamMemberIndicator_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x43664d1a);
 
 	UAthenaTeamMemberIndicator_C_Construct_Params params;
 
@@ -81,7 +84,8 @@ void UAthenaTeamMemberIndicator_C::Construct()
 
 void UAthenaTeamMemberIndicator_C::Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.Tick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc9dca5e8);
 
 	UAthenaTeamMemberIndicator_C_Tick_Params params;
 	params.MyGeometry = MyGeometry;
@@ -100,7 +104,8 @@ void UAthenaTeamMemberIndicator_C::Tick(struct FGeometry* MyGeometry, float* InD
 
 void UAthenaTeamMemberIndicator_C::Destruct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.Destruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6233d3c1);
 
 	UAthenaTeamMemberIndicator_C_Destruct_Params params;
 
@@ -117,7 +122,8 @@ void UAthenaTeamMemberIndicator_C::Destruct()
 
 void UAthenaTeamMemberIndicator_C::Update_Pawn()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.Update Pawn");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x98d93422);
 
 	UAthenaTeamMemberIndicator_C_Update_Pawn_Params params;
 
@@ -136,7 +142,8 @@ void UAthenaTeamMemberIndicator_C::Update_Pawn()
 
 void UAthenaTeamMemberIndicator_C::ExecuteUbergraph_AthenaTeamMemberIndicator(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaTeamMemberIndicator.AthenaTeamMemberIndicator_C.ExecuteUbergraph_AthenaTeamMemberIndicator");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x63ce159e);
 
 	UAthenaTeamMemberIndicator_C_ExecuteUbergraph_AthenaTeamMemberIndicator_Params params;
 	params.EntryPoint = EntryPoint;

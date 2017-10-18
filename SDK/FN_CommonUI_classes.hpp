@@ -22,7 +22,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonUserWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7a7440a6);
 		return ptr;
 	}
 
@@ -50,7 +51,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonTabListWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5bb2c0b4);
 		return ptr;
 	}
 
@@ -96,7 +98,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonActivatablePanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1b59e1e3);
 		return ptr;
 	}
 
@@ -165,7 +168,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaba0959f);
 		return ptr;
 	}
 
@@ -226,7 +230,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonWidgetGroupBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc0fa672f);
 		return ptr;
 	}
 
@@ -252,7 +257,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonButtonGroup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9c917ec4);
 		return ptr;
 	}
 
@@ -285,7 +291,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonTextBlock");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x77cb5d85);
 		return ptr;
 	}
 
@@ -317,7 +324,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonNumericTextBlock");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4f54d26c);
 		return ptr;
 	}
 
@@ -358,7 +366,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonListView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf9ee3e40);
 		return ptr;
 	}
 
@@ -401,7 +410,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonTileView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfc124b40);
 		return ptr;
 	}
 
@@ -419,7 +429,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.AnalogSlider");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf9988ccf);
 		return ptr;
 	}
 
@@ -434,7 +445,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonActionHandlerInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2f70a20);
 		return ptr;
 	}
 
@@ -456,7 +468,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonActionWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3d8bb119);
 		return ptr;
 	}
 
@@ -478,7 +491,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonBorderStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9c86a334);
 		return ptr;
 	}
 
@@ -500,7 +514,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonBorder");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfa980b81);
 		return ptr;
 	}
 
@@ -528,7 +543,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonVisibilityWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4a9a4103);
 		return ptr;
 	}
 
@@ -564,7 +580,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonButtonStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2fabc742);
 		return ptr;
 	}
 
@@ -602,7 +619,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonButtonInternal");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xca4856e0);
 		return ptr;
 	}
 
@@ -618,7 +636,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonCustomNavigation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc063afc0);
 		return ptr;
 	}
 
@@ -636,7 +655,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonGlobalInputHandler");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x703ef45a);
 		return ptr;
 	}
 
@@ -658,7 +678,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonInputManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7fe023ea);
 		return ptr;
 	}
 
@@ -693,7 +714,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonLoadGuard");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdce70972);
 		return ptr;
 	}
 
@@ -717,7 +739,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonLazyImage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd1d28db8);
 		return ptr;
 	}
 
@@ -739,7 +762,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonListViewNullItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2a7d678a);
 		return ptr;
 	}
 
@@ -757,7 +781,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonTreeView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3caf395c);
 		return ptr;
 	}
 
@@ -777,7 +802,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonPoolableWidgetInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8f5d8bc6);
 		return ptr;
 	}
 
@@ -795,7 +821,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonListItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb64003a);
 		return ptr;
 	}
 
@@ -820,7 +847,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonObjectListItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x79c90c23);
 		return ptr;
 	}
 
@@ -847,7 +875,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonTextStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x36a77825);
 		return ptr;
 	}
 
@@ -875,7 +904,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonTextScrollStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfcfb22f4);
 		return ptr;
 	}
 
@@ -899,7 +929,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonUIContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x82eaca32);
 		return ptr;
 	}
 
@@ -924,7 +955,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonUILibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x57121b46);
 		return ptr;
 	}
 
@@ -949,7 +981,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonUISettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbec45716);
 		return ptr;
 	}
 
@@ -971,7 +1004,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonRotator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbf2c04ca);
 		return ptr;
 	}
 
@@ -995,7 +1029,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonInputReflector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x76d9d75b);
 		return ptr;
 	}
 
@@ -1023,7 +1058,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonWidgetSwitcher");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2eaeb4a2);
 		return ptr;
 	}
 
@@ -1052,7 +1088,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonWidgetCarousel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x50eb5fd5);
 		return ptr;
 	}
 
@@ -1076,7 +1113,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class CommonUI.CommonWidgetStack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9bce9d29);
 		return ptr;
 	}
 

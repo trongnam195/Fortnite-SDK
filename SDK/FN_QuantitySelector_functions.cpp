@@ -19,7 +19,8 @@ namespace SDK
 
 void UQuantitySelector_C::SetupForInputMode(bool IsUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.SetupForInputMode");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a48980c);
 
 	UQuantitySelector_C_SetupForInputMode_Params params;
 	params.IsUsingGamepad = IsUsingGamepad;
@@ -37,7 +38,8 @@ void UQuantitySelector_C::SetupForInputMode(bool IsUsingGamepad)
 
 void UQuantitySelector_C::SliderValueChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.SliderValueChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a485b39);
 
 	UQuantitySelector_C_SliderValueChanged_Params params;
 
@@ -56,7 +58,8 @@ void UQuantitySelector_C::SliderValueChanged()
 
 void UQuantitySelector_C::HandleCancelPressed(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.HandleCancelPressed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x257360e7);
 
 	UQuantitySelector_C_HandleCancelPressed_Params params;
 
@@ -78,7 +81,8 @@ void UQuantitySelector_C::HandleCancelPressed(bool* PassThrough)
 
 void UQuantitySelector_C::HandleTransferPressed(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.HandleTransferPressed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7cd065e2);
 
 	UQuantitySelector_C_HandleTransferPressed_Params params;
 
@@ -100,7 +104,8 @@ void UQuantitySelector_C::HandleTransferPressed(bool* PassThrough)
 
 void UQuantitySelector_C::HandleMaxPressed(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.HandleMaxPressed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9032da71);
 
 	UQuantitySelector_C_HandleMaxPressed_Params params;
 
@@ -120,7 +125,8 @@ void UQuantitySelector_C::HandleMaxPressed(bool* PassThrough)
 
 void UQuantitySelector_C::CloseSelector()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.CloseSelector");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc0bc8a1e);
 
 	UQuantitySelector_C_CloseSelector_Params params;
 
@@ -139,7 +145,8 @@ void UQuantitySelector_C::CloseSelector()
 
 void UQuantitySelector_C::SetAdditionalText(const struct FText& AdditionalInfoText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.SetAdditionalText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3eca3b13);
 
 	UQuantitySelector_C_SetAdditionalText_Params params;
 	params.AdditionalInfoText = AdditionalInfoText;
@@ -164,7 +171,8 @@ void UQuantitySelector_C::SetAdditionalText(const struct FText& AdditionalInfoTe
 
 void UQuantitySelector_C::SetSplitData(int StartingCount, int MaximumCount, class UFortItem* Item, const struct FText& TitleText, const struct FText& ButtonText, const struct FText& AdditionalInfoText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.SetSplitData");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1d8dbb43);
 
 	UQuantitySelector_C_SetSplitData_Params params;
 	params.StartingCount = StartingCount;
@@ -189,7 +197,8 @@ void UQuantitySelector_C::SetSplitData(int StartingCount, int MaximumCount, clas
 
 void UQuantitySelector_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32be54e9);
 
 	UQuantitySelector_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -209,7 +218,8 @@ void UQuantitySelector_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_86_C
 
 void UQuantitySelector_C::BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_166_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_166_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb8716d34);
 
 	UQuantitySelector_C_BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_166_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -229,7 +239,8 @@ void UQuantitySelector_C::BndEvt__ConfirmButton_K2Node_ComponentBoundEvent_166_C
 
 void UQuantitySelector_C::BndEvt__AnalogSlider_0_K2Node_ComponentBoundEvent_434_OnFloatValueChangedEvent__DelegateSignature(float Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.BndEvt__AnalogSlider_0_K2Node_ComponentBoundEvent_434_OnFloatValueChangedEvent__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa7874360);
 
 	UQuantitySelector_C_BndEvt__AnalogSlider_0_K2Node_ComponentBoundEvent_434_OnFloatValueChangedEvent__DelegateSignature_Params params;
 	params.Value = Value;
@@ -249,7 +260,8 @@ void UQuantitySelector_C::BndEvt__AnalogSlider_0_K2Node_ComponentBoundEvent_434_
 
 void UQuantitySelector_C::BndEvt__MaxButton_K2Node_ComponentBoundEvent_343_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.BndEvt__MaxButton_K2Node_ComponentBoundEvent_343_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2d6cd975);
 
 	UQuantitySelector_C_BndEvt__MaxButton_K2Node_ComponentBoundEvent_343_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -267,7 +279,8 @@ void UQuantitySelector_C::BndEvt__MaxButton_K2Node_ComponentBoundEvent_343_Commo
 
 void UQuantitySelector_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb8336935);
 
 	UQuantitySelector_C_OnActivated_Params params;
 
@@ -284,7 +297,8 @@ void UQuantitySelector_C::OnActivated()
 
 void UQuantitySelector_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2a152f8a);
 
 	UQuantitySelector_C_OnDeactivated_Params params;
 
@@ -301,7 +315,8 @@ void UQuantitySelector_C::OnDeactivated()
 
 void UQuantitySelector_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0484e9e);
 
 	UQuantitySelector_C_Construct_Params params;
 
@@ -320,7 +335,8 @@ void UQuantitySelector_C::Construct()
 
 void UQuantitySelector_C::HandleChangeInputMode(bool bUsingGamepad)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.HandleChangeInputMode");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6ba48dfe);
 
 	UQuantitySelector_C_HandleChangeInputMode_Params params;
 	params.bUsingGamepad = bUsingGamepad;
@@ -340,7 +356,8 @@ void UQuantitySelector_C::HandleChangeInputMode(bool bUsingGamepad)
 
 void UQuantitySelector_C::ExecuteUbergraph_QuantitySelector(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.ExecuteUbergraph_QuantitySelector");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x311f383f);
 
 	UQuantitySelector_C_ExecuteUbergraph_QuantitySelector_Params params;
 	params.EntryPoint = EntryPoint;
@@ -361,7 +378,8 @@ void UQuantitySelector_C::ExecuteUbergraph_QuantitySelector(int EntryPoint)
 
 void UQuantitySelector_C::OnStackValueChangedDispatcher__DelegateSignature(int NewValue, class UFortItem* FortItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.OnStackValueChangedDispatcher__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6d32583d);
 
 	UQuantitySelector_C_OnStackValueChangedDispatcher__DelegateSignature_Params params;
 	params.NewValue = NewValue;
@@ -383,7 +401,8 @@ void UQuantitySelector_C::OnStackValueChangedDispatcher__DelegateSignature(int N
 
 void UQuantitySelector_C::OnButtonClickedDispatcher__DelegateSignature(int ChosenValue, class UFortItem* FortItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuantitySelector.QuantitySelector_C.OnButtonClickedDispatcher__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfd1958f3);
 
 	UQuantitySelector_C_OnButtonClickedDispatcher__DelegateSignature_Params params;
 	params.ChosenValue = ChosenValue;

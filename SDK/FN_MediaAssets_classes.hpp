@@ -21,7 +21,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MediaAssets.MediaOverlays");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x791add5b);
 		return ptr;
 	}
 
@@ -59,7 +60,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MediaAssets.MediaPlayer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2cffba0f);
 		return ptr;
 	}
 
@@ -119,7 +121,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MediaAssets.MediaPlaylist");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4a6b213a);
 		return ptr;
 	}
 
@@ -149,7 +152,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MediaAssets.MediaSoundWave");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdcc89e32);
 		return ptr;
 	}
 
@@ -165,7 +169,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MediaAssets.MediaSource");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcd3c5ebf);
 		return ptr;
 	}
 
@@ -181,7 +186,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MediaAssets.BaseMediaSource");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x92e96ee6);
 		return ptr;
 	}
 
@@ -199,7 +205,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MediaAssets.FileMediaSource");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e2846d5);
 		return ptr;
 	}
 
@@ -217,7 +224,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MediaAssets.StreamMediaSource");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x79f0a2b7);
 		return ptr;
 	}
 
@@ -233,7 +241,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MediaAssets.PlatformMediaSource");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8be57aa4);
 		return ptr;
 	}
 
@@ -257,7 +266,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MediaAssets.MediaTexture");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf2ae8c61);
 		return ptr;
 	}
 

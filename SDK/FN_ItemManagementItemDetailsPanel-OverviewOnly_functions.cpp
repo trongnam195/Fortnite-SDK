@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemManagementItemDetailsPanel_OverviewOnly_C::SetDescriptionText()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementItemDetailsPanel-OverviewOnly.ItemManagementItemDetailsPanel-OverviewOnly_C.SetDescriptionText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd4d01984);
 
 	UItemManagementItemDetailsPanel_OverviewOnly_C_SetDescriptionText_Params params;
 
@@ -34,7 +35,8 @@ void UItemManagementItemDetailsPanel_OverviewOnly_C::SetDescriptionText()
 
 void UItemManagementItemDetailsPanel_OverviewOnly_C::HandleDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementItemDetailsPanel-OverviewOnly.ItemManagementItemDetailsPanel-OverviewOnly_C.HandleDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa1eb17ab);
 
 	UItemManagementItemDetailsPanel_OverviewOnly_C_HandleDifferentItemToDetailSet_Params params;
 
@@ -53,7 +55,8 @@ void UItemManagementItemDetailsPanel_OverviewOnly_C::HandleDifferentItemToDetail
 
 void UItemManagementItemDetailsPanel_OverviewOnly_C::ExecuteUbergraph_ItemManagementItemDetailsPanel_OverviewOnly(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemManagementItemDetailsPanel-OverviewOnly.ItemManagementItemDetailsPanel-OverviewOnly_C.ExecuteUbergraph_ItemManagementItemDetailsPanel-OverviewOnly");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5cf40e50);
 
 	UItemManagementItemDetailsPanel_OverviewOnly_C_ExecuteUbergraph_ItemManagementItemDetailsPanel_OverviewOnly_Params params;
 	params.EntryPoint = EntryPoint;

@@ -19,7 +19,8 @@ namespace SDK
 
 void UView3DModel_C::HandleBack(bool* PassThrough)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function View3DModel.View3DModel_C.HandleBack");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2178acb8);
 
 	UView3DModel_C_HandleBack_Params params;
 
@@ -39,7 +40,8 @@ void UView3DModel_C::HandleBack(bool* PassThrough)
 
 void UView3DModel_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function View3DModel.View3DModel_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7f01a7a);
 
 	UView3DModel_C_Construct_Params params;
 
@@ -56,7 +58,8 @@ void UView3DModel_C::Construct()
 
 void UView3DModel_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function View3DModel.View3DModel_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x306bdb71);
 
 	UView3DModel_C_OnActivated_Params params;
 
@@ -75,7 +78,8 @@ void UView3DModel_C::OnActivated()
 
 void UView3DModel_C::ExecuteUbergraph_View3DModel(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function View3DModel.View3DModel_C.ExecuteUbergraph_View3DModel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf000ba18);
 
 	UView3DModel_C_ExecuteUbergraph_View3DModel_Params params;
 	params.EntryPoint = EntryPoint;

@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass ButtonStyle-LeaderboardItem-LocalUser.ButtonStyle-LeaderboardItem-LocalUser_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf9a03b51);
 		return ptr;
 	}
 

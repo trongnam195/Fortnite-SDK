@@ -17,7 +17,8 @@ namespace SDK
 
 void APlayerPawn_Athena_C::InitAthenaFoleyAudio()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.InitAthenaFoleyAudio");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb605f699);
 
 	APlayerPawn_Athena_C_InitAthenaFoleyAudio_Params params;
 
@@ -34,7 +35,8 @@ void APlayerPawn_Athena_C::InitAthenaFoleyAudio()
 
 void APlayerPawn_Athena_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd4d73c78);
 
 	APlayerPawn_Athena_C_UserConstructionScript_Params params;
 
@@ -54,7 +56,8 @@ void APlayerPawn_Athena_C::UserConstructionScript()
 
 void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(TEnumAsByte<EGameplayCueEvent>* EventType, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x84b59355);
 
 	APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2_Params params;
 	params.EventType = EventType;
@@ -76,7 +79,8 @@ void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_
 
 void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(TEnumAsByte<EGameplayCueEvent>* EventType, struct FGameplayCueParameters* Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaab80dbe);
 
 	APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1_Params params;
 	params.EventType = EventType;
@@ -97,7 +101,8 @@ void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_
 
 void APlayerPawn_Athena_C::ReceivePossessed(class AController** NewController)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceivePossessed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66a649e1);
 
 	APlayerPawn_Athena_C_ReceivePossessed_Params params;
 	params.NewController = NewController;
@@ -118,7 +123,8 @@ void APlayerPawn_Athena_C::ReceivePossessed(class AController** NewController)
 
 void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Commando_Shockwave(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Commando.Shockwave");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe1e6d3bd);
 
 	APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Commando_Shockwave_Params params;
 	params.EventType = EventType;
@@ -137,7 +143,8 @@ void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Commando_Shockwave(T
 
 void APlayerPawn_Athena_C::SetMenuScreenClassName()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.SetMenuScreenClassName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2cc37d61);
 
 	APlayerPawn_Athena_C_SetMenuScreenClassName_Params params;
 
@@ -154,7 +161,8 @@ void APlayerPawn_Athena_C::SetMenuScreenClassName()
 
 void APlayerPawn_Athena_C::ReceiveBeginPlay()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceiveBeginPlay");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71c6706f);
 
 	APlayerPawn_Athena_C_ReceiveBeginPlay_Params params;
 
@@ -173,7 +181,8 @@ void APlayerPawn_Athena_C::ReceiveBeginPlay()
 
 void APlayerPawn_Athena_C::SelectPawn(class UAnimInstance* AnimInst)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.SelectPawn");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88d5a019);
 
 	APlayerPawn_Athena_C_SelectPawn_Params params;
 	params.AnimInst = AnimInst;
@@ -191,7 +200,8 @@ void APlayerPawn_Athena_C::SelectPawn(class UAnimInstance* AnimInst)
 
 void APlayerPawn_Athena_C::ReceiveDestroyed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceiveDestroyed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x64f4e2c7);
 
 	APlayerPawn_Athena_C_ReceiveDestroyed_Params params;
 
@@ -211,7 +221,8 @@ void APlayerPawn_Athena_C::ReceiveDestroyed()
 
 void APlayerPawn_Athena_C::GameplayCue_Athena_OutsideSafeZone(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.OutsideSafeZone");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd53a64d9);
 
 	APlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone_Params params;
 	params.EventType = EventType;
@@ -230,7 +241,8 @@ void APlayerPawn_Athena_C::GameplayCue_Athena_OutsideSafeZone(TEnumAsByte<EGamep
 
 void APlayerPawn_Athena_C::SafeZoneStatusChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.SafeZoneStatusChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81bfb40c);
 
 	APlayerPawn_Athena_C_SafeZoneStatusChanged_Params params;
 
@@ -250,7 +262,8 @@ void APlayerPawn_Athena_C::SafeZoneStatusChanged()
 
 void APlayerPawn_Athena_C::GameplayCue_Athena_Equipping(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.Equipping");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6a5c003d);
 
 	APlayerPawn_Athena_C_GameplayCue_Athena_Equipping_Params params;
 	params.EventType = EventType;
@@ -277,7 +290,8 @@ void APlayerPawn_Athena_C::GameplayCue_Athena_Equipping(TEnumAsByte<EGameplayCue
 
 void APlayerPawn_Athena_C::OnDeathPlayEffects(float* Damage, struct FGameplayTagContainer* DamageTags, struct FVector* Momentum, struct FHitResult* HitInfo, class AFortPawn** InstigatedBy, class AActor** DamageCauser, struct FGameplayEffectContextHandle* EffectContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.OnDeathPlayEffects");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca57b626);
 
 	APlayerPawn_Athena_C_OnDeathPlayEffects_Params params;
 	params.Damage = Damage;
@@ -303,7 +317,8 @@ void APlayerPawn_Athena_C::OnDeathPlayEffects(float* Damage, struct FGameplayTag
 
 void APlayerPawn_Athena_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcb80a425);
 
 	APlayerPawn_Athena_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -321,7 +336,8 @@ void APlayerPawn_Athena_C::ReceiveTick(float* DeltaSeconds)
 
 void APlayerPawn_Athena_C::ContrailCheck()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.ContrailCheck");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x19fb4179);
 
 	APlayerPawn_Athena_C_ContrailCheck_Params params;
 
@@ -341,7 +357,8 @@ void APlayerPawn_Athena_C::ContrailCheck()
 
 void APlayerPawn_Athena_C::GameplayCue_Athena_Player_BeingRevivedFromDBNO(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.Player.BeingRevivedFromDBNO");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x69dff7eb);
 
 	APlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO_Params params;
 	params.EventType = EventType;
@@ -362,7 +379,8 @@ void APlayerPawn_Athena_C::GameplayCue_Athena_Player_BeingRevivedFromDBNO(TEnumA
 
 void APlayerPawn_Athena_C::ExecuteUbergraph_PlayerPawn_Athena(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Athena.PlayerPawn_Athena_C.ExecuteUbergraph_PlayerPawn_Athena");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4ab99eb0);
 
 	APlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena_Params params;
 	params.EntryPoint = EntryPoint;

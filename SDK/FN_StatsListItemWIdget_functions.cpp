@@ -19,7 +19,8 @@ namespace SDK
 
 class UWidget* UStatsListItemWIdget_C::GetListItemTooltipWidget()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListItemWIdget.StatsListItemWIdget_C.GetListItemTooltipWidget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a3609bd);
 
 	UStatsListItemWIdget_C_GetListItemTooltipWidget_Params params;
 
@@ -40,7 +41,8 @@ class UWidget* UStatsListItemWIdget_C::GetListItemTooltipWidget()
 
 void UStatsListItemWIdget_C::SetStatIcon(const struct FSlateBrush& NewParam)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListItemWIdget.StatsListItemWIdget_C.SetStatIcon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb6c9df48);
 
 	UStatsListItemWIdget_C_SetStatIcon_Params params;
 	params.NewParam = NewParam;
@@ -60,7 +62,8 @@ void UStatsListItemWIdget_C::SetStatIcon(const struct FSlateBrush& NewParam)
 
 void UStatsListItemWIdget_C::UpdateBuffArrows(const struct FFortDisplayAttribute& CurrentAttribute)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListItemWIdget.StatsListItemWIdget_C.UpdateBuffArrows");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24f6ee21);
 
 	UStatsListItemWIdget_C_UpdateBuffArrows_Params params;
 	params.CurrentAttribute = CurrentAttribute;
@@ -80,7 +83,8 @@ void UStatsListItemWIdget_C::UpdateBuffArrows(const struct FFortDisplayAttribute
 
 void UStatsListItemWIdget_C::UpdateBasicPairLabel(const struct FFortDisplayAttribute& CurrentAttribute)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListItemWIdget.StatsListItemWIdget_C.UpdateBasicPairLabel");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x346eabb4);
 
 	UStatsListItemWIdget_C_UpdateBasicPairLabel_Params params;
 	params.CurrentAttribute = CurrentAttribute;
@@ -100,7 +104,8 @@ void UStatsListItemWIdget_C::UpdateBasicPairLabel(const struct FFortDisplayAttri
 
 void UStatsListItemWIdget_C::UpdateValueText(const struct FFortDisplayAttribute& CurrentAttribute)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListItemWIdget.StatsListItemWIdget_C.UpdateValueText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81e25706);
 
 	UStatsListItemWIdget_C_UpdateValueText_Params params;
 	params.CurrentAttribute = CurrentAttribute;
@@ -120,7 +125,8 @@ void UStatsListItemWIdget_C::UpdateValueText(const struct FFortDisplayAttribute&
 
 void UStatsListItemWIdget_C::UpdateType(const struct FFortDisplayAttribute& CurrentAttribute)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListItemWIdget.StatsListItemWIdget_C.UpdateType");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2e4963d8);
 
 	UStatsListItemWIdget_C_UpdateType_Params params;
 	params.CurrentAttribute = CurrentAttribute;
@@ -140,7 +146,8 @@ void UStatsListItemWIdget_C::UpdateType(const struct FFortDisplayAttribute& Curr
 
 void UStatsListItemWIdget_C::UpdateColors(const struct FFortDisplayAttribute& CurrentAttribute)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListItemWIdget.StatsListItemWIdget_C.UpdateColors");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x513773a4);
 
 	UStatsListItemWIdget_C_UpdateColors_Params params;
 	params.CurrentAttribute = CurrentAttribute;
@@ -158,7 +165,8 @@ void UStatsListItemWIdget_C::UpdateColors(const struct FFortDisplayAttribute& Cu
 
 void UStatsListItemWIdget_C::Update()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListItemWIdget.StatsListItemWIdget_C.Update");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x336b37c0);
 
 	UStatsListItemWIdget_C_Update_Params params;
 
@@ -175,7 +183,8 @@ void UStatsListItemWIdget_C::Update()
 
 void UStatsListItemWIdget_C::DisplayAttributeChanged()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListItemWIdget.StatsListItemWIdget_C.DisplayAttributeChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x17e4c82b);
 
 	UStatsListItemWIdget_C_DisplayAttributeChanged_Params params;
 
@@ -192,7 +201,8 @@ void UStatsListItemWIdget_C::DisplayAttributeChanged()
 
 void UStatsListItemWIdget_C::PreviewStarted()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListItemWIdget.StatsListItemWIdget_C.PreviewStarted");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x93767390);
 
 	UStatsListItemWIdget_C_PreviewStarted_Params params;
 
@@ -209,7 +219,8 @@ void UStatsListItemWIdget_C::PreviewStarted()
 
 void UStatsListItemWIdget_C::PreviewEnded()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListItemWIdget.StatsListItemWIdget_C.PreviewEnded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71e3560b);
 
 	UStatsListItemWIdget_C_PreviewEnded_Params params;
 
@@ -228,7 +239,8 @@ void UStatsListItemWIdget_C::PreviewEnded()
 
 void UStatsListItemWIdget_C::ValueChanged(float* Delta)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListItemWIdget.StatsListItemWIdget_C.ValueChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf6e926e);
 
 	UStatsListItemWIdget_C_ValueChanged_Params params;
 	params.Delta = Delta;
@@ -246,7 +258,8 @@ void UStatsListItemWIdget_C::ValueChanged(float* Delta)
 
 void UStatsListItemWIdget_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListItemWIdget.StatsListItemWIdget_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x98d10b9a);
 
 	UStatsListItemWIdget_C_Construct_Params params;
 
@@ -265,7 +278,8 @@ void UStatsListItemWIdget_C::Construct()
 
 void UStatsListItemWIdget_C::ExecuteUbergraph_StatsListItemWIdget(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function StatsListItemWIdget.StatsListItemWIdget_C.ExecuteUbergraph_StatsListItemWIdget");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5bc93e6d);
 
 	UStatsListItemWIdget_C_ExecuteUbergraph_StatsListItemWIdget_Params params;
 	params.EntryPoint = EntryPoint;

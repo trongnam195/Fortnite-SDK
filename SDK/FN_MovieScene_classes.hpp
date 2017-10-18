@@ -22,7 +22,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieScene.MovieSceneSignedObject");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x81542ba);
 		return ptr;
 	}
 
@@ -51,7 +52,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieScene.MovieScene");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xad0d0963);
 		return ptr;
 	}
 
@@ -66,7 +68,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieScene.MovieSceneBindingOverridesInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9cb7061a);
 		return ptr;
 	}
 
@@ -84,7 +87,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieScene.MovieSceneBindingOverrides");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6d52760d);
 		return ptr;
 	}
 
@@ -99,7 +103,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieScene.MovieSceneBindingOwnerInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7f76072c);
 		return ptr;
 	}
 
@@ -119,7 +124,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieScene.MovieSceneFolder");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x18373ba3);
 		return ptr;
 	}
 
@@ -150,7 +156,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieScene.MovieSceneSequencePlayer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6ddc4b43);
 		return ptr;
 	}
 
@@ -192,7 +199,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieScene.MovieSceneSection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xccefd5d0);
 		return ptr;
 	}
 
@@ -209,7 +217,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieScene.MovieSceneTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x72a9e938);
 		return ptr;
 	}
 
@@ -228,7 +237,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieScene.MovieSceneSequence");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdca4ab94);
 		return ptr;
 	}
 
@@ -243,7 +253,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class MovieScene.MovieSceneNameableTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1adf3ae7);
 		return ptr;
 	}
 

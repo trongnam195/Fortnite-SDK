@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_ZT_ChallengeTheHorde_Twine.BP_ZT_ChallengeTheHorde_Twine_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7c9db14d);
 		return ptr;
 	}
 

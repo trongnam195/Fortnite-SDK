@@ -17,7 +17,8 @@ namespace SDK
 
 void UQuestTrackerEntry_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerEntry.QuestTrackerEntry_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24ff5dce);
 
 	UQuestTrackerEntry_C_Construct_Params params;
 
@@ -34,7 +35,8 @@ void UQuestTrackerEntry_C::Construct()
 
 void UQuestTrackerEntry_C::OnSetup()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerEntry.QuestTrackerEntry_C.OnSetup");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xedff6a6f);
 
 	UQuestTrackerEntry_C_OnSetup_Params params;
 
@@ -53,7 +55,8 @@ void UQuestTrackerEntry_C::OnSetup()
 
 void UQuestTrackerEntry_C::ExecuteUbergraph_QuestTrackerEntry(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function QuestTrackerEntry.QuestTrackerEntry_C.ExecuteUbergraph_QuestTrackerEntry");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3cc9878f);
 
 	UQuestTrackerEntry_C_ExecuteUbergraph_QuestTrackerEntry_Params params;
 	params.EntryPoint = EntryPoint;

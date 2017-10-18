@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemDetailsHeaderItemDisplayText_C::GetDisplayName(struct FText* DisplayName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.GetDisplayName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x17acfefc);
 
 	UItemDetailsHeaderItemDisplayText_C_GetDisplayName_Params params;
 
@@ -39,7 +40,8 @@ void UItemDetailsHeaderItemDisplayText_C::GetDisplayName(struct FText* DisplayNa
 
 void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.HandlePostDifferentItemToCompareWithSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3820b117);
 
 	UItemDetailsHeaderItemDisplayText_C_HandlePostDifferentItemToCompareWithSet_Params params;
 
@@ -56,7 +58,8 @@ void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToCompareWithSe
 
 void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.HandlePostDifferentItemToDetailSet");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1e323025);
 
 	UItemDetailsHeaderItemDisplayText_C_HandlePostDifferentItemToDetailSet_Params params;
 
@@ -75,7 +78,8 @@ void UItemDetailsHeaderItemDisplayText_C::HandlePostDifferentItemToDetailSet()
 
 void UItemDetailsHeaderItemDisplayText_C::ExecuteUbergraph_ItemDetailsHeaderItemDisplayText(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.ExecuteUbergraph_ItemDetailsHeaderItemDisplayText");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x646d0105);
 
 	UItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText_Params params;
 	params.EntryPoint = EntryPoint;

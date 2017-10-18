@@ -19,7 +19,8 @@ namespace SDK
 
 void UAthenaMainStatTile_C::SetStatValue(const struct FText& StatValueAsText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaMainStatTile.AthenaMainStatTile_C.SetStatValue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf223c3d2);
 
 	UAthenaMainStatTile_C_SetStatValue_Params params;
 	params.StatValueAsText = StatValueAsText;
@@ -40,7 +41,8 @@ void UAthenaMainStatTile_C::SetStatValue(const struct FText& StatValueAsText)
 
 void UAthenaMainStatTile_C::SetTagAndDisplayName(const struct FString& Tag, const struct FText& DisplayName)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaMainStatTile.AthenaMainStatTile_C.SetTagAndDisplayName");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x70bd5389);
 
 	UAthenaMainStatTile_C_SetTagAndDisplayName_Params params;
 	params.Tag = Tag;
@@ -61,7 +63,8 @@ void UAthenaMainStatTile_C::SetTagAndDisplayName(const struct FString& Tag, cons
 
 void UAthenaMainStatTile_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaMainStatTile.AthenaMainStatTile_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a6487ed);
 
 	UAthenaMainStatTile_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -81,7 +84,8 @@ void UAthenaMainStatTile_C::PreConstruct(bool* IsDesignTime)
 
 void UAthenaMainStatTile_C::ExecuteUbergraph_AthenaMainStatTile(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaMainStatTile.AthenaMainStatTile_C.ExecuteUbergraph_AthenaMainStatTile");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x77a0a36b);
 
 	UAthenaMainStatTile_C_ExecuteUbergraph_AthenaMainStatTile_Params params;
 	params.EntryPoint = EntryPoint;

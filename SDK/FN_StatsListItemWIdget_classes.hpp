@@ -44,7 +44,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass StatsListItemWIdget.StatsListItemWIdget_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfa7c3f49);
 		return ptr;
 	}
 

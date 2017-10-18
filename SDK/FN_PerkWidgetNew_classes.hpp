@@ -59,7 +59,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass PerkWidgetNew.PerkWidgetNew_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x70c47c15);
 		return ptr;
 	}
 

@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass MissionGen_RetrieveTheData_NoSecondary.MissionGen_RetrieveTheData_NoSecondary_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x16392b45);
 		return ptr;
 	}
 

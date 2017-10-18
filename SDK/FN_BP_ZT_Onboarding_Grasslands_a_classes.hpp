@@ -20,7 +20,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("BlueprintGeneratedClass BP_ZT_Onboarding_Grasslands_a.BP_ZT_Onboarding_Grasslands_a_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5ccaa171);
 		return ptr;
 	}
 

@@ -17,7 +17,8 @@ namespace SDK
 
 void UPowerRatingBlockItemDetails_C::ClearComparison()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C.ClearComparison");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc2d93b5);
 
 	UPowerRatingBlockItemDetails_C_ClearComparison_Params params;
 
@@ -34,7 +35,8 @@ void UPowerRatingBlockItemDetails_C::ClearComparison()
 
 void UPowerRatingBlockItemDetails_C::UpdateComparison()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C.UpdateComparison");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5feb89e3);
 
 	UPowerRatingBlockItemDetails_C_UpdateComparison_Params params;
 
@@ -53,7 +55,8 @@ void UPowerRatingBlockItemDetails_C::UpdateComparison()
 
 void UPowerRatingBlockItemDetails_C::SetPowerRatingValueForComparison(int Value)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C.SetPowerRatingValueForComparison");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9099a030);
 
 	UPowerRatingBlockItemDetails_C_SetPowerRatingValueForComparison_Params params;
 	params.Value = Value;
@@ -74,7 +77,8 @@ void UPowerRatingBlockItemDetails_C::SetPowerRatingValueForComparison(int Value)
 
 void UPowerRatingBlockItemDetails_C::SetPowerRatingFromItem(class UFortItem* Item, float InterpolationDuration)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C.SetPowerRatingFromItem");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4352f09a);
 
 	UPowerRatingBlockItemDetails_C_SetPowerRatingFromItem_Params params;
 	params.Item = Item;
@@ -96,7 +100,8 @@ void UPowerRatingBlockItemDetails_C::SetPowerRatingFromItem(class UFortItem* Ite
 
 void UPowerRatingBlockItemDetails_C::SetPowerRatingValue(int PowerRating, float InterpolationDuration)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PowerRatingBlockItemDetails.PowerRatingBlockItemDetails_C.SetPowerRatingValue");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2fd75a16);
 
 	UPowerRatingBlockItemDetails_C_SetPowerRatingValue_Params params;
 	params.PowerRating = PowerRating;

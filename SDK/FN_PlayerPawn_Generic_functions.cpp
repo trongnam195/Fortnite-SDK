@@ -19,7 +19,8 @@ namespace SDK
 
 void APlayerPawn_Generic_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Melee_Effect_Color");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5bd5bf11);
 
 	APlayerPawn_Generic_C_Melee_Effect_Color_Params params;
 
@@ -41,7 +42,8 @@ void APlayerPawn_Generic_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 
 void APlayerPawn_Generic_C::Are_the_wind_and_water_RTT_passes_enabled(bool* NewParam)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Are the wind and water RTT passes enabled");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55b9c42);
 
 	APlayerPawn_Generic_C_Are_the_wind_and_water_RTT_passes_enabled_Params params;
 
@@ -61,7 +63,8 @@ void APlayerPawn_Generic_C::Are_the_wind_and_water_RTT_passes_enabled(bool* NewP
 
 void APlayerPawn_Generic_C::DisableWaterLevelTick()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.DisableWaterLevelTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa834b9d9);
 
 	APlayerPawn_Generic_C_DisableWaterLevelTick_Params params;
 
@@ -80,7 +83,8 @@ void APlayerPawn_Generic_C::DisableWaterLevelTick()
 
 void APlayerPawn_Generic_C::SetAdrenalineRushVisibility(bool Visible)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.SetAdrenalineRushVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x713ad838);
 
 	APlayerPawn_Generic_C_SetAdrenalineRushVisibility_Params params;
 	params.Visible = Visible;
@@ -98,7 +102,8 @@ void APlayerPawn_Generic_C::SetAdrenalineRushVisibility(bool Visible)
 
 void APlayerPawn_Generic_C::OnRep_On_Player_Built_Floor()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnRep_On_Player_Built_Floor");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x35cfccc1);
 
 	APlayerPawn_Generic_C_OnRep_On_Player_Built_Floor_Params params;
 
@@ -125,7 +130,8 @@ void APlayerPawn_Generic_C::OnRep_On_Player_Built_Floor()
 
 void APlayerPawn_Generic_C::Setup_FX_Mesh_Duplicates(int Translucent_Sort_Order, bool Transfer_Material_Parameters, class UMaterialInterface** Material_to_Apply, TArray<class UMaterialInstanceDynamic*>* Charm_MID_Array, class USkeletalMeshComponent** Charm_Mesh, TArray<class UMaterialInstanceDynamic*>* Head_MID_Array, class USkeletalMeshComponent** Head_Mesh, TArray<class UMaterialInstanceDynamic*>* Body_MID_Array, class USkeletalMeshComponent** Body_Mesh)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Setup FX Mesh Duplicates");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3ef2e205);
 
 	APlayerPawn_Generic_C_Setup_FX_Mesh_Duplicates_Params params;
 	params.Translucent_Sort_Order = Translucent_Sort_Order;
@@ -165,7 +171,8 @@ void APlayerPawn_Generic_C::Setup_FX_Mesh_Duplicates(int Translucent_Sort_Order,
 
 void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh(TEnumAsByte<EFortCustomPartType> BodyType, class UMaterialInterface* Material_to_Apply, int TranslucentSortPriority, TArray<class UMaterialInstanceDynamic*>* Empty_MID_Array, class UPoseableMeshComponent** PoseableMesh)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Create and Duplicate Effect Poseable Skeletal Mesh");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3de2677b);
 
 	APlayerPawn_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh_Params params;
 	params.BodyType = BodyType;
@@ -190,7 +197,8 @@ void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh(T
 
 void APlayerPawn_Generic_C::ToggleShieldVisibility()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.ToggleShieldVisibility");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xab86c392);
 
 	APlayerPawn_Generic_C_ToggleShieldVisibility_Params params;
 
@@ -210,7 +218,8 @@ void APlayerPawn_Generic_C::ToggleShieldVisibility()
 
 void APlayerPawn_Generic_C::SlaveAMeshToTheBody(class USkeletalMeshComponent* Mesh, class USkeletalMeshComponent* Master)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.SlaveAMeshToTheBody");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcba6b6f4);
 
 	APlayerPawn_Generic_C_SlaveAMeshToTheBody_Params params;
 	params.Mesh = Mesh;
@@ -235,7 +244,8 @@ void APlayerPawn_Generic_C::SlaveAMeshToTheBody(class USkeletalMeshComponent* Me
 
 void APlayerPawn_Generic_C::SetShieldMids_InternalLoop(float Highlight_Cracks, bool Set_Highlight_Cracks, float Push, bool Set_Push, TArray<class UMaterialInstanceDynamic*>* NewParam1)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.SetShieldMids_InternalLoop");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9404cbd);
 
 	APlayerPawn_Generic_C_SetShieldMids_InternalLoop_Params params;
 	params.Highlight_Cracks = Highlight_Cracks;
@@ -264,7 +274,8 @@ void APlayerPawn_Generic_C::SetShieldMids_InternalLoop(float Highlight_Cracks, b
 
 void APlayerPawn_Generic_C::SetShieldMids(float Highlight_Cracks, bool Set_Highlight_Cracks, float Push, bool Set_Push)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.SetShieldMids");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a01c6d);
 
 	APlayerPawn_Generic_C_SetShieldMids_Params params;
 	params.Highlight_Cracks = Highlight_Cracks;
@@ -285,7 +296,8 @@ void APlayerPawn_Generic_C::SetShieldMids(float Highlight_Cracks, bool Set_Highl
 
 void APlayerPawn_Generic_C::FindShieldOpacity()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.FindShieldOpacity");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe2460076);
 
 	APlayerPawn_Generic_C_FindShieldOpacity_Params params;
 
@@ -308,7 +320,8 @@ void APlayerPawn_Generic_C::FindShieldOpacity()
 
 void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Skeletal_Meshes_Parent(TEnumAsByte<EFortCustomPartType> BodyType, class UMaterialInterface* Material_to_Apply, int TranslucentSortPriority, class USkeletalMeshComponent** DuplicatedSkeletalMeshComponent, TArray<class UMaterialInstanceDynamic*>* Empty_MID_Array)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Create and Duplicate Effect Skeletal Meshes Parent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c6f9c28);
 
 	APlayerPawn_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent_Params params;
 	params.BodyType = BodyType;
@@ -333,7 +346,8 @@ void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Skeletal_Meshes_Parent(T
 
 void APlayerPawn_Generic_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x374c38b6);
 
 	APlayerPawn_Generic_C_UserConstructionScript_Params params;
 
@@ -350,7 +364,8 @@ void APlayerPawn_Generic_C::UserConstructionScript()
 
 void APlayerPawn_Generic_C::CapsuleFadeTL__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.CapsuleFadeTL__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8d23c05a);
 
 	APlayerPawn_Generic_C_CapsuleFadeTL__FinishedFunc_Params params;
 
@@ -367,7 +382,8 @@ void APlayerPawn_Generic_C::CapsuleFadeTL__FinishedFunc()
 
 void APlayerPawn_Generic_C::CapsuleFadeTL__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.CapsuleFadeTL__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b6f22a7);
 
 	APlayerPawn_Generic_C_CapsuleFadeTL__UpdateFunc_Params params;
 
@@ -384,7 +400,8 @@ void APlayerPawn_Generic_C::CapsuleFadeTL__UpdateFunc()
 
 void APlayerPawn_Generic_C::HealthSweep__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.HealthSweep__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55527ff7);
 
 	APlayerPawn_Generic_C_HealthSweep__FinishedFunc_Params params;
 
@@ -401,7 +418,8 @@ void APlayerPawn_Generic_C::HealthSweep__FinishedFunc()
 
 void APlayerPawn_Generic_C::HealthSweep__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.HealthSweep__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2a49d682);
 
 	APlayerPawn_Generic_C_HealthSweep__UpdateFunc_Params params;
 
@@ -418,7 +436,8 @@ void APlayerPawn_Generic_C::HealthSweep__UpdateFunc()
 
 void APlayerPawn_Generic_C::Shield_Regen_Timeline__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Shield Regen Timeline__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x32aec5c);
 
 	APlayerPawn_Generic_C_Shield_Regen_Timeline__FinishedFunc_Params params;
 
@@ -435,7 +454,8 @@ void APlayerPawn_Generic_C::Shield_Regen_Timeline__FinishedFunc()
 
 void APlayerPawn_Generic_C::Shield_Regen_Timeline__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Shield Regen Timeline__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x446c5805);
 
 	APlayerPawn_Generic_C_Shield_Regen_Timeline__UpdateFunc_Params params;
 
@@ -452,7 +472,8 @@ void APlayerPawn_Generic_C::Shield_Regen_Timeline__UpdateFunc()
 
 void APlayerPawn_Generic_C::Shield_ShatterTimeline__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Shield_ShatterTimeline__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb610b17b);
 
 	APlayerPawn_Generic_C_Shield_ShatterTimeline__FinishedFunc_Params params;
 
@@ -469,7 +490,8 @@ void APlayerPawn_Generic_C::Shield_ShatterTimeline__FinishedFunc()
 
 void APlayerPawn_Generic_C::Shield_ShatterTimeline__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Shield_ShatterTimeline__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x165fd676);
 
 	APlayerPawn_Generic_C_Shield_ShatterTimeline__UpdateFunc_Params params;
 
@@ -486,7 +508,8 @@ void APlayerPawn_Generic_C::Shield_ShatterTimeline__UpdateFunc()
 
 void APlayerPawn_Generic_C::Shield_DamageTimeline__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Shield_DamageTimeline__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa6d4eb5d);
 
 	APlayerPawn_Generic_C_Shield_DamageTimeline__FinishedFunc_Params params;
 
@@ -503,7 +526,8 @@ void APlayerPawn_Generic_C::Shield_DamageTimeline__FinishedFunc()
 
 void APlayerPawn_Generic_C::Shield_DamageTimeline__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Shield_DamageTimeline__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5c5052c);
 
 	APlayerPawn_Generic_C_Shield_DamageTimeline__UpdateFunc_Params params;
 
@@ -520,7 +544,8 @@ void APlayerPawn_Generic_C::Shield_DamageTimeline__UpdateFunc()
 
 void APlayerPawn_Generic_C::Full_Shield_Health__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Full Shield Health__FinishedFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x208cd613);
 
 	APlayerPawn_Generic_C_Full_Shield_Health__FinishedFunc_Params params;
 
@@ -537,7 +562,8 @@ void APlayerPawn_Generic_C::Full_Shield_Health__FinishedFunc()
 
 void APlayerPawn_Generic_C::Full_Shield_Health__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Full Shield Health__UpdateFunc");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdd88774e);
 
 	APlayerPawn_Generic_C_Full_Shield_Health__UpdateFunc_Params params;
 
@@ -554,7 +580,8 @@ void APlayerPawn_Generic_C::Full_Shield_Health__UpdateFunc()
 
 void APlayerPawn_Generic_C::MeleeSwingRight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.MeleeSwingRight");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcb51d0b3);
 
 	APlayerPawn_Generic_C_MeleeSwingRight_Params params;
 
@@ -571,7 +598,8 @@ void APlayerPawn_Generic_C::MeleeSwingRight()
 
 void APlayerPawn_Generic_C::MeleeSwingLeft()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.MeleeSwingLeft");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcde3685c);
 
 	APlayerPawn_Generic_C_MeleeSwingLeft_Params params;
 
@@ -596,7 +624,8 @@ void APlayerPawn_Generic_C::MeleeSwingLeft()
 
 void APlayerPawn_Generic_C::OnDamagePlayEffects(float* Damage, struct FGameplayTagContainer* DamageTags, struct FVector* Momentum, struct FHitResult* HitInfo, class AFortPawn** InstigatedBy, class AActor** DamageCauser, struct FGameplayEffectContextHandle* EffectContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnDamagePlayEffects");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc47316c3);
 
 	APlayerPawn_Generic_C_OnDamagePlayEffects_Params params;
 	params.Damage = Damage;
@@ -622,7 +651,8 @@ void APlayerPawn_Generic_C::OnDamagePlayEffects(float* Damage, struct FGameplayT
 
 void APlayerPawn_Generic_C::OnLanded(struct FHitResult* Hit)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnLanded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88dd8ba);
 
 	APlayerPawn_Generic_C_OnLanded_Params params;
 	params.Hit = Hit;
@@ -648,7 +678,8 @@ void APlayerPawn_Generic_C::OnLanded(struct FHitResult* Hit)
 
 void APlayerPawn_Generic_C::OnDeathPlayEffects(float* Damage, struct FGameplayTagContainer* DamageTags, struct FVector* Momentum, struct FHitResult* HitInfo, class AFortPawn** InstigatedBy, class AActor** DamageCauser, struct FGameplayEffectContextHandle* EffectContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnDeathPlayEffects");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4d57efd8);
 
 	APlayerPawn_Generic_C_OnDeathPlayEffects_Params params;
 	params.Damage = Damage;
@@ -675,7 +706,8 @@ void APlayerPawn_Generic_C::OnDeathPlayEffects(float* Damage, struct FGameplayTa
 
 void APlayerPawn_Generic_C::OnWeaponEquipped(class AFortWeapon** NewWeapon, class AFortWeapon** PrevWeapon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnWeaponEquipped");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x23130c09);
 
 	APlayerPawn_Generic_C_OnWeaponEquipped_Params params;
 	params.NewWeapon = NewWeapon;
@@ -696,7 +728,8 @@ void APlayerPawn_Generic_C::OnWeaponEquipped(class AFortWeapon** NewWeapon, clas
 
 void APlayerPawn_Generic_C::ReceiveTick(float* DeltaSeconds)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.ReceiveTick");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7e60db7);
 
 	APlayerPawn_Generic_C_ReceiveTick_Params params;
 	params.DeltaSeconds = DeltaSeconds;
@@ -714,7 +747,8 @@ void APlayerPawn_Generic_C::ReceiveTick(float* DeltaSeconds)
 
 void APlayerPawn_Generic_C::FootStepLeft()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.FootStepLeft");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1db7f47c);
 
 	APlayerPawn_Generic_C_FootStepLeft_Params params;
 
@@ -731,7 +765,8 @@ void APlayerPawn_Generic_C::FootStepLeft()
 
 void APlayerPawn_Generic_C::FootStepRight()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.FootStepRight");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd1fd3b53);
 
 	APlayerPawn_Generic_C_FootStepRight_Params params;
 
@@ -748,7 +783,8 @@ void APlayerPawn_Generic_C::FootStepRight()
 
 void APlayerPawn_Generic_C::OnCharacterPartsReinitialized()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnCharacterPartsReinitialized");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0e17336);
 
 	APlayerPawn_Generic_C_OnCharacterPartsReinitialized_Params params;
 
@@ -768,7 +804,8 @@ void APlayerPawn_Generic_C::OnCharacterPartsReinitialized()
 
 void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd8a13840);
 
 	APlayerPawn_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1_Params params;
 	params.EventType = EventType;
@@ -790,7 +827,8 @@ void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff
 
 void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4aa8a77b);
 
 	APlayerPawn_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2_Params params;
 	params.EventType = EventType;
@@ -811,7 +849,8 @@ void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff
 
 void APlayerPawn_Generic_C::SetFirstPersonCamera(bool* bNewUseFirstPersonCamera)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.SetFirstPersonCamera");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7841412d);
 
 	APlayerPawn_Generic_C_SetFirstPersonCamera_Params params;
 	params.bNewUseFirstPersonCamera = bNewUseFirstPersonCamera;
@@ -832,7 +871,8 @@ void APlayerPawn_Generic_C::SetFirstPersonCamera(bool* bNewUseFirstPersonCamera)
 
 void APlayerPawn_Generic_C::GameplayCue_GravitySphere(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.GameplayCue.GravitySphere");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21ec11e5);
 
 	APlayerPawn_Generic_C_GameplayCue_GravitySphere_Params params;
 	params.EventType = EventType;
@@ -853,7 +893,8 @@ void APlayerPawn_Generic_C::GameplayCue_GravitySphere(TEnumAsByte<EGameplayCueEv
 
 void APlayerPawn_Generic_C::InternalSetFirstPersonCamera(bool NewUseFirstPersonCamera)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.InternalSetFirstPersonCamera");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x47058df2);
 
 	APlayerPawn_Generic_C_InternalSetFirstPersonCamera_Params params;
 	params.NewUseFirstPersonCamera = NewUseFirstPersonCamera;
@@ -874,7 +915,8 @@ void APlayerPawn_Generic_C::InternalSetFirstPersonCamera(bool NewUseFirstPersonC
 
 void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_DBNOResurrect(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.GameplayCue.Abilities.Activation.DBNOResurrect");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a9ebd5a);
 
 	APlayerPawn_Generic_C_GameplayCue_Abilities_Activation_DBNOResurrect_Params params;
 	params.EventType = EventType;
@@ -895,7 +937,8 @@ void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_DBNOResurrect(TEnum
 
 void APlayerPawn_Generic_C::OnBaseChanged(class AActor** NewBase)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnBaseChanged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5bc995bb);
 
 	APlayerPawn_Generic_C_OnBaseChanged_Params params;
 	params.NewBase = NewBase;
@@ -915,7 +958,8 @@ void APlayerPawn_Generic_C::OnBaseChanged(class AActor** NewBase)
 
 void APlayerPawn_Generic_C::ReceivePossessed(class AController** NewController)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.ReceivePossessed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81e8f30b);
 
 	APlayerPawn_Generic_C_ReceivePossessed_Params params;
 	params.NewController = NewController;
@@ -935,7 +979,8 @@ void APlayerPawn_Generic_C::ReceivePossessed(class AController** NewController)
 
 void APlayerPawn_Generic_C::OnDisplaySentence(struct FText* SpeechText)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnDisplaySentence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x477dc28b);
 
 	APlayerPawn_Generic_C_OnDisplaySentence_Params params;
 	params.SpeechText = SpeechText;
@@ -953,7 +998,8 @@ void APlayerPawn_Generic_C::OnDisplaySentence(struct FText* SpeechText)
 
 void APlayerPawn_Generic_C::OnClearSentence()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnClearSentence");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe6099462);
 
 	APlayerPawn_Generic_C_OnClearSentence_Params params;
 
@@ -970,7 +1016,8 @@ void APlayerPawn_Generic_C::OnClearSentence()
 
 void APlayerPawn_Generic_C::CleanupGravitySphereFootEffects()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.CleanupGravitySphereFootEffects");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf0c3f96);
 
 	APlayerPawn_Generic_C_CleanupGravitySphereFootEffects_Params params;
 
@@ -987,7 +1034,8 @@ void APlayerPawn_Generic_C::CleanupGravitySphereFootEffects()
 
 void APlayerPawn_Generic_C::ReceiveDestroyed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.ReceiveDestroyed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd8e32fa1);
 
 	APlayerPawn_Generic_C_ReceiveDestroyed_Params params;
 
@@ -1007,7 +1055,8 @@ void APlayerPawn_Generic_C::ReceiveDestroyed()
 
 void APlayerPawn_Generic_C::ClientBindWeaponSwap(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.ClientBindWeaponSwap");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb202b564);
 
 	APlayerPawn_Generic_C_ClientBindWeaponSwap_Params params;
 	params.NewWeapon = NewWeapon;
@@ -1028,7 +1077,8 @@ void APlayerPawn_Generic_C::ClientBindWeaponSwap(class AFortWeapon* NewWeapon, c
 
 void APlayerPawn_Generic_C::BindWeaponSwap(float InDuration)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.BindWeaponSwap");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x31984249);
 
 	APlayerPawn_Generic_C_BindWeaponSwap_Params params;
 	params.InDuration = InDuration;
@@ -1049,7 +1099,8 @@ void APlayerPawn_Generic_C::BindWeaponSwap(float InDuration)
 
 void APlayerPawn_Generic_C::MultiSwapWeapon(class AFortWeapon* New, class AFortWeapon* Prev)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.MultiSwapWeapon");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x151c8fdd);
 
 	APlayerPawn_Generic_C_MultiSwapWeapon_Params params;
 	params.New = New;
@@ -1068,7 +1119,8 @@ void APlayerPawn_Generic_C::MultiSwapWeapon(class AFortWeapon* New, class AFortW
 
 void APlayerPawn_Generic_C::UnBindWeaponSwap()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.UnBindWeaponSwap");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xce721914);
 
 	APlayerPawn_Generic_C_UnBindWeaponSwap_Params params;
 
@@ -1087,7 +1139,8 @@ void APlayerPawn_Generic_C::UnBindWeaponSwap()
 
 void APlayerPawn_Generic_C::MultiEndSwap(class AFortWeapon* CurrentWeapon)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.MultiEndSwap");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x62cf837e);
 
 	APlayerPawn_Generic_C_MultiEndSwap_Params params;
 	params.CurrentWeapon = CurrentWeapon;
@@ -1105,7 +1158,8 @@ void APlayerPawn_Generic_C::MultiEndSwap(class AFortWeapon* CurrentWeapon)
 
 void APlayerPawn_Generic_C::Clean_up_DBNO_fx()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Clean up DBNO fx");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x76f5d7bc);
 
 	APlayerPawn_Generic_C_Clean_up_DBNO_fx_Params params;
 
@@ -1130,7 +1184,8 @@ void APlayerPawn_Generic_C::Clean_up_DBNO_fx()
 
 void APlayerPawn_Generic_C::OnDeathServer(float* Damage, struct FGameplayTagContainer* DamageTags, struct FVector* Momentum, struct FHitResult* HitInfo, class AController** InstigatedBy, class AActor** DamageCauser, struct FGameplayEffectContextHandle* EffectContext)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnDeathServer");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf2555c3d);
 
 	APlayerPawn_Generic_C_OnDeathServer_Params params;
 	params.Damage = Damage;
@@ -1154,7 +1209,8 @@ void APlayerPawn_Generic_C::OnDeathServer(float* Damage, struct FGameplayTagCont
 
 void APlayerPawn_Generic_C::Entered_WaterVolume()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Entered WaterVolume");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x462898e5);
 
 	APlayerPawn_Generic_C_Entered_WaterVolume_Params params;
 
@@ -1173,7 +1229,8 @@ void APlayerPawn_Generic_C::Entered_WaterVolume()
 
 void APlayerPawn_Generic_C::CharacterDestroyed(class AActor* DestroyedActor)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.CharacterDestroyed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ec2e4a7);
 
 	APlayerPawn_Generic_C_CharacterDestroyed_Params params;
 	params.DestroyedActor = DestroyedActor;
@@ -1191,7 +1248,8 @@ void APlayerPawn_Generic_C::CharacterDestroyed(class AActor* DestroyedActor)
 
 void APlayerPawn_Generic_C::BindOnDestroyed()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.BindOnDestroyed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa36f1ed4);
 
 	APlayerPawn_Generic_C_BindOnDestroyed_Params params;
 
@@ -1208,7 +1266,8 @@ void APlayerPawn_Generic_C::BindOnDestroyed()
 
 void APlayerPawn_Generic_C::FadeOutCapsuleShadow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.FadeOutCapsuleShadow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x12f86096);
 
 	APlayerPawn_Generic_C_FadeOutCapsuleShadow_Params params;
 
@@ -1228,7 +1287,8 @@ void APlayerPawn_Generic_C::FadeOutCapsuleShadow()
 
 void APlayerPawn_Generic_C::SpawnDBNOParticles(const struct FVector& ParticleLocation, const struct FVector& HitNormal)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.SpawnDBNOParticles");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x60df5b26);
 
 	APlayerPawn_Generic_C_SpawnDBNOParticles_Params params;
 	params.ParticleLocation = ParticleLocation;
@@ -1247,7 +1307,8 @@ void APlayerPawn_Generic_C::SpawnDBNOParticles(const struct FVector& ParticleLoc
 
 void APlayerPawn_Generic_C::OnLand_CE()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnLand_CE");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4780db1c);
 
 	APlayerPawn_Generic_C_OnLand_CE_Params params;
 
@@ -1264,7 +1325,8 @@ void APlayerPawn_Generic_C::OnLand_CE()
 
 void APlayerPawn_Generic_C::Test_Adrenaline_Rush()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.Test Adrenaline Rush");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x368f702c);
 
 	APlayerPawn_Generic_C_Test_Adrenaline_Rush_Params params;
 
@@ -1284,7 +1346,8 @@ void APlayerPawn_Generic_C::Test_Adrenaline_Rush()
 
 void APlayerPawn_Generic_C::GameplayCue_Generic_AdrenalineRush_PeriodicHeal(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.GameplayCue.Generic.AdrenalineRush.PeriodicHeal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x937367bf);
 
 	APlayerPawn_Generic_C_GameplayCue_Generic_AdrenalineRush_PeriodicHeal_Params params;
 	params.EventType = EventType;
@@ -1306,7 +1369,8 @@ void APlayerPawn_Generic_C::GameplayCue_Generic_AdrenalineRush_PeriodicHeal(TEnu
 
 void APlayerPawn_Generic_C::GameplayCue_Generic_AdrenalineRush_DirectHeal(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.GameplayCue.Generic.AdrenalineRush.DirectHeal");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa2d75e3);
 
 	APlayerPawn_Generic_C_GameplayCue_Generic_AdrenalineRush_DirectHeal_Params params;
 	params.EventType = EventType;
@@ -1328,7 +1392,8 @@ void APlayerPawn_Generic_C::GameplayCue_Generic_AdrenalineRush_DirectHeal(TEnumA
 
 void APlayerPawn_Generic_C::GameplayCue_Damage_Shielded(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.GameplayCue.Damage.Shielded");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x270ff4c7);
 
 	APlayerPawn_Generic_C_GameplayCue_Damage_Shielded_Params params;
 	params.EventType = EventType;
@@ -1350,7 +1415,8 @@ void APlayerPawn_Generic_C::GameplayCue_Damage_Shielded(TEnumAsByte<EGameplayCue
 
 void APlayerPawn_Generic_C::GameplayCue_Shield_Destroyed(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.GameplayCue.Shield.Destroyed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcf1fe6b8);
 
 	APlayerPawn_Generic_C_GameplayCue_Shield_Destroyed_Params params;
 	params.EventType = EventType;
@@ -1372,7 +1438,8 @@ void APlayerPawn_Generic_C::GameplayCue_Shield_Destroyed(TEnumAsByte<EGameplayCu
 
 void APlayerPawn_Generic_C::GameplayCue_Shield_FullyCharged(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.GameplayCue.Shield.FullyCharged");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81bba957);
 
 	APlayerPawn_Generic_C_GameplayCue_Shield_FullyCharged_Params params;
 	params.EventType = EventType;
@@ -1394,7 +1461,8 @@ void APlayerPawn_Generic_C::GameplayCue_Shield_FullyCharged(TEnumAsByte<EGamepla
 
 void APlayerPawn_Generic_C::GameplayCue_Shield_Reapplied(TEnumAsByte<EGameplayCueEvent> EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.GameplayCue.Shield.Reapplied");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30b689d3);
 
 	APlayerPawn_Generic_C_GameplayCue_Shield_Reapplied_Params params;
 	params.EventType = EventType;
@@ -1413,7 +1481,8 @@ void APlayerPawn_Generic_C::GameplayCue_Shield_Reapplied(TEnumAsByte<EGameplayCu
 
 void APlayerPawn_Generic_C::MultiEndAnimTrails()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.MultiEndAnimTrails");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x566d9d63);
 
 	APlayerPawn_Generic_C_MultiEndAnimTrails_Params params;
 
@@ -1430,7 +1499,8 @@ void APlayerPawn_Generic_C::MultiEndAnimTrails()
 
 void APlayerPawn_Generic_C::DisableAnimTrails()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.DisableAnimTrails");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf42e5a67);
 
 	APlayerPawn_Generic_C_DisableAnimTrails_Params params;
 
@@ -1449,7 +1519,8 @@ void APlayerPawn_Generic_C::DisableAnimTrails()
 
 void APlayerPawn_Generic_C::AnimTrailsCE(bool Active)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.AnimTrailsCE");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x61a8d811);
 
 	APlayerPawn_Generic_C_AnimTrailsCE_Params params;
 	params.Active = Active;
@@ -1472,7 +1543,8 @@ void APlayerPawn_Generic_C::AnimTrailsCE(bool Active)
 
 void APlayerPawn_Generic_C::SetupAnimTrails(class UParticleSystem* Particle_System_Reference, const struct FName& First_Socket_Name, const struct FName& Second_Socket_Name, float Width)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.SetupAnimTrails");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9495ddbc);
 
 	APlayerPawn_Generic_C_SetupAnimTrails_Params params;
 	params.Particle_System_Reference = Particle_System_Reference;
@@ -1495,7 +1567,8 @@ void APlayerPawn_Generic_C::SetupAnimTrails(class UParticleSystem* Particle_Syst
 
 void APlayerPawn_Generic_C::ExecuteUbergraph_PlayerPawn_Generic(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function PlayerPawn_Generic.PlayerPawn_Generic_C.ExecuteUbergraph_PlayerPawn_Generic");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbd765842);
 
 	APlayerPawn_Generic_C_ExecuteUbergraph_PlayerPawn_Generic_Params params;
 	params.EntryPoint = EntryPoint;

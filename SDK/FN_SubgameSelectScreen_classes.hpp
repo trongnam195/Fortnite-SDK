@@ -54,7 +54,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("WidgetBlueprintGeneratedClass SubgameSelectScreen.SubgameSelectScreen_C");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x60e6b819);
 		return ptr;
 	}
 

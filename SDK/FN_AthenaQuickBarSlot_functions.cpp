@@ -19,7 +19,8 @@ namespace SDK
 
 void UAthenaQuickBarSlot_C::GetKeyBindingAction_Gamepad(struct FName* KeyBindingAction)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaQuickBarSlot.AthenaQuickBarSlot_C.GetKeyBindingAction_Gamepad");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x928ff3f9);
 
 	UAthenaQuickBarSlot_C_GetKeyBindingAction_Gamepad_Params params;
 

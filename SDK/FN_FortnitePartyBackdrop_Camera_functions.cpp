@@ -17,7 +17,8 @@ namespace SDK
 
 void AFortnitePartyBackdrop_Camera_C::UserConstructionScript()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.UserConstructionScript");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a080ec6);
 
 	AFortnitePartyBackdrop_Camera_C_UserConstructionScript_Params params;
 
@@ -34,7 +35,8 @@ void AFortnitePartyBackdrop_Camera_C::UserConstructionScript()
 
 void AFortnitePartyBackdrop_Camera_C::OnDeactivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.OnDeactivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38d54fd8);
 
 	AFortnitePartyBackdrop_Camera_C_OnDeactivated_Params params;
 
@@ -51,7 +53,8 @@ void AFortnitePartyBackdrop_Camera_C::OnDeactivated()
 
 void AFortnitePartyBackdrop_Camera_C::OnActivated()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.OnActivated");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c7f4a53);
 
 	AFortnitePartyBackdrop_Camera_C_OnActivated_Params params;
 
@@ -70,7 +73,8 @@ void AFortnitePartyBackdrop_Camera_C::OnActivated()
 
 void AFortnitePartyBackdrop_Camera_C::ExecuteUbergraph_FortnitePartyBackdrop_Camera(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.ExecuteUbergraph_FortnitePartyBackdrop_Camera");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ef4bcb0);
 
 	AFortnitePartyBackdrop_Camera_C_ExecuteUbergraph_FortnitePartyBackdrop_Camera_Params params;
 	params.EntryPoint = EntryPoint;

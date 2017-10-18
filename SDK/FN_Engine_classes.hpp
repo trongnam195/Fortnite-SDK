@@ -110,7 +110,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Actor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4e92c4bc);
 		return ptr;
 	}
 
@@ -250,7 +251,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BlueprintFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2f84ca4b);
 		return ptr;
 	}
 
@@ -267,7 +269,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x71eb018b);
 		return ptr;
 	}
 
@@ -307,7 +310,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ActorComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7f4d0689);
 		return ptr;
 	}
 
@@ -377,7 +381,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SceneComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x60a1d7a0);
 		return ptr;
 	}
 
@@ -536,7 +541,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PrimitiveComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x488d4d11);
 		return ptr;
 	}
 
@@ -636,7 +642,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PrimaryDataAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcc44760b);
 		return ptr;
 	}
 
@@ -651,7 +658,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Info");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6163de19);
 		return ptr;
 	}
 
@@ -722,7 +730,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.WorldSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e5aee48);
 		return ptr;
 	}
 
@@ -741,7 +750,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MeshComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf3a85f3b);
 		return ptr;
 	}
 
@@ -786,7 +796,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.StaticMeshComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf1cf2499);
 		return ptr;
 	}
 
@@ -826,7 +837,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Pawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc3163777);
 		return ptr;
 	}
 
@@ -908,7 +920,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Character");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbbc8fc4a);
 		return ptr;
 	}
 
@@ -978,7 +991,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Controller");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7b1d3461);
 		return ptr;
 	}
 
@@ -1024,7 +1038,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AISystemBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9b3b88bf);
 		return ptr;
 	}
 
@@ -1057,7 +1072,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x34d5af4b);
 		return ptr;
 	}
 
@@ -1138,7 +1154,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimNotify");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xff5f5471);
 		return ptr;
 	}
 
@@ -1162,7 +1179,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimNotify_PlaySound");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2ed1b44f);
 		return ptr;
 	}
 
@@ -1184,7 +1202,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimNotify_PlayParticleEffect");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5ef747ab);
 		return ptr;
 	}
 
@@ -1200,7 +1219,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimNotifyState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6080b504);
 		return ptr;
 	}
 
@@ -1230,7 +1250,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AssetManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5a6aca20);
 		return ptr;
 	}
 
@@ -1245,7 +1266,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BlueprintAsyncActionBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd53e75eb);
 		return ptr;
 	}
 
@@ -1482,7 +1504,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Engine");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc92c29bb);
 		return ptr;
 	}
 
@@ -1503,7 +1526,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Player");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xffb85e12);
 		return ptr;
 	}
 
@@ -1528,7 +1552,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LocalPlayer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x749a39fd);
 		return ptr;
 	}
 
@@ -1559,7 +1584,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MovementComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd6d63637);
 		return ptr;
 	}
 
@@ -1605,7 +1631,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavMovementComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa325edd8);
 		return ptr;
 	}
 
@@ -1629,7 +1656,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PawnMovementComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x645f75dd);
 		return ptr;
 	}
 
@@ -1664,7 +1692,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CameraActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x709a299b);
 		return ptr;
 	}
 
@@ -1742,7 +1771,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PlayerController");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xef932482);
 		return ptr;
 	}
 
@@ -1884,7 +1914,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CheatManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x62ff0637);
 		return ptr;
 	}
 
@@ -1974,7 +2005,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.GameModeBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x79c977b5);
 		return ptr;
 	}
 
@@ -2032,7 +2064,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.GameMode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x57a5074e);
 		return ptr;
 	}
 
@@ -2061,7 +2094,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ScriptViewportClient");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1021efd3);
 		return ptr;
 	}
 
@@ -2083,7 +2117,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.GameViewportClient");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc023ddc4);
 		return ptr;
 	}
 
@@ -2109,7 +2144,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Console");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x279e5e94);
 		return ptr;
 	}
 
@@ -2134,7 +2170,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.GameStateBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x22964029);
 		return ptr;
 	}
 
@@ -2163,7 +2200,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.GameState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6703f22a);
 		return ptr;
 	}
 
@@ -2182,7 +2220,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DeveloperSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x55e27e4e);
 		return ptr;
 	}
 
@@ -2201,7 +2240,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavRelevantComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xff720ec);
 		return ptr;
 	}
 
@@ -2239,7 +2279,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavLinkCustomComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x660ac43a);
 		return ptr;
 	}
 
@@ -2263,7 +2304,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Emitter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2b636f95);
 		return ptr;
 	}
 
@@ -2302,7 +2344,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.EmitterCameraLensEffectBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5e693d30);
 		return ptr;
 	}
 
@@ -2319,7 +2362,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.GameEngine");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x256fd409);
 		return ptr;
 	}
 
@@ -2338,7 +2382,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.GameInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x315be37e);
 		return ptr;
 	}
 
@@ -2365,7 +2410,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PlayerInput");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x586b17ce);
 		return ptr;
 	}
 
@@ -2400,7 +2446,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Brush");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7cc2fe7f);
 		return ptr;
 	}
 
@@ -2415,7 +2462,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Volume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xba195563);
 		return ptr;
 	}
 
@@ -2437,7 +2485,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.GameSession");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7f2f708d);
 		return ptr;
 	}
 
@@ -2483,7 +2532,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.GameUserSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbc75b8d);
 		return ptr;
 	}
 
@@ -2562,7 +2612,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DataTable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x42d45f73);
 		return ptr;
 	}
 
@@ -2592,7 +2643,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavigationData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x135c73cb);
 		return ptr;
 	}
 
@@ -2643,7 +2695,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.World");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc6c83c2f);
 		return ptr;
 	}
 
@@ -2683,7 +2736,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavigationSystem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7813e508);
 		return ptr;
 	}
 
@@ -2725,7 +2779,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavLinkProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x26546948);
 		return ptr;
 	}
 
@@ -2748,7 +2803,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LevelScriptActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcb0b1713);
 		return ptr;
 	}
 
@@ -2789,7 +2845,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavArea");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3235423);
 		return ptr;
 	}
 
@@ -2804,7 +2861,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavAreaMeta");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaf4dd4d4);
 		return ptr;
 	}
 
@@ -2982,7 +3040,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CharacterMovementComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa84e2a4e);
 		return ptr;
 	}
 
@@ -3035,7 +3094,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavigationQueryFilter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x413fe38b);
 		return ptr;
 	}
 
@@ -3058,7 +3118,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ShapeComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xed13830d);
 		return ptr;
 	}
 
@@ -3075,7 +3136,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BoxComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb8c005);
 		return ptr;
 	}
 
@@ -3097,7 +3159,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavLinkDefinition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7a423bcb);
 		return ptr;
 	}
 
@@ -3173,7 +3236,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.RecastNavMesh");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3eb0cb01);
 		return ptr;
 	}
 
@@ -3188,7 +3252,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LocalMessage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc4a7071f);
 		return ptr;
 	}
 
@@ -3203,7 +3268,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.OnlineSession");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x716b39d4);
 		return ptr;
 	}
 
@@ -3224,7 +3290,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavigationObjectBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaae0e241);
 		return ptr;
 	}
 
@@ -3261,7 +3328,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PlayerState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8f7c5381);
 		return ptr;
 	}
 
@@ -3323,7 +3391,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PlayerCameraManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2a035c84);
 		return ptr;
 	}
 
@@ -3383,7 +3452,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CameraComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf2a1d615);
 		return ptr;
 	}
 
@@ -3420,7 +3490,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SkeletalMeshActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd03792ce);
 		return ptr;
 	}
 
@@ -3441,7 +3512,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PlayerStart");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc236632);
 		return ptr;
 	}
 
@@ -3495,7 +3567,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SkinnedMeshComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf9e417c5);
 		return ptr;
 	}
 
@@ -3605,7 +3678,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SkeletalMeshComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc9bc13a0);
 		return ptr;
 	}
 
@@ -3687,7 +3761,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DefaultPawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x66756d2);
 		return ptr;
 	}
 
@@ -3708,7 +3783,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SpectatorPawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x88bb9b72);
 		return ptr;
 	}
 
@@ -3727,7 +3803,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.StaticMeshActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x675b28c7);
 		return ptr;
 	}
 
@@ -3742,7 +3819,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AssetUserData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1ed77cba);
 		return ptr;
 	}
 
@@ -3775,7 +3853,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.HUD");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd0f01c5c);
 		return ptr;
 	}
 
@@ -3824,7 +3903,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.FloatingPawnMovement");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb8cdb9b6);
 		return ptr;
 	}
 
@@ -3841,7 +3921,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SpectatorPawnMovement");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1cf7b8f5);
 		return ptr;
 	}
 
@@ -3862,7 +3943,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicsVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5f1c22a2);
 		return ptr;
 	}
 
@@ -3889,7 +3971,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InstancedStaticMeshComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdfb48bae);
 		return ptr;
 	}
 
@@ -3928,7 +4011,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.HierarchicalInstancedStaticMeshComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe5c78771);
 		return ptr;
 	}
 
@@ -3952,7 +4036,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2c1d75cf);
 		return ptr;
 	}
 
@@ -3984,7 +4069,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6c281feb);
 		return ptr;
 	}
 
@@ -3999,7 +4085,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialInstanceConstant");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9a525d83);
 		return ptr;
 	}
 
@@ -4030,7 +4117,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpression");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbdd8274);
 		return ptr;
 	}
 
@@ -4045,7 +4133,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionCustomOutput");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe85ca48e);
 		return ptr;
 	}
 
@@ -4073,7 +4162,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BlueprintGeneratedClass");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9a9b139f);
 		return ptr;
 	}
 
@@ -4089,7 +4179,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.UserDefinedStruct");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x697d9034);
 		return ptr;
 	}
 
@@ -4104,7 +4195,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.OnlineBlueprintCallProxyBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8f1f3a98);
 		return ptr;
 	}
 
@@ -4122,7 +4214,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Model");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x33d9006c);
 		return ptr;
 	}
 
@@ -4137,7 +4230,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.EngineTypes");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4aba4632);
 		return ptr;
 	}
 
@@ -4152,7 +4246,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.EngineBaseTypes");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x96856eb7);
 		return ptr;
 	}
 
@@ -4187,7 +4282,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.EdGraphNode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9f10d72e);
 		return ptr;
 	}
 
@@ -4215,7 +4311,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.EdGraphPin_Deprecated");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xca18f5d5);
 		return ptr;
 	}
 
@@ -4230,7 +4327,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Interface_AssetUserData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8fc648be);
 		return ptr;
 	}
 
@@ -4249,7 +4347,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ChildActorComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xef5088b9);
 		return ptr;
 	}
 
@@ -4299,7 +4398,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Level");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaefd6375);
 		return ptr;
 	}
 
@@ -4315,7 +4415,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AmbientSound");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x96bc3668);
 		return ptr;
 	}
 
@@ -4336,7 +4437,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BrushShape");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x530e63d2);
 		return ptr;
 	}
 
@@ -4357,7 +4459,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AudioVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe9fc53b7);
 		return ptr;
 	}
 
@@ -4378,7 +4481,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BlockingVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5f51bca6);
 		return ptr;
 	}
 
@@ -4393,7 +4497,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CameraBlockingVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdf276063);
 		return ptr;
 	}
 
@@ -4411,7 +4516,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CullDistanceVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1b982b32);
 		return ptr;
 	}
 
@@ -4432,7 +4538,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LevelStreamingVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xff26efe1);
 		return ptr;
 	}
 
@@ -4447,7 +4554,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LightmassCharacterIndirectDetailVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3752ad53);
 		return ptr;
 	}
 
@@ -4462,7 +4570,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LightmassImportanceVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x95b0a23b);
 		return ptr;
 	}
 
@@ -4477,7 +4586,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MeshMergeCullingVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdcbc1840);
 		return ptr;
 	}
 
@@ -4492,7 +4602,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavigationTypes");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb2b73d12);
 		return ptr;
 	}
 
@@ -4509,7 +4620,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavMeshBoundsVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x49f97da6);
 		return ptr;
 	}
 
@@ -4524,7 +4636,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavRelevantInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2826c0c);
 		return ptr;
 	}
 
@@ -4541,7 +4654,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavModifierVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfac021f1);
 		return ptr;
 	}
 
@@ -4558,7 +4672,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DefaultPhysicsVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcdb88781);
 		return ptr;
 	}
 
@@ -4573,7 +4688,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.KillZVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x49b22233);
 		return ptr;
 	}
 
@@ -4597,7 +4713,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DamageType");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6ce09362);
 		return ptr;
 	}
 
@@ -4622,7 +4739,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PainCausingVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2d25bc4d);
 		return ptr;
 	}
 
@@ -4637,7 +4755,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BlendableInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x99d7fedb);
 		return ptr;
 	}
 
@@ -4652,7 +4771,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Scene");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8c3a4e7f);
 		return ptr;
 	}
 
@@ -4667,7 +4787,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Interface_PostProcessVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x28c3d8bc);
 		return ptr;
 	}
 
@@ -4690,7 +4811,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PostProcessVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbb682a38);
 		return ptr;
 	}
 
@@ -4710,7 +4832,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PrecomputedVisibilityOverrideVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd1684d7f);
 		return ptr;
 	}
 
@@ -4725,7 +4848,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PrecomputedVisibilityVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xadeee597);
 		return ptr;
 	}
 
@@ -4740,7 +4864,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TriggerVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e872859);
 		return ptr;
 	}
 
@@ -4755,7 +4880,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavAgentInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe69a6afc);
 		return ptr;
 	}
 
@@ -4792,7 +4918,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CameraShake");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa098057a);
 		return ptr;
 	}
 
@@ -4813,7 +4940,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InputComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x33046ca0);
 		return ptr;
 	}
 
@@ -4839,7 +4967,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CurveBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x303ac731);
 		return ptr;
 	}
 
@@ -4860,7 +4989,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CurveFloat");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd8362d24);
 		return ptr;
 	}
 
@@ -4880,7 +5010,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ForceFeedbackEffect");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x44c18480);
 		return ptr;
 	}
 
@@ -4905,7 +5036,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DebugCameraController");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa8b96c03);
 		return ptr;
 	}
 
@@ -4929,7 +5061,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DecalActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xff0720b3);
 		return ptr;
 	}
 
@@ -4952,7 +5085,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DestructibleActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb0f32026);
 		return ptr;
 	}
 
@@ -4968,7 +5102,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DocumentationActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc61d04b8);
 		return ptr;
 	}
 
@@ -4983,7 +5118,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DebugCameraHUD");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6f297b42);
 		return ptr;
 	}
 
@@ -4999,7 +5135,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AtmosphericFog");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x64bc6f04);
 		return ptr;
 	}
 
@@ -5017,7 +5154,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ExponentialHeightFog");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9dfe589);
 		return ptr;
 	}
 
@@ -5086,7 +5224,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ServerStatReplicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x909b8071);
 		return ptr;
 	}
 
@@ -5139,7 +5278,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.GameNetworkManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1bb9c54c);
 		return ptr;
 	}
 
@@ -5157,7 +5297,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SkyLight");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa7139598);
 		return ptr;
 	}
 
@@ -5175,7 +5316,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.WindDirectionalSource");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf1b62a2a);
 		return ptr;
 	}
 
@@ -5191,7 +5333,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.HierarchicalLODSetup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb0cf4fc2);
 		return ptr;
 	}
 
@@ -5208,7 +5351,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LevelBounds");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5e665536);
 		return ptr;
 	}
 
@@ -5226,7 +5370,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Light");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfc5e7df3);
 		return ptr;
 	}
 
@@ -5255,7 +5400,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DirectionalLight");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x93701ec5);
 		return ptr;
 	}
 
@@ -5271,7 +5417,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PointLight");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x612df0db);
 		return ptr;
 	}
 
@@ -5290,7 +5437,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SpotLight");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x13c0d07b);
 		return ptr;
 	}
 
@@ -5308,7 +5456,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.GeneratedMeshAreaLight");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcb909d74);
 		return ptr;
 	}
 
@@ -5324,7 +5473,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LightmassPortal");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x648c4641);
 		return ptr;
 	}
 
@@ -5345,7 +5495,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LODActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x745f2eb1);
 		return ptr;
 	}
 
@@ -5361,7 +5512,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialInstanceActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x74dfe2);
 		return ptr;
 	}
 
@@ -5416,7 +5568,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MatineeActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1a7f6dad);
 		return ptr;
 	}
 
@@ -5441,7 +5594,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MatineeActorCameraAnim");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x516bdcef);
 		return ptr;
 	}
 
@@ -5456,7 +5610,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AbstractNavData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb22d4e6e);
 		return ptr;
 	}
 
@@ -5471,7 +5626,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavigationGraph");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6a59b61);
 		return ptr;
 	}
 
@@ -5486,7 +5642,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavigationGraphNode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf8cae471);
 		return ptr;
 	}
 
@@ -5501,7 +5658,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PlayerStartPIE");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x14a608d4);
 		return ptr;
 	}
 
@@ -5516,7 +5674,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavPathObserverInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb9628944);
 		return ptr;
 	}
 
@@ -5567,7 +5726,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavigationTestingActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xecf0e8b4);
 		return ptr;
 	}
 
@@ -5582,7 +5742,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavLinkHostInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3026313);
 		return ptr;
 	}
 
@@ -5597,7 +5758,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Note");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x93e3f35);
 		return ptr;
 	}
 
@@ -5660,7 +5822,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleSystem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe203ed58);
 		return ptr;
 	}
 
@@ -5722,7 +5885,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleSystemComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6fb47b75);
 		return ptr;
 	}
 
@@ -5768,7 +5932,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleEventManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xed61bb6);
 		return ptr;
 	}
 
@@ -5783,7 +5948,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Interface_CollisionDataProvider");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xea207ac);
 		return ptr;
 	}
 
@@ -5826,7 +5992,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SkeletalMesh");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe9e6227f);
 		return ptr;
 	}
 
@@ -5854,7 +6021,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimationAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x638943eb);
 		return ptr;
 	}
 
@@ -5870,7 +6038,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ReflectionCapture");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4b19c920);
 		return ptr;
 	}
 
@@ -5885,7 +6054,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BoxReflectionCapture");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2c616983);
 		return ptr;
 	}
 
@@ -5900,7 +6070,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PlaneReflectionCapture");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x80a45998);
 		return ptr;
 	}
 
@@ -5916,7 +6087,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SphereReflectionCapture");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd9375f11);
 		return ptr;
 	}
 
@@ -5931,7 +6103,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.RigidBodyBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6a3e2031);
 		return ptr;
 	}
 
@@ -5951,7 +6124,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicsConstraintActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3e4f7148);
 		return ptr;
 	}
 
@@ -5967,7 +6141,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicsThruster");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbebf7943);
 		return ptr;
 	}
 
@@ -5983,7 +6158,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.RadialForceActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x43217f04);
 		return ptr;
 	}
 
@@ -6004,7 +6180,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SceneCapture");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x69eecfd3);
 		return ptr;
 	}
 
@@ -6022,7 +6199,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PlanarReflection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1ef9e8f2);
 		return ptr;
 	}
 
@@ -6041,7 +6219,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SceneCapture2D");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x955b5415);
 		return ptr;
 	}
 
@@ -6060,7 +6239,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SceneCaptureCube");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x387a4d94);
 		return ptr;
 	}
 
@@ -6077,7 +6257,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MatineeAnimInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1668edea);
 		return ptr;
 	}
 
@@ -6093,7 +6274,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SplineMeshActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf4428944);
 		return ptr;
 	}
 
@@ -6110,7 +6292,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SubDSurfaceActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbfc93107);
 		return ptr;
 	}
 
@@ -6125,7 +6308,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TargetPoint");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x282e4454);
 		return ptr;
 	}
 
@@ -6141,7 +6325,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TextRenderActor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe874b8d3);
 		return ptr;
 	}
 
@@ -6158,7 +6343,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TriggerBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x87601e5c);
 		return ptr;
 	}
 
@@ -6173,7 +6359,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TriggerBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x76d4c172);
 		return ptr;
 	}
 
@@ -6188,7 +6375,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TriggerCapsule");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd6783280);
 		return ptr;
 	}
 
@@ -6203,7 +6391,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TriggerSphere");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x779964a4);
 		return ptr;
 	}
 
@@ -6219,7 +6408,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.VectorFieldVolume");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb52ec9de);
 		return ptr;
 	}
 
@@ -6239,7 +6429,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ApplicationLifecycleComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xec9743d4);
 		return ptr;
 	}
 
@@ -6272,7 +6463,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpToMovementComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6f0de114);
 		return ptr;
 	}
 
@@ -6309,7 +6501,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Skeleton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6aef0020);
 		return ptr;
 	}
 
@@ -6328,7 +6521,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimSequenceBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4d66d6f6);
 		return ptr;
 	}
 
@@ -6345,7 +6539,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimCompositeBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1b2dc938);
 		return ptr;
 	}
 
@@ -6379,7 +6574,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimMontage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7fe02341);
 		return ptr;
 	}
 
@@ -6394,7 +6590,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.RVOAvoidanceInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6285d99b);
 		return ptr;
 	}
 
@@ -6409,7 +6606,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NetworkPredictionInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfd3901af);
 		return ptr;
 	}
 
@@ -6448,7 +6646,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ProjectileMovementComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x87a44324);
 		return ptr;
 	}
 
@@ -6473,7 +6672,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.RotatingMovementComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdcb0baa7);
 		return ptr;
 	}
 
@@ -6490,7 +6690,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavigationInvokerComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfbcc381c);
 		return ptr;
 	}
 
@@ -6505,7 +6706,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavLinkCustomInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6781dbf6);
 		return ptr;
 	}
 
@@ -6523,7 +6725,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavModifierComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbccf4bd4);
 		return ptr;
 	}
 
@@ -6549,7 +6752,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PawnNoiseEmitterComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e78cc34);
 		return ptr;
 	}
 
@@ -6570,7 +6774,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicalAnimationComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3699fced);
 		return ptr;
 	}
 
@@ -6605,7 +6810,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicsHandleComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x192f48ab);
 		return ptr;
 	}
 
@@ -6637,7 +6843,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PlatformEventsComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x50b176c);
 		return ptr;
 	}
 
@@ -6676,7 +6883,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AtmosphericFogComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x55dcefd1);
 		return ptr;
 	}
 
@@ -6707,7 +6915,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundAttenuation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x18f870ea);
 		return ptr;
 	}
 
@@ -6760,7 +6969,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AudioComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9829aa8a);
 		return ptr;
 	}
 
@@ -6804,7 +7014,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DecalComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x42325d2d);
 		return ptr;
 	}
 
@@ -6850,7 +7061,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ExponentialHeightFogComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x32ac778a);
 		return ptr;
 	}
 
@@ -6886,7 +7098,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ForceFeedbackAttenuation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x27ee1bf9);
 		return ptr;
 	}
 
@@ -6912,7 +7125,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ForceFeedbackComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdd9c1c4c);
 		return ptr;
 	}
 
@@ -6948,7 +7162,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LightComponentBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb8f5c4cb);
 		return ptr;
 	}
 
@@ -7003,7 +7218,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LightComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3e9ee114);
 		return ptr;
 	}
 
@@ -7062,7 +7278,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DirectionalLightComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x15d1f546);
 		return ptr;
 	}
 
@@ -7096,7 +7313,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PointLightComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xccf9f4fc);
 		return ptr;
 	}
 
@@ -7118,7 +7336,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SpotLightComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf52cfa5c);
 		return ptr;
 	}
 
@@ -7153,7 +7372,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SkyLightComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd06bc6b5);
 		return ptr;
 	}
 
@@ -7182,7 +7402,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LightmassPortalComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf7222f22);
 		return ptr;
 	}
 
@@ -7201,7 +7422,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavigationGraphNodeComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xac3deb72);
 		return ptr;
 	}
 
@@ -7225,7 +7447,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicsConstraintComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8c195fda);
 		return ptr;
 	}
 
@@ -7281,7 +7504,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicsSpringComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7276a074);
 		return ptr;
 	}
 
@@ -7303,7 +7527,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicsThrusterComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd469ec04);
 		return ptr;
 	}
 
@@ -7326,7 +7551,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PostProcessComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf6e3d1f);
 		return ptr;
 	}
 
@@ -7350,7 +7576,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ArrowComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xad35fad9);
 		return ptr;
 	}
 
@@ -7375,7 +7602,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BillboardComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x90d28903);
 		return ptr;
 	}
 
@@ -7398,7 +7626,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BrushComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb660e7a0);
 		return ptr;
 	}
 
@@ -7420,7 +7649,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DrawFrustumComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbad74d60);
 		return ptr;
 	}
 
@@ -7436,7 +7666,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LineBatchComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5dd72372);
 		return ptr;
 	}
 
@@ -7452,7 +7683,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialBillboardComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x99f4d020);
 		return ptr;
 	}
 
@@ -7479,7 +7711,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DestructibleComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe8f94698);
 		return ptr;
 	}
 
@@ -7500,7 +7733,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PoseableMeshComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbdd29b4a);
 		return ptr;
 	}
 
@@ -7541,7 +7775,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SplineMeshComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6e41596e);
 		return ptr;
 	}
 
@@ -7590,7 +7825,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ModelComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf7299559);
 		return ptr;
 	}
 
@@ -7608,7 +7844,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavLinkComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa9d80955);
 		return ptr;
 	}
 
@@ -7623,7 +7860,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavLinkRenderingComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x60294f7d);
 		return ptr;
 	}
 
@@ -7639,7 +7877,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavMeshRenderingComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x35a59502);
 		return ptr;
 	}
 
@@ -7654,7 +7893,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavTestRenderingComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1cd833f1);
 		return ptr;
 	}
 
@@ -7673,7 +7913,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CapsuleComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa423dedb);
 		return ptr;
 	}
 
@@ -7705,7 +7946,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SphereComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7c114093);
 		return ptr;
 	}
 
@@ -7725,7 +7967,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DrawSphereComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x56d88e25);
 		return ptr;
 	}
 
@@ -7760,7 +8003,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SplineComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4394adf);
 		return ptr;
 	}
 
@@ -7861,7 +8105,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SubDSurfaceComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x898881d9);
 		return ptr;
 	}
 
@@ -7893,7 +8138,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TextRenderComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x284eb64d);
 		return ptr;
 	}
 
@@ -7928,7 +8174,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.VectorFieldComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5437f7f5);
 		return ptr;
 	}
 
@@ -7956,7 +8203,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.RadialForceComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x91f1d32e);
 		return ptr;
 	}
 
@@ -7985,7 +8233,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ReflectionCaptureComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xca77f6dd);
 		return ptr;
 	}
 
@@ -8005,7 +8254,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BoxReflectionCaptureComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4db71b44);
 		return ptr;
 	}
 
@@ -8025,7 +8275,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PlaneReflectionCaptureComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7d5d2b5);
 		return ptr;
 	}
 
@@ -8043,7 +8294,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SphereReflectionCaptureComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x194f3552);
 		return ptr;
 	}
 
@@ -8070,7 +8322,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SceneCaptureComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x83317034);
 		return ptr;
 	}
 
@@ -8107,7 +8360,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PlanarReflectionComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x70bb5b2f);
 		return ptr;
 	}
 
@@ -8141,7 +8395,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SceneCaptureComponent2D");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc11ee53e);
 		return ptr;
 	}
 
@@ -8161,7 +8416,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SceneCaptureComponentCube");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xed61a433);
 		return ptr;
 	}
 
@@ -8199,7 +8455,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SpringArmComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb3dd42bd);
 		return ptr;
 	}
 
@@ -8232,7 +8489,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.StereoLayerComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc4b540f1);
 		return ptr;
 	}
 
@@ -8264,7 +8522,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.WindDirectionalSourceComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x60012247);
 		return ptr;
 	}
 
@@ -8289,7 +8548,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TimelineComponent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2a3ad501);
 		return ptr;
 	}
 
@@ -8329,7 +8589,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimComposite");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd00d500f);
 		return ptr;
 	}
 
@@ -8363,7 +8624,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimSequence");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe6b46c3d);
 		return ptr;
 	}
 
@@ -8392,7 +8654,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BlendSpaceBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfd544727);
 		return ptr;
 	}
 
@@ -8409,7 +8672,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BlendSpace");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8442e748);
 		return ptr;
 	}
 
@@ -8424,7 +8688,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AimOffsetBlendSpace");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf1ed5910);
 		return ptr;
 	}
 
@@ -8441,7 +8706,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BlendSpace1D");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe6339867);
 		return ptr;
 	}
 
@@ -8456,7 +8722,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AimOffsetBlendSpace1D");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf538c0af);
 		return ptr;
 	}
 
@@ -8477,7 +8744,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PoseAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x784b8cb6);
 		return ptr;
 	}
 
@@ -8492,7 +8760,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimStateMachineTypes");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa7b219d3);
 		return ptr;
 	}
 
@@ -8507,7 +8776,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimClassInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x246f766f);
 		return ptr;
 	}
 
@@ -8532,7 +8802,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimClassData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfb8f425a);
 		return ptr;
 	}
 
@@ -8554,7 +8825,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimCompress");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb96fff2);
 		return ptr;
 	}
 
@@ -8578,7 +8850,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimCompress_Automatic");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x63ae5562);
 		return ptr;
 	}
 
@@ -8593,7 +8866,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimCompress_BitwiseCompressOnly");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xede78578);
 		return ptr;
 	}
 
@@ -8608,7 +8882,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimCompress_LeastDestructive");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x873153d4);
 		return ptr;
 	}
 
@@ -8626,7 +8901,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimCompress_RemoveEverySecondKey");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x78e55ba7);
 		return ptr;
 	}
 
@@ -8651,7 +8927,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimCompress_RemoveLinearKeys");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x96b1d5a2);
 		return ptr;
 	}
 
@@ -8691,7 +8968,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimCompress_PerTrackCompression");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x41dfba4b);
 		return ptr;
 	}
 
@@ -8710,7 +8988,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimCompress_RemoveTrivialKeys");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x40267e28);
 		return ptr;
 	}
 
@@ -8727,7 +9006,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimSingleNodeInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x960e7da7);
 		return ptr;
 	}
 
@@ -8755,7 +9035,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimMetaData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4f7124b1);
 		return ptr;
 	}
 
@@ -8770,7 +9051,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimNotify_ResetClothingSimulation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8dc9cbb0);
 		return ptr;
 	}
 
@@ -8785,7 +9067,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimNotifyState_DisableRootMotion");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x63dd42bb);
 		return ptr;
 	}
 
@@ -8806,7 +9089,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimNotifyState_TimedParticleEffect");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc85f70c9);
 		return ptr;
 	}
 
@@ -8829,7 +9113,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimNotifyState_Trail");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x46309e5d);
 		return ptr;
 	}
 
@@ -8857,7 +9142,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimSet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc27daed2);
 		return ptr;
 	}
 
@@ -8872,7 +9158,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AssetImportData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa1aed4b0);
 		return ptr;
 	}
 
@@ -8888,7 +9175,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AssetMappingTable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6208fc71);
 		return ptr;
 	}
 
@@ -8917,7 +9205,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AutomationTestSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd3e86f4b);
 		return ptr;
 	}
 
@@ -8941,7 +9230,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AvoidanceManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc38076a);
 		return ptr;
 	}
 
@@ -8966,7 +9256,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BlendProfile");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x77c5ae09);
 		return ptr;
 	}
 
@@ -8988,7 +9279,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BlueprintCore");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8abd330f);
 		return ptr;
 	}
 
@@ -9020,7 +9312,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Blueprint");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdd5dae86);
 		return ptr;
 	}
 
@@ -9039,7 +9332,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimBlueprint");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf3610673);
 		return ptr;
 	}
 
@@ -9054,7 +9348,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LevelScriptBlueprint");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xef085571);
 		return ptr;
 	}
 
@@ -9069,7 +9364,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BlueprintMapLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe5bc0395);
 		return ptr;
 	}
 
@@ -9105,7 +9401,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PlatformGameInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xac2bb92f);
 		return ptr;
 	}
 
@@ -9128,7 +9425,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BlueprintPlatformLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa4e6ef8c);
 		return ptr;
 	}
 
@@ -9149,7 +9447,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BlueprintSetLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd9f696cf);
 		return ptr;
 	}
 
@@ -9176,7 +9475,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DataTableFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4ef8e250);
 		return ptr;
 	}
 
@@ -9195,7 +9495,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DebugDrawService");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8579e889);
 		return ptr;
 	}
 
@@ -9210,7 +9511,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.KismetSystemLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb4f750da);
 		return ptr;
 	}
 
@@ -9396,7 +9698,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.GameplayStatics");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xec734a2);
 		return ptr;
 	}
 
@@ -9516,7 +9819,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.HeadMountedDisplayFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcbb2f112);
 		return ptr;
 	}
 
@@ -9551,7 +9855,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.KismetArrayLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdf08dec2);
 		return ptr;
 	}
 
@@ -9585,7 +9890,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.KismetGuidLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x93af7ee2);
 		return ptr;
 	}
 
@@ -9608,7 +9914,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.KismetInputLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe98affbb);
 		return ptr;
 	}
 
@@ -9664,7 +9971,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.KismetMaterialLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4f0bee0e);
 		return ptr;
 	}
 
@@ -9685,7 +9993,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.KismetMathLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x77d8b969);
 		return ptr;
 	}
 
@@ -10074,7 +10383,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.KismetNodeHelperLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x39341947);
 		return ptr;
 	}
 
@@ -10103,7 +10413,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.KismetRenderingLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2581b2d7);
 		return ptr;
 	}
 
@@ -10128,7 +10439,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.KismetStringLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd257bca);
 		return ptr;
 	}
 
@@ -10207,7 +10519,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.KismetStringTableLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd7a72418);
 		return ptr;
 	}
 
@@ -10231,7 +10544,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.KismetTextLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xabdfd27c);
 		return ptr;
 	}
 
@@ -10289,7 +10603,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MeshVertexPainterKismetLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6d43e47b);
 		return ptr;
 	}
 
@@ -10308,7 +10623,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.StereoLayerFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa112b6ed);
 		return ptr;
 	}
 
@@ -10328,7 +10644,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.VisualLoggerKismetLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf77609ab);
 		return ptr;
 	}
 
@@ -10350,7 +10667,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PoseWatch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd78f2bbf);
 		return ptr;
 	}
 
@@ -10374,7 +10692,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimBlueprintGeneratedClass");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2b38602a);
 		return ptr;
 	}
 
@@ -10410,7 +10729,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BodySetup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa13a3640);
 		return ptr;
 	}
 
@@ -10426,7 +10746,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BodySetup2D");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfba14102);
 		return ptr;
 	}
 
@@ -10447,7 +10768,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicsAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5c6332a4);
 		return ptr;
 	}
 
@@ -10463,7 +10785,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SkeletalBodySetup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7edda0fb);
 		return ptr;
 	}
 
@@ -10479,7 +10802,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BoneMaskFilter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf1634799);
 		return ptr;
 	}
 
@@ -10497,7 +10821,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BookMark");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa978cfd1);
 		return ptr;
 	}
 
@@ -10515,7 +10840,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BookMark2D");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x21559217);
 		return ptr;
 	}
 
@@ -10537,7 +10863,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Breakpoint");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3d19a0a4);
 		return ptr;
 	}
 
@@ -10561,7 +10888,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.BrushBuilder");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xea3a18c0);
 		return ptr;
 	}
 
@@ -10577,7 +10905,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ButtonStyleAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x97c4d738);
 		return ptr;
 	}
 
@@ -10603,7 +10932,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CameraAnim");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7cbc7167);
 		return ptr;
 	}
 
@@ -10627,7 +10957,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CameraAnimInst");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbc0fb8c3);
 		return ptr;
 	}
 
@@ -10656,7 +10987,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CameraModifier");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfbf15da3);
 		return ptr;
 	}
 
@@ -10681,7 +11013,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CameraModifier_CameraShake");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc33daf6b);
 		return ptr;
 	}
 
@@ -10713,7 +11046,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Canvas");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd8593059);
 		return ptr;
 	}
 
@@ -10744,7 +11078,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Channel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2fa665c2);
 		return ptr;
 	}
 
@@ -10761,7 +11096,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ActorChannel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x32045865);
 		return ptr;
 	}
 
@@ -10777,7 +11113,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ControlChannel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x86ecc6b9);
 		return ptr;
 	}
 
@@ -10793,7 +11130,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.VoiceChannel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8cfc2736);
 		return ptr;
 	}
 
@@ -10809,7 +11147,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CheckBoxStyleAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf1c3ff97);
 		return ptr;
 	}
 
@@ -10835,7 +11174,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Commandlet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xae0e52bb);
 		return ptr;
 	}
 
@@ -10851,7 +11191,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PluginCommandlet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa977f2be);
 		return ptr;
 	}
 
@@ -10866,7 +11207,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SmokeTestCommandlet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x94de008e);
 		return ptr;
 	}
 
@@ -10882,7 +11224,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CurveLinearColor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3edaf94a);
 		return ptr;
 	}
 
@@ -10900,7 +11243,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CurveVector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x41aec977);
 		return ptr;
 	}
 
@@ -10917,7 +11261,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CurveEdPresetCurve");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe5aeef31);
 		return ptr;
 	}
 
@@ -10932,7 +11277,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CurveSourceInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfcfee23e);
 		return ptr;
 	}
 
@@ -10952,7 +11298,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CurveTable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7e2bacce);
 		return ptr;
 	}
 
@@ -10967,7 +11314,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PreviewCollectionInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc9ee8f90);
 		return ptr;
 	}
 
@@ -10985,7 +11333,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PreviewMeshCollection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd07b51ec);
 		return ptr;
 	}
 
@@ -11006,7 +11355,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PrimaryAssetLabel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc811975b);
 		return ptr;
 	}
 
@@ -11023,7 +11373,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TireType");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x839c7593);
 		return ptr;
 	}
 
@@ -11048,7 +11399,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DestructibleFractureSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8de266fa);
 		return ptr;
 	}
 
@@ -11083,7 +11435,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AnimationSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb2c1ffe6);
 		return ptr;
 	}
 
@@ -11106,7 +11459,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AssetManagerSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x20373c17);
 		return ptr;
 	}
 
@@ -11134,7 +11488,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.AudioSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x59201fa);
 		return ptr;
 	}
 
@@ -11155,7 +11510,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CollisionProfile");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3de995e);
 		return ptr;
 	}
 
@@ -11188,7 +11544,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.StreamingSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc32fc804);
 		return ptr;
 	}
 
@@ -11218,7 +11575,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.GarbageCollectionSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcf0da7b5);
 		return ptr;
 	}
 
@@ -11234,7 +11592,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MeshSimplificationSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7ef50f7a);
 		return ptr;
 	}
 
@@ -11255,7 +11614,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NetworkSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc246ea36);
 		return ptr;
 	}
 
@@ -11313,7 +11673,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicsSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x42a276eb);
 		return ptr;
 	}
 
@@ -11413,7 +11774,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.RendererSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x21156fef);
 		return ptr;
 	}
 
@@ -11430,7 +11792,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.RendererOverrideSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb65572ff);
 		return ptr;
 	}
 
@@ -11464,7 +11827,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.UserInterfaceSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf39a980e);
 		return ptr;
 	}
 
@@ -11481,7 +11845,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DeviceProfileManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4d13afcf);
 		return ptr;
 	}
 
@@ -11501,7 +11866,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DialogueVoice");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa9bb27bb);
 		return ptr;
 	}
 
@@ -11523,7 +11889,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DialogueWave");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9273c27c);
 		return ptr;
 	}
 
@@ -11539,7 +11906,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Distribution");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xda962953);
 		return ptr;
 	}
 
@@ -11558,7 +11926,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DistributionFloat");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe7f796fb);
 		return ptr;
 	}
 
@@ -11575,7 +11944,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DistributionFloatConstant");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5d2f20b3);
 		return ptr;
 	}
 
@@ -11597,7 +11967,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DistributionFloatParameterBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x309aa8cb);
 		return ptr;
 	}
 
@@ -11612,7 +11983,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DistributionFloatParticleParameter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x69f2a3f6);
 		return ptr;
 	}
 
@@ -11628,7 +12000,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DistributionFloatConstantCurve");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4931b110);
 		return ptr;
 	}
 
@@ -11645,7 +12018,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DistributionFloatUniform");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe6278755);
 		return ptr;
 	}
 
@@ -11661,7 +12035,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DistributionFloatUniformCurve");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1c2c3a62);
 		return ptr;
 	}
 
@@ -11680,7 +12055,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DistributionVector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc0ef7fba);
 		return ptr;
 	}
 
@@ -11700,7 +12076,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DistributionVectorConstant");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xeb56ebf2);
 		return ptr;
 	}
 
@@ -11722,7 +12099,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DistributionVectorParameterBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x27d58eac);
 		return ptr;
 	}
 
@@ -11737,7 +12115,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DistributionVectorParticleParameter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6fce462d);
 		return ptr;
 	}
 
@@ -11757,7 +12136,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DistributionVectorConstantCurve");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7b18d50b);
 		return ptr;
 	}
 
@@ -11780,7 +12160,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DistributionVectorUniform");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2d0b7cde);
 		return ptr;
 	}
 
@@ -11804,7 +12185,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DistributionVectorUniformCurve");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9e54b287);
 		return ptr;
 	}
 
@@ -11819,7 +12201,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DPICustomScalingRule");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x78814784);
 		return ptr;
 	}
 
@@ -11834,7 +12217,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DynamicBlueprintBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x33cdd078);
 		return ptr;
 	}
 
@@ -11850,7 +12234,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ComponentDelegateBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x65939fb6);
 		return ptr;
 	}
 
@@ -11865,7 +12250,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InputDelegateBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x765831b5);
 		return ptr;
 	}
 
@@ -11881,7 +12267,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InputActionDelegateBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd8e3a42b);
 		return ptr;
 	}
 
@@ -11897,7 +12284,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InputAxisDelegateBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x31909d14);
 		return ptr;
 	}
 
@@ -11913,7 +12301,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InputAxisKeyDelegateBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd7f1e0d7);
 		return ptr;
 	}
 
@@ -11928,7 +12317,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InputVectorAxisDelegateBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x45d1d0c3);
 		return ptr;
 	}
 
@@ -11944,7 +12334,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InputKeyDelegateBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x96469ddc);
 		return ptr;
 	}
 
@@ -11960,7 +12351,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InputTouchDelegateBinding");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x65801cb0);
 		return ptr;
 	}
 
@@ -11981,7 +12373,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.EdGraph");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4a8046ca);
 		return ptr;
 	}
 
@@ -11998,7 +12391,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.EdGraphNode_Documentation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x868358a1);
 		return ptr;
 	}
 
@@ -12013,7 +12407,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.EdGraphSchema");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf695038b);
 		return ptr;
 	}
 
@@ -12028,7 +12423,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ImportantToggleSettingInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x93621e7c);
 		return ptr;
 	}
 
@@ -12048,7 +12444,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.EndUserSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xff3e7e);
 		return ptr;
 	}
 
@@ -12067,7 +12464,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PendingNetGame");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x542957b9);
 		return ptr;
 	}
 
@@ -12111,7 +12509,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NetDriver");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfa51022c);
 		return ptr;
 	}
 
@@ -12127,7 +12526,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PackageMapClient");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9827d4c6);
 		return ptr;
 	}
 
@@ -12158,7 +12558,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NetConnection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6e72e45a);
 		return ptr;
 	}
 
@@ -12174,7 +12575,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DemoNetConnection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7dedce8d);
 		return ptr;
 	}
 
@@ -12192,7 +12594,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DemoNetDriver");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x52d88c57);
 		return ptr;
 	}
 
@@ -12207,7 +12610,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.EngineHandlerComponentFactory");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x96320794);
 		return ptr;
 	}
 
@@ -12232,7 +12636,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Exporter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5021e7b2);
 		return ptr;
 	}
 
@@ -12248,7 +12653,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.FontImportOptions");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd2141055);
 		return ptr;
 	}
 
@@ -12283,7 +12689,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Font");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb796d44a);
 		return ptr;
 	}
 
@@ -12303,7 +12710,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.FontFace");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa58655f5);
 		return ptr;
 	}
 
@@ -12318,7 +12726,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.HapticFeedbackEffect_Base");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd2a3ff7e);
 		return ptr;
 	}
 
@@ -12336,7 +12745,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.HapticFeedbackEffect_Buffer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x48b8ff87);
 		return ptr;
 	}
 
@@ -12352,7 +12762,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.HapticFeedbackEffect_Curve");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x40b767b2);
 		return ptr;
 	}
 
@@ -12369,7 +12780,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.HapticFeedbackEffect_SoundWave");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x71adcb25);
 		return ptr;
 	}
 
@@ -12386,7 +12798,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InheritableComponentHandler");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd198451d);
 		return ptr;
 	}
 
@@ -12422,7 +12835,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InputSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcd3e8398);
 		return ptr;
 	}
 
@@ -12440,7 +12854,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpCurveEdSetup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1c214c8a);
 		return ptr;
 	}
 
@@ -12465,7 +12880,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x82f8dfe7);
 		return ptr;
 	}
 
@@ -12481,7 +12897,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpFilter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1e4d299d);
 		return ptr;
 	}
 
@@ -12496,7 +12913,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpFilter_Classes");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe541de04);
 		return ptr;
 	}
 
@@ -12511,7 +12929,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpFilter_Custom");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6cea3c31);
 		return ptr;
 	}
 
@@ -12536,7 +12955,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpGroup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xeac89f4c);
 		return ptr;
 	}
 
@@ -12554,7 +12974,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpGroupCamera");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf1dd9919);
 		return ptr;
 	}
 
@@ -12569,7 +12990,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpGroupDirector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x83faab84);
 		return ptr;
 	}
 
@@ -12587,7 +13009,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpGroupInst");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc6bf9cac);
 		return ptr;
 	}
 
@@ -12602,7 +13025,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpGroupInstCamera");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf26980b9);
 		return ptr;
 	}
 
@@ -12617,7 +13041,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpGroupInstDirector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x567ba724);
 		return ptr;
 	}
 
@@ -12647,7 +13072,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrack");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x80a0d27c);
 		return ptr;
 	}
 
@@ -12664,7 +13090,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackBoolProp");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x22d8a76f);
 		return ptr;
 	}
 
@@ -12682,7 +13109,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackDirector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2cb3a14);
 		return ptr;
 	}
 
@@ -12703,7 +13131,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackEvent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc879f064);
 		return ptr;
 	}
 
@@ -12721,7 +13150,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackFloatBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb6f40a71);
 		return ptr;
 	}
 
@@ -12740,7 +13170,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackAnimControl");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x68b87436);
 		return ptr;
 	}
 
@@ -12760,7 +13191,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackFade");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2f74ab6);
 		return ptr;
 	}
 
@@ -12779,7 +13211,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackFloatAnimBPParam");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7dd6c0c6);
 		return ptr;
 	}
 
@@ -12796,7 +13229,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackFloatMaterialParam");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfad36208);
 		return ptr;
 	}
 
@@ -12812,7 +13246,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackFloatParticleParam");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x29cd9c0b);
 		return ptr;
 	}
 
@@ -12828,7 +13263,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackFloatProp");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbe8d8705);
 		return ptr;
 	}
 
@@ -12858,7 +13294,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackMove");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xee36a733);
 		return ptr;
 	}
 
@@ -12876,7 +13313,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackMoveAxis");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcc5d6480);
 		return ptr;
 	}
 
@@ -12891,7 +13329,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackSlomo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8292775c);
 		return ptr;
 	}
 
@@ -12909,7 +13348,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackLinearColorBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6ac7d917);
 		return ptr;
 	}
 
@@ -12925,7 +13365,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackLinearColorProp");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x318b407b);
 		return ptr;
 	}
 
@@ -12941,7 +13382,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackParticleReplay");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb918f443);
 		return ptr;
 	}
 
@@ -12963,7 +13405,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackToggle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe65f2b20);
 		return ptr;
 	}
 
@@ -12981,7 +13424,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackVectorBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x13c0067a);
 		return ptr;
 	}
 
@@ -12996,7 +13440,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackAudioMaster");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3bd976cc);
 		return ptr;
 	}
 
@@ -13012,7 +13457,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackColorProp");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x288af382);
 		return ptr;
 	}
 
@@ -13027,7 +13473,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackColorScale");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcbd24389);
 		return ptr;
 	}
 
@@ -13049,7 +13496,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackSound");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3c50e0d1);
 		return ptr;
 	}
 
@@ -13066,7 +13514,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackVectorMaterialParam");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc65a9081);
 		return ptr;
 	}
 
@@ -13082,7 +13531,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackVectorProp");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8ee366da);
 		return ptr;
 	}
 
@@ -13102,7 +13552,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackVisibility");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf2ff68d8);
 		return ptr;
 	}
 
@@ -13117,7 +13568,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInst");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8ebc85c);
 		return ptr;
 	}
 
@@ -13134,7 +13586,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstAnimControl");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x28234f96);
 		return ptr;
 	}
 
@@ -13149,7 +13602,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstAudioMaster");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x775a0fac);
 		return ptr;
 	}
 
@@ -13164,7 +13618,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstColorScale");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2529d8e9);
 		return ptr;
 	}
 
@@ -13180,7 +13635,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstDirector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x97ad134);
 		return ptr;
 	}
 
@@ -13197,7 +13653,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstEvent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x50c9b904);
 		return ptr;
 	}
 
@@ -13212,7 +13669,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstFade");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbe0fded6);
 		return ptr;
 	}
 
@@ -13230,7 +13688,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstFloatAnimBPParam");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf0c4fe6);
 		return ptr;
 	}
 
@@ -13249,7 +13708,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstFloatMaterialParam");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x63fb88a8);
 		return ptr;
 	}
 
@@ -13266,7 +13726,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstFloatParticleParam");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x392e23ab);
 		return ptr;
 	}
 
@@ -13283,7 +13744,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstMove");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe29bf053);
 		return ptr;
 	}
 
@@ -13300,7 +13762,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstParticleReplay");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6c4b68a3);
 		return ptr;
 	}
 
@@ -13317,7 +13780,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstProperty");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x13dba27f);
 		return ptr;
 	}
 
@@ -13336,7 +13800,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstBoolProp");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4fecb64f);
 		return ptr;
 	}
 
@@ -13354,7 +13819,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstColorProp");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaac04962);
 		return ptr;
 	}
 
@@ -13372,7 +13838,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstFloatProp");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x275e1ae5);
 		return ptr;
 	}
 
@@ -13389,7 +13856,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstLinearColorProp");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x970d2b9b);
 		return ptr;
 	}
 
@@ -13407,7 +13875,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstVectorProp");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x634239ba);
 		return ptr;
 	}
 
@@ -13424,7 +13893,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstSlomo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x837088fc);
 		return ptr;
 	}
 
@@ -13442,7 +13912,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstSound");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3fa95b71);
 		return ptr;
 	}
 
@@ -13462,7 +13933,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstToggle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf28e9240);
 		return ptr;
 	}
 
@@ -13481,7 +13953,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstVectorMaterialParam");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6ebb77a1);
 		return ptr;
 	}
 
@@ -13499,7 +13972,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InterpTrackInstVisibility");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x767a57f8);
 		return ptr;
 	}
 
@@ -13526,7 +14000,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.IntSerialization");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x60cba51c);
 		return ptr;
 	}
 
@@ -13545,7 +14020,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Layer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6fb73a38);
 		return ptr;
 	}
 
@@ -13561,7 +14037,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LevelActorContainer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc1e2b871);
 		return ptr;
 	}
 
@@ -13608,7 +14085,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LevelStreaming");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x35a71fe3);
 		return ptr;
 	}
 
@@ -13629,7 +14107,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LevelStreamingAlwaysLoaded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x69375947);
 		return ptr;
 	}
 
@@ -13644,7 +14123,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LevelStreamingKismet");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb5922c3c);
 		return ptr;
 	}
 
@@ -13661,7 +14141,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LevelStreamingPersistent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x99324afc);
 		return ptr;
 	}
 
@@ -13678,7 +14159,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LightmappedSurfaceCollection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6388aef3);
 		return ptr;
 	}
 
@@ -13694,7 +14176,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LightmassPrimitiveSettingsObject");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x63348238);
 		return ptr;
 	}
 
@@ -13717,7 +14200,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.EngineMessage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3fdbd110);
 		return ptr;
 	}
 
@@ -13734,7 +14218,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MapBuildDataRegistry");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5595bfc2);
 		return ptr;
 	}
 
@@ -13750,7 +14235,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionAbs");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x970cbeac);
 		return ptr;
 	}
 
@@ -13765,7 +14251,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionActorPositionWS");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5e118e64);
 		return ptr;
 	}
 
@@ -13784,7 +14271,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionAdd");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x416f1c5);
 		return ptr;
 	}
 
@@ -13801,7 +14289,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionAppendVector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa11567a1);
 		return ptr;
 	}
 
@@ -13817,7 +14306,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionArccosine");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2cfe83a1);
 		return ptr;
 	}
 
@@ -13833,7 +14323,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionArccosineFast");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9442471f);
 		return ptr;
 	}
 
@@ -13849,7 +14340,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionArcsine");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf0b66423);
 		return ptr;
 	}
 
@@ -13865,7 +14357,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionArcsineFast");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb921c5b1);
 		return ptr;
 	}
 
@@ -13881,7 +14374,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionArctangent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x99b1fbf);
 		return ptr;
 	}
 
@@ -13898,7 +14392,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionArctangent2");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xca1047ef);
 		return ptr;
 	}
 
@@ -13915,7 +14410,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionArctangent2Fast");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7abad96d);
 		return ptr;
 	}
 
@@ -13931,7 +14427,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionArctangentFast");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7b9857bd);
 		return ptr;
 	}
 
@@ -13947,7 +14444,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionAtmosphericFogColor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3c3b7e7e);
 		return ptr;
 	}
 
@@ -13962,7 +14460,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionAtmosphericLightColor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5950f6ce);
 		return ptr;
 	}
 
@@ -13977,7 +14476,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionAtmosphericLightVector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x623971b8);
 		return ptr;
 	}
 
@@ -13993,7 +14493,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionBlackBody");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd363c135);
 		return ptr;
 	}
 
@@ -14014,7 +14515,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionBlendMaterialAttributes");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x157572b9);
 		return ptr;
 	}
 
@@ -14030,7 +14532,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionBreakMaterialAttributes");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc6d11525);
 		return ptr;
 	}
 
@@ -14052,7 +14555,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionBumpOffset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x775efcb9);
 		return ptr;
 	}
 
@@ -14067,7 +14571,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionCameraPositionWS");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1122beae);
 		return ptr;
 	}
 
@@ -14082,7 +14587,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionCameraVectorWS");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb69493de);
 		return ptr;
 	}
 
@@ -14098,7 +14604,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionCeil");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3a7746a7);
 		return ptr;
 	}
 
@@ -14121,7 +14628,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionClamp");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8c0163d9);
 		return ptr;
 	}
 
@@ -14139,7 +14647,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionCollectionParameter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf5de797d);
 		return ptr;
 	}
 
@@ -14158,7 +14667,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionComment");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x18002f1b);
 		return ptr;
 	}
 
@@ -14179,7 +14689,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionComponentMask");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x785521fd);
 		return ptr;
 	}
 
@@ -14196,7 +14707,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionConstant");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xca39e468);
 		return ptr;
 	}
 
@@ -14213,7 +14725,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionConstant2Vector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe7f327cf);
 		return ptr;
 	}
 
@@ -14229,7 +14742,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionConstant3Vector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd45eda0a);
 		return ptr;
 	}
 
@@ -14245,7 +14759,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionConstant4Vector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x70ffc899);
 		return ptr;
 	}
 
@@ -14263,7 +14778,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionConstantBiasScale");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2061043b);
 		return ptr;
 	}
 
@@ -14281,7 +14797,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionCosine");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x515d379);
 		return ptr;
 	}
 
@@ -14298,7 +14815,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionCrossProduct");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x63787011);
 		return ptr;
 	}
 
@@ -14318,7 +14836,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionCustom");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdf6eb015);
 		return ptr;
 	}
 
@@ -14334,7 +14853,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionClearCoatNormalCustomOutput");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe123bf9d);
 		return ptr;
 	}
 
@@ -14350,7 +14870,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTangentOutput");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x60c55eb4);
 		return ptr;
 	}
 
@@ -14366,7 +14887,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDDX");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc43df5fc);
 		return ptr;
 	}
 
@@ -14382,7 +14904,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDDY");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xea407065);
 		return ptr;
 	}
 
@@ -14397,7 +14920,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDecalDerivative");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x65045e54);
 		return ptr;
 	}
 
@@ -14412,7 +14936,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDecalLifetimeOpacity");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe38eb881);
 		return ptr;
 	}
 
@@ -14430,7 +14955,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDecalMipmapLevel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xce30412b);
 		return ptr;
 	}
 
@@ -14449,7 +14975,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDepthFade");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4358c35);
 		return ptr;
 	}
 
@@ -14467,7 +14994,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDepthOfFieldFunction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7ab63650);
 		return ptr;
 	}
 
@@ -14483,7 +15011,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDeriveNormalZ");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd304b2e);
 		return ptr;
 	}
 
@@ -14501,7 +15030,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDesaturation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc5927869);
 		return ptr;
 	}
 
@@ -14518,7 +15048,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDistance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x501ea405);
 		return ptr;
 	}
 
@@ -14533,7 +15064,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDistanceCullFade");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1f0fe49f);
 		return ptr;
 	}
 
@@ -14549,7 +15081,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDistanceFieldGradient");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x11f78443);
 		return ptr;
 	}
 
@@ -14565,7 +15098,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDistanceToNearestSurface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3bd85e0d);
 		return ptr;
 	}
 
@@ -14584,7 +15118,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDivide");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x977cdaaf);
 		return ptr;
 	}
 
@@ -14601,7 +15136,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDotProduct");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8de3528e);
 		return ptr;
 	}
 
@@ -14618,7 +15154,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionDynamicParameter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd4ec3348);
 		return ptr;
 	}
 
@@ -14633,7 +15170,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionEyeAdaptation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x18f5c740);
 		return ptr;
 	}
 
@@ -14650,7 +15188,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionFeatureLevelSwitch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfb86145c);
 		return ptr;
 	}
 
@@ -14666,7 +15205,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionFloor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcaba08ce);
 		return ptr;
 	}
 
@@ -14683,7 +15223,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionFmod");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf361d556);
 		return ptr;
 	}
 
@@ -14701,7 +15242,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionFontSample");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x777b3289);
 		return ptr;
 	}
 
@@ -14719,7 +15261,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionFontSampleParameter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4bc776ce);
 		return ptr;
 	}
 
@@ -14735,7 +15278,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionFrac");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x71ad108c);
 		return ptr;
 	}
 
@@ -14757,7 +15301,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionFresnel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7aae3e9);
 		return ptr;
 	}
 
@@ -14784,7 +15329,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionFunctionInput");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb5f08218);
 		return ptr;
 	}
 
@@ -14808,7 +15354,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionFunctionOutput");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8b36d2eb);
 		return ptr;
 	}
 
@@ -14825,7 +15372,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionGetMaterialAttributes");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9347d858);
 		return ptr;
 	}
 
@@ -14843,7 +15391,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionGIReplace");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x37d0bfb0);
 		return ptr;
 	}
 
@@ -14867,7 +15416,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionIf");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x888c23f1);
 		return ptr;
 	}
 
@@ -14882,7 +15432,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionLightmapUVs");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x75fe69e);
 		return ptr;
 	}
 
@@ -14899,7 +15450,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionLightmassReplace");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa0dcca98);
 		return ptr;
 	}
 
@@ -14914,7 +15466,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionLightVector");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x29fa173d);
 		return ptr;
 	}
 
@@ -14936,7 +15489,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionLinearInterpolate");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb7b930b8);
 		return ptr;
 	}
 
@@ -14952,7 +15506,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionLogarithm2");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6c95c7ad);
 		return ptr;
 	}
 
@@ -14985,7 +15540,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionMakeMaterialAttributes");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd0e01372);
 		return ptr;
 	}
 
@@ -15003,7 +15559,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionMaterialFunctionCall");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x636243e7);
 		return ptr;
 	}
 
@@ -15020,7 +15577,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionMaterialProxyReplace");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6d96cdf);
 		return ptr;
 	}
 
@@ -15039,7 +15597,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionMax");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbc9e3a0e);
 		return ptr;
 	}
 
@@ -15058,7 +15617,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionMin");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf75a8d0);
 		return ptr;
 	}
 
@@ -15077,7 +15637,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionMultiply");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc0f40e2c);
 		return ptr;
 	}
 
@@ -15107,7 +15668,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionNoise");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3541b20a);
 		return ptr;
 	}
 
@@ -15123,7 +15685,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionNormalize");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5e706435);
 		return ptr;
 	}
 
@@ -15138,7 +15701,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionObjectBounds");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbb7219d2);
 		return ptr;
 	}
 
@@ -15153,7 +15717,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionObjectOrientation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe45f83fd);
 		return ptr;
 	}
 
@@ -15168,7 +15733,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionObjectPositionWS");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x39ed148e);
 		return ptr;
 	}
 
@@ -15183,7 +15749,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionObjectRadius");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd39d7cb);
 		return ptr;
 	}
 
@@ -15199,7 +15766,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionOneMinus");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x706d86d8);
 		return ptr;
 	}
 
@@ -15222,7 +15790,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionPanner");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xed86b9e4);
 		return ptr;
 	}
 
@@ -15240,7 +15809,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionParameter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7edd94b9);
 		return ptr;
 	}
 
@@ -15259,7 +15829,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionScalarParameter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb47f2f2d);
 		return ptr;
 	}
 
@@ -15276,7 +15847,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionStaticBoolParameter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcfebad2b);
 		return ptr;
 	}
 
@@ -15293,7 +15865,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionStaticSwitchParameter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3e00cae7);
 		return ptr;
 	}
 
@@ -15314,7 +15887,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionStaticComponentMaskParameter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e8e4818);
 		return ptr;
 	}
 
@@ -15330,7 +15904,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionVectorParameter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf65732b6);
 		return ptr;
 	}
 
@@ -15345,7 +15920,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionParticleColor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe1012b03);
 		return ptr;
 	}
 
@@ -15360,7 +15936,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionParticleDirection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x14d82c89);
 		return ptr;
 	}
 
@@ -15375,7 +15952,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionParticleMacroUV");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe45bb9fb);
 		return ptr;
 	}
 
@@ -15390,7 +15968,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionParticleMotionBlurFade");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4f24a849);
 		return ptr;
 	}
 
@@ -15405,7 +15984,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionParticlePositionWS");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdd8f12f1);
 		return ptr;
 	}
 
@@ -15420,7 +16000,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionParticleRadius");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x88f0d0f4);
 		return ptr;
 	}
 
@@ -15435,7 +16016,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionParticleRandom");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xeec2219b);
 		return ptr;
 	}
 
@@ -15450,7 +16032,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionParticleRelativeTime");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8703386d);
 		return ptr;
 	}
 
@@ -15465,7 +16048,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionParticleSize");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x39584ffd);
 		return ptr;
 	}
 
@@ -15480,7 +16064,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionParticleSpeed");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2feaeda3);
 		return ptr;
 	}
 
@@ -15495,7 +16080,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionPerInstanceFadeAmount");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x31f248e);
 		return ptr;
 	}
 
@@ -15510,7 +16096,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionPerInstanceRandom");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8e6a4bf5);
 		return ptr;
 	}
 
@@ -15525,7 +16112,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionPixelDepth");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe9d013f3);
 		return ptr;
 	}
 
@@ -15540,7 +16128,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionPixelNormalWS");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x679c7513);
 		return ptr;
 	}
 
@@ -15559,7 +16148,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionPower");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd5ad6c1f);
 		return ptr;
 	}
 
@@ -15574,7 +16164,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionPrecomputedAOMask");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x71ff7e16);
 		return ptr;
 	}
 
@@ -15589,7 +16180,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionPreSkinnedNormal");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9388ee54);
 		return ptr;
 	}
 
@@ -15604,7 +16196,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionPreSkinnedPosition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8cc31b40);
 		return ptr;
 	}
 
@@ -15621,7 +16214,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionPreviousFrameSwitch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf6807d3e);
 		return ptr;
 	}
 
@@ -15638,7 +16232,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionQualitySwitch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4b2e67cb);
 		return ptr;
 	}
 
@@ -15656,7 +16251,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionReflectionVectorWS");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xede12b8);
 		return ptr;
 	}
 
@@ -15672,7 +16268,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionReroute");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3955d6c2);
 		return ptr;
 	}
 
@@ -15693,7 +16290,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionRotateAboutAxis");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4986c81b);
 		return ptr;
 	}
 
@@ -15714,7 +16312,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionRotator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd32744a3);
 		return ptr;
 	}
 
@@ -15730,7 +16329,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionRound");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf7d9e14);
 		return ptr;
 	}
 
@@ -15746,7 +16346,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionSaturate");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2f0440f);
 		return ptr;
 	}
 
@@ -15766,7 +16367,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionSceneColor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x56c09861);
 		return ptr;
 	}
 
@@ -15786,7 +16388,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionSceneDepth");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2958af8b);
 		return ptr;
 	}
 
@@ -15801,7 +16404,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionSceneTexelSize");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x989afe27);
 		return ptr;
 	}
 
@@ -15821,7 +16425,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionSceneTexture");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8b8d27d);
 		return ptr;
 	}
 
@@ -15838,7 +16443,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionScreenPosition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa40de31);
 		return ptr;
 	}
 
@@ -15855,7 +16461,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionSetMaterialAttributes");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4d9c6894);
 		return ptr;
 	}
 
@@ -15873,7 +16480,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionSine");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x76c70cab);
 		return ptr;
 	}
 
@@ -15895,7 +16503,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionSpeedTree");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8e71b5e1);
 		return ptr;
 	}
 
@@ -15916,7 +16525,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionSphereMask");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3e24cf87);
 		return ptr;
 	}
 
@@ -15934,7 +16544,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionSphericalParticleOpacity");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbc2c9a1e);
 		return ptr;
 	}
 
@@ -15950,7 +16561,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionSquareRoot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfce7bf55);
 		return ptr;
 	}
 
@@ -15967,7 +16579,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionStaticBool");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6876f8aa);
 		return ptr;
 	}
 
@@ -15987,7 +16600,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionStaticSwitch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xebf79d7e);
 		return ptr;
 	}
 
@@ -16006,7 +16620,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionSubtract");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x438c7270);
 		return ptr;
 	}
 
@@ -16024,7 +16639,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTangent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5d695c57);
 		return ptr;
 	}
 
@@ -16044,7 +16660,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTextureBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1fe9198e);
 		return ptr;
 	}
 
@@ -16059,7 +16676,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTextureObject");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4e7068fc);
 		return ptr;
 	}
 
@@ -16085,7 +16703,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTextureSample");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x28ba645f);
 		return ptr;
 	}
 
@@ -16102,7 +16721,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionParticleSubUV");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5b776305);
 		return ptr;
 	}
 
@@ -16120,7 +16740,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTextureSampleParameter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x52a4f950);
 		return ptr;
 	}
 
@@ -16135,7 +16756,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTextureObjectParameter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc27d7961);
 		return ptr;
 	}
 
@@ -16150,7 +16772,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTextureSampleParameter2D");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf0fda672);
 		return ptr;
 	}
 
@@ -16168,7 +16791,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionAntialiasedTextureMask");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9840f060);
 		return ptr;
 	}
 
@@ -16185,7 +16809,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTextureSampleParameterSubUV");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x849720cb);
 		return ptr;
 	}
 
@@ -16200,7 +16825,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTextureSampleParameterCube");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6d99cc9f);
 		return ptr;
 	}
 
@@ -16221,7 +16847,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTextureCoordinate");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe3d41b4b);
 		return ptr;
 	}
 
@@ -16239,7 +16866,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTextureProperty");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb0c23ff2);
 		return ptr;
 	}
 
@@ -16258,7 +16886,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTime");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xba9b5567);
 		return ptr;
 	}
 
@@ -16277,7 +16906,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTransform");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xad1a90b8);
 		return ptr;
 	}
 
@@ -16296,7 +16926,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTransformPosition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8af8f621);
 		return ptr;
 	}
 
@@ -16312,7 +16943,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTruncate");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x28fca50a);
 		return ptr;
 	}
 
@@ -16327,7 +16959,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionTwoSidedSign");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd36beaea);
 		return ptr;
 	}
 
@@ -16349,7 +16982,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionVectorNoise");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4c1e1625);
 		return ptr;
 	}
 
@@ -16364,7 +16998,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionVertexColor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6e82fb17);
 		return ptr;
 	}
 
@@ -16379,7 +17014,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionVertexNormalWS");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x68a05d1);
 		return ptr;
 	}
 
@@ -16396,7 +17032,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionViewProperty");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x72300158);
 		return ptr;
 	}
 
@@ -16411,7 +17048,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionViewSize");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc9f7c454);
 		return ptr;
 	}
 
@@ -16428,7 +17066,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialExpressionWorldPosition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbe3ea9e1);
 		return ptr;
 	}
 
@@ -16450,7 +17089,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialFunction");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd28c7596);
 		return ptr;
 	}
 
@@ -16578,7 +17218,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Material");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1e3557fa);
 		return ptr;
 	}
 
@@ -16594,7 +17235,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialInstanceDynamic");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe8323256);
 		return ptr;
 	}
 
@@ -16624,7 +17266,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialParameterCollection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x758a9b77);
 		return ptr;
 	}
 
@@ -16643,7 +17286,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MaterialParameterCollectionInstance");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x305c429e);
 		return ptr;
 	}
 
@@ -16658,7 +17302,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MatineeInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa00750e7);
 		return ptr;
 	}
 
@@ -16675,7 +17320,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MorphTarget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc8722b82);
 		return ptr;
 	}
 
@@ -16690,7 +17336,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavArea_Default");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa4f994d5);
 		return ptr;
 	}
 
@@ -16705,7 +17352,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavArea_LowHeight");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7e80a1f1);
 		return ptr;
 	}
 
@@ -16720,7 +17368,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavArea_Null");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc9a44c21);
 		return ptr;
 	}
 
@@ -16735,7 +17384,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavArea_Obstacle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x210f15b1);
 		return ptr;
 	}
 
@@ -16766,7 +17416,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavAreaMeta_SwitchByAgent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x52bd3637);
 		return ptr;
 	}
 
@@ -16788,7 +17439,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavCollision");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe75fdc90);
 		return ptr;
 	}
 
@@ -16803,7 +17455,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavEdgeProviderInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3eb735d5);
 		return ptr;
 	}
 
@@ -16819,7 +17472,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavigationDataChunk");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x53b97a5a);
 		return ptr;
 	}
 
@@ -16835,7 +17489,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.RecastNavMeshDataChunk");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb28144d0);
 		return ptr;
 	}
 
@@ -16854,7 +17509,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavigationPath");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb4589606);
 		return ptr;
 	}
 
@@ -16878,7 +17534,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavigationPathGenerator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7d929b8d);
 		return ptr;
 	}
 
@@ -16893,7 +17550,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.RecastFilter_UseDefaultArea");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc2a41417);
 		return ptr;
 	}
 
@@ -16908,7 +17566,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavLinkTrivial");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x107cfcdb);
 		return ptr;
 	}
 
@@ -16923,7 +17582,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.NavNodeInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2b9f9d15);
 		return ptr;
 	}
 
@@ -16946,7 +17606,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ObjectLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcd5c833d);
 		return ptr;
 	}
 
@@ -16962,7 +17623,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ObjectReferencer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x28403203);
 		return ptr;
 	}
 
@@ -16977,7 +17639,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.OnlineEngineInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x725e0cfb);
 		return ptr;
 	}
 
@@ -17012,7 +17675,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleEmitter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6d5efb23);
 		return ptr;
 	}
 
@@ -17027,7 +17691,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleSpriteEmitter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x50548ba);
 		return ptr;
 	}
 
@@ -17058,7 +17723,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleLODLevel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf2735946);
 		return ptr;
 	}
 
@@ -17088,7 +17754,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModule");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa98e4bc3);
 		return ptr;
 	}
 
@@ -17105,7 +17772,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleAccelerationBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2301070c);
 		return ptr;
 	}
 
@@ -17123,7 +17791,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleAcceleration");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8db1bbb);
 		return ptr;
 	}
 
@@ -17140,7 +17809,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleAccelerationConstant");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbaa83e73);
 		return ptr;
 	}
 
@@ -17157,7 +17827,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleAccelerationDrag");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb561e435);
 		return ptr;
 	}
 
@@ -17174,7 +17845,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleAccelerationDragScaleOverLife");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdf6b045);
 		return ptr;
 	}
 
@@ -17190,7 +17862,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleAccelerationOverLifetime");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x66e2cb90);
 		return ptr;
 	}
 
@@ -17205,7 +17878,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleAttractorBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd0cdac6e);
 		return ptr;
 	}
 
@@ -17224,7 +17898,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleAttractorLine");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x996cfa9f);
 		return ptr;
 	}
 
@@ -17252,7 +17927,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleAttractorParticle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6f37fd9b);
 		return ptr;
 	}
 
@@ -17281,7 +17957,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleAttractorPoint");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xae58341d);
 		return ptr;
 	}
 
@@ -17300,7 +17977,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleAttractorPointGravity");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd58c99a5);
 		return ptr;
 	}
 
@@ -17315,7 +17993,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleBeamBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc7eeef21);
 		return ptr;
 	}
 
@@ -17341,7 +18020,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleBeamModifier");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd63496c1);
 		return ptr;
 	}
 
@@ -17384,7 +18064,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleBeamNoise");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6c2ff570);
 		return ptr;
 	}
 
@@ -17415,7 +18096,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleBeamSource");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb098d3e1);
 		return ptr;
 	}
 
@@ -17447,7 +18129,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleBeamTarget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x54ce2a85);
 		return ptr;
 	}
 
@@ -17462,7 +18145,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleCameraBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6d68355);
 		return ptr;
 	}
 
@@ -17482,7 +18166,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleCameraOffset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x565a59b7);
 		return ptr;
 	}
 
@@ -17497,7 +18182,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleCollisionBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x480fa9d2);
 		return ptr;
 	}
 
@@ -17535,7 +18221,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleCollision");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe9f85ea1);
 		return ptr;
 	}
 
@@ -17560,7 +18247,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleCollisionGPU");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x44579121);
 		return ptr;
 	}
 
@@ -17575,7 +18263,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleColorBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2586df53);
 		return ptr;
 	}
 
@@ -17594,7 +18283,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleColor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5ba1c73c);
 		return ptr;
 	}
 
@@ -17610,7 +18300,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleColor_Seeded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xca9a0b83);
 		return ptr;
 	}
 
@@ -17629,7 +18320,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleColorOverLife");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x694e0f6c);
 		return ptr;
 	}
 
@@ -17648,7 +18340,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleColorScaleOverLife");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8f58b59a);
 		return ptr;
 	}
 
@@ -17663,7 +18356,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleEventBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4f124382);
 		return ptr;
 	}
 
@@ -17679,7 +18373,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleEventGenerator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8a9d0240);
 		return ptr;
 	}
 
@@ -17697,7 +18392,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleEventReceiverBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf6fcf619);
 		return ptr;
 	}
 
@@ -17714,7 +18410,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleEventReceiverKillParticles");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3fad77e7);
 		return ptr;
 	}
 
@@ -17738,7 +18435,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleEventReceiverSpawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x21dcfe87);
 		return ptr;
 	}
 
@@ -17753,7 +18451,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleKillBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf64cc548);
 		return ptr;
 	}
 
@@ -17774,7 +18473,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleKillBox");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9ee506f6);
 		return ptr;
 	}
 
@@ -17794,7 +18494,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleKillHeight");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf6d10e26);
 		return ptr;
 	}
 
@@ -17809,7 +18510,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLifetimeBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8bc031a5);
 		return ptr;
 	}
 
@@ -17825,7 +18527,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLifetime");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x155fe49e);
 		return ptr;
 	}
 
@@ -17841,7 +18544,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLifetime_Seeded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x43418569);
 		return ptr;
 	}
 
@@ -17856,7 +18560,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLightBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e98d232);
 		return ptr;
 	}
 
@@ -17886,7 +18591,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLight");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcbfe8541);
 		return ptr;
 	}
 
@@ -17902,7 +18608,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLight_Seeded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfbf4be70);
 		return ptr;
 	}
 
@@ -17917,7 +18624,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocationBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x738a3025);
 		return ptr;
 	}
 
@@ -17935,7 +18643,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc3aefb1e);
 		return ptr;
 	}
 
@@ -17951,7 +18660,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocation_Seeded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf6294e9);
 		return ptr;
 	}
 
@@ -17966,7 +18676,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocationWorldOffset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x302de3e3);
 		return ptr;
 	}
 
@@ -17982,7 +18693,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocationWorldOffset_Seeded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd41264fe);
 		return ptr;
 	}
 
@@ -18012,7 +18724,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocationBoneSocket");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf61778e7);
 		return ptr;
 	}
 
@@ -18031,7 +18744,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocationDirect");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x94eadc01);
 		return ptr;
 	}
 
@@ -18056,7 +18770,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocationEmitter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf8b341f8);
 		return ptr;
 	}
 
@@ -18072,7 +18787,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocationEmitterDirect");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1f426ebb);
 		return ptr;
 	}
 
@@ -18098,7 +18814,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocationPrimitiveBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7de2824e);
 		return ptr;
 	}
 
@@ -18119,7 +18836,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocationPrimitiveCylinder");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8258a567);
 		return ptr;
 	}
 
@@ -18135,7 +18853,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocationPrimitiveCylinder_Seeded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x65f58c9a);
 		return ptr;
 	}
 
@@ -18151,7 +18870,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocationPrimitiveSphere");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4280b436);
 		return ptr;
 	}
 
@@ -18167,7 +18887,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocationPrimitiveSphere_Seeded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xceffc801);
 		return ptr;
 	}
 
@@ -18186,7 +18907,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocationPrimitiveTriangle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1875b871);
 		return ptr;
 	}
 
@@ -18221,7 +18943,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleLocationSkelVertSurface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6c054bc7);
 		return ptr;
 	}
 
@@ -18237,7 +18960,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModulePivotOffset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6a2bd210);
 		return ptr;
 	}
 
@@ -18253,7 +18977,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleSourceMovement");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfee7a813);
 		return ptr;
 	}
 
@@ -18268,7 +18993,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleMaterialBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9908a68b);
 		return ptr;
 	}
 
@@ -18284,7 +19010,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleMeshMaterial");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x83ad0043);
 		return ptr;
 	}
 
@@ -18301,7 +19028,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleOrbitBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x341a2e8a);
 		return ptr;
 	}
 
@@ -18327,7 +19055,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleOrbit");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe38aef39);
 		return ptr;
 	}
 
@@ -18342,7 +19071,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleOrientationBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x15d5f800);
 		return ptr;
 	}
 
@@ -18359,7 +19089,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleOrientationAxisLock");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7db70ec9);
 		return ptr;
 	}
 
@@ -18374,7 +19105,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleParameterBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe11ce173);
 		return ptr;
 	}
 
@@ -18393,7 +19125,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleParameterDynamic");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc1bbb88f);
 		return ptr;
 	}
 
@@ -18409,7 +19142,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleParameterDynamic_Seeded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9cfaadc2);
 		return ptr;
 	}
 
@@ -18432,7 +19166,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SubUVAnimation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5fbc6ef6);
 		return ptr;
 	}
 
@@ -18508,7 +19243,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleRequired");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2c943364);
 		return ptr;
 	}
 
@@ -18523,7 +19259,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleRotationBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9c6d853a);
 		return ptr;
 	}
 
@@ -18541,7 +19278,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleMeshRotation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2cf3776a);
 		return ptr;
 	}
 
@@ -18557,7 +19295,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleMeshRotation_Seeded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf816973d);
 		return ptr;
 	}
 
@@ -18573,7 +19312,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleRotation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xadeb9449);
 		return ptr;
 	}
 
@@ -18589,7 +19329,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleRotation_Seeded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x25b68598);
 		return ptr;
 	}
 
@@ -18607,7 +19348,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleRotationOverLifetime");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc797f79e);
 		return ptr;
 	}
 
@@ -18622,7 +19364,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleRotationRateBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6a411ec);
 		return ptr;
 	}
 
@@ -18638,7 +19381,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleMeshRotationRate");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb08588a4);
 		return ptr;
 	}
 
@@ -18654,7 +19398,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleMeshRotationRate_Seeded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbfff312b);
 		return ptr;
 	}
 
@@ -18670,7 +19415,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleMeshRotationRateMultiplyLife");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8f79f15a);
 		return ptr;
 	}
 
@@ -18688,7 +19434,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleMeshRotationRateOverLife");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaec83c04);
 		return ptr;
 	}
 
@@ -18704,7 +19451,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleRotationRate");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb43fd5db);
 		return ptr;
 	}
 
@@ -18720,7 +19468,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleRotationRate_Seeded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x51c9c0f6);
 		return ptr;
 	}
 
@@ -18736,7 +19485,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleRotationRateMultiplyLife");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5ef09fe9);
 		return ptr;
 	}
 
@@ -18751,7 +19501,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleSizeBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1e924d3f);
 		return ptr;
 	}
 
@@ -18767,7 +19518,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleSize");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb48a0f40);
 		return ptr;
 	}
 
@@ -18783,7 +19535,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleSize_Seeded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa6c9899f);
 		return ptr;
 	}
 
@@ -18803,7 +19556,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleSizeMultiplyLife");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8ebf6bc6);
 		return ptr;
 	}
 
@@ -18823,7 +19577,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleSizeScale");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdab1d7c6);
 		return ptr;
 	}
 
@@ -18840,7 +19595,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleSizeScaleBySpeed");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcded3292);
 		return ptr;
 	}
 
@@ -18858,7 +19614,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleSpawnBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xedb0af1b);
 		return ptr;
 	}
 
@@ -18881,7 +19638,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleSpawn");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfcf00e04);
 		return ptr;
 	}
 
@@ -18907,7 +19665,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleSpawnPerUnit");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe39ed2db);
 		return ptr;
 	}
 
@@ -18922,7 +19681,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleSubUVBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x876b94a9);
 		return ptr;
 	}
 
@@ -18941,7 +19701,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleSubUV");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf8b4feaa);
 		return ptr;
 	}
 
@@ -18961,7 +19722,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleSubUVMovie");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x86f7e9a);
 		return ptr;
 	}
 
@@ -18976,7 +19738,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleTrailBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7b73f47e);
 		return ptr;
 	}
 
@@ -19003,7 +19766,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleTrailSource");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa7788a96);
 		return ptr;
 	}
 
@@ -19018,7 +19782,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleTypeDataBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x765deebc);
 		return ptr;
 	}
 
@@ -19042,7 +19807,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleTypeDataAnimTrail");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xba017358);
 		return ptr;
 	}
 
@@ -19080,7 +19846,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleTypeDataBeam2");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc5315e6c);
 		return ptr;
 	}
 
@@ -19100,7 +19867,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleTypeDataGpu");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6896b313);
 		return ptr;
 	}
 
@@ -19141,7 +19909,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleTypeDataMesh");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2826d320);
 		return ptr;
 	}
 
@@ -19180,7 +19949,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleTypeDataRibbon");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd04a9337);
 		return ptr;
 	}
 
@@ -19195,7 +19965,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleVectorFieldBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x428353b5);
 		return ptr;
 	}
 
@@ -19215,7 +19986,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleVectorFieldGlobal");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2be58fbf);
 		return ptr;
 	}
 
@@ -19242,7 +20014,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleVectorFieldLocal");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x399b3d63);
 		return ptr;
 	}
 
@@ -19259,7 +20032,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleVectorFieldRotation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbf94d18);
 		return ptr;
 	}
 
@@ -19276,7 +20050,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleVectorFieldRotationRate");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc9090f9e);
 		return ptr;
 	}
 
@@ -19293,7 +20068,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleVectorFieldScale");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x312122f0);
 		return ptr;
 	}
 
@@ -19310,7 +20086,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleVectorFieldScaleOverLife");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbe4f4bf0);
 		return ptr;
 	}
 
@@ -19328,7 +20105,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleVelocityBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x131acbd1);
 		return ptr;
 	}
 
@@ -19345,7 +20123,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleVelocity");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb0b48dd2);
 		return ptr;
 	}
 
@@ -19361,7 +20140,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleVelocity_Seeded");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x18a85265);
 		return ptr;
 	}
 
@@ -19380,7 +20160,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleVelocityCone");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x958a1db7);
 		return ptr;
 	}
 
@@ -19396,7 +20177,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleVelocityInheritParent");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xef6d141f);
 		return ptr;
 	}
 
@@ -19414,7 +20196,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleVelocityOverLifetime");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb6de0a0d);
 		return ptr;
 	}
 
@@ -19429,7 +20212,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleModuleEventSendToGame");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x15792d82);
 		return ptr;
 	}
 
@@ -19446,7 +20230,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ParticleSystemReplay");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5dc38c85);
 		return ptr;
 	}
 
@@ -19461,7 +20246,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DemoPendingNetGame");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x34cd30e8);
 		return ptr;
 	}
 
@@ -19494,7 +20280,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicalMaterial");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5d0b5395);
 		return ptr;
 	}
 
@@ -19509,7 +20296,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicalMaterialPropertyBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1a181b1);
 		return ptr;
 	}
 
@@ -19529,7 +20317,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicsCollisionHandler");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6fb64080);
 		return ptr;
 	}
 
@@ -19549,7 +20338,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicsConstraintTemplate");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x66a59563);
 		return ptr;
 	}
 
@@ -19565,7 +20355,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PhysicsSerializer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6a710458);
 		return ptr;
 	}
 
@@ -19581,7 +20372,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PlatformInterfaceBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x78c9bca2);
 		return ptr;
 	}
 
@@ -19599,7 +20391,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CloudStorageBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa0985c0);
 		return ptr;
 	}
 
@@ -19618,7 +20411,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.InGameAdManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc19c5446);
 		return ptr;
 	}
 
@@ -19636,7 +20430,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.MicroTransactionBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5334fcd2);
 		return ptr;
 	}
 
@@ -19651,7 +20446,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TwitterIntegrationBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8264fbb3);
 		return ptr;
 	}
 
@@ -19680,7 +20476,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.PlatformInterfaceWebResponse");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1b69ce80);
 		return ptr;
 	}
 
@@ -19700,7 +20497,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ChildConnection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5fd0b5fd);
 		return ptr;
 	}
 
@@ -19716,7 +20514,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Polys");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7e94face);
 		return ptr;
 	}
 
@@ -19732,7 +20531,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ReporterBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x26da94bd);
 		return ptr;
 	}
 
@@ -19748,7 +20548,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ReporterGraph");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe4a09d1e);
 		return ptr;
 	}
 
@@ -19775,7 +20576,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ReverbEffect");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaa517396);
 		return ptr;
 	}
 
@@ -19792,7 +20594,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Rig");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe1a1cd5d);
 		return ptr;
 	}
 
@@ -19807,7 +20610,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SaveGame");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7419c700);
 		return ptr;
 	}
 
@@ -19828,7 +20632,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SimpleConstructionScript");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb5072d9d);
 		return ptr;
 	}
 
@@ -19863,7 +20668,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SCS_Node");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa89d086d);
 		return ptr;
 	}
 
@@ -19879,7 +20685,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Selection");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7e190c39);
 		return ptr;
 	}
 
@@ -19897,7 +20704,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DestructibleMesh");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7612a40c);
 		return ptr;
 	}
 
@@ -19914,7 +20722,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SkeletalMeshReductionSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc0e15fb5);
 		return ptr;
 	}
 
@@ -19936,7 +20745,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SkeletalMeshSocket");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6c856704);
 		return ptr;
 	}
 
@@ -19955,7 +20765,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SlateBrushAsset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1ac7c640);
 		return ptr;
 	}
 
@@ -19987,7 +20798,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Texture");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7ab2da92);
 		return ptr;
 	}
 
@@ -20002,7 +20814,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SlateTextureAtlasInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5224788b);
 		return ptr;
 	}
 
@@ -20018,7 +20831,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundConcurrency");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa0bb67c3);
 		return ptr;
 	}
 
@@ -20052,7 +20866,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf485ecb9);
 		return ptr;
 	}
 
@@ -20068,7 +20883,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DialogueSoundWaveProxy");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7db60f79);
 		return ptr;
 	}
 
@@ -20091,7 +20907,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundCue");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x20e58d4b);
 		return ptr;
 	}
 
@@ -20108,7 +20925,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundGroups");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xab2b6f32);
 		return ptr;
 	}
 
@@ -20148,7 +20966,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundWave");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x58e4dde5);
 		return ptr;
 	}
 
@@ -20164,7 +20983,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundWaveProcedural");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x51ce74ac);
 		return ptr;
 	}
 
@@ -20184,7 +21004,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundClass");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1e4749a);
 		return ptr;
 	}
 
@@ -20200,7 +21021,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundEffectPreset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4fbdbc5c);
 		return ptr;
 	}
 
@@ -20215,7 +21037,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundEffectSourcePreset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbd36728f);
 		return ptr;
 	}
 
@@ -20230,7 +21053,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundEffectSubmixPreset");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc60133d0);
 		return ptr;
 	}
 
@@ -20254,7 +21078,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundMix");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa40e5858);
 		return ptr;
 	}
 
@@ -20270,7 +21095,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb1ffcd7e);
 		return ptr;
 	}
 
@@ -20285,7 +21111,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeAssetReferencer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x96ae0ca1);
 		return ptr;
 	}
 
@@ -20305,7 +21132,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeWavePlayer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf5dc75ee);
 		return ptr;
 	}
 
@@ -20324,7 +21152,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeAttenuation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x636d8766);
 		return ptr;
 	}
 
@@ -20340,7 +21169,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeBranch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x165e5df6);
 		return ptr;
 	}
 
@@ -20356,7 +21186,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeConcatenator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3f4a507b);
 		return ptr;
 	}
 
@@ -20373,7 +21204,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeDelay");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x55e2c7d7);
 		return ptr;
 	}
 
@@ -20391,7 +21223,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeDialoguePlayer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4ecd64e7);
 		return ptr;
 	}
 
@@ -20407,7 +21240,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeDistanceCrossFade");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x231f94bb);
 		return ptr;
 	}
 
@@ -20423,7 +21257,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeParamCrossFade");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaedd67fd);
 		return ptr;
 	}
 
@@ -20440,7 +21275,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeDoppler");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x849b1cae);
 		return ptr;
 	}
 
@@ -20470,7 +21306,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeEnveloper");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5284888);
 		return ptr;
 	}
 
@@ -20486,7 +21323,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeGroupControl");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xad237e32);
 		return ptr;
 	}
 
@@ -20504,7 +21342,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeLooping");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xebfeb2b0);
 		return ptr;
 	}
 
@@ -20519,7 +21358,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeMature");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8e12d2da);
 		return ptr;
 	}
 
@@ -20535,7 +21375,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeMixer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x75c7ead9);
 		return ptr;
 	}
 
@@ -20554,7 +21395,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeModulator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb335bf8d);
 		return ptr;
 	}
 
@@ -20571,7 +21413,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeModulatorContinuous");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf2a07994);
 		return ptr;
 	}
 
@@ -20598,7 +21441,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeOscillator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x19250120);
 		return ptr;
 	}
 
@@ -20613,7 +21457,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeQualityLevel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xde870fe5);
 		return ptr;
 	}
 
@@ -20635,7 +21480,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeRandom");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8dd0e1f);
 		return ptr;
 	}
 
@@ -20651,7 +21497,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeSoundClass");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6778e651);
 		return ptr;
 	}
 
@@ -20667,7 +21514,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeSwitch");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2009e056);
 		return ptr;
 	}
 
@@ -20683,7 +21531,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundNodeWaveParam");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfce86af8);
 		return ptr;
 	}
 
@@ -20703,7 +21552,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SoundSubmix");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc6cfa666);
 		return ptr;
 	}
 
@@ -20745,7 +21595,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.StaticMesh");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x364d1dac);
 		return ptr;
 	}
 
@@ -20771,7 +21622,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.StaticMeshSocket");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x11cad48f);
 		return ptr;
 	}
 
@@ -20787,7 +21639,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.StringTable");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc290b5b2);
 		return ptr;
 	}
 
@@ -20806,7 +21659,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.VertexAttributeStream");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdafa1941);
 		return ptr;
 	}
 
@@ -20826,7 +21680,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SubDSurface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6d0581ec);
 		return ptr;
 	}
 
@@ -20843,7 +21698,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.SubsurfaceProfile");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1682cd31);
 		return ptr;
 	}
 
@@ -20861,7 +21717,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TextPropertyTestObject");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7808be5a);
 		return ptr;
 	}
 
@@ -20895,7 +21752,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Texture2D");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6d054f38);
 		return ptr;
 	}
 
@@ -20914,7 +21772,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.LightMapTexture2D");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4082932e);
 		return ptr;
 	}
 
@@ -20931,7 +21790,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ShadowMapTexture2D");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xabd4a10);
 		return ptr;
 	}
 
@@ -20948,7 +21808,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TextureLightProfile");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe9dc4f25);
 		return ptr;
 	}
 
@@ -20966,7 +21827,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.Texture2DDynamic");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd7e43dfb);
 		return ptr;
 	}
 
@@ -20982,7 +21844,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TextureCube");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x96c5c459);
 		return ptr;
 	}
 
@@ -20999,7 +21862,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TextureRenderTarget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x27798411);
 		return ptr;
 	}
 
@@ -21027,7 +21891,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TextureRenderTarget2D");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcc8cbd7);
 		return ptr;
 	}
 
@@ -21046,7 +21911,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.CanvasRenderTarget2D");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1ef0e72c);
 		return ptr;
 	}
 
@@ -21073,7 +21939,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TextureRenderTargetCube");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc55fdb5a);
 		return ptr;
 	}
 
@@ -21089,7 +21956,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TextureLODSettings");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x22ce2978);
 		return ptr;
 	}
 
@@ -21110,7 +21978,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.DeviceProfile");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa51b59e2);
 		return ptr;
 	}
 
@@ -21125,7 +21994,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.ThumbnailInfo");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfb4bf017);
 		return ptr;
 	}
 
@@ -21155,7 +22025,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TimelineTemplate");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x602d9692);
 		return ptr;
 	}
 
@@ -21180,7 +22051,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.TouchInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf80fd25f);
 		return ptr;
 	}
 
@@ -21196,7 +22068,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.UserDefinedEnum");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8febdd2c);
 		return ptr;
 	}
 
@@ -21213,7 +22086,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.VectorField");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1b1d9ed8);
 		return ptr;
 	}
 
@@ -21243,7 +22117,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.VectorFieldAnimated");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x463570f3);
 		return ptr;
 	}
 
@@ -21262,7 +22137,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.VectorFieldStatic");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x87105f7a);
 		return ptr;
 	}
 
@@ -21277,7 +22153,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.VisualLoggerAutomationTests");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5c88c79b);
 		return ptr;
 	}
 
@@ -21292,7 +22169,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.VisualLoggerDebugSnapshotInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x846f1cf7);
 		return ptr;
 	}
 
@@ -21314,7 +22192,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class Engine.WorldComposition");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x95a271ab);
 		return ptr;
 	}
 

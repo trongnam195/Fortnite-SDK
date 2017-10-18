@@ -43,7 +43,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.AthenaHUDContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe486c50b);
 		return ptr;
 	}
 
@@ -65,7 +66,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHUDElementWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd567c124);
 		return ptr;
 	}
 
@@ -83,7 +85,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.AthenaHUDTeamIndicatorBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x601cf493);
 		return ptr;
 	}
 
@@ -98,7 +101,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTabButtonInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x799bebdb);
 		return ptr;
 	}
 
@@ -117,7 +121,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTabListWidgetBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc96c40c5);
 		return ptr;
 	}
 
@@ -146,7 +151,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.AthenaInventoryPanelBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x89ac03d6);
 		return ptr;
 	}
 
@@ -191,7 +197,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.AthenaLeaderboardScreenBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x711d1e5f);
 		return ptr;
 	}
 
@@ -219,7 +226,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.AthenaLobbyBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9322a62);
 		return ptr;
 	}
 
@@ -240,7 +248,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.AthenaLootStoreScreenBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x824c517b);
 		return ptr;
 	}
 
@@ -256,7 +265,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.AthenaMatchReadyDesktopPopup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x93797309);
 		return ptr;
 	}
 
@@ -277,7 +287,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.AthenaStatsScreenBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdf79eb3f);
 		return ptr;
 	}
 
@@ -304,7 +315,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAbilitySystemContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9e368beb);
 		return ptr;
 	}
 
@@ -322,7 +334,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAccountStatsContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xba9c385c);
 		return ptr;
 	}
 
@@ -343,7 +356,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortActivatablePanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x25485b49);
 		return ptr;
 	}
 
@@ -365,7 +379,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAccountLinkingWindow");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6c66dbfa);
 		return ptr;
 	}
 
@@ -385,7 +400,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAsyncAction_CheckHasRedeemForAccess");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8d99142b);
 		return ptr;
 	}
 
@@ -405,7 +421,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAsyncAction_ShowPlatformStoreForPurchase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x402f0e33);
 		return ptr;
 	}
 
@@ -425,7 +442,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAsyncAction_ShowPlatformRedeemCode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbc996cb1);
 		return ptr;
 	}
 
@@ -448,7 +466,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAsyncAction_WebCreateEpicAccountAndLink");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8a999d09);
 		return ptr;
 	}
 
@@ -468,7 +487,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAsyncAction_CreateHeadlessAccount");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1a9079ee);
 		return ptr;
 	}
 
@@ -487,7 +507,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookProgressionRewardDetailInspectWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x41fa606b);
 		return ptr;
 	}
 
@@ -514,7 +535,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookProgressionRewardsModalWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfcef797c);
 		return ptr;
 	}
 
@@ -540,7 +562,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaecbe76e);
 		return ptr;
 	}
 
@@ -562,7 +585,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortErrorWindow");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9dd27b89);
 		return ptr;
 	}
 
@@ -584,7 +608,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortGameFeedbackBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x76ec9d59);
 		return ptr;
 	}
 
@@ -606,7 +631,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortInfoWindow");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x81f718c5);
 		return ptr;
 	}
 
@@ -628,7 +654,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMtxOfferData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe79dbcd8);
 		return ptr;
 	}
 
@@ -644,7 +671,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMtxOfferDetailsBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdacfc01);
 		return ptr;
 	}
 
@@ -674,7 +702,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPlayerProfileModalWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x211a828c);
 		return ptr;
 	}
 
@@ -689,7 +718,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortFrontendInventoryFilterFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa5b13272);
 		return ptr;
 	}
 
@@ -715,7 +745,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemManagementScreen");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x789dc899);
 		return ptr;
 	}
 
@@ -756,7 +787,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemViewContextInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x96de1ee5);
 		return ptr;
 	}
 
@@ -772,7 +804,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadManagementItemViewContextBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbffc8b54);
 		return ptr;
 	}
 
@@ -788,7 +821,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemViewContext_SquadSlotsView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x34173d45);
 		return ptr;
 	}
 
@@ -804,7 +838,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemViewContext_SquadSlotItemPicker");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x44efb258);
 		return ptr;
 	}
 
@@ -820,7 +855,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemViewContext_ExpeditionSquadSlotsView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf49c3010);
 		return ptr;
 	}
 
@@ -836,7 +872,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemViewContext_ExpeditionSquadSlotItemPicker");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb494dcf3);
 		return ptr;
 	}
 
@@ -867,7 +904,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadManagementScreenBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x69ae33b7);
 		return ptr;
 	}
 
@@ -902,7 +940,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHeroSquadManagementScreen");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4efaa4fc);
 		return ptr;
 	}
 
@@ -917,7 +956,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSurvivorSquadManagementScreen");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa68ddaea);
 		return ptr;
 	}
 
@@ -935,7 +975,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadSelectorButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x98b02fea);
 		return ptr;
 	}
 
@@ -962,7 +1003,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadTypeLandingPageBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa40df748);
 		return ptr;
 	}
 
@@ -982,7 +1024,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTopBarPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc0525829);
 		return ptr;
 	}
 
@@ -997,7 +1040,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTwitchLoginModalWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa0cbe49e);
 		return ptr;
 	}
 
@@ -1016,7 +1060,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortActorCanvas");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcbfc1cdc);
 		return ptr;
 	}
 
@@ -1038,7 +1083,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortActorCanvasSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5f308578);
 		return ptr;
 	}
 
@@ -1062,7 +1108,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAlterationsWidget_NUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x832630d8);
 		return ptr;
 	}
 
@@ -1087,7 +1134,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAlterationWidget_NUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8cd13437);
 		return ptr;
 	}
 
@@ -1108,7 +1156,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAnnouncementWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x267ae174);
 		return ptr;
 	}
 
@@ -1127,7 +1176,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortArmoryScreen");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6e0722cf);
 		return ptr;
 	}
 
@@ -1145,7 +1195,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAsyncAction_SetUIState");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa7547685);
 		return ptr;
 	}
 
@@ -1165,7 +1216,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAsyncAction_ShowAdvancedLatentConfirmation_NUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3948636d);
 		return ptr;
 	}
 
@@ -1187,7 +1239,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAsyncAction_ShowConfirmation");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf3839ff0);
 		return ptr;
 	}
 
@@ -1207,7 +1260,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAsyncAction_ShowConfirmation_NUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x41b6cd45);
 		return ptr;
 	}
 
@@ -1231,7 +1285,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAsyncAction_ShowPartyDialog");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf66c6545);
 		return ptr;
 	}
 
@@ -1265,7 +1320,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAthenaMatchmakingWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbe9a6078);
 		return ptr;
 	}
 
@@ -1287,7 +1343,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAthenaNewsWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcf3c2a05);
 		return ptr;
 	}
 
@@ -1307,7 +1364,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUserWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8cf73f64);
 		return ptr;
 	}
 
@@ -1325,7 +1383,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortNodeCanvasEntityInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x71b0cb21);
 		return ptr;
 	}
 
@@ -1340,7 +1399,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortNodeCanvasInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x27e9501a);
 		return ptr;
 	}
 
@@ -1365,7 +1425,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortBaseCanvasEntity");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaa97a983);
 		return ptr;
 	}
 
@@ -1388,7 +1449,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortBaseCanvasNode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf9eeba0a);
 		return ptr;
 	}
 
@@ -1427,7 +1489,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortNodeCanvas");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7b59840d);
 		return ptr;
 	}
 
@@ -1453,7 +1516,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortBangWrapper");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd29a2924);
 		return ptr;
 	}
 
@@ -1496,7 +1560,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortGlobalUIContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd7c1077f);
 		return ptr;
 	}
 
@@ -1608,7 +1673,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAthenaTabsScreenBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7aa2fd7);
 		return ptr;
 	}
 
@@ -1631,7 +1697,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAttributeListItem_NUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8d8b4e2f);
 		return ptr;
 	}
 
@@ -1662,7 +1729,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAttributeList_NUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xecf6fd66);
 		return ptr;
 	}
 
@@ -1686,7 +1754,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAttributeListItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcd0dfc62);
 		return ptr;
 	}
 
@@ -1716,7 +1785,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortBangWrapper_NUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa8d72401);
 		return ptr;
 	}
 
@@ -1745,7 +1815,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortBannerSelectorBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xffc17deb);
 		return ptr;
 	}
 
@@ -1768,7 +1839,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortBorderStyleList");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x84a43776);
 		return ptr;
 	}
 
@@ -1787,7 +1859,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortButtonInternalWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3b8a2062);
 		return ptr;
 	}
 
@@ -1814,7 +1887,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortButtonStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xef1f5c4);
 		return ptr;
 	}
 
@@ -1860,7 +1934,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortBaseButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x33d61dca);
 		return ptr;
 	}
 
@@ -1906,7 +1981,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortChatWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x27828297);
 		return ptr;
 	}
 
@@ -1924,7 +2000,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCheatMenuFactory");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2889e347);
 		return ptr;
 	}
 
@@ -1950,7 +2027,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookGenericRewardWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa6da7ad4);
 		return ptr;
 	}
 
@@ -1973,7 +2051,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookPageCompletionRewardWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1e7bc7ec);
 		return ptr;
 	}
 
@@ -1990,7 +2069,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookProgressionRewardWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf97dc7be);
 		return ptr;
 	}
 
@@ -2010,7 +2090,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemWidget_NUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6ad7a9ed);
 		return ptr;
 	}
 
@@ -2028,7 +2109,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemCardBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x213855b5);
 		return ptr;
 	}
 
@@ -2051,7 +2133,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRewardInfoButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdb40e234);
 		return ptr;
 	}
 
@@ -2085,7 +2168,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRewardInfoWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x92c3d2c);
 		return ptr;
 	}
 
@@ -2108,7 +2192,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookRewardModalWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x99f00b62);
 		return ptr;
 	}
 
@@ -2128,7 +2213,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookSectionCompletionRewardWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x69532708);
 		return ptr;
 	}
 
@@ -2151,7 +2237,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookOverviewWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcc2a5b5f);
 		return ptr;
 	}
 
@@ -2180,7 +2267,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookPageDetailsWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7121fab7);
 		return ptr;
 	}
 
@@ -2208,7 +2296,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookPageListWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xeb9093d3);
 		return ptr;
 	}
 
@@ -2240,7 +2329,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookPrimaryPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4e975362);
 		return ptr;
 	}
 
@@ -2265,7 +2355,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookProgressionRewardsPreviewWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd05b3e93);
 		return ptr;
 	}
 
@@ -2289,7 +2380,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookProgressWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf5ba4fd3);
 		return ptr;
 	}
 
@@ -2316,7 +2408,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookRecycleSlotResultsWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe9906c05);
 		return ptr;
 	}
 
@@ -2345,7 +2438,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookRewardCardWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4f9d9b21);
 		return ptr;
 	}
 
@@ -2394,7 +2488,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookSectionPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8d0020cb);
 		return ptr;
 	}
 
@@ -2445,7 +2540,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookSlotWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa90f5d4a);
 		return ptr;
 	}
 
@@ -2476,7 +2572,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookSectionTileWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4ca2620f);
 		return ptr;
 	}
 
@@ -2495,7 +2592,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookSlotButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x99747cfe);
 		return ptr;
 	}
 
@@ -2512,7 +2610,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookSlotDetailsWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1926c524);
 		return ptr;
 	}
 
@@ -2538,7 +2637,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookSlotView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc7c8d331);
 		return ptr;
 	}
 
@@ -2558,7 +2658,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCommittableButtonGroup");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe83b6a93);
 		return ptr;
 	}
 
@@ -2574,7 +2675,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortDailyRewardsItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4ffb1629);
 		return ptr;
 	}
 
@@ -2590,7 +2692,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortDailyRewardsSchedule");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x72cadcb3);
 		return ptr;
 	}
 
@@ -2606,7 +2709,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortDailyRewards");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3b1f9674);
 		return ptr;
 	}
 
@@ -2634,7 +2738,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortExpeditionBuildSquadWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x929aeb52);
 		return ptr;
 	}
 
@@ -2666,7 +2771,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortExpeditionDetailsWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf850f796);
 		return ptr;
 	}
 
@@ -2689,7 +2795,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortExpeditionExpiresWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xad3149c0);
 		return ptr;
 	}
 
@@ -2710,7 +2817,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortExpeditionListItemWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x77ffd1f5);
 		return ptr;
 	}
 
@@ -2733,7 +2841,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortExpeditionListViewWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfdf0dfcb);
 		return ptr;
 	}
 
@@ -2753,7 +2862,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortExpeditionMasterWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x74123b26);
 		return ptr;
 	}
 
@@ -2772,7 +2882,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortExpeditionOverviewWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbaf846a1);
 		return ptr;
 	}
 
@@ -2795,7 +2906,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortExpeditionPickVehicleWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfc0179f9);
 		return ptr;
 	}
 
@@ -2814,7 +2926,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortExpeditionReturnsWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd7d22d8d);
 		return ptr;
 	}
 
@@ -2836,7 +2949,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortExpeditionRewardsWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x95df9968);
 		return ptr;
 	}
 
@@ -2865,7 +2979,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortExpeditionSummaryWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb1160204);
 		return ptr;
 	}
 
@@ -2882,7 +2997,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortExpeditionUtilities");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x23455f7c);
 		return ptr;
 	}
 
@@ -2914,7 +3030,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortExpeditionVehicleTileItemWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x36117839);
 		return ptr;
 	}
 
@@ -2929,7 +3046,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSkillTreeCanvasEntityInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc319d08a);
 		return ptr;
 	}
 
@@ -2949,7 +3067,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSkillTreeNodeDisplayDataRegistry");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3f4c1143);
 		return ptr;
 	}
 
@@ -2969,7 +3088,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSkillTreeCanvasNode");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf0a75330);
 		return ptr;
 	}
 
@@ -3003,7 +3123,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortKeybindWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbbcabba3);
 		return ptr;
 	}
 
@@ -3029,7 +3150,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemInspectionScreen");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa1be3e6);
 		return ptr;
 	}
 
@@ -3054,7 +3176,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSkillTreeViewer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc32019f6);
 		return ptr;
 	}
 
@@ -3183,7 +3306,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIDataConfiguration");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x76203e7);
 		return ptr;
 	}
 
@@ -3221,7 +3345,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortFrontEndContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfb47b4b2);
 		return ptr;
 	}
 
@@ -3304,7 +3429,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortGridPickerTile");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe25f69d3);
 		return ptr;
 	}
 
@@ -3347,7 +3473,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortGridWidgetBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1ce5d246);
 		return ptr;
 	}
 
@@ -3381,7 +3508,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortGridPickerButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd5b5222b);
 		return ptr;
 	}
 
@@ -3402,7 +3530,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortGridWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9c4f8ed);
 		return ptr;
 	}
 
@@ -3430,7 +3559,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHeroManagementContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x47e34475);
 		return ptr;
 	}
 
@@ -3497,7 +3627,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHeroNotificationHandler");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xeb0c9d54);
 		return ptr;
 	}
 
@@ -3522,7 +3653,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHeroSupportPerkWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x89c8da4e);
 		return ptr;
 	}
 
@@ -3549,7 +3681,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHomebaseNodeItemUtilities");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4a4bd80e);
 		return ptr;
 	}
 
@@ -3581,7 +3714,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHomebaseUIContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcbcfd856);
 		return ptr;
 	}
 
@@ -3623,7 +3757,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHomeCMSScreenBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x395e647c);
 		return ptr;
 	}
 
@@ -3644,7 +3779,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHUDCenterPopupMessageWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2384afbc);
 		return ptr;
 	}
 
@@ -3736,7 +3872,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHUDContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf0a494d1);
 		return ptr;
 	}
 
@@ -3793,7 +3930,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.AthenaHUDGamePhaseChangingBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbd26d507);
 		return ptr;
 	}
 
@@ -3815,7 +3953,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.AthenaHUDPlayerActionAlertBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6b3df9d4);
 		return ptr;
 	}
 
@@ -3844,7 +3983,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortActorIndicatorWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa6b4e073);
 		return ptr;
 	}
 
@@ -3860,7 +4000,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.AthenaPlayersLeftBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x65f599cb);
 		return ptr;
 	}
 
@@ -3875,7 +4016,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.AthenaTeamMemberIndicatorBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x318a03ba);
 		return ptr;
 	}
 
@@ -3894,7 +4036,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCraftingBarWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd15bc266);
 		return ptr;
 	}
 
@@ -3914,7 +4057,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHUDEquipProgressBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb5cd48fe);
 		return ptr;
 	}
 
@@ -3929,7 +4073,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHUDObjectiveSizeInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x469a1da3);
 		return ptr;
 	}
 
@@ -3954,7 +4099,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMissionTrackerList");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfb4e6573);
 		return ptr;
 	}
 
@@ -3979,7 +4125,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortQuestTrackerList");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfcda2c23);
 		return ptr;
 	}
 
@@ -4010,7 +4157,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMissionTracker");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5f11001f);
 		return ptr;
 	}
 
@@ -4030,7 +4178,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortReticle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcab3593);
 		return ptr;
 	}
 
@@ -4052,7 +4201,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHUDTargetUnderReticleWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbb310881);
 		return ptr;
 	}
 
@@ -4076,7 +4226,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHUDVisibilityData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xdc42b634);
 		return ptr;
 	}
 
@@ -4098,7 +4249,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortIconWithLabel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9c58f40c);
 		return ptr;
 	}
 
@@ -4116,7 +4268,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHeroSupportPerkIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8de95b89);
 		return ptr;
 	}
 
@@ -4137,7 +4290,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemCategoryIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x340f2fdf);
 		return ptr;
 	}
 
@@ -4171,7 +4325,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortInventoryContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6045529c);
 		return ptr;
 	}
 
@@ -4271,7 +4426,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemCardMaterialPooler");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfcad8c52);
 		return ptr;
 	}
 
@@ -4286,7 +4442,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemCardUtilities");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2382292);
 		return ptr;
 	}
 
@@ -4311,7 +4468,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemCooldownWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x40d17767);
 		return ptr;
 	}
 
@@ -4337,7 +4495,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemCountTextBlock");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x92e4127f);
 		return ptr;
 	}
 
@@ -4364,7 +4523,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemDetailElementWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf14386fd);
 		return ptr;
 	}
 
@@ -4393,7 +4553,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemDetailsHostPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x574c74ce);
 		return ptr;
 	}
 
@@ -4418,7 +4579,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadSlotItemDetailElementWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2d8d3de5);
 		return ptr;
 	}
 
@@ -4440,7 +4602,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadSlotItemDetailsHostPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfea5f206);
 		return ptr;
 	}
 
@@ -4469,7 +4632,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadSlotSurvivorTraitMatchesDetailWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x703cf21b);
 		return ptr;
 	}
 
@@ -4490,7 +4654,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemDetailsActivatablePanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5a6f35be);
 		return ptr;
 	}
 
@@ -4510,7 +4675,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemDetailsModeActivatablePanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xab9c3b9b);
 		return ptr;
 	}
 
@@ -4529,7 +4695,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemCompareModeActivatablePanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe3de7694);
 		return ptr;
 	}
 
@@ -4546,7 +4713,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemMulchModeActivatablePanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xde0f082);
 		return ptr;
 	}
 
@@ -4565,7 +4733,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemManagementItemDetailsPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x39317244);
 		return ptr;
 	}
 
@@ -4586,7 +4755,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemManagementMulchDetailsPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4dbd9f60);
 		return ptr;
 	}
 
@@ -4613,7 +4783,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemManagementModeDetailsPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4b10c164);
 		return ptr;
 	}
 
@@ -4635,7 +4806,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemDetailsPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x395e95f0);
 		return ptr;
 	}
 
@@ -4660,7 +4832,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemDisplayNameText");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x10477946);
 		return ptr;
 	}
 
@@ -4686,7 +4859,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemIcon");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x103e671f);
 		return ptr;
 	}
 
@@ -4722,7 +4896,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemManagementInventoryPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x216163b3);
 		return ptr;
 	}
 
@@ -4771,7 +4946,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemPickerBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x67189289);
 		return ptr;
 	}
 
@@ -4805,7 +4981,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCollectionBookPicker");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcf702054);
 		return ptr;
 	}
 
@@ -4826,7 +5003,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortOutpostStorageItemPicker");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2e16f73);
 		return ptr;
 	}
 
@@ -4845,7 +5023,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadSlotItemPicker");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x25395d82);
 		return ptr;
 	}
 
@@ -4864,7 +5043,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTransformKeyPicker");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xed7e75b2);
 		return ptr;
 	}
 
@@ -4882,7 +5062,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTransformSlotItemPicker");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd0bd6298);
 		return ptr;
 	}
 
@@ -4902,7 +5083,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTrapDefenderItemPicker");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9ba968e);
 		return ptr;
 	}
 
@@ -4922,7 +5104,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemQuantityListEntryBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9c7ec53a);
 		return ptr;
 	}
 
@@ -4952,7 +5135,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemQuantityListBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x91d13668);
 		return ptr;
 	}
 
@@ -4981,7 +5165,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemRatingIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e19dd86);
 		return ptr;
 	}
 
@@ -5008,7 +5193,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemTileButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1c316dcc);
 		return ptr;
 	}
 
@@ -5023,7 +5209,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.AthenaInventoryFortItemTileButtonBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x66e45314);
 		return ptr;
 	}
 
@@ -5048,7 +5235,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemManagementItemTileButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xca9ff848);
 		return ptr;
 	}
 
@@ -5070,7 +5258,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemPickerButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb60934a);
 		return ptr;
 	}
 
@@ -5086,7 +5275,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadSlotItemPickerTileButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb6e5842e);
 		return ptr;
 	}
 
@@ -5105,7 +5295,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTransformKeyPickerTileButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe5b260de);
 		return ptr;
 	}
 
@@ -5120,7 +5311,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTransformSlotItemPickerTileButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xef5dc4a8);
 		return ptr;
 	}
 
@@ -5146,7 +5338,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemTileView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9e6eb813);
 		return ptr;
 	}
 
@@ -5173,7 +5366,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemTransform");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb39a4cb0);
 		return ptr;
 	}
 
@@ -5196,7 +5390,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMultiSizeItemCard");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2359f6a4);
 		return ptr;
 	}
 
@@ -5217,7 +5412,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortJournalQuestDetails");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd40927be);
 		return ptr;
 	}
 
@@ -5244,7 +5440,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortJournalQuestProgressBar");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x68003168);
 		return ptr;
 	}
 
@@ -5262,7 +5459,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortLeaderboardContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb4cef83);
 		return ptr;
 	}
 
@@ -5282,7 +5480,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortLeaderboardEntryWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb0b72c86);
 		return ptr;
 	}
 
@@ -5303,7 +5502,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortLegacySlateBridgeWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa349ce8);
 		return ptr;
 	}
 
@@ -5341,7 +5541,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortLevelIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe631dad8);
 		return ptr;
 	}
 
@@ -5373,7 +5574,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortListView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x61d711ba);
 		return ptr;
 	}
 
@@ -5398,7 +5600,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortLiveStreamGrantWindowExpires");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x785b6ea5);
 		return ptr;
 	}
 
@@ -5416,7 +5619,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortLobby");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9d01d87b);
 		return ptr;
 	}
 
@@ -5438,7 +5642,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortLoginAccountSelect");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x37f30cd);
 		return ptr;
 	}
 
@@ -5459,7 +5664,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMainTabsScreenBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6f60a565);
 		return ptr;
 	}
 
@@ -5484,7 +5690,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMaterialProgressBarStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xab34ca9d);
 		return ptr;
 	}
 
@@ -5507,7 +5714,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMaterialProgressBar");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xda8e98ce);
 		return ptr;
 	}
 
@@ -5528,7 +5736,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMicIndicatorWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf821a4e1);
 		return ptr;
 	}
 
@@ -5552,7 +5761,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMissionSelect");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf57edf19);
 		return ptr;
 	}
 
@@ -5581,7 +5791,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMissionTrackerEntry");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x24df9049);
 		return ptr;
 	}
 
@@ -5607,7 +5818,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMissionTrackerSubEntry");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x437aded9);
 		return ptr;
 	}
 
@@ -5627,7 +5839,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortModalContainerData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x14bc5029);
 		return ptr;
 	}
 
@@ -5652,7 +5865,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortModalContainerWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x850b60a1);
 		return ptr;
 	}
 
@@ -5669,7 +5883,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMtxStoreOfferBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5978fe9a);
 		return ptr;
 	}
 
@@ -5704,7 +5919,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMtxStoreRootBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8b88112);
 		return ptr;
 	}
 
@@ -5732,7 +5948,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMultiSizeImage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xde2d85a6);
 		return ptr;
 	}
 
@@ -5754,7 +5971,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortComparisonResultIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb9863460);
 		return ptr;
 	}
 
@@ -5773,7 +5991,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSimpleItemConditionIconIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7152b131);
 		return ptr;
 	}
 
@@ -5792,7 +6011,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortEvolveIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x67b9a4cd);
 		return ptr;
 	}
 
@@ -5807,7 +6027,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortFavoriteIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x470d15b0);
 		return ptr;
 	}
 
@@ -5822,7 +6043,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortInventoryOverflowIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa31499b8);
 		return ptr;
 	}
 
@@ -5837,7 +6059,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTrackedIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7b6d3578);
 		return ptr;
 	}
 
@@ -5852,7 +6075,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUpgradeIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3db5a3be);
 		return ptr;
 	}
 
@@ -5877,7 +6101,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortNumericTextBlock");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa68c7f9e);
 		return ptr;
 	}
 
@@ -5897,7 +6122,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortOptionsMenu");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x928b1478);
 		return ptr;
 	}
 
@@ -5933,7 +6159,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortOptionsMenuInputData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xac4b506c);
 		return ptr;
 	}
 
@@ -5949,7 +6176,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortOptionsTab");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x215ef3da);
 		return ptr;
 	}
 
@@ -5970,7 +6198,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAccountOptions");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x14fc0078);
 		return ptr;
 	}
 
@@ -5985,7 +6214,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAudioOptions");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x11137251);
 		return ptr;
 	}
 
@@ -6024,7 +6254,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortGameOptions");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xda63f38b);
 		return ptr;
 	}
 
@@ -6090,7 +6321,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortInputOptions");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9e43adfb);
 		return ptr;
 	}
 
@@ -6112,7 +6344,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortVideoOptions");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1f8e3f70);
 		return ptr;
 	}
 
@@ -6165,7 +6398,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPartyTreeItemBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc84cb261);
 		return ptr;
 	}
 
@@ -6186,7 +6420,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPerkWidget_NUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaa7268a0);
 		return ptr;
 	}
 
@@ -6220,7 +6455,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPerkTierWidget_NUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x27bfd0);
 		return ptr;
 	}
 
@@ -6246,7 +6482,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPerksWidget_NUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2a2fe139);
 		return ptr;
 	}
 
@@ -6282,7 +6519,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPickerContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x275d0338);
 		return ptr;
 	}
 
@@ -6319,7 +6557,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPickerData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8d2ca643);
 		return ptr;
 	}
 
@@ -6340,7 +6579,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPlayerProfileBannerEditor");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa11623b4);
 		return ptr;
 	}
 
@@ -6364,7 +6604,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPlayerProfileBannerEditorTile");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2e8071d8);
 		return ptr;
 	}
 
@@ -6384,7 +6625,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPlayerTrackerBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4a02b095);
 		return ptr;
 	}
 
@@ -6434,7 +6676,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPrivacyBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x457e1050);
 		return ptr;
 	}
 
@@ -6456,7 +6699,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortQuestExpiresWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9c73a897);
 		return ptr;
 	}
 
@@ -6476,7 +6720,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortQuestNotificationHandler");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5670ed40);
 		return ptr;
 	}
 
@@ -6491,7 +6736,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortQuestScreen");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8bbcbe6d);
 		return ptr;
 	}
 
@@ -6517,7 +6763,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortQuestTrackerEntry");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc3059239);
 		return ptr;
 	}
 
@@ -6542,7 +6789,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortQuestTrackerSubEntry");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6a160c69);
 		return ptr;
 	}
 
@@ -6565,7 +6813,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortQuestTreeItemWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf2c693bc);
 		return ptr;
 	}
 
@@ -6588,7 +6837,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRejoinWindowBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5c3ccfad);
 		return ptr;
 	}
 
@@ -6607,7 +6857,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortResultsSummaryScreenWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x47edeaab);
 		return ptr;
 	}
 
@@ -6626,7 +6877,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortResultsTeleportScreenWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa393244);
 		return ptr;
 	}
 
@@ -6654,7 +6906,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortResultsWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xea546351);
 		return ptr;
 	}
 
@@ -6682,7 +6935,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRewardNotificationData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9ac679e9);
 		return ptr;
 	}
 
@@ -6700,7 +6954,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRewardCollectionBookData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x81f47b7);
 		return ptr;
 	}
 
@@ -6718,7 +6973,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRewardEpicQuestData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa1057173);
 		return ptr;
 	}
 
@@ -6736,7 +6992,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRewardExpeditionData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x54fb5619);
 		return ptr;
 	}
 
@@ -6753,7 +7010,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRewardMissionAlertData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb61c8d38);
 		return ptr;
 	}
 
@@ -6768,7 +7026,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRewardMissionData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3f1631c6);
 		return ptr;
 	}
 
@@ -6784,7 +7043,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRewardQuestData");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x738c52b2);
 		return ptr;
 	}
 
@@ -6807,7 +7067,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRewardNotificationWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe2443761);
 		return ptr;
 	}
 
@@ -6846,7 +7107,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRewardNotificationSubWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x12eff0f5);
 		return ptr;
 	}
 
@@ -6884,7 +7146,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRewardConversationWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x698c3979);
 		return ptr;
 	}
 
@@ -6904,7 +7167,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRewardExpeditionWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x43ddf831);
 		return ptr;
 	}
 
@@ -6922,7 +7186,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRewardNewQuestWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x546748e0);
 		return ptr;
 	}
 
@@ -6951,7 +7216,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortRichTextBlock");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3df66819);
 		return ptr;
 	}
 
@@ -6974,7 +7240,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSignInWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3e7ac39b);
 		return ptr;
 	}
 
@@ -6992,7 +7259,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSkillTreeCanvasEditorInterface");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe61af0b8);
 		return ptr;
 	}
 
@@ -7012,7 +7280,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSkillTreeCanvas");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd66557bc);
 		return ptr;
 	}
 
@@ -7035,7 +7304,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSkillTreeCanvasSlot");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5e1de18);
 		return ptr;
 	}
 
@@ -7059,7 +7329,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSkillTreePageSelectorButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc8a620ce);
 		return ptr;
 	}
 
@@ -7083,7 +7354,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSkillTreeLandingPage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcc481ee8);
 		return ptr;
 	}
 
@@ -7103,7 +7375,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSkillTreeNodeDetailsPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8fa41530);
 		return ptr;
 	}
 
@@ -7130,7 +7403,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSkillTreePageWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe6ccd459);
 		return ptr;
 	}
 
@@ -7151,7 +7425,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSkillTreePageWidgetRegistry");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x23959d0c);
 		return ptr;
 	}
 
@@ -7171,7 +7446,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSocialListView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaa8a3c97);
 		return ptr;
 	}
 
@@ -7190,7 +7466,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSocialStyle");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x119845b3);
 		return ptr;
 	}
 
@@ -7207,7 +7484,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSplashScreenWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5b3e7754);
 		return ptr;
 	}
 
@@ -7231,7 +7509,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadIcon");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x62a1fcc2);
 		return ptr;
 	}
 
@@ -7250,7 +7529,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadLandingPageDefenderSummary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8ac0e50a);
 		return ptr;
 	}
 
@@ -7271,7 +7551,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadLandingPageDefenderSquadDetails");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc2909816);
 		return ptr;
 	}
 
@@ -7291,7 +7572,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadLandingPageDefenderSquadDetailsLocked");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xae9f4f8c);
 		return ptr;
 	}
 
@@ -7313,7 +7595,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadLandingPageSurvivorSummary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x67659f23);
 		return ptr;
 	}
 
@@ -7331,7 +7614,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortDefenderSquadSelectorButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x75d47329);
 		return ptr;
 	}
 
@@ -7351,7 +7635,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSurvivorSquadSelectorButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x58e924ac);
 		return ptr;
 	}
 
@@ -7374,7 +7659,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadSlotDetailsPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x28ff5759);
 		return ptr;
 	}
 
@@ -7404,7 +7690,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadSlotSelectorButton");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7d165a86);
 		return ptr;
 	}
 
@@ -7438,7 +7725,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadSlotsView");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x55b94eeb);
 		return ptr;
 	}
 
@@ -7474,7 +7762,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadSlotWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7c9a5f01);
 		return ptr;
 	}
 
@@ -7496,7 +7785,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadStatDetailsWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x272184d7);
 		return ptr;
 	}
 
@@ -7512,7 +7802,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPerkWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x46672d21);
 		return ptr;
 	}
 
@@ -7540,7 +7831,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortHeroSquadBonusPerksWidgetBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x47b64eaa);
 		return ptr;
 	}
 
@@ -7557,7 +7849,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSurvivorSquadStatMatchBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7d3b8793);
 		return ptr;
 	}
 
@@ -7579,7 +7872,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSurvivorSquadStatMatchesBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6898692f);
 		return ptr;
 	}
 
@@ -7604,7 +7898,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadStatsWidgetBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1a12cfc1);
 		return ptr;
 	}
 
@@ -7630,7 +7925,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadStatValueWithIcon");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa33d5441);
 		return ptr;
 	}
 
@@ -7651,7 +7947,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortStatIcon");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1d188cbc);
 		return ptr;
 	}
 
@@ -7681,7 +7978,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortStoreContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8bdaaead);
 		return ptr;
 	}
 
@@ -7733,7 +8031,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortStoreRootBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x690be6db);
 		return ptr;
 	}
 
@@ -7749,7 +8048,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.StoreCardObject");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8b835662);
 		return ptr;
 	}
 
@@ -7767,7 +8067,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortStoreSummary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xbd98f64c);
 		return ptr;
 	}
 
@@ -7784,7 +8085,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSubGameSelectBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x67341f48);
 		return ptr;
 	}
 
@@ -7802,7 +8104,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSubGameSelectButtonBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xadd07914);
 		return ptr;
 	}
 
@@ -7824,7 +8127,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSurvivorSquadSummaryStatItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc1af1342);
 		return ptr;
 	}
 
@@ -7846,7 +8150,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSZAwareImage");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5f89d58f);
 		return ptr;
 	}
 
@@ -7862,7 +8167,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTextStyleList");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa4d1b74f);
 		return ptr;
 	}
 
@@ -7882,7 +8188,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTheaterSelect");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9d2da218);
 		return ptr;
 	}
 
@@ -7907,7 +8214,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTierIndicator");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x29db8468);
 		return ptr;
 	}
 
@@ -7928,7 +8236,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTooltipUIContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x208e65a5);
 		return ptr;
 	}
 
@@ -7956,7 +8265,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTutorialContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x752fc524);
 		return ptr;
 	}
 
@@ -7988,7 +8298,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortTwitchLogin");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2bad8c27);
 		return ptr;
 	}
 
@@ -8015,7 +8326,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIBlueprintFunctionLibrary");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd70ebacd);
 		return ptr;
 	}
 
@@ -8038,7 +8350,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIDataConfigurationContext");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8d8a82dc);
 		return ptr;
 	}
 
@@ -8081,7 +8394,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIManagerWidget_NUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x160f6da1);
 		return ptr;
 	}
 
@@ -8142,7 +8456,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIMessageItemWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfb43174d);
 		return ptr;
 	}
 
@@ -8165,7 +8480,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIMessageManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4f38cd5);
 		return ptr;
 	}
 
@@ -8192,7 +8508,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIMessagesPageBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5c720fcd);
 		return ptr;
 	}
 
@@ -8215,7 +8532,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUINotificationQueue");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x96357777);
 		return ptr;
 	}
 
@@ -8238,7 +8556,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIRewardReport");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7f807304);
 		return ptr;
 	}
 
@@ -8256,7 +8575,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIScoreReport");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa77cac35);
 		return ptr;
 	}
 
@@ -8289,7 +8609,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIStateTrigger");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5951b7c6);
 		return ptr;
 	}
 
@@ -8307,7 +8628,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIStateTrigger_Athena");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5e5dc6c);
 		return ptr;
 	}
 
@@ -8322,7 +8644,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIStateTrigger_InGame");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcfb98e52);
 		return ptr;
 	}
 
@@ -8337,7 +8660,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIStateTrigger_Login");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x47523264);
 		return ptr;
 	}
 
@@ -8355,7 +8679,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIStateWidget_NUI");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x10075047);
 		return ptr;
 	}
 
@@ -8378,7 +8703,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.AthenaHUDBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe91b5a19);
 		return ptr;
 	}
 
@@ -8395,7 +8721,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIStateWidget_Frontend");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd441ac4d);
 		return ptr;
 	}
 
@@ -8411,7 +8738,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIStateWidget_Login");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa74fc650);
 		return ptr;
 	}
 
@@ -8453,7 +8781,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortActionHandlerPanel");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4acf771d);
 		return ptr;
 	}
 
@@ -8477,7 +8806,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortConfirmationWindow");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa7d17fb6);
 		return ptr;
 	}
 
@@ -8499,7 +8829,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortErrorDialog");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa9c095a5);
 		return ptr;
 	}
 
@@ -8518,7 +8849,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortQuestRewardChoiceWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x9b298855);
 		return ptr;
 	}
 
@@ -8535,7 +8867,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIStateWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x4288b52a);
 		return ptr;
 	}
 
@@ -8557,7 +8890,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortVaultWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd24a69bf);
 		return ptr;
 	}
 
@@ -8596,7 +8930,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAlterationsWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2deab4e9);
 		return ptr;
 	}
 
@@ -8615,7 +8950,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAlterationWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x874c5d1a);
 		return ptr;
 	}
 
@@ -8639,7 +8975,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortAttributeList");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1686d0af);
 		return ptr;
 	}
 
@@ -8667,7 +9004,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf7c41028);
 		return ptr;
 	}
 
@@ -8713,7 +9051,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortBluGloCounter");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xec4565a8);
 		return ptr;
 	}
 
@@ -8731,7 +9070,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortCapturePointWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x80624d99);
 		return ptr;
 	}
 
@@ -8755,7 +9095,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortChatContainer");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6b213aa0);
 		return ptr;
 	}
 
@@ -8773,7 +9114,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortGridPickerGrid");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x723c33db);
 		return ptr;
 	}
 
@@ -8790,7 +9132,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemCollectorWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x7a42a131);
 		return ptr;
 	}
 
@@ -8814,7 +9157,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemGroupSlotPicker");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8d2dcdab);
 		return ptr;
 	}
 
@@ -8861,7 +9205,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemGroupSlotWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x517a1021);
 		return ptr;
 	}
 
@@ -8901,7 +9246,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortItemGroupWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2c95018d);
 		return ptr;
 	}
 
@@ -8925,7 +9271,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortListItem");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xa8049324);
 		return ptr;
 	}
 
@@ -8952,7 +9299,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortMovieWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfeba4ac3);
 		return ptr;
 	}
 
@@ -8976,7 +9324,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortNodeCanvasHost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xc590a6cb);
 		return ptr;
 	}
 
@@ -8998,7 +9347,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortNodeGraphHost");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x17fa3601);
 		return ptr;
 	}
 
@@ -9025,7 +9375,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortNodePrerequisitesWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xead8a012);
 		return ptr;
 	}
 
@@ -9049,7 +9400,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPerksWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x3584da0c);
 		return ptr;
 	}
 
@@ -9068,7 +9420,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPerkTierWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd8ad1c51);
 		return ptr;
 	}
 
@@ -9087,7 +9440,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortPvPMinimapWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xe4f65636);
 		return ptr;
 	}
 
@@ -9102,7 +9456,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSocialItemWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xb8e455f9);
 		return ptr;
 	}
 
@@ -9124,7 +9479,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortSquadPanelWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xcb0acc05);
 		return ptr;
 	}
 
@@ -9139,7 +9495,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortStorefront");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xd50fff91);
 		return ptr;
 	}
 
@@ -9171,7 +9528,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUIManagerWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x8a4a4ec4);
 		return ptr;
 	}
 
@@ -9210,7 +9568,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUserChoiceWidget");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x473e4fb1);
 		return ptr;
 	}
 
@@ -9231,7 +9590,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortWorkerSetBonusIcon");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x447d51ad);
 		return ptr;
 	}
 
@@ -9249,7 +9609,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FriendCodeEntryBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x832510b4);
 		return ptr;
 	}
 
@@ -9264,7 +9625,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FriendCodeListBase");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x27deb766);
 		return ptr;
 	}
 
@@ -9281,7 +9643,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.UINavigationManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xaf9cfb83);
 		return ptr;
 	}
 
@@ -9318,7 +9681,8 @@ public:
 
 	static UClass* StaticClass()
 	{
-		static auto ptr = UObject::FindClass("Class FortniteUI.FortUINavigationManager");
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x538aa2d2);
 		return ptr;
 	}
 

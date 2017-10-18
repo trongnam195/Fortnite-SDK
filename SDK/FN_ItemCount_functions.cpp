@@ -19,7 +19,8 @@ namespace SDK
 
 void UItemCount_C::SetIsBeingPreviewed(bool BeingPreviewed)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCount.ItemCount_C.SetIsBeingPreviewed");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x806fca5d);
 
 	UItemCount_C_SetIsBeingPreviewed_Params params;
 	params.BeingPreviewed = BeingPreviewed;
@@ -39,7 +40,8 @@ void UItemCount_C::SetIsBeingPreviewed(bool BeingPreviewed)
 
 void UItemCount_C::SetItemDefinition(class UFortItemDefinition* ItemDefinition)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCount.ItemCount_C.SetItemDefinition");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc7fddbd7);
 
 	UItemCount_C_SetItemDefinition_Params params;
 	params.ItemDefinition = ItemDefinition;
@@ -57,7 +59,8 @@ void UItemCount_C::SetItemDefinition(class UFortItemDefinition* ItemDefinition)
 
 void UItemCount_C::Construct()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCount.ItemCount_C.Construct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x41a0fb56);
 
 	UItemCount_C_Construct_Params params;
 
@@ -76,7 +79,8 @@ void UItemCount_C::Construct()
 
 void UItemCount_C::PreConstruct(bool* IsDesignTime)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCount.ItemCount_C.PreConstruct");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4792fbad);
 
 	UItemCount_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
@@ -96,7 +100,8 @@ void UItemCount_C::PreConstruct(bool* IsDesignTime)
 
 void UItemCount_C::ExecuteUbergraph_ItemCount(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemCount.ItemCount_C.ExecuteUbergraph_ItemCount");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6841cecf);
 
 	UItemCount_C_ExecuteUbergraph_ItemCount_Params params;
 	params.EntryPoint = EntryPoint;

@@ -17,7 +17,8 @@ namespace SDK
 
 void UItemInspectEvolutionConfirmation_C::SetEvolutionRestrictions()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.SetEvolutionRestrictions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xba52c247);
 
 	UItemInspectEvolutionConfirmation_C_SetEvolutionRestrictions_Params params;
 
@@ -36,7 +37,8 @@ void UItemInspectEvolutionConfirmation_C::SetEvolutionRestrictions()
 
 void UItemInspectEvolutionConfirmation_C::UnselectOtherEvolutions(int SelectedIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.UnselectOtherEvolutions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa61ccbf8);
 
 	UItemInspectEvolutionConfirmation_C_UnselectOtherEvolutions_Params params;
 	params.SelectedIndex = SelectedIndex;
@@ -54,7 +56,8 @@ void UItemInspectEvolutionConfirmation_C::UnselectOtherEvolutions(int SelectedIn
 
 void UItemInspectEvolutionConfirmation_C::ClearEvolutionRepresented()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.ClearEvolutionRepresented");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x79463736);
 
 	UItemInspectEvolutionConfirmation_C_ClearEvolutionRepresented_Params params;
 
@@ -71,7 +74,8 @@ void UItemInspectEvolutionConfirmation_C::ClearEvolutionRepresented()
 
 void UItemInspectEvolutionConfirmation_C::OnShow()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.OnShow");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb49a7d51);
 
 	UItemInspectEvolutionConfirmation_C_OnShow_Params params;
 
@@ -88,7 +92,8 @@ void UItemInspectEvolutionConfirmation_C::OnShow()
 
 void UItemInspectEvolutionConfirmation_C::HideEvolutionOptions()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.HideEvolutionOptions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2c34bf22);
 
 	UItemInspectEvolutionConfirmation_C_HideEvolutionOptions_Params params;
 
@@ -105,7 +110,8 @@ void UItemInspectEvolutionConfirmation_C::HideEvolutionOptions()
 
 void UItemInspectEvolutionConfirmation_C::ShowEvolutionOptions()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.ShowEvolutionOptions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xae4c3995);
 
 	UItemInspectEvolutionConfirmation_C_ShowEvolutionOptions_Params params;
 
@@ -124,7 +130,8 @@ void UItemInspectEvolutionConfirmation_C::ShowEvolutionOptions()
 
 void UItemInspectEvolutionConfirmation_C::GetNumEvolutionOptions(int* NumRecipes)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.GetNumEvolutionOptions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2ef35bba);
 
 	UItemInspectEvolutionConfirmation_C_GetNumEvolutionOptions_Params params;
 
@@ -144,7 +151,8 @@ void UItemInspectEvolutionConfirmation_C::GetNumEvolutionOptions(int* NumRecipes
 
 void UItemInspectEvolutionConfirmation_C::SetupEvolutionOptions()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.SetupEvolutionOptions");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ad07df);
 
 	UItemInspectEvolutionConfirmation_C_SetupEvolutionOptions_Params params;
 
@@ -164,7 +172,8 @@ void UItemInspectEvolutionConfirmation_C::SetupEvolutionOptions()
 
 void UItemInspectEvolutionConfirmation_C::HandleEvolutionOptionSelected(class UFortItem* Item, int RecipeIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.HandleEvolutionOptionSelected");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xad4d5f6e);
 
 	UItemInspectEvolutionConfirmation_C_HandleEvolutionOptionSelected_Params params;
 	params.Item = Item;
@@ -185,7 +194,8 @@ void UItemInspectEvolutionConfirmation_C::HandleEvolutionOptionSelected(class UF
 
 void UItemInspectEvolutionConfirmation_C::HandleEvolutionOptionUnhovered(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.HandleEvolutionOptionUnhovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f0b0bfd);
 
 	UItemInspectEvolutionConfirmation_C_HandleEvolutionOptionUnhovered_Params params;
 	params.Item = Item;
@@ -206,7 +216,8 @@ void UItemInspectEvolutionConfirmation_C::HandleEvolutionOptionUnhovered(class U
 
 void UItemInspectEvolutionConfirmation_C::HandleEvolutionOptionHovered(class UFortItem* Item, int RecipeIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.HandleEvolutionOptionHovered");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5012c9ee);
 
 	UItemInspectEvolutionConfirmation_C_HandleEvolutionOptionHovered_Params params;
 	params.Item = Item;
@@ -228,7 +239,8 @@ void UItemInspectEvolutionConfirmation_C::HandleEvolutionOptionHovered(class UFo
 
 void UItemInspectEvolutionConfirmation_C::SetEvolutionToRepresent(int EvolutionIndex, class UFortItem* EvolutionItem)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.SetEvolutionToRepresent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdaba04eb);
 
 	UItemInspectEvolutionConfirmation_C_SetEvolutionToRepresent_Params params;
 	params.EvolutionIndex = EvolutionIndex;
@@ -249,7 +261,8 @@ void UItemInspectEvolutionConfirmation_C::SetEvolutionToRepresent(int EvolutionI
 
 void UItemInspectEvolutionConfirmation_C::SetItemToRepresent(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.SetItemToRepresent");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9f4bc23);
 
 	UItemInspectEvolutionConfirmation_C_SetItemToRepresent_Params params;
 	params.Item = Item;
@@ -269,7 +282,8 @@ void UItemInspectEvolutionConfirmation_C::SetItemToRepresent(class UFortItem* It
 
 void UItemInspectEvolutionConfirmation_C::BndEvt__UpgradeConfirmButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.BndEvt__UpgradeConfirmButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x152c46b);
 
 	UItemInspectEvolutionConfirmation_C_BndEvt__UpgradeConfirmButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
@@ -289,7 +303,8 @@ void UItemInspectEvolutionConfirmation_C::BndEvt__UpgradeConfirmButton_K2Node_Co
 
 void UItemInspectEvolutionConfirmation_C::ExecuteUbergraph_ItemInspectEvolutionConfirmation(int EntryPoint)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.ExecuteUbergraph_ItemInspectEvolutionConfirmation");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x68bf10ac);
 
 	UItemInspectEvolutionConfirmation_C_ExecuteUbergraph_ItemInspectEvolutionConfirmation_Params params;
 	params.EntryPoint = EntryPoint;
@@ -310,7 +325,8 @@ void UItemInspectEvolutionConfirmation_C::ExecuteUbergraph_ItemInspectEvolutionC
 
 void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionSelected__DelegateSignature(class UFortItem* Item, int RecipeIndex)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.OnEvolutionOptionSelected__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xaa88ebd8);
 
 	UItemInspectEvolutionConfirmation_C_OnEvolutionOptionSelected__DelegateSignature_Params params;
 	params.Item = Item;
@@ -331,7 +347,8 @@ void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionSelected__DelegateSig
 
 void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionUnhovered__DelegateSignature(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.OnEvolutionOptionUnhovered__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4a4dbbbf);
 
 	UItemInspectEvolutionConfirmation_C_OnEvolutionOptionUnhovered__DelegateSignature_Params params;
 	params.Item = Item;
@@ -351,7 +368,8 @@ void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionUnhovered__DelegateSi
 
 void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionHovered__DelegateSignature(class UFortItem* Item)
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.OnEvolutionOptionHovered__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa9013d6e);
 
 	UItemInspectEvolutionConfirmation_C_OnEvolutionOptionHovered__DelegateSignature_Params params;
 	params.Item = Item;
@@ -369,7 +387,8 @@ void UItemInspectEvolutionConfirmation_C::OnEvolutionOptionHovered__DelegateSign
 
 void UItemInspectEvolutionConfirmation_C::OnEvolutionConfirm__DelegateSignature()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.OnEvolutionConfirm__DelegateSignature");
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x81208742);
 
 	UItemInspectEvolutionConfirmation_C_OnEvolutionConfirm__DelegateSignature_Params params;
 
