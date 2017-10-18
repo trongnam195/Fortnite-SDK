@@ -12135,7 +12135,7 @@ public:
 
 
 // Class Engine.NetConnection
-// 0x33650 (0x33698 - 0x0048)
+// 0x336F8 (0x33740 - 0x0048)
 class UNetConnection : public UPlayer
 {
 public:
@@ -12152,9 +12152,9 @@ public:
 	struct FUniqueNetIdRepl                            PlayerID;                                                 // 0x0150(0x0018)
 	unsigned char                                      UnknownData01[0x68];                                      // 0x0168(0x0068) MISSED OFFSET
 	double                                             LastReceiveTime;                                          // 0x01D0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x33488];                                   // 0x01D8(0x33488) MISSED OFFSET
-	TArray<class UChannel*>                            ChannelsToTick;                                           // 0x33660(0x0010) (CPF_ZeroConstructor)
-	unsigned char                                      UnknownData03[0x28];                                      // 0x33670(0x0028) MISSED OFFSET
+	unsigned char                                      UnknownData02[0x33530];                                   // 0x01D8(0x33530) MISSED OFFSET
+	TArray<class UChannel*>                            ChannelsToTick;                                           // 0x33708(0x0010) (CPF_ZeroConstructor)
+	unsigned char                                      UnknownData03[0x28];                                      // 0x33718(0x0028) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -12166,11 +12166,11 @@ public:
 
 
 // Class Engine.DemoNetConnection
-// 0x0020 (0x336B8 - 0x33698)
+// 0x0020 (0x33760 - 0x33740)
 class UDemoNetConnection : public UNetConnection
 {
 public:
-	unsigned char                                      UnknownData00[0x20];                                      // 0x33698(0x0020) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x20];                                      // 0x33740(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -19692,11 +19692,11 @@ public:
 
 
 // Class Engine.ChildConnection
-// 0x0008 (0x336A0 - 0x33698)
+// 0x0008 (0x33748 - 0x33740)
 class UChildConnection : public UNetConnection
 {
 public:
-	class UNetConnection*                              Parent;                                                   // 0x33698(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UNetConnection*                              Parent;                                                   // 0x33740(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

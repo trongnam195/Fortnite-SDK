@@ -3968,6 +3968,17 @@ enum class EFortAnnouncerTeamVocalChords : uint8_t
 };
 
 
+// Enum FortniteGame.ETrustedPlatformType
+enum class ETrustedPlatformType : uint8_t
+{
+	Unknown                        = 0,
+	Desktop                        = 1,
+	PS4                            = 2,
+	XboxOne                        = 3,
+	ETrustedPlatformType_MAX       = 4
+};
+
+
 // Enum FortniteGame.EFrontEndCamera
 enum class EFrontEndCamera : uint8_t
 {
@@ -4852,13 +4863,13 @@ struct FFortTargetFilter
 	bool                                               bExcludePawnEnemies;                                      // 0x0016(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               bExcludeNonPawnFriends;                                   // 0x0017(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	bool                                               bExcludeNonPawnEnemies;                                   // 0x0018(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bExcludeWithoutNavigationCorridor;                        // 0x0019(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bExcludeNonPlayerBuiltPieces;                             // 0x001A(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bExcludePlayerBuiltPieces;                                // 0x001B(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bExcludeNonBGABuildings;                                  // 0x001C(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bExcludeNonBlockingHits;                                  // 0x001D(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bTraceComplexCollision;                                   // 0x001E(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x1];                                       // 0x001F(0x0001) MISSED OFFSET
+	bool                                               bExcludeDBNOPawns;                                        // 0x0019(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bExcludeWithoutNavigationCorridor;                        // 0x001A(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bExcludeNonPlayerBuiltPieces;                             // 0x001B(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bExcludePlayerBuiltPieces;                                // 0x001C(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bExcludeNonBGABuildings;                                  // 0x001D(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bExcludeNonBlockingHits;                                  // 0x001E(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bTraceComplexCollision;                                   // 0x001F(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // ScriptStruct FortniteGame.FortAbilityTargetSelection
@@ -9676,7 +9687,7 @@ struct FFortMeleeWeaponStats : public FFortBaseWeaponStats
 };
 
 // ScriptStruct FortniteGame.LeaderboardRowData
-// 0x0040
+// 0x0038
 struct FLeaderboardRowData
 {
 	int                                                Rank;                                                     // 0x0000(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
@@ -9684,9 +9695,7 @@ struct FLeaderboardRowData
 	struct FString                                     User;                                                     // 0x0008(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
 	int                                                Value;                                                    // 0x0018(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData01[0x4];                                       // 0x001C(0x0004) MISSED OFFSET
-	struct FUniqueNetIdRepl                            UserId;                                                   // 0x0020(0x0018) (CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	bool                                               bIsFriend;                                                // 0x0038(0x0001) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x7];                                       // 0x0039(0x0007) MISSED OFFSET
+	struct FUniqueNetIdRepl                            PlatformAccountId;                                        // 0x0020(0x0018) (CPF_BlueprintVisible, CPF_BlueprintReadOnly)
 };
 
 // ScriptStruct FortniteGame.MatchmakingParams

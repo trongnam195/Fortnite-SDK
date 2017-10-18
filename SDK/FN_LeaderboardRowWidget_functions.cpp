@@ -12,6 +12,46 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function LeaderboardRowWidget.LeaderboardRowWidget_C.Refresh
+// (FUNC_Private, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UFortLeaderboardRowProxyInstance* RowObject                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void ULeaderboardRowWidget_C::Refresh(class UFortLeaderboardRowProxyInstance* RowObject)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function LeaderboardRowWidget.LeaderboardRowWidget_C.Refresh");
+
+	ULeaderboardRowWidget_C_Refresh_Params params;
+	params.RowObject = RowObject;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function LeaderboardRowWidget.LeaderboardRowWidget_C.SetDataDirect
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UFortLeaderboardRowProxyInstance* NewData                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void ULeaderboardRowWidget_C::SetDataDirect(class UFortLeaderboardRowProxyInstance* NewData)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function LeaderboardRowWidget.LeaderboardRowWidget_C.SetDataDirect");
+
+	ULeaderboardRowWidget_C_SetDataDirect_Params params;
+	params.NewData = NewData;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function LeaderboardRowWidget.LeaderboardRowWidget_C.OnLeaderboardEntryDataSet
 // (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
 
@@ -30,7 +70,7 @@ void ULeaderboardRowWidget_C::OnLeaderboardEntryDataSet()
 
 
 // Function LeaderboardRowWidget.LeaderboardRowWidget_C.ExecuteUbergraph_LeaderboardRowWidget
-// (FUNC_HasDefaults)
+// ()
 // Parameters:
 // int                            EntryPoint                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 

@@ -24,10 +24,10 @@ public:
 	class UPostProcessComponent*                       DownScopePostProcess;                                     // 0x0CC0(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	class UStaticMeshComponent*                        ScopeMesh1P;                                              // 0x0CC8(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	class UParticleSystemComponent*                    Muzzle_Empty_;                                            // 0x0CD0(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              AnimateScopePostProcess_DownSightPostProcessAmount_DA5AC2EC4201B24ECDEFF3A15125235A;// 0x0CD8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TEnumAsByte<ETimelineDirection>                    AnimateScopePostProcess__Direction_DA5AC2EC4201B24ECDEFF3A15125235A;// 0x0CDC(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              Timeline_0_DownSightPostProcessAmount_DA5AC2EC4201B24ECDEFF3A15125235A;// 0x0CD8(0x0004) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TEnumAsByte<ETimelineDirection>                    Timeline_0__Direction_DA5AC2EC4201B24ECDEFF3A15125235A;   // 0x0CDC(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
 	unsigned char                                      UnknownData00[0x3];                                       // 0x0CDD(0x0003) MISSED OFFSET
-	class UTimelineComponent*                          AnimateScopePostProcess;                                  // 0x0CE0(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UTimelineComponent*                          Timeline_1;                                               // 0x0CE0(0x0008) (CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	class UParticleSystem*                             MuzzleParticleSystem;                                     // 0x0CE8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
 	class UParticleSystem*                             WeaponDurabilityDestroyEffect;                            // 0x0CF0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
 	class UParticleSystem*                             WeaponDurabilityDestroyEffectIcon;                        // 0x0CF8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
@@ -94,8 +94,8 @@ public:
 	void SetWpnRarity();
 	void AddRandomScale();
 	void UserConstructionScript();
-	void AnimateScopePostProcess__FinishedFunc();
-	void AnimateScopePostProcess__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void Timeline_0__UpdateFunc();
 	void OnLoaded_4DE6158742ED7EE528BC98A240A81632(class UObject* Loaded);
 	void OnLoaded_3A9BBE884A5C5966375089938B7DC0CA(class UObject* Loaded);
 	void OnLoaded_83457BA843174AC6288682A342EBEAD9(class UObject* Loaded);

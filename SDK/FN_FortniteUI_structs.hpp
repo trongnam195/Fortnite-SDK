@@ -899,6 +899,14 @@ struct FFortTabListRegistrationInfo
 	class UWidget*                                     CreatedTabContentWidget;                                  // 0x00C8(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_Transient, CPF_InstancedReference, CPF_IsPlainOldData)
 };
 
+// ScriptStruct FortniteUI.LeaderboardFilter
+// 0x0018
+struct FLeaderboardFilter
+{
+	class UDataTable*                                  LeaderboardDisplayData;                                   // 0x0000(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0008(0x0010) MISSED OFFSET
+};
+
 // ScriptStruct FortniteUI.AthenaPlaylistLeaderboardData
 // 0x0048
 struct FAthenaPlaylistLeaderboardData

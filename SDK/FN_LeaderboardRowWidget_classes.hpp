@@ -32,6 +32,8 @@ public:
 	}
 
 
+	void Refresh(class UFortLeaderboardRowProxyInstance* RowObject);
+	void SetDataDirect(class UFortLeaderboardRowProxyInstance* NewData);
 	void OnLeaderboardEntryDataSet();
 	void ExecuteUbergraph_LeaderboardRowWidget(int EntryPoint);
 };

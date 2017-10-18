@@ -3,7 +3,7 @@
 // Fortnite SDK
 
 #ifdef _MSC_VER
-#pragma pack(push, 0x8)
+	#pragma pack(push, 0x8)
 #endif
 
 #define CHECK_VALID( _v ) 0
@@ -1193,5 +1193,5 @@ namespace SDK
 }
 
 #ifdef _MSC_VER
-#pragma pack(pop)
+	#pragma pack(pop)
 #endif

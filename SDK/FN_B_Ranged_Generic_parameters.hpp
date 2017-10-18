@@ -77,13 +77,13 @@ struct AB_Ranged_Generic_C_UserConstructionScript_Params
 {
 };
 
-// Function B_Ranged_Generic.B_Ranged_Generic_C.AnimateScopePostProcess__FinishedFunc
-struct AB_Ranged_Generic_C_AnimateScopePostProcess__FinishedFunc_Params
+// Function B_Ranged_Generic.B_Ranged_Generic_C.Timeline_0__FinishedFunc
+struct AB_Ranged_Generic_C_Timeline_0__FinishedFunc_Params
 {
 };
 
-// Function B_Ranged_Generic.B_Ranged_Generic_C.AnimateScopePostProcess__UpdateFunc
-struct AB_Ranged_Generic_C_AnimateScopePostProcess__UpdateFunc_Params
+// Function B_Ranged_Generic.B_Ranged_Generic_C.Timeline_0__UpdateFunc
+struct AB_Ranged_Generic_C_Timeline_0__UpdateFunc_Params
 {
 };
 

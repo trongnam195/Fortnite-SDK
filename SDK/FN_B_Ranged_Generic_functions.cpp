@@ -225,14 +225,14 @@ void AB_Ranged_Generic_C::UserConstructionScript()
 }
 
 
-// Function B_Ranged_Generic.B_Ranged_Generic_C.AnimateScopePostProcess__FinishedFunc
+// Function B_Ranged_Generic.B_Ranged_Generic_C.Timeline_0__FinishedFunc
 // (FUNC_BlueprintEvent)
 
-void AB_Ranged_Generic_C::AnimateScopePostProcess__FinishedFunc()
+void AB_Ranged_Generic_C::Timeline_0__FinishedFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Ranged_Generic.B_Ranged_Generic_C.AnimateScopePostProcess__FinishedFunc");
+	static auto fn = UObject::FindObject<UFunction>("Function B_Ranged_Generic.B_Ranged_Generic_C.Timeline_0__FinishedFunc");
 
-	AB_Ranged_Generic_C_AnimateScopePostProcess__FinishedFunc_Params params;
+	AB_Ranged_Generic_C_Timeline_0__FinishedFunc_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -242,14 +242,14 @@ void AB_Ranged_Generic_C::AnimateScopePostProcess__FinishedFunc()
 }
 
 
-// Function B_Ranged_Generic.B_Ranged_Generic_C.AnimateScopePostProcess__UpdateFunc
+// Function B_Ranged_Generic.B_Ranged_Generic_C.Timeline_0__UpdateFunc
 // (FUNC_BlueprintEvent)
 
-void AB_Ranged_Generic_C::AnimateScopePostProcess__UpdateFunc()
+void AB_Ranged_Generic_C::Timeline_0__UpdateFunc()
 {
-	static auto fn = UObject::FindObject<UFunction>("Function B_Ranged_Generic.B_Ranged_Generic_C.AnimateScopePostProcess__UpdateFunc");
+	static auto fn = UObject::FindObject<UFunction>("Function B_Ranged_Generic.B_Ranged_Generic_C.Timeline_0__UpdateFunc");
 
-	AB_Ranged_Generic_C_AnimateScopePostProcess__UpdateFunc_Params params;
+	AB_Ranged_Generic_C_Timeline_0__UpdateFunc_Params params;
 
 	auto flags = fn->FunctionFlags;
 

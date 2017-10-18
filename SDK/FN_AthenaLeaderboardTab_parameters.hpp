@@ -14,6 +14,23 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.ToggleDisabledTabVisuals
+struct UAthenaLeaderboardTab_C_ToggleDisabledTabVisuals_Params
+{
+	bool                                               bShouldBeDisabled;                                        // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnShowQueryThrobber
+struct UAthenaLeaderboardTab_C_OnShowQueryThrobber_Params
+{
+};
+
+// Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnQueryStateChanged
+struct UAthenaLeaderboardTab_C_OnQueryStateChanged_Params
+{
+	bool                                               bQueryInProgress;                                         // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnFriendTypeChangeGamepad
 struct UAthenaLeaderboardTab_C_OnFriendTypeChangeGamepad_Params
 {
@@ -79,12 +96,9 @@ struct UAthenaLeaderboardTab_C_OnUpdateTabButtonText_Params
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnUpdateLeaderboardListUI
 struct UAthenaLeaderboardTab_C_OnUpdateLeaderboardListUI_Params
 {
-};
-
-// Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnUpdateUIForQuery
-struct UAthenaLeaderboardTab_C_OnUpdateUIForQuery_Params
-{
-	bool*                                              bQueryInProgress;                                         // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool*                                              bWasSuccessful;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UFortLeaderboardRowProxyInstance**           LocalUserRow;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FText*                                      ErrorStr;                                                 // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
 };
 
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnUpdateListHeader
@@ -95,6 +109,16 @@ struct UAthenaLeaderboardTab_C_OnUpdateListHeader_Params
 
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnDeactivated
 struct UAthenaLeaderboardTab_C_OnDeactivated_Params
+{
+};
+
+// Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnQueryFinished
+struct UAthenaLeaderboardTab_C_OnQueryFinished_Params
+{
+};
+
+// Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnQueryStarted
+struct UAthenaLeaderboardTab_C_OnQueryStarted_Params
 {
 };
 

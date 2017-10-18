@@ -12,6 +12,63 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.ToggleDisabledTabVisuals
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           bShouldBeDisabled              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UAthenaLeaderboardTab_C::ToggleDisabledTabVisuals(bool bShouldBeDisabled)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.ToggleDisabledTabVisuals");
+
+	UAthenaLeaderboardTab_C_ToggleDisabledTabVisuals_Params params;
+	params.bShouldBeDisabled = bShouldBeDisabled;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnShowQueryThrobber
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaLeaderboardTab_C::OnShowQueryThrobber()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnShowQueryThrobber");
+
+	UAthenaLeaderboardTab_C_OnShowQueryThrobber_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnQueryStateChanged
+// (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           bQueryInProgress               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UAthenaLeaderboardTab_C::OnQueryStateChanged(bool bQueryInProgress)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnQueryStateChanged");
+
+	UAthenaLeaderboardTab_C_OnQueryStateChanged_Params params;
+	params.bQueryInProgress = bQueryInProgress;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnFriendTypeChangeGamepad
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -219,33 +276,20 @@ void UAthenaLeaderboardTab_C::OnUpdateTabButtonText(class UCommonButton** Button
 
 
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnUpdateLeaderboardListUI
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+// (FUNC_Event, FUNC_Protected, FUNC_HasOutParms, FUNC_BlueprintEvent)
+// Parameters:
+// bool*                          bWasSuccessful                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UFortLeaderboardRowProxyInstance** LocalUserRow                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FText*                  ErrorStr                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
 
-void UAthenaLeaderboardTab_C::OnUpdateLeaderboardListUI()
+void UAthenaLeaderboardTab_C::OnUpdateLeaderboardListUI(bool* bWasSuccessful, class UFortLeaderboardRowProxyInstance** LocalUserRow, struct FText* ErrorStr)
 {
 	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnUpdateLeaderboardListUI");
 
 	UAthenaLeaderboardTab_C_OnUpdateLeaderboardListUI_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnUpdateUIForQuery
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-// Parameters:
-// bool*                          bQueryInProgress               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UAthenaLeaderboardTab_C::OnUpdateUIForQuery(bool* bQueryInProgress)
-{
-	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnUpdateUIForQuery");
-
-	UAthenaLeaderboardTab_C_OnUpdateUIForQuery_Params params;
-	params.bQueryInProgress = bQueryInProgress;
+	params.bWasSuccessful = bWasSuccessful;
+	params.LocalUserRow = LocalUserRow;
+	params.ErrorStr = ErrorStr;
 
 	auto flags = fn->FunctionFlags;
 
@@ -283,6 +327,40 @@ void UAthenaLeaderboardTab_C::OnDeactivated()
 	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnDeactivated");
 
 	UAthenaLeaderboardTab_C_OnDeactivated_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnQueryFinished
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UAthenaLeaderboardTab_C::OnQueryFinished()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnQueryFinished");
+
+	UAthenaLeaderboardTab_C_OnQueryFinished_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnQueryStarted
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UAthenaLeaderboardTab_C::OnQueryStarted()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.OnQueryStarted");
+
+	UAthenaLeaderboardTab_C_OnQueryStarted_Params params;
 
 	auto flags = fn->FunctionFlags;
 

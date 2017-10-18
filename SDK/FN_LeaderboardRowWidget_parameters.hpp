@@ -14,6 +14,18 @@ namespace SDK
 //Parameters
 //---------------------------------------------------------------------------
 
+// Function LeaderboardRowWidget.LeaderboardRowWidget_C.Refresh
+struct ULeaderboardRowWidget_C_Refresh_Params
+{
+	class UFortLeaderboardRowProxyInstance*            RowObject;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
+// Function LeaderboardRowWidget.LeaderboardRowWidget_C.SetDataDirect
+struct ULeaderboardRowWidget_C_SetDataDirect_Params
+{
+	class UFortLeaderboardRowProxyInstance*            NewData;                                                  // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+};
+
 // Function LeaderboardRowWidget.LeaderboardRowWidget_C.OnLeaderboardEntryDataSet
 struct ULeaderboardRowWidget_C_OnLeaderboardEntryDataSet_Params
 {

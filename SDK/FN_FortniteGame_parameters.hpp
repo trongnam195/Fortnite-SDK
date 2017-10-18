@@ -6631,6 +6631,16 @@ struct AFortAIPawn_OnEndSleepEffects_Params
 {
 };
 
+// Function FortniteGame.FortAIPawn.OnEncounterSpawnEnableRangedAttacking
+struct AFortAIPawn_OnEncounterSpawnEnableRangedAttacking_Params
+{
+};
+
+// Function FortniteGame.FortAIPawn.OnEncounterSpawnEnableMeleeAttacking
+struct AFortAIPawn_OnEncounterSpawnEnableMeleeAttacking_Params
+{
+};
+
 // Function FortniteGame.FortAIPawn.OnDefenderTrapSet
 struct AFortAIPawn_OnDefenderTrapSet_Params
 {
@@ -8139,6 +8149,17 @@ struct AFortPlayerPawnAthena_OnRep_GliderType_Params
 // Function FortniteGame.FortPlayerPawnAthena.OnRep_DrivingCar
 struct AFortPlayerPawnAthena_OnRep_DrivingCar_Params
 {
+};
+
+// Function FortniteGame.FortPlayerPawnAthena.OnCapsuleBeginOverlap
+struct AFortPlayerPawnAthena_OnCapsuleBeginOverlap_Params
+{
+	class UPrimitiveComponent*                         OverlappedComp;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	class AActor*                                      OtherActor;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UPrimitiveComponent*                         OtherComp;                                                // (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	int                                                OtherBodyIndex;                                           // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bFromSweep;                                               // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FHitResult                                  SweepResult;                                              // (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
 };
 
 // Function FortniteGame.FortPlayerPawnAthena.NetMulticast_InvokeGameplayCuesExecuted_WithParams
@@ -11134,6 +11155,8 @@ struct AFortPlayerController_ServerRequestAIDebug_Params
 struct AFortPlayerController_ServerReportClientFPS_Params
 {
 	float                                              ClientAvgFPS;                                             // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      ClientAvgFrameScore;                                      // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      ClientMaxFrameScore;                                      // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
 // Function FortniteGame.FortPlayerController.ServerReplyToReadyCheck
@@ -12359,6 +12382,16 @@ struct UFortCheatManager_TestKnockback_Params
 
 // Function FortniteGame.FortCheatManager.TestJoin
 struct UFortCheatManager_TestJoin_Params
+{
+};
+
+// Function FortniteGame.FortCheatManager.TestInvalidRPCCall
+struct UFortCheatManager_TestInvalidRPCCall_Params
+{
+};
+
+// Function FortniteGame.FortCheatManager.TestInfJumps
+struct UFortCheatManager_TestInfJumps_Params
 {
 };
 
@@ -16807,6 +16840,16 @@ struct AFortPlayerControllerPvP_ClientReceiveKillNotification_Params
 	class AFortPlayerStateZone*                        Killed;                                                   // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
+// Function FortniteGame.FortPlayerControllerAthena.VoiceChatReconnected
+struct AFortPlayerControllerAthena_VoiceChatReconnected_Params
+{
+};
+
+// Function FortniteGame.FortPlayerControllerAthena.VoiceChatChannelJoinFailed
+struct AFortPlayerControllerAthena_VoiceChatChannelJoinFailed_Params
+{
+};
+
 // Function FortniteGame.FortPlayerControllerAthena.UpdateRichPresenceTimer
 struct AFortPlayerControllerAthena_UpdateRichPresenceTimer_Params
 {
@@ -16823,6 +16866,16 @@ struct AFortPlayerControllerAthena_SpawnCar_Params
 	struct FString                                     Command;                                                  // (CPF_Parm, CPF_ZeroConstructor)
 };
 
+// Function FortniteGame.FortPlayerControllerAthena.ServerVoiceChatRejoinChannel
+struct AFortPlayerControllerAthena_ServerVoiceChatRejoinChannel_Params
+{
+};
+
+// Function FortniteGame.FortPlayerControllerAthena.ServerVoiceChatReconnected
+struct AFortPlayerControllerAthena_ServerVoiceChatReconnected_Params
+{
+};
+
 // Function FortniteGame.FortPlayerControllerAthena.ServerRemoveMapCursor
 struct AFortPlayerControllerAthena_ServerRemoveMapCursor_Params
 {
@@ -16832,6 +16885,11 @@ struct AFortPlayerControllerAthena_ServerRemoveMapCursor_Params
 struct AFortPlayerControllerAthena_ServerPlaceMapCursor_Params
 {
 	struct FVector_NetQuantize                         CursorPos;                                                // (CPF_Parm)
+};
+
+// Function FortniteGame.FortPlayerControllerAthena.ServerFollowNextTeammate
+struct AFortPlayerControllerAthena_ServerFollowNextTeammate_Params
+{
 };
 
 // Function FortniteGame.FortPlayerControllerAthena.ServerDBNOReviveStarted
@@ -16883,10 +16941,22 @@ struct AFortPlayerControllerAthena_IsInAircraft_Params
 	bool                                               ReturnValue;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
 };
 
+// Function FortniteGame.FortPlayerControllerAthena.GetTeamTalking
+struct AFortPlayerControllerAthena_GetTeamTalking_Params
+{
+	TArray<bool>                                       TalkingStates;                                            // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
+};
+
 // Function FortniteGame.FortPlayerControllerAthena.GetTeamReviving
 struct AFortPlayerControllerAthena_GetTeamReviving_Params
 {
 	TArray<bool>                                       RevivingStates;                                           // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
+};
+
+// Function FortniteGame.FortPlayerControllerAthena.GetTeamMuted
+struct AFortPlayerControllerAthena_GetTeamMuted_Params
+{
+	TArray<bool>                                       MutedStates;                                              // (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
 };
 
 // Function FortniteGame.FortPlayerControllerAthena.GetTeamHitPointFractions
@@ -16954,6 +17024,11 @@ struct AFortPlayerControllerAthena_FullscreenMapCursorHorizontal_Params
 	float                                              Value;                                                    // (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 };
 
+// Function FortniteGame.FortPlayerControllerAthena.FollowNextTeammate
+struct AFortPlayerControllerAthena_FollowNextTeammate_Params
+{
+};
+
 // Function FortniteGame.FortPlayerControllerAthena.DumpTeamMemberState
 struct AFortPlayerControllerAthena_DumpTeamMemberState_Params
 {
@@ -16972,15 +17047,15 @@ struct AFortPlayerControllerAthena_CycleHeroBackward_Params
 // Function FortniteGame.FortPlayerControllerAthena.ClientVoiceChatLogin
 struct AFortPlayerControllerAthena_ClientVoiceChatLogin_Params
 {
-	struct FString                                     VoiceChatPlayerName;                                      // (CPF_Parm, CPF_ZeroConstructor)
+	struct FString                                     InVoiceChatPlayerName;                                    // (CPF_Parm, CPF_ZeroConstructor)
 	struct FString                                     LoginToken;                                               // (CPF_Parm, CPF_ZeroConstructor)
 };
 
 // Function FortniteGame.FortPlayerControllerAthena.ClientVoiceChatChannelJoin
 struct AFortPlayerControllerAthena_ClientVoiceChatChannelJoin_Params
 {
-	struct FString                                     VoiceChatPlayerName;                                      // (CPF_Parm, CPF_ZeroConstructor)
-	struct FString                                     VoiceChatChannel;                                         // (CPF_Parm, CPF_ZeroConstructor)
+	struct FString                                     InVoiceChatPlayerName;                                    // (CPF_Parm, CPF_ZeroConstructor)
+	struct FString                                     InVoiceChatChannel;                                       // (CPF_Parm, CPF_ZeroConstructor)
 	struct FString                                     JoinToken;                                                // (CPF_Parm, CPF_ZeroConstructor)
 };
 
