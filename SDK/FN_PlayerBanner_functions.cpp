@@ -12,6 +12,125 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function PlayerBanner.PlayerBanner_C.SetBannerIconAndColorFromProfile
+// (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UPlayerBanner_C::SetBannerIconAndColorFromProfile()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe40d6119);
+
+	UPlayerBanner_C_SetBannerIconAndColorFromProfile_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerBanner.PlayerBanner_C.SetBannerIconAndColor
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// struct FName                   IconId                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName                   ColorId                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UPlayerBanner_C::SetBannerIconAndColor(const struct FName& IconId, const struct FName& ColorId)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x370bb2ce);
+
+	UPlayerBanner_C_SetBannerIconAndColor_Params params;
+	params.IconId = IconId;
+	params.ColorId = ColorId;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerBanner.PlayerBanner_C.ToggleBannerMask
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           Enable                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UPlayerBanner_C::ToggleBannerMask(bool Enable)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe0f0ddef);
+
+	UPlayerBanner_C_ToggleBannerMask_Params params;
+	params.Enable = Enable;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerBanner.PlayerBanner_C.RefreshSurround
+// (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UPlayerBanner_C::RefreshSurround()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x14387bd4);
+
+	UPlayerBanner_C_RefreshSurround_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerBanner.PlayerBanner_C.OnSurroundIconLoaded
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UObject*                 LoadedObject                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UPlayerBanner_C::OnSurroundIconLoaded(class UObject* LoadedObject)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc1ee8b50);
+
+	UPlayerBanner_C_OnSurroundIconLoaded_Params params;
+	params.LoadedObject = LoadedObject;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerBanner.PlayerBanner_C.EnableSurround
+// (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UPlayerBanner_C::EnableSurround()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5f22480a);
+
+	UPlayerBanner_C_EnableSurround_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function PlayerBanner.PlayerBanner_C.ClearBannerState
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
@@ -75,7 +194,7 @@ void UPlayerBanner_C::GetBannerMID(class UMaterialInstanceDynamic** BannerMID)
 
 
 // Function PlayerBanner.PlayerBanner_C.SetBannerOwner
-// (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
 // struct FUniqueNetIdRepl        OwnerId                        (CPF_Parm)
 
@@ -195,6 +314,27 @@ void UPlayerBanner_C::PreConstruct(bool* IsDesignTime)
 
 	UPlayerBanner_C_PreConstruct_Params params;
 	params.IsDesignTime = IsDesignTime;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerBanner.PlayerBanner_C.Account Info Changed
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// struct FFortPublicAccountInfo  NewInfo                        (CPF_Parm)
+
+void UPlayerBanner_C::Account_Info_Changed(const struct FFortPublicAccountInfo& NewInfo)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc5471e56);
+
+	UPlayerBanner_C_Account_Info_Changed_Params params;
+	params.NewInfo = NewInfo;
 
 	auto flags = fn->FunctionFlags;
 

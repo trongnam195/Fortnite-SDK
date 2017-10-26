@@ -269,27 +269,6 @@ void UAthenaDeathWidget_C::TeamMemberChanged()
 }
 
 
-// Function AthenaDeathWidget.AthenaDeathWidget_C.PreConstruct
-// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// bool*                          IsDesignTime                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UAthenaDeathWidget_C::PreConstruct(bool* IsDesignTime)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x7b776cc5);
-
-	UAthenaDeathWidget_C_PreConstruct_Params params;
-	params.IsDesignTime = IsDesignTime;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function AthenaDeathWidget.AthenaDeathWidget_C.BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature
 // (FUNC_BlueprintEvent)
 // Parameters:

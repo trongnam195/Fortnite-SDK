@@ -34,1076 +34,6 @@ void UCommonUserWidget::SetConsumePointerInput(bool bInConsumePointerInput)
 }
 
 
-// Function CommonUI.CommonTabListWidget.SetTabEnabled
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// bool                           bEnable                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonTabListWidget::SetTabEnabled(const struct FName& TabNameID, bool bEnable)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x94bfe164);
-
-	UCommonTabListWidget_SetTabEnabled_Params params;
-	params.TabNameID = TabNameID;
-	params.bEnable = bEnable;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonTabListWidget.SetListeningForInput
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// bool                           bShouldListen                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonTabListWidget::SetListeningForInput(bool bShouldListen)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xdc19511c);
-
-	UCommonTabListWidget_SetListeningForInput_Params params;
-	params.bShouldListen = bShouldListen;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonTabListWidget.SetLinkedSwitcher
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// class UCommonWidgetSwitcher*   CommonSwitcher                 (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-
-void UCommonTabListWidget::SetLinkedSwitcher(class UCommonWidgetSwitcher* CommonSwitcher)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x30c309a2);
-
-	UCommonTabListWidget_SetLinkedSwitcher_Params params;
-	params.CommonSwitcher = CommonSwitcher;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonTabListWidget.SelectTabByID
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// bool                           bSuppressClickFeedback         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool UCommonTabListWidget::SelectTabByID(const struct FName& TabNameID, bool bSuppressClickFeedback)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xf6a4c415);
-
-	UCommonTabListWidget_SelectTabByID_Params params;
-	params.TabNameID = TabNameID;
-	params.bSuppressClickFeedback = bSuppressClickFeedback;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonTabListWidget.RemoveTab
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool UCommonTabListWidget::RemoveTab(const struct FName& TabNameID)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xd0c1a99d);
-
-	UCommonTabListWidget_RemoveTab_Params params;
-	params.TabNameID = TabNameID;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonTabListWidget.RemoveAllTabs
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void UCommonTabListWidget::RemoveAllTabs()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x88d34b51);
-
-	UCommonTabListWidget_RemoveAllTabs_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonTabListWidget.RegisterTab
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class UClass*                  ButtonWidgetType               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class UWidget*                 ContentWidget                  (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool UCommonTabListWidget::RegisterTab(const struct FName& TabNameID, class UClass* ButtonWidgetType, class UWidget* ContentWidget)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xdf3a3208);
-
-	UCommonTabListWidget_RegisterTab_Params params;
-	params.TabNameID = TabNameID;
-	params.ButtonWidgetType = ButtonWidgetType;
-	params.ContentWidget = ContentWidget;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// DelegateFunction CommonUI.CommonTabListWidget.OnTabSelected__DelegateSignature
-// (FUNC_MulticastDelegate, FUNC_Public, FUNC_Delegate)
-// Parameters:
-// struct FName                   TabId                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonTabListWidget::OnTabSelected__DelegateSignature(const struct FName& TabId)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x1aa9a5fb);
-
-	UCommonTabListWidget_OnTabSelected__DelegateSignature_Params params;
-	params.TabId = TabId;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// DelegateFunction CommonUI.CommonTabListWidget.OnTabButtonRemoved__DelegateSignature
-// (FUNC_MulticastDelegate, FUNC_Public, FUNC_Delegate)
-// Parameters:
-// struct FName                   TabId                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class UCommonButton*           TabButton                      (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-
-void UCommonTabListWidget::OnTabButtonRemoved__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xe2e77d44);
-
-	UCommonTabListWidget_OnTabButtonRemoved__DelegateSignature_Params params;
-	params.TabId = TabId;
-	params.TabButton = TabButton;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// DelegateFunction CommonUI.CommonTabListWidget.OnTabButtonCreated__DelegateSignature
-// (FUNC_MulticastDelegate, FUNC_Public, FUNC_Delegate)
-// Parameters:
-// struct FName                   TabId                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class UCommonButton*           TabButton                      (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-
-void UCommonTabListWidget::OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x9b8f1ea4);
-
-	UCommonTabListWidget_OnTabButtonCreated__DelegateSignature_Params params;
-	params.TabId = TabId;
-	params.TabButton = TabButton;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonTabListWidget.HandleTabRemoved
-// (FUNC_Native, FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-// Parameters:
-// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class UCommonButton*           TabButton                      (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-
-void UCommonTabListWidget::HandleTabRemoved(const struct FName& TabNameID, class UCommonButton* TabButton)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xdfba2419);
-
-	UCommonTabListWidget_HandleTabRemoved_Params params;
-	params.TabNameID = TabNameID;
-	params.TabButton = TabButton;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonTabListWidget.HandleTabCreated
-// (FUNC_Native, FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-// Parameters:
-// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class UCommonButton*           TabButton                      (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-
-void UCommonTabListWidget::HandleTabCreated(const struct FName& TabNameID, class UCommonButton* TabButton)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x2360cd99);
-
-	UCommonTabListWidget_HandleTabCreated_Params params;
-	params.TabNameID = TabNameID;
-	params.TabButton = TabButton;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonTabListWidget.HandleTabButtonSelected
-// (FUNC_Final, FUNC_Native, FUNC_Private)
-// Parameters:
-// class UCommonButton*           SelectedTabButton              (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-// int                            ButtonIndex                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonTabListWidget::HandleTabButtonSelected(class UCommonButton* SelectedTabButton, int ButtonIndex)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x8792d978);
-
-	UCommonTabListWidget_HandleTabButtonSelected_Params params;
-	params.SelectedTabButton = SelectedTabButton;
-	params.ButtonIndex = ButtonIndex;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonTabListWidget.HandlePreviousTabInputAction
-// (FUNC_Final, FUNC_Native, FUNC_Private, FUNC_HasOutParms)
-// Parameters:
-// bool                           bPassThrough                   (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonTabListWidget::HandlePreviousTabInputAction(bool* bPassThrough)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x7030ab1c);
-
-	UCommonTabListWidget_HandlePreviousTabInputAction_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (bPassThrough != nullptr)
-		*bPassThrough = params.bPassThrough;
-}
-
-
-// Function CommonUI.CommonTabListWidget.HandlePreLinkedSwitcherChanged_BP
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-
-void UCommonTabListWidget::HandlePreLinkedSwitcherChanged_BP()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x66db2c0a);
-
-	UCommonTabListWidget_HandlePreLinkedSwitcherChanged_BP_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonTabListWidget.HandlePostLinkedSwitcherChanged_BP
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-
-void UCommonTabListWidget::HandlePostLinkedSwitcherChanged_BP()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x678ea9df);
-
-	UCommonTabListWidget_HandlePostLinkedSwitcherChanged_BP_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonTabListWidget.HandleNextTabInputAction
-// (FUNC_Final, FUNC_Native, FUNC_Private, FUNC_HasOutParms)
-// Parameters:
-// bool                           bPassThrough                   (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonTabListWidget::HandleNextTabInputAction(bool* bPassThrough)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x72ab75fc);
-
-	UCommonTabListWidget_HandleNextTabInputAction_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (bPassThrough != nullptr)
-		*bPassThrough = params.bPassThrough;
-}
-
-
-// Function CommonUI.CommonTabListWidget.GetTabCount
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-int UCommonTabListWidget::GetTabCount()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xa6c7c346);
-
-	UCommonTabListWidget_GetTabCount_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonTabListWidget.GetTabButtonByID
-// (FUNC_Final, FUNC_Native, FUNC_Protected, FUNC_BlueprintCallable)
-// Parameters:
-// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class UCommonButton*           ReturnValue                    (CPF_ExportObject, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_InstancedReference, CPF_IsPlainOldData)
-
-class UCommonButton* UCommonTabListWidget::GetTabButtonByID(const struct FName& TabNameID)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x5935a451);
-
-	UCommonTabListWidget_GetTabButtonByID_Params params;
-	params.TabNameID = TabNameID;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonTabListWidget.GetLinkedSwitcher
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// class UCommonWidgetSwitcher*   ReturnValue                    (CPF_ExportObject, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_InstancedReference, CPF_IsPlainOldData)
-
-class UCommonWidgetSwitcher* UCommonTabListWidget::GetLinkedSwitcher()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x64498b2e);
-
-	UCommonTabListWidget_GetLinkedSwitcher_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonTabListWidget.GetActiveTab
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// struct FName                   ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-struct FName UCommonTabListWidget::GetActiveTab()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xa0d88ddf);
-
-	UCommonTabListWidget_GetActiveTab_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonTabListWidget.DisableTabWithReason
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
-// Parameters:
-// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FText                   Reason                         (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
-
-void UCommonTabListWidget::DisableTabWithReason(const struct FName& TabNameID, const struct FText& Reason)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x539b9f9d);
-
-	UCommonTabListWidget_DisableTabWithReason_Params params;
-	params.TabNameID = TabNameID;
-	params.Reason = Reason;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.SetInputActionHandlerWithProgress
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// struct FDataTableRowHandle     InputActionRow                 (CPF_Parm)
-// struct FScriptDelegate         CommitedEvent                  (CPF_Parm, CPF_ZeroConstructor)
-// struct FScriptDelegate         ProgressEvent                  (CPF_Parm, CPF_ZeroConstructor)
-
-void UCommonActivatablePanel::SetInputActionHandlerWithProgress(const struct FDataTableRowHandle& InputActionRow, const struct FScriptDelegate& CommitedEvent, const struct FScriptDelegate& ProgressEvent)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x7747560c);
-
-	UCommonActivatablePanel_SetInputActionHandlerWithProgress_Params params;
-	params.InputActionRow = InputActionRow;
-	params.CommitedEvent = CommitedEvent;
-	params.ProgressEvent = ProgressEvent;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.SetInputActionHandler
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// struct FDataTableRowHandle     InputActionRow                 (CPF_Parm)
-// struct FScriptDelegate         CommitedEvent                  (CPF_Parm, CPF_ZeroConstructor)
-
-void UCommonActivatablePanel::SetInputActionHandler(const struct FDataTableRowHandle& InputActionRow, const struct FScriptDelegate& CommitedEvent)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x46cb2029);
-
-	UCommonActivatablePanel_SetInputActionHandler_Params params;
-	params.InputActionRow = InputActionRow;
-	params.CommitedEvent = CommitedEvent;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.SetActionHandlerStateWithDisabledCommitEvent
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// class UDataTable*              DataTable                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FName                   RowName                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// EInputActionState              State                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FScriptDelegate         DisabledCommitEvent            (CPF_Parm, CPF_ZeroConstructor)
-
-void UCommonActivatablePanel::SetActionHandlerStateWithDisabledCommitEvent(class UDataTable* DataTable, const struct FName& RowName, EInputActionState State, const struct FScriptDelegate& DisabledCommitEvent)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x980165c7);
-
-	UCommonActivatablePanel_SetActionHandlerStateWithDisabledCommitEvent_Params params;
-	params.DataTable = DataTable;
-	params.RowName = RowName;
-	params.State = State;
-	params.DisabledCommitEvent = DisabledCommitEvent;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.SetActionHandlerStateFromHandleWithDisabledCommitEvent
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// struct FDataTableRowHandle     InputActionRow                 (CPF_Parm)
-// EInputActionState              State                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FScriptDelegate         DisabledCommitEvent            (CPF_Parm, CPF_ZeroConstructor)
-
-void UCommonActivatablePanel::SetActionHandlerStateFromHandleWithDisabledCommitEvent(const struct FDataTableRowHandle& InputActionRow, EInputActionState State, const struct FScriptDelegate& DisabledCommitEvent)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xa5599641);
-
-	UCommonActivatablePanel_SetActionHandlerStateFromHandleWithDisabledCommitEvent_Params params;
-	params.InputActionRow = InputActionRow;
-	params.State = State;
-	params.DisabledCommitEvent = DisabledCommitEvent;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.SetActionHandlerStateFromHandle
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// struct FDataTableRowHandle     InputActionRow                 (CPF_Parm)
-// EInputActionState              State                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonActivatablePanel::SetActionHandlerStateFromHandle(const struct FDataTableRowHandle& InputActionRow, EInputActionState State)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xd799809c);
-
-	UCommonActivatablePanel_SetActionHandlerStateFromHandle_Params params;
-	params.InputActionRow = InputActionRow;
-	params.State = State;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.SetActionHandlerState
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// class UDataTable*              DataTable                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FName                   RowName                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// EInputActionState              State                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonActivatablePanel::SetActionHandlerState(class UDataTable* DataTable, const struct FName& RowName, EInputActionState State)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xc281588a);
-
-	UCommonActivatablePanel_SetActionHandlerState_Params params;
-	params.DataTable = DataTable;
-	params.RowName = RowName;
-	params.State = State;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.RemoveInputActionHandler
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// struct FDataTableRowHandle     InputActionRow                 (CPF_Parm)
-
-void UCommonActivatablePanel::RemoveInputActionHandler(const struct FDataTableRowHandle& InputActionRow)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x7dddc22b);
-
-	UCommonActivatablePanel_RemoveInputActionHandler_Params params;
-	params.InputActionRow = InputActionRow;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.RemoveAllInputActionHandlers
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void UCommonActivatablePanel::RemoveAllInputActionHandlers()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xa5f6882b);
-
-	UCommonActivatablePanel_RemoveAllInputActionHandlers_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.PopPanel
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void UCommonActivatablePanel::PopPanel()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xe7ecfec4);
-
-	UCommonActivatablePanel_PopPanel_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.OnInputModeChanged
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-// Parameters:
-// bool                           bUsingGamepad                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonActivatablePanel::OnInputModeChanged(bool bUsingGamepad)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x7d6cadad);
-
-	UCommonActivatablePanel_OnInputModeChanged_Params params;
-	params.bUsingGamepad = bUsingGamepad;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.OnDeactivated
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-
-void UCommonActivatablePanel::OnDeactivated()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xbd41a440);
-
-	UCommonActivatablePanel_OnDeactivated_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.OnBeginOutro
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-
-void UCommonActivatablePanel::OnBeginOutro()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xefefbb92);
-
-	UCommonActivatablePanel_OnBeginOutro_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.OnBeginIntro
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-
-void UCommonActivatablePanel::OnBeginIntro()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xc826fac5);
-
-	UCommonActivatablePanel_OnBeginIntro_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.OnActivated
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-
-void UCommonActivatablePanel::OnActivated()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xb30baebb);
-
-	UCommonActivatablePanel_OnActivated_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.IsIntroed
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool UCommonActivatablePanel::IsIntroed()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x521258ae);
-
-	UCommonActivatablePanel_IsIntroed_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.IsActivated
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool UCommonActivatablePanel::IsActivated()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x75d483e);
-
-	UCommonActivatablePanel_IsActivated_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.HasInputActionHandler
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// struct FDataTableRowHandle     InputActionRow                 (CPF_Parm)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool UCommonActivatablePanel::HasInputActionHandler(const struct FDataTableRowHandle& InputActionRow)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x90faa61);
-
-	UCommonActivatablePanel_HasInputActionHandler_Params params;
-	params.InputActionRow = InputActionRow;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.GetInputActions
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// TArray<struct FCommonInputActionHandlerData> InputActionDataRows            (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool UCommonActivatablePanel::GetInputActions(TArray<struct FCommonInputActionHandlerData>* InputActionDataRows)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x33f83a3a);
-
-	UCommonActivatablePanel_GetInputActions_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (InputActionDataRows != nullptr)
-		*InputActionDataRows = params.InputActionDataRows;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.EndOutro
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void UCommonActivatablePanel::EndOutro()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x8530e8ed);
-
-	UCommonActivatablePanel_EndOutro_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.EndIntro
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void UCommonActivatablePanel::EndIntro()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x18393f2e);
-
-	UCommonActivatablePanel_EndIntro_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.BeginOutro
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void UCommonActivatablePanel::BeginOutro()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x4d550881);
-
-	UCommonActivatablePanel_BeginOutro_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.BeginIntro
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void UCommonActivatablePanel::BeginIntro()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x89491dea);
-
-	UCommonActivatablePanel_BeginIntro_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.AddInputActionNoHandler
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// class UDataTable*              DataTable                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FName                   RowName                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonActivatablePanel::AddInputActionNoHandler(class UDataTable* DataTable, const struct FName& RowName)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x38089a8b);
-
-	UCommonActivatablePanel_AddInputActionNoHandler_Params params;
-	params.DataTable = DataTable;
-	params.RowName = RowName;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.AddInputActionHandlerWithProgress
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// class UDataTable*              DataTable                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FName                   RowName                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FScriptDelegate         CommitedEvent                  (CPF_Parm, CPF_ZeroConstructor)
-// struct FScriptDelegate         ProgressEvent                  (CPF_Parm, CPF_ZeroConstructor)
-
-void UCommonActivatablePanel::AddInputActionHandlerWithProgress(class UDataTable* DataTable, const struct FName& RowName, const struct FScriptDelegate& CommitedEvent, const struct FScriptDelegate& ProgressEvent)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xceb946dd);
-
-	UCommonActivatablePanel_AddInputActionHandlerWithProgress_Params params;
-	params.DataTable = DataTable;
-	params.RowName = RowName;
-	params.CommitedEvent = CommitedEvent;
-	params.ProgressEvent = ProgressEvent;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonActivatablePanel.AddInputActionHandler
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// class UDataTable*              DataTable                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FName                   RowName                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FScriptDelegate         CommitedEvent                  (CPF_Parm, CPF_ZeroConstructor)
-
-void UCommonActivatablePanel::AddInputActionHandler(class UDataTable* DataTable, const struct FName& RowName, const struct FScriptDelegate& CommitedEvent)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x4cd6aa04);
-
-	UCommonActivatablePanel_AddInputActionHandler_Params params;
-	params.DataTable = DataTable;
-	params.RowName = RowName;
-	params.CommitedEvent = CommitedEvent;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function CommonUI.CommonButton.SetTriggeredInputAction
 // (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
 // Parameters:
@@ -2063,6 +993,1719 @@ void UCommonButton::ClearSelection()
 }
 
 
+// Function CommonUI.CommonActivatablePanel.SetInputActionHandlerWithProgress
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FDataTableRowHandle     InputActionRow                 (CPF_Parm)
+// struct FScriptDelegate         CommitedEvent                  (CPF_Parm, CPF_ZeroConstructor)
+// struct FScriptDelegate         ProgressEvent                  (CPF_Parm, CPF_ZeroConstructor)
+
+void UCommonActivatablePanel::SetInputActionHandlerWithProgress(const struct FDataTableRowHandle& InputActionRow, const struct FScriptDelegate& CommitedEvent, const struct FScriptDelegate& ProgressEvent)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7747560c);
+
+	UCommonActivatablePanel_SetInputActionHandlerWithProgress_Params params;
+	params.InputActionRow = InputActionRow;
+	params.CommitedEvent = CommitedEvent;
+	params.ProgressEvent = ProgressEvent;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.SetInputActionHandler
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FDataTableRowHandle     InputActionRow                 (CPF_Parm)
+// struct FScriptDelegate         CommitedEvent                  (CPF_Parm, CPF_ZeroConstructor)
+
+void UCommonActivatablePanel::SetInputActionHandler(const struct FDataTableRowHandle& InputActionRow, const struct FScriptDelegate& CommitedEvent)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x46cb2029);
+
+	UCommonActivatablePanel_SetInputActionHandler_Params params;
+	params.InputActionRow = InputActionRow;
+	params.CommitedEvent = CommitedEvent;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.SetActionHandlerStateWithDisabledCommitEvent
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UDataTable*              DataTable                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName                   RowName                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// EInputActionState              State                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FScriptDelegate         DisabledCommitEvent            (CPF_Parm, CPF_ZeroConstructor)
+
+void UCommonActivatablePanel::SetActionHandlerStateWithDisabledCommitEvent(class UDataTable* DataTable, const struct FName& RowName, EInputActionState State, const struct FScriptDelegate& DisabledCommitEvent)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x980165c7);
+
+	UCommonActivatablePanel_SetActionHandlerStateWithDisabledCommitEvent_Params params;
+	params.DataTable = DataTable;
+	params.RowName = RowName;
+	params.State = State;
+	params.DisabledCommitEvent = DisabledCommitEvent;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.SetActionHandlerStateFromHandleWithDisabledCommitEvent
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FDataTableRowHandle     InputActionRow                 (CPF_Parm)
+// EInputActionState              State                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FScriptDelegate         DisabledCommitEvent            (CPF_Parm, CPF_ZeroConstructor)
+
+void UCommonActivatablePanel::SetActionHandlerStateFromHandleWithDisabledCommitEvent(const struct FDataTableRowHandle& InputActionRow, EInputActionState State, const struct FScriptDelegate& DisabledCommitEvent)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5599641);
+
+	UCommonActivatablePanel_SetActionHandlerStateFromHandleWithDisabledCommitEvent_Params params;
+	params.InputActionRow = InputActionRow;
+	params.State = State;
+	params.DisabledCommitEvent = DisabledCommitEvent;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.SetActionHandlerStateFromHandle
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FDataTableRowHandle     InputActionRow                 (CPF_Parm)
+// EInputActionState              State                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonActivatablePanel::SetActionHandlerStateFromHandle(const struct FDataTableRowHandle& InputActionRow, EInputActionState State)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd799809c);
+
+	UCommonActivatablePanel_SetActionHandlerStateFromHandle_Params params;
+	params.InputActionRow = InputActionRow;
+	params.State = State;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.SetActionHandlerState
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UDataTable*              DataTable                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName                   RowName                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// EInputActionState              State                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonActivatablePanel::SetActionHandlerState(class UDataTable* DataTable, const struct FName& RowName, EInputActionState State)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc281588a);
+
+	UCommonActivatablePanel_SetActionHandlerState_Params params;
+	params.DataTable = DataTable;
+	params.RowName = RowName;
+	params.State = State;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.RemoveInputActionHandler
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FDataTableRowHandle     InputActionRow                 (CPF_Parm)
+
+void UCommonActivatablePanel::RemoveInputActionHandler(const struct FDataTableRowHandle& InputActionRow)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7dddc22b);
+
+	UCommonActivatablePanel_RemoveInputActionHandler_Params params;
+	params.InputActionRow = InputActionRow;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.RemoveAllInputActionHandlers
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void UCommonActivatablePanel::RemoveAllInputActionHandlers()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa5f6882b);
+
+	UCommonActivatablePanel_RemoveAllInputActionHandlers_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.PopPanel
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void UCommonActivatablePanel::PopPanel()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe7ecfec4);
+
+	UCommonActivatablePanel_PopPanel_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.OnInputModeChanged
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           bUsingGamepad                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonActivatablePanel::OnInputModeChanged(bool bUsingGamepad)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7d6cadad);
+
+	UCommonActivatablePanel_OnInputModeChanged_Params params;
+	params.bUsingGamepad = bUsingGamepad;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.OnDeactivated
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UCommonActivatablePanel::OnDeactivated()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbd41a440);
+
+	UCommonActivatablePanel_OnDeactivated_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.OnBeginOutro
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void UCommonActivatablePanel::OnBeginOutro()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xefefbb92);
+
+	UCommonActivatablePanel_OnBeginOutro_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.OnBeginIntro
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void UCommonActivatablePanel::OnBeginIntro()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc826fac5);
+
+	UCommonActivatablePanel_OnBeginIntro_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.OnActivated
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UCommonActivatablePanel::OnActivated()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb30baebb);
+
+	UCommonActivatablePanel_OnActivated_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.IsIntroed
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UCommonActivatablePanel::IsIntroed()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x521258ae);
+
+	UCommonActivatablePanel_IsIntroed_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.IsActivated
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UCommonActivatablePanel::IsActivated()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x75d483e);
+
+	UCommonActivatablePanel_IsActivated_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.HasInputActionHandler
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// struct FDataTableRowHandle     InputActionRow                 (CPF_Parm)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UCommonActivatablePanel::HasInputActionHandler(const struct FDataTableRowHandle& InputActionRow)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x90faa61);
+
+	UCommonActivatablePanel_HasInputActionHandler_Params params;
+	params.InputActionRow = InputActionRow;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.GetInputActions
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// TArray<struct FCommonInputActionHandlerData> InputActionDataRows            (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UCommonActivatablePanel::GetInputActions(TArray<struct FCommonInputActionHandlerData>* InputActionDataRows)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x33f83a3a);
+
+	UCommonActivatablePanel_GetInputActions_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (InputActionDataRows != nullptr)
+		*InputActionDataRows = params.InputActionDataRows;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.EndOutro
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void UCommonActivatablePanel::EndOutro()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8530e8ed);
+
+	UCommonActivatablePanel_EndOutro_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.EndIntro
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void UCommonActivatablePanel::EndIntro()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x18393f2e);
+
+	UCommonActivatablePanel_EndIntro_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.BeginOutro
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void UCommonActivatablePanel::BeginOutro()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4d550881);
+
+	UCommonActivatablePanel_BeginOutro_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.BeginIntro
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void UCommonActivatablePanel::BeginIntro()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x89491dea);
+
+	UCommonActivatablePanel_BeginIntro_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.AddInputActionNoHandler
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UDataTable*              DataTable                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName                   RowName                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonActivatablePanel::AddInputActionNoHandler(class UDataTable* DataTable, const struct FName& RowName)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38089a8b);
+
+	UCommonActivatablePanel_AddInputActionNoHandler_Params params;
+	params.DataTable = DataTable;
+	params.RowName = RowName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.AddInputActionHandlerWithProgress
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UDataTable*              DataTable                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName                   RowName                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FScriptDelegate         CommitedEvent                  (CPF_Parm, CPF_ZeroConstructor)
+// struct FScriptDelegate         ProgressEvent                  (CPF_Parm, CPF_ZeroConstructor)
+
+void UCommonActivatablePanel::AddInputActionHandlerWithProgress(class UDataTable* DataTable, const struct FName& RowName, const struct FScriptDelegate& CommitedEvent, const struct FScriptDelegate& ProgressEvent)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xceb946dd);
+
+	UCommonActivatablePanel_AddInputActionHandlerWithProgress_Params params;
+	params.DataTable = DataTable;
+	params.RowName = RowName;
+	params.CommitedEvent = CommitedEvent;
+	params.ProgressEvent = ProgressEvent;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonActivatablePanel.AddInputActionHandler
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UDataTable*              DataTable                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName                   RowName                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FScriptDelegate         CommitedEvent                  (CPF_Parm, CPF_ZeroConstructor)
+
+void UCommonActivatablePanel::AddInputActionHandler(class UDataTable* DataTable, const struct FName& RowName, const struct FScriptDelegate& CommitedEvent)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4cd6aa04);
+
+	UCommonActivatablePanel_AddInputActionHandler_Params params;
+	params.DataTable = DataTable;
+	params.RowName = RowName;
+	params.CommitedEvent = CommitedEvent;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.SetSimulateDoubleClickOnSelectedItemClick
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// bool                           bInSimulateDoubleClick         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonListView::SetSimulateDoubleClickOnSelectedItemClick(bool bInSimulateDoubleClick)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x22cf94be);
+
+	UCommonListView_SetSimulateDoubleClickOnSelectedItemClick_Params params;
+	params.bInSimulateDoubleClick = bInSimulateDoubleClick;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.SetSelectionMode
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// TEnumAsByte<ESelectionMode>    SelectionMode                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonListView::SetSelectionMode(TEnumAsByte<ESelectionMode> SelectionMode)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc382533);
+
+	UCommonListView_SetSelectionMode_Params params;
+	params.SelectionMode = SelectionMode;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.SetSelectedItem
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UObject*                 Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           bWaitIfPendingRefresh          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UCommonListView::SetSelectedItem(class UObject* Item, bool bWaitIfPendingRefresh)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x856abf5a);
+
+	UCommonListView_SetSelectedItem_Params params;
+	params.Item = Item;
+	params.bWaitIfPendingRefresh = bWaitIfPendingRefresh;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonListView.SetSelectedIndex
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// int                            Index                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UCommonListView::SetSelectedIndex(int Index)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x196bb2d9);
+
+	UCommonListView_SetSelectedIndex_Params params;
+	params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonListView.SetItemSelection
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UObject*                 Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           bSelected                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonListView::SetItemSelection(class UObject* Item, bool bSelected)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x23f3ed0d);
+
+	UCommonListView_SetItemSelection_Params params;
+	params.Item = Item;
+	params.bSelected = bSelected;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.SetItemHeight
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// float                          NewHeight                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonListView::SetItemHeight(float NewHeight)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xed0a634c);
+
+	UCommonListView_SetItemHeight_Params params;
+	params.NewHeight = NewHeight;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.SetDesiredItemPadding
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
+// Parameters:
+// struct FMargin                 DesiredPadding                 (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+
+void UCommonListView::SetDesiredItemPadding(const struct FMargin& DesiredPadding)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2f0e0b8a);
+
+	UCommonListView_SetDesiredItemPadding_Params params;
+	params.DesiredPadding = DesiredPadding;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.SetDataProvider
+// (FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
+// Parameters:
+// TArray<class UObject*>         InDataProvider                 (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+
+void UCommonListView::SetDataProvider(TArray<class UObject*> InDataProvider)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2b2b86ab);
+
+	UCommonListView_SetDataProvider_Params params;
+	params.InDataProvider = InDataProvider;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.ScrollIntoView
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UObject*                 Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           NavigateOnScrollIntoView       (CPF_ConstParm, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonListView::ScrollIntoView(class UObject* Item, bool NavigateOnScrollIntoView)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3cf29a62);
+
+	UCommonListView_ScrollIntoView_Params params;
+	params.Item = Item;
+	params.NavigateOnScrollIntoView = NavigateOnScrollIntoView;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.IsRefreshPending
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UCommonListView::IsRefreshPending()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x812097ba);
+
+	UCommonListView_IsRefreshPending_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonListView.IsItemVisible
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// class UObject*                 Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UCommonListView::IsItemVisible(class UObject* Item)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5e48905d);
+
+	UCommonListView_IsItemVisible_Params params;
+	params.Item = Item;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonListView.GetSelectionModeBP
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// TEnumAsByte<ESelectionMode>    ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+TEnumAsByte<ESelectionMode> UCommonListView::GetSelectionModeBP()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc171bbd5);
+
+	UCommonListView_GetSelectionModeBP_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonListView.GetSelectedItems
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_Const)
+// Parameters:
+// TArray<class UObject*>         Items                          (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UCommonListView::GetSelectedItems(TArray<class UObject*>* Items)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x36711c71);
+
+	UCommonListView_GetSelectedItems_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (Items != nullptr)
+		*Items = params.Items;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonListView.GetSelectedItem
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// class UObject*                 ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class UObject* UCommonListView::GetSelectedItem()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xace624ce);
+
+	UCommonListView_GetSelectedItem_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonListView.GetNumItemsSelected
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+int UCommonListView::GetNumItemsSelected()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcb8f170f);
+
+	UCommonListView_GetNumItemsSelected_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonListView.GetNumItems
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+int UCommonListView::GetNumItems()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x972716d4);
+
+	UCommonListView_GetNumItems_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonListView.GetItemAt
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// int                            Index                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UObject*                 ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class UObject* UCommonListView::GetItemAt(int Index)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x92b24026);
+
+	UCommonListView_GetItemAt_Params params;
+	params.Index = Index;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonListView.GetIndexForItem
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// class UObject*                 Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+int UCommonListView::GetIndexForItem(class UObject* Item)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8656c714);
+
+	UCommonListView_GetIndexForItem_Params params;
+	params.Item = Item;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonListView.DynamicHandleItemUnhoveredCommonButton
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+// Parameters:
+// class UCommonButton*           Button                         (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void UCommonListView::DynamicHandleItemUnhoveredCommonButton(class UCommonButton* Button)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2c481f0d);
+
+	UCommonListView_DynamicHandleItemUnhoveredCommonButton_Params params;
+	params.Button = Button;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.DynamicHandleItemHoveredCommonButton
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+// Parameters:
+// class UCommonButton*           Button                         (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void UCommonListView::DynamicHandleItemHoveredCommonButton(class UCommonButton* Button)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x77b79f22);
+
+	UCommonListView_DynamicHandleItemHoveredCommonButton_Params params;
+	params.Button = Button;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.DynamicHandleItemDoubleClickedCommonButton
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+// Parameters:
+// class UCommonButton*           Button                         (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void UCommonListView::DynamicHandleItemDoubleClickedCommonButton(class UCommonButton* Button)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xac74ac81);
+
+	UCommonListView_DynamicHandleItemDoubleClickedCommonButton_Params params;
+	params.Button = Button;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.DynamicHandleItemClickedUserWidget
+// (FUNC_Final, FUNC_Native, FUNC_Protected)
+// Parameters:
+// class UUserWidget*             Widget                         (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void UCommonListView::DynamicHandleItemClickedUserWidget(class UUserWidget* Widget)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x91c28f8a);
+
+	UCommonListView_DynamicHandleItemClickedUserWidget_Params params;
+	params.Widget = Widget;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.DynamicHandleItemClickedCommonButton
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+// Parameters:
+// class UCommonButton*           Button                         (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void UCommonListView::DynamicHandleItemClickedCommonButton(class UCommonButton* Button)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb9f01d40);
+
+	UCommonListView_DynamicHandleItemClickedCommonButton_Params params;
+	params.Button = Button;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.ClearSelection
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void UCommonListView::ClearSelection()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5eb2240b);
+
+	UCommonListView_ClearSelection_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.Clear
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void UCommonListView::Clear()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf52a6e63);
+
+	UCommonListView_Clear_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonListView.AddItem
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_Const)
+// Parameters:
+// class UObject*                 Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonListView::AddItem(class UObject* Item)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf81b1840);
+
+	UCommonListView_AddItem_Params params;
+	params.Item = Item;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonTileView.SetItemWidth
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// float                          NewWidth                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonTileView::SetItemWidth(float NewWidth)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4df549b);
+
+	UCommonTileView_SetItemWidth_Params params;
+	params.NewWidth = NewWidth;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonTabListWidget.SetTabVisibility
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// ESlateVisibility               NewVisibility                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonTabListWidget::SetTabVisibility(const struct FName& TabNameID, ESlateVisibility NewVisibility)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbc7063e9);
+
+	UCommonTabListWidget_SetTabVisibility_Params params;
+	params.TabNameID = TabNameID;
+	params.NewVisibility = NewVisibility;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonTabListWidget.SetTabEnabled
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           bEnable                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonTabListWidget::SetTabEnabled(const struct FName& TabNameID, bool bEnable)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x94bfe164);
+
+	UCommonTabListWidget_SetTabEnabled_Params params;
+	params.TabNameID = TabNameID;
+	params.bEnable = bEnable;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonTabListWidget.SetListeningForInput
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// bool                           bShouldListen                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonTabListWidget::SetListeningForInput(bool bShouldListen)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdc19511c);
+
+	UCommonTabListWidget_SetListeningForInput_Params params;
+	params.bShouldListen = bShouldListen;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonTabListWidget.SetLinkedSwitcher
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UCommonWidgetSwitcher*   CommonSwitcher                 (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void UCommonTabListWidget::SetLinkedSwitcher(class UCommonWidgetSwitcher* CommonSwitcher)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x30c309a2);
+
+	UCommonTabListWidget_SetLinkedSwitcher_Params params;
+	params.CommonSwitcher = CommonSwitcher;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonTabListWidget.SelectTabByID
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           bSuppressClickFeedback         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UCommonTabListWidget::SelectTabByID(const struct FName& TabNameID, bool bSuppressClickFeedback)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf6a4c415);
+
+	UCommonTabListWidget_SelectTabByID_Params params;
+	params.TabNameID = TabNameID;
+	params.bSuppressClickFeedback = bSuppressClickFeedback;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonTabListWidget.RemoveTab
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UCommonTabListWidget::RemoveTab(const struct FName& TabNameID)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd0c1a99d);
+
+	UCommonTabListWidget_RemoveTab_Params params;
+	params.TabNameID = TabNameID;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonTabListWidget.RemoveAllTabs
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void UCommonTabListWidget::RemoveAllTabs()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x88d34b51);
+
+	UCommonTabListWidget_RemoveAllTabs_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonTabListWidget.RegisterTab
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UClass*                  ButtonWidgetType               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UWidget*                 ContentWidget                  (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UCommonTabListWidget::RegisterTab(const struct FName& TabNameID, class UClass* ButtonWidgetType, class UWidget* ContentWidget)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf3a3208);
+
+	UCommonTabListWidget_RegisterTab_Params params;
+	params.TabNameID = TabNameID;
+	params.ButtonWidgetType = ButtonWidgetType;
+	params.ContentWidget = ContentWidget;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// DelegateFunction CommonUI.CommonTabListWidget.OnTabSelected__DelegateSignature
+// (FUNC_MulticastDelegate, FUNC_Public, FUNC_Delegate)
+// Parameters:
+// struct FName                   TabId                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonTabListWidget::OnTabSelected__DelegateSignature(const struct FName& TabId)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1aa9a5fb);
+
+	UCommonTabListWidget_OnTabSelected__DelegateSignature_Params params;
+	params.TabId = TabId;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// DelegateFunction CommonUI.CommonTabListWidget.OnTabButtonRemoved__DelegateSignature
+// (FUNC_MulticastDelegate, FUNC_Public, FUNC_Delegate)
+// Parameters:
+// struct FName                   TabId                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UCommonButton*           TabButton                      (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void UCommonTabListWidget::OnTabButtonRemoved__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe2e77d44);
+
+	UCommonTabListWidget_OnTabButtonRemoved__DelegateSignature_Params params;
+	params.TabId = TabId;
+	params.TabButton = TabButton;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// DelegateFunction CommonUI.CommonTabListWidget.OnTabButtonCreated__DelegateSignature
+// (FUNC_MulticastDelegate, FUNC_Public, FUNC_Delegate)
+// Parameters:
+// struct FName                   TabId                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UCommonButton*           TabButton                      (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void UCommonTabListWidget::OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9b8f1ea4);
+
+	UCommonTabListWidget_OnTabButtonCreated__DelegateSignature_Params params;
+	params.TabId = TabId;
+	params.TabButton = TabButton;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonTabListWidget.HandleTabRemoved
+// (FUNC_Native, FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+// Parameters:
+// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UCommonButton*           TabButton                      (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void UCommonTabListWidget::HandleTabRemoved(const struct FName& TabNameID, class UCommonButton* TabButton)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdfba2419);
+
+	UCommonTabListWidget_HandleTabRemoved_Params params;
+	params.TabNameID = TabNameID;
+	params.TabButton = TabButton;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonTabListWidget.HandleTabCreated
+// (FUNC_Native, FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+// Parameters:
+// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UCommonButton*           TabButton                      (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+
+void UCommonTabListWidget::HandleTabCreated(const struct FName& TabNameID, class UCommonButton* TabButton)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2360cd99);
+
+	UCommonTabListWidget_HandleTabCreated_Params params;
+	params.TabNameID = TabNameID;
+	params.TabButton = TabButton;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonTabListWidget.HandleTabButtonSelected
+// (FUNC_Final, FUNC_Native, FUNC_Private)
+// Parameters:
+// class UCommonButton*           SelectedTabButton              (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+// int                            ButtonIndex                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonTabListWidget::HandleTabButtonSelected(class UCommonButton* SelectedTabButton, int ButtonIndex)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8792d978);
+
+	UCommonTabListWidget_HandleTabButtonSelected_Params params;
+	params.SelectedTabButton = SelectedTabButton;
+	params.ButtonIndex = ButtonIndex;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonTabListWidget.HandlePreviousTabInputAction
+// (FUNC_Final, FUNC_Native, FUNC_Private, FUNC_HasOutParms)
+// Parameters:
+// bool                           bPassThrough                   (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonTabListWidget::HandlePreviousTabInputAction(bool* bPassThrough)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7030ab1c);
+
+	UCommonTabListWidget_HandlePreviousTabInputAction_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (bPassThrough != nullptr)
+		*bPassThrough = params.bPassThrough;
+}
+
+
+// Function CommonUI.CommonTabListWidget.HandlePreLinkedSwitcherChanged_BP
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UCommonTabListWidget::HandlePreLinkedSwitcherChanged_BP()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x66db2c0a);
+
+	UCommonTabListWidget_HandlePreLinkedSwitcherChanged_BP_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonTabListWidget.HandlePostLinkedSwitcherChanged_BP
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UCommonTabListWidget::HandlePostLinkedSwitcherChanged_BP()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x678ea9df);
+
+	UCommonTabListWidget_HandlePostLinkedSwitcherChanged_BP_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonTabListWidget.HandleNextTabInputAction
+// (FUNC_Final, FUNC_Native, FUNC_Private, FUNC_HasOutParms)
+// Parameters:
+// bool                           bPassThrough                   (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonTabListWidget::HandleNextTabInputAction(bool* bPassThrough)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72ab75fc);
+
+	UCommonTabListWidget_HandleNextTabInputAction_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (bPassThrough != nullptr)
+		*bPassThrough = params.bPassThrough;
+}
+
+
+// Function CommonUI.CommonTabListWidget.GetTabCount
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+int UCommonTabListWidget::GetTabCount()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa6c7c346);
+
+	UCommonTabListWidget_GetTabCount_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonTabListWidget.GetTabButtonByID
+// (FUNC_Final, FUNC_Native, FUNC_Protected, FUNC_BlueprintCallable)
+// Parameters:
+// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UCommonButton*           ReturnValue                    (CPF_ExportObject, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_InstancedReference, CPF_IsPlainOldData)
+
+class UCommonButton* UCommonTabListWidget::GetTabButtonByID(const struct FName& TabNameID)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5935a451);
+
+	UCommonTabListWidget_GetTabButtonByID_Params params;
+	params.TabNameID = TabNameID;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonTabListWidget.GetLinkedSwitcher
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// class UCommonWidgetSwitcher*   ReturnValue                    (CPF_ExportObject, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_InstancedReference, CPF_IsPlainOldData)
+
+class UCommonWidgetSwitcher* UCommonTabListWidget::GetLinkedSwitcher()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x64498b2e);
+
+	UCommonTabListWidget_GetLinkedSwitcher_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonTabListWidget.GetActiveTab
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// struct FName                   ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+struct FName UCommonTabListWidget::GetActiveTab()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa0d88ddf);
+
+	UCommonTabListWidget_GetActiveTab_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function CommonUI.CommonTabListWidget.DisableTabWithReason
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
+// Parameters:
+// struct FName                   TabNameID                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FText                   Reason                         (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+
+void UCommonTabListWidget::DisableTabWithReason(const struct FName& TabNameID, const struct FText& Reason)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x539b9f9d);
+
+	UCommonTabListWidget_DisableTabWithReason_Params params;
+	params.TabNameID = TabNameID;
+	params.Reason = Reason;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function CommonUI.CommonWidgetGroupBase.RemoveWidget
 // (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
 // Parameters:
@@ -2690,625 +3333,6 @@ float UCommonNumericTextBlock::GetTargetValue()
 }
 
 
-// Function CommonUI.CommonListView.SetSimulateDoubleClickOnSelectedItemClick
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// bool                           bInSimulateDoubleClick         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonListView::SetSimulateDoubleClickOnSelectedItemClick(bool bInSimulateDoubleClick)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x22cf94be);
-
-	UCommonListView_SetSimulateDoubleClickOnSelectedItemClick_Params params;
-	params.bInSimulateDoubleClick = bInSimulateDoubleClick;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonListView.SetSelectionMode
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// TEnumAsByte<ESelectionMode>    SelectionMode                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonListView::SetSelectionMode(TEnumAsByte<ESelectionMode> SelectionMode)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xc382533);
-
-	UCommonListView_SetSelectionMode_Params params;
-	params.SelectionMode = SelectionMode;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonListView.SetSelectedItem
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// class UObject*                 Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// bool                           bWaitIfPendingRefresh          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool UCommonListView::SetSelectedItem(class UObject* Item, bool bWaitIfPendingRefresh)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x856abf5a);
-
-	UCommonListView_SetSelectedItem_Params params;
-	params.Item = Item;
-	params.bWaitIfPendingRefresh = bWaitIfPendingRefresh;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonListView.SetSelectedIndex
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// int                            Index                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool UCommonListView::SetSelectedIndex(int Index)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x196bb2d9);
-
-	UCommonListView_SetSelectedIndex_Params params;
-	params.Index = Index;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonListView.SetItemSelection
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// class UObject*                 Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// bool                           bSelected                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonListView::SetItemSelection(class UObject* Item, bool bSelected)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x23f3ed0d);
-
-	UCommonListView_SetItemSelection_Params params;
-	params.Item = Item;
-	params.bSelected = bSelected;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonListView.SetItemHeight
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// float                          NewHeight                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonListView::SetItemHeight(float NewHeight)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xed0a634c);
-
-	UCommonListView_SetItemHeight_Params params;
-	params.NewHeight = NewHeight;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonListView.SetDesiredItemPadding
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
-// Parameters:
-// struct FMargin                 DesiredPadding                 (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
-
-void UCommonListView::SetDesiredItemPadding(const struct FMargin& DesiredPadding)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x2f0e0b8a);
-
-	UCommonListView_SetDesiredItemPadding_Params params;
-	params.DesiredPadding = DesiredPadding;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonListView.SetDataProvider
-// (FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
-// Parameters:
-// TArray<class UObject*>         InDataProvider                 (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
-
-void UCommonListView::SetDataProvider(TArray<class UObject*> InDataProvider)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x2b2b86ab);
-
-	UCommonListView_SetDataProvider_Params params;
-	params.InDataProvider = InDataProvider;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonListView.ScrollIntoView
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// class UObject*                 Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// bool                           NavigateOnScrollIntoView       (CPF_ConstParm, CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonListView::ScrollIntoView(class UObject* Item, bool NavigateOnScrollIntoView)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x3cf29a62);
-
-	UCommonListView_ScrollIntoView_Params params;
-	params.Item = Item;
-	params.NavigateOnScrollIntoView = NavigateOnScrollIntoView;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonListView.IsRefreshPending
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool UCommonListView::IsRefreshPending()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x812097ba);
-
-	UCommonListView_IsRefreshPending_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonListView.IsItemVisible
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// class UObject*                 Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool UCommonListView::IsItemVisible(class UObject* Item)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x5e48905d);
-
-	UCommonListView_IsItemVisible_Params params;
-	params.Item = Item;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonListView.GetSelectionModeBP
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// TEnumAsByte<ESelectionMode>    ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-TEnumAsByte<ESelectionMode> UCommonListView::GetSelectionModeBP()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xc171bbd5);
-
-	UCommonListView_GetSelectionModeBP_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonListView.GetSelectedItems
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_Const)
-// Parameters:
-// TArray<class UObject*>         Items                          (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool UCommonListView::GetSelectedItems(TArray<class UObject*>* Items)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x36711c71);
-
-	UCommonListView_GetSelectedItems_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (Items != nullptr)
-		*Items = params.Items;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonListView.GetSelectedItem
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// class UObject*                 ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-class UObject* UCommonListView::GetSelectedItem()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xace624ce);
-
-	UCommonListView_GetSelectedItem_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonListView.GetNumItemsSelected
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-int UCommonListView::GetNumItemsSelected()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xcb8f170f);
-
-	UCommonListView_GetNumItemsSelected_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonListView.GetNumItems
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-int UCommonListView::GetNumItems()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x972716d4);
-
-	UCommonListView_GetNumItems_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonListView.GetItemAt
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// int                            Index                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class UObject*                 ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-class UObject* UCommonListView::GetItemAt(int Index)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x92b24026);
-
-	UCommonListView_GetItemAt_Params params;
-	params.Index = Index;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonListView.GetIndexForItem
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// class UObject*                 Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-int UCommonListView::GetIndexForItem(class UObject* Item)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x8656c714);
-
-	UCommonListView_GetIndexForItem_Params params;
-	params.Item = Item;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function CommonUI.CommonListView.DynamicHandleItemUnhoveredCommonButton
-// (FUNC_Final, FUNC_Native, FUNC_Private)
-// Parameters:
-// class UCommonButton*           Button                         (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-
-void UCommonListView::DynamicHandleItemUnhoveredCommonButton(class UCommonButton* Button)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x2c481f0d);
-
-	UCommonListView_DynamicHandleItemUnhoveredCommonButton_Params params;
-	params.Button = Button;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonListView.DynamicHandleItemHoveredCommonButton
-// (FUNC_Final, FUNC_Native, FUNC_Private)
-// Parameters:
-// class UCommonButton*           Button                         (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-
-void UCommonListView::DynamicHandleItemHoveredCommonButton(class UCommonButton* Button)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x77b79f22);
-
-	UCommonListView_DynamicHandleItemHoveredCommonButton_Params params;
-	params.Button = Button;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonListView.DynamicHandleItemDoubleClickedCommonButton
-// (FUNC_Final, FUNC_Native, FUNC_Private)
-// Parameters:
-// class UCommonButton*           Button                         (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-
-void UCommonListView::DynamicHandleItemDoubleClickedCommonButton(class UCommonButton* Button)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xac74ac81);
-
-	UCommonListView_DynamicHandleItemDoubleClickedCommonButton_Params params;
-	params.Button = Button;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonListView.DynamicHandleItemClickedUserWidget
-// (FUNC_Final, FUNC_Native, FUNC_Protected)
-// Parameters:
-// class UUserWidget*             Widget                         (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-
-void UCommonListView::DynamicHandleItemClickedUserWidget(class UUserWidget* Widget)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x91c28f8a);
-
-	UCommonListView_DynamicHandleItemClickedUserWidget_Params params;
-	params.Widget = Widget;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonListView.DynamicHandleItemClickedCommonButton
-// (FUNC_Final, FUNC_Native, FUNC_Private)
-// Parameters:
-// class UCommonButton*           Button                         (CPF_Parm, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-
-void UCommonListView::DynamicHandleItemClickedCommonButton(class UCommonButton* Button)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xb9f01d40);
-
-	UCommonListView_DynamicHandleItemClickedCommonButton_Params params;
-	params.Button = Button;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonListView.ClearSelection
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void UCommonListView::ClearSelection()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x5eb2240b);
-
-	UCommonListView_ClearSelection_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonListView.Clear
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void UCommonListView::Clear()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xf52a6e63);
-
-	UCommonListView_Clear_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonListView.AddItem
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_Const)
-// Parameters:
-// class UObject*                 Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonListView::AddItem(class UObject* Item)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xf81b1840);
-
-	UCommonListView_AddItem_Params params;
-	params.Item = Item;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function CommonUI.CommonTileView.SetItemWidth
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// float                          NewWidth                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UCommonTileView::SetItemWidth(float NewWidth)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x4df549b);
-
-	UCommonTileView_SetItemWidth_Params params;
-	params.NewWidth = NewWidth;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function CommonUI.CommonActionWidget.SetInputAction
 // (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
 // Parameters:
@@ -3846,6 +3870,25 @@ bool UCommonCustomNavigation::OnCustomNavigationEvent__DelegateSignature(EUINavi
 }
 
 
+// Function CommonUI.CommonInputManager.SuspendStartingOperationProcessing
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void UCommonInputManager::SuspendStartingOperationProcessing()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x37649a80);
+
+	UCommonInputManager_SuspendStartingOperationProcessing_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function CommonUI.CommonInputManager.StopListeningForExistingHeldAction
 // (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable)
 // Parameters:
@@ -3916,6 +3959,25 @@ void UCommonInputManager::SetGlobalInputHandlerPriorityFilter(int InFilterPriori
 
 	UCommonInputManager_SetGlobalInputHandlerPriorityFilter_Params params;
 	params.InFilterPriority = InFilterPriority;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonInputManager.ResumeStartingOperationProcessing
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void UCommonInputManager::ResumeStartingOperationProcessing()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8adbbd17);
+
+	UCommonInputManager_ResumeStartingOperationProcessing_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -4844,6 +4906,75 @@ void UCommonTextStyle::GetColor(struct FLinearColor* OutColor)
 
 	if (OutColor != nullptr)
 		*OutColor = params.OutColor;
+}
+
+
+// Function CommonUI.CommonDateTimeTextBlock.SetTimespanValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable)
+// Parameters:
+// struct FTimespan               InTimespan                     (CPF_ConstParm, CPF_Parm)
+
+void UCommonDateTimeTextBlock::SetTimespanValue(const struct FTimespan& InTimespan)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd6b3618e);
+
+	UCommonDateTimeTextBlock_SetTimespanValue_Params params;
+	params.InTimespan = InTimespan;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonDateTimeTextBlock.SetDateTimeValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable)
+// Parameters:
+// struct FDateTime               InDateTime                     (CPF_ConstParm, CPF_Parm)
+// bool                           bShowAsCountdown               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UCommonDateTimeTextBlock::SetDateTimeValue(const struct FDateTime& InDateTime, bool bShowAsCountdown)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x43878b96);
+
+	UCommonDateTimeTextBlock_SetDateTimeValue_Params params;
+	params.InDateTime = InDateTime;
+	params.bShowAsCountdown = bShowAsCountdown;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function CommonUI.CommonDateTimeTextBlock.GetDateTime
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// struct FDateTime               ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm)
+
+struct FDateTime UCommonDateTimeTextBlock::GetDateTime()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa588a99b);
+
+	UCommonDateTimeTextBlock_GetDateTime_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
 }
 
 

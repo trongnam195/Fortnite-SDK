@@ -32,106 +32,6 @@ public:
 };
 
 
-// Class CommonUI.CommonTabListWidget
-// 0x00C8 (0x0300 - 0x0238)
-class UCommonTabListWidget : public UCommonUserWidget
-{
-public:
-	struct FScriptMulticastDelegate                    OnTabSelected;                                            // 0x0238(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnTabButtonCreated;                                       // 0x0248(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnTabButtonRemoved;                                       // 0x0258(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FDataTableRowHandle                         NextTabInputActionData;                                   // 0x0268(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	struct FDataTableRowHandle                         PreviousTabInputActionData;                               // 0x0278(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	bool                                               bAutoListenForInput;                                      // 0x0288(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0289(0x0007) MISSED OFFSET
-	class UCommonWidgetSwitcher*                       LinkedSwitcher;                                           // 0x0290(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	TMap<struct FName, struct FCommonRegisteredTabInfo> RegisteredTabsByID;                                       // 0x0298(0x0050) (CPF_ZeroConstructor)
-	class UCommonButtonGroup*                          TabButtonGroup;                                           // 0x02E8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x10];                                      // 0x02F0(0x0010) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr) ptr = UObject::FindClass(0x5bb2c0b4);
-		return ptr;
-	}
-
-
-	void SetTabEnabled(const struct FName& TabNameID, bool bEnable);
-	void SetListeningForInput(bool bShouldListen);
-	void SetLinkedSwitcher(class UCommonWidgetSwitcher* CommonSwitcher);
-	bool SelectTabByID(const struct FName& TabNameID, bool bSuppressClickFeedback);
-	bool RemoveTab(const struct FName& TabNameID);
-	void RemoveAllTabs();
-	bool RegisterTab(const struct FName& TabNameID, class UClass* ButtonWidgetType, class UWidget* ContentWidget);
-	void OnTabSelected__DelegateSignature(const struct FName& TabId);
-	void OnTabButtonRemoved__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton);
-	void OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton);
-	void HandleTabRemoved(const struct FName& TabNameID, class UCommonButton* TabButton);
-	void HandleTabCreated(const struct FName& TabNameID, class UCommonButton* TabButton);
-	void HandleTabButtonSelected(class UCommonButton* SelectedTabButton, int ButtonIndex);
-	void HandlePreviousTabInputAction(bool* bPassThrough);
-	void HandlePreLinkedSwitcherChanged_BP();
-	void HandlePostLinkedSwitcherChanged_BP();
-	void HandleNextTabInputAction(bool* bPassThrough);
-	int GetTabCount();
-	class UCommonButton* GetTabButtonByID(const struct FName& TabNameID);
-	class UCommonWidgetSwitcher* GetLinkedSwitcher();
-	struct FName GetActiveTab();
-	void DisableTabWithReason(const struct FName& TabNameID, const struct FText& Reason);
-};
-
-
-// Class CommonUI.CommonActivatablePanel
-// 0x01A8 (0x03E0 - 0x0238)
-class UCommonActivatablePanel : public UCommonUserWidget
-{
-public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0238(0x0008) MISSED OFFSET
-	struct FScriptMulticastDelegate                    OnWidgetActivated;                                        // 0x0240(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnWidgetDeactivated;                                      // 0x0250(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	unsigned char                                      UnknownData01[0x100];                                     // 0x0260(0x0100) MISSED OFFSET
-	bool                                               bConsumeAllActions;                                       // 0x0360(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bExposeActionsExternally;                                 // 0x0361(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bShouldBypassStack;                                       // 0x0362(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x7D];                                      // 0x0363(0x007D) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr) ptr = UObject::FindClass(0x1b59e1e3);
-		return ptr;
-	}
-
-
-	void SetInputActionHandlerWithProgress(const struct FDataTableRowHandle& InputActionRow, const struct FScriptDelegate& CommitedEvent, const struct FScriptDelegate& ProgressEvent);
-	void SetInputActionHandler(const struct FDataTableRowHandle& InputActionRow, const struct FScriptDelegate& CommitedEvent);
-	void SetActionHandlerStateWithDisabledCommitEvent(class UDataTable* DataTable, const struct FName& RowName, EInputActionState State, const struct FScriptDelegate& DisabledCommitEvent);
-	void SetActionHandlerStateFromHandleWithDisabledCommitEvent(const struct FDataTableRowHandle& InputActionRow, EInputActionState State, const struct FScriptDelegate& DisabledCommitEvent);
-	void SetActionHandlerStateFromHandle(const struct FDataTableRowHandle& InputActionRow, EInputActionState State);
-	void SetActionHandlerState(class UDataTable* DataTable, const struct FName& RowName, EInputActionState State);
-	void RemoveInputActionHandler(const struct FDataTableRowHandle& InputActionRow);
-	void RemoveAllInputActionHandlers();
-	void PopPanel();
-	void OnInputModeChanged(bool bUsingGamepad);
-	void OnDeactivated();
-	void OnBeginOutro();
-	void OnBeginIntro();
-	void OnActivated();
-	bool IsIntroed();
-	bool IsActivated();
-	bool HasInputActionHandler(const struct FDataTableRowHandle& InputActionRow);
-	bool GetInputActions(TArray<struct FCommonInputActionHandlerData>* InputActionDataRows);
-	void EndOutro();
-	void EndIntro();
-	void BeginOutro();
-	void BeginIntro();
-	void AddInputActionNoHandler(class UDataTable* DataTable, const struct FName& RowName);
-	void AddInputActionHandlerWithProgress(class UDataTable* DataTable, const struct FName& RowName, const struct FScriptDelegate& CommitedEvent, const struct FScriptDelegate& ProgressEvent);
-	void AddInputActionHandler(class UDataTable* DataTable, const struct FName& RowName, const struct FScriptDelegate& CommitedEvent);
-};
-
-
 // Class CommonUI.CommonButton
 // 0x0668 (0x08A0 - 0x0238)
 class UCommonButton : public UCommonUserWidget
@@ -219,6 +119,188 @@ public:
 	void DisableButtonWithReason(const struct FText& DisabledReason);
 	void DisableButton();
 	void ClearSelection();
+};
+
+
+// Class CommonUI.CommonActivatablePanel
+// 0x01A8 (0x03E0 - 0x0238)
+class UCommonActivatablePanel : public UCommonUserWidget
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0238(0x0008) MISSED OFFSET
+	struct FScriptMulticastDelegate                    OnWidgetActivated;                                        // 0x0240(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnWidgetDeactivated;                                      // 0x0250(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	unsigned char                                      UnknownData01[0x100];                                     // 0x0260(0x0100) MISSED OFFSET
+	bool                                               bConsumeAllActions;                                       // 0x0360(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bExposeActionsExternally;                                 // 0x0361(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bShouldBypassStack;                                       // 0x0362(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x7D];                                      // 0x0363(0x007D) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x1b59e1e3);
+		return ptr;
+	}
+
+
+	void SetInputActionHandlerWithProgress(const struct FDataTableRowHandle& InputActionRow, const struct FScriptDelegate& CommitedEvent, const struct FScriptDelegate& ProgressEvent);
+	void SetInputActionHandler(const struct FDataTableRowHandle& InputActionRow, const struct FScriptDelegate& CommitedEvent);
+	void SetActionHandlerStateWithDisabledCommitEvent(class UDataTable* DataTable, const struct FName& RowName, EInputActionState State, const struct FScriptDelegate& DisabledCommitEvent);
+	void SetActionHandlerStateFromHandleWithDisabledCommitEvent(const struct FDataTableRowHandle& InputActionRow, EInputActionState State, const struct FScriptDelegate& DisabledCommitEvent);
+	void SetActionHandlerStateFromHandle(const struct FDataTableRowHandle& InputActionRow, EInputActionState State);
+	void SetActionHandlerState(class UDataTable* DataTable, const struct FName& RowName, EInputActionState State);
+	void RemoveInputActionHandler(const struct FDataTableRowHandle& InputActionRow);
+	void RemoveAllInputActionHandlers();
+	void PopPanel();
+	void OnInputModeChanged(bool bUsingGamepad);
+	void OnDeactivated();
+	void OnBeginOutro();
+	void OnBeginIntro();
+	void OnActivated();
+	bool IsIntroed();
+	bool IsActivated();
+	bool HasInputActionHandler(const struct FDataTableRowHandle& InputActionRow);
+	bool GetInputActions(TArray<struct FCommonInputActionHandlerData>* InputActionDataRows);
+	void EndOutro();
+	void EndIntro();
+	void BeginOutro();
+	void BeginIntro();
+	void AddInputActionNoHandler(class UDataTable* DataTable, const struct FName& RowName);
+	void AddInputActionHandlerWithProgress(class UDataTable* DataTable, const struct FName& RowName, const struct FScriptDelegate& CommitedEvent, const struct FScriptDelegate& ProgressEvent);
+	void AddInputActionHandler(class UDataTable* DataTable, const struct FName& RowName, const struct FScriptDelegate& CommitedEvent);
+};
+
+
+// Class CommonUI.CommonListView
+// 0x0208 (0x0320 - 0x0118)
+class UCommonListView : public UWidget
+{
+public:
+	struct FScriptMulticastDelegate                    OnItemClicked;                                            // 0x0118(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnItemDoubleClicked;                                      // 0x0128(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnItemHovered;                                            // 0x0138(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnItemSelected;                                           // 0x0148(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnItemWidgetCreated;                                      // 0x0158(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnItemWidgetDestroyed;                                    // 0x0168(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	float                                              ItemHeight;                                               // 0x0178(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_IsPlainOldData)
+	struct FMargin                                     DesiredItemPadding;                                       // 0x017C(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnTemplate)
+	unsigned char                                      UnknownData00[0x4];                                       // 0x018C(0x0004) MISSED OFFSET
+	class UClass*                                      ListItemClass;                                            // 0x0190(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_IsPlainOldData)
+	TEnumAsByte<ESelectionMode>                        SelectionMode;                                            // 0x0198(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_IsPlainOldData)
+	EConsumeMouseWheel                                 ConsumeMouseWheel;                                        // 0x0199(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_IsPlainOldData)
+	bool                                               bClearSelectionOnClick;                                   // 0x019A(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x1];                                       // 0x019B(0x0001) MISSED OFFSET
+	int                                                NumPreAllocatedEntries;                                   // 0x019C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_IsPlainOldData)
+	bool                                               bSimulateDoubleClickOnSelectedItemClick;                  // 0x01A0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData02[0x16F];                                     // 0x01A1(0x016F) MISSED OFFSET
+	class UCommonListViewNullItem*                     NullItem;                                                 // 0x0310(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData03[0x8];                                       // 0x0318(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xf9ee3e40);
+		return ptr;
+	}
+
+
+	void SetSimulateDoubleClickOnSelectedItemClick(bool bInSimulateDoubleClick);
+	void SetSelectionMode(TEnumAsByte<ESelectionMode> SelectionMode);
+	bool SetSelectedItem(class UObject* Item, bool bWaitIfPendingRefresh);
+	bool SetSelectedIndex(int Index);
+	void SetItemSelection(class UObject* Item, bool bSelected);
+	void SetItemHeight(float NewHeight);
+	void SetDesiredItemPadding(const struct FMargin& DesiredPadding);
+	void SetDataProvider(TArray<class UObject*> InDataProvider);
+	void ScrollIntoView(class UObject* Item, bool NavigateOnScrollIntoView);
+	bool IsRefreshPending();
+	bool IsItemVisible(class UObject* Item);
+	TEnumAsByte<ESelectionMode> GetSelectionModeBP();
+	bool GetSelectedItems(TArray<class UObject*>* Items);
+	class UObject* GetSelectedItem();
+	int GetNumItemsSelected();
+	int GetNumItems();
+	class UObject* GetItemAt(int Index);
+	int GetIndexForItem(class UObject* Item);
+	void DynamicHandleItemUnhoveredCommonButton(class UCommonButton* Button);
+	void DynamicHandleItemHoveredCommonButton(class UCommonButton* Button);
+	void DynamicHandleItemDoubleClickedCommonButton(class UCommonButton* Button);
+	void DynamicHandleItemClickedUserWidget(class UUserWidget* Widget);
+	void DynamicHandleItemClickedCommonButton(class UCommonButton* Button);
+	void ClearSelection();
+	void Clear();
+	void AddItem(class UObject* Item);
+};
+
+
+// Class CommonUI.CommonTileView
+// 0x0010 (0x0330 - 0x0320)
+class UCommonTileView : public UCommonListView
+{
+public:
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0320(0x0010) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xfc124b40);
+		return ptr;
+	}
+
+
+	void SetItemWidth(float NewWidth);
+};
+
+
+// Class CommonUI.CommonTabListWidget
+// 0x00C8 (0x0300 - 0x0238)
+class UCommonTabListWidget : public UCommonUserWidget
+{
+public:
+	struct FScriptMulticastDelegate                    OnTabSelected;                                            // 0x0238(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnTabButtonCreated;                                       // 0x0248(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FScriptMulticastDelegate                    OnTabButtonRemoved;                                       // 0x0258(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
+	struct FDataTableRowHandle                         NextTabInputActionData;                                   // 0x0268(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	struct FDataTableRowHandle                         PreviousTabInputActionData;                               // 0x0278(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	bool                                               bAutoListenForInput;                                      // 0x0288(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0289(0x0007) MISSED OFFSET
+	class UCommonWidgetSwitcher*                       LinkedSwitcher;                                           // 0x0290(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
+	TMap<struct FName, struct FCommonRegisteredTabInfo> RegisteredTabsByID;                                       // 0x0298(0x0050) (CPF_ZeroConstructor)
+	class UCommonButtonGroup*                          TabButtonGroup;                                           // 0x02E8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x10];                                      // 0x02F0(0x0010) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5bb2c0b4);
+		return ptr;
+	}
+
+
+	void SetTabVisibility(const struct FName& TabNameID, ESlateVisibility NewVisibility);
+	void SetTabEnabled(const struct FName& TabNameID, bool bEnable);
+	void SetListeningForInput(bool bShouldListen);
+	void SetLinkedSwitcher(class UCommonWidgetSwitcher* CommonSwitcher);
+	bool SelectTabByID(const struct FName& TabNameID, bool bSuppressClickFeedback);
+	bool RemoveTab(const struct FName& TabNameID);
+	void RemoveAllTabs();
+	bool RegisterTab(const struct FName& TabNameID, class UClass* ButtonWidgetType, class UWidget* ContentWidget);
+	void OnTabSelected__DelegateSignature(const struct FName& TabId);
+	void OnTabButtonRemoved__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton);
+	void OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton);
+	void HandleTabRemoved(const struct FName& TabNameID, class UCommonButton* TabButton);
+	void HandleTabCreated(const struct FName& TabNameID, class UCommonButton* TabButton);
+	void HandleTabButtonSelected(class UCommonButton* SelectedTabButton, int ButtonIndex);
+	void HandlePreviousTabInputAction(bool* bPassThrough);
+	void HandlePreLinkedSwitcherChanged_BP();
+	void HandlePostLinkedSwitcherChanged_BP();
+	void HandleNextTabInputAction(bool* bPassThrough);
+	int GetTabCount();
+	class UCommonButton* GetTabButtonByID(const struct FName& TabNameID);
+	class UCommonWidgetSwitcher* GetLinkedSwitcher();
+	struct FName GetActiveTab();
+	void DisableTabWithReason(const struct FName& TabNameID, const struct FText& Reason);
 };
 
 
@@ -336,87 +418,6 @@ public:
 	bool IsInterpolatingNumericValue();
 	void InterpolateToValue(float TargetValue, float MaximumInterpolationDuration, float MinimumChangeRate, float OutroOffset);
 	float GetTargetValue();
-};
-
-
-// Class CommonUI.CommonListView
-// 0x0208 (0x0320 - 0x0118)
-class UCommonListView : public UWidget
-{
-public:
-	struct FScriptMulticastDelegate                    OnItemClicked;                                            // 0x0118(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnItemDoubleClicked;                                      // 0x0128(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnItemHovered;                                            // 0x0138(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnItemSelected;                                           // 0x0148(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnItemWidgetCreated;                                      // 0x0158(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	struct FScriptMulticastDelegate                    OnItemWidgetDestroyed;                                    // 0x0168(0x0010) (CPF_ZeroConstructor, CPF_InstancedReference, CPF_BlueprintAssignable)
-	float                                              ItemHeight;                                               // 0x0178(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_IsPlainOldData)
-	struct FMargin                                     DesiredItemPadding;                                       // 0x017C(0x0010) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_DisableEditOnTemplate)
-	unsigned char                                      UnknownData00[0x4];                                       // 0x018C(0x0004) MISSED OFFSET
-	class UClass*                                      ListItemClass;                                            // 0x0190(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_IsPlainOldData)
-	TEnumAsByte<ESelectionMode>                        SelectionMode;                                            // 0x0198(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_IsPlainOldData)
-	EConsumeMouseWheel                                 ConsumeMouseWheel;                                        // 0x0199(0x0001) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_IsPlainOldData)
-	bool                                               bClearSelectionOnClick;                                   // 0x019A(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x1];                                       // 0x019B(0x0001) MISSED OFFSET
-	int                                                NumPreAllocatedEntries;                                   // 0x019C(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_IsPlainOldData)
-	bool                                               bSimulateDoubleClickOnSelectedItemClick;                  // 0x01A0(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_DisableEditOnTemplate, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x16F];                                     // 0x01A1(0x016F) MISSED OFFSET
-	class UCommonListViewNullItem*                     NullItem;                                                 // 0x0310(0x0008) (CPF_ExportObject, CPF_ZeroConstructor, CPF_InstancedReference, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData03[0x8];                                       // 0x0318(0x0008) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr) ptr = UObject::FindClass(0xf9ee3e40);
-		return ptr;
-	}
-
-
-	void SetSimulateDoubleClickOnSelectedItemClick(bool bInSimulateDoubleClick);
-	void SetSelectionMode(TEnumAsByte<ESelectionMode> SelectionMode);
-	bool SetSelectedItem(class UObject* Item, bool bWaitIfPendingRefresh);
-	bool SetSelectedIndex(int Index);
-	void SetItemSelection(class UObject* Item, bool bSelected);
-	void SetItemHeight(float NewHeight);
-	void SetDesiredItemPadding(const struct FMargin& DesiredPadding);
-	void SetDataProvider(TArray<class UObject*> InDataProvider);
-	void ScrollIntoView(class UObject* Item, bool NavigateOnScrollIntoView);
-	bool IsRefreshPending();
-	bool IsItemVisible(class UObject* Item);
-	TEnumAsByte<ESelectionMode> GetSelectionModeBP();
-	bool GetSelectedItems(TArray<class UObject*>* Items);
-	class UObject* GetSelectedItem();
-	int GetNumItemsSelected();
-	int GetNumItems();
-	class UObject* GetItemAt(int Index);
-	int GetIndexForItem(class UObject* Item);
-	void DynamicHandleItemUnhoveredCommonButton(class UCommonButton* Button);
-	void DynamicHandleItemHoveredCommonButton(class UCommonButton* Button);
-	void DynamicHandleItemDoubleClickedCommonButton(class UCommonButton* Button);
-	void DynamicHandleItemClickedUserWidget(class UUserWidget* Widget);
-	void DynamicHandleItemClickedCommonButton(class UCommonButton* Button);
-	void ClearSelection();
-	void Clear();
-	void AddItem(class UObject* Item);
-};
-
-
-// Class CommonUI.CommonTileView
-// 0x0010 (0x0330 - 0x0320)
-class UCommonTileView : public UCommonListView
-{
-public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0320(0x0010) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr) ptr = UObject::FindClass(0xfc124b40);
-		return ptr;
-	}
-
-
-	void SetItemWidth(float NewWidth);
 };
 
 
@@ -684,9 +685,11 @@ public:
 	}
 
 
+	void SuspendStartingOperationProcessing();
 	bool StopListeningForExistingHeldAction(const struct FDataTableRowHandle& InputActionDataRow, const struct FScriptDelegate& CompleteEvent, const struct FScriptDelegate& ProgressEvent);
 	bool StartListeningForExistingHeldAction(const struct FDataTableRowHandle& InputActionDataRow, const struct FScriptDelegate& CompleteEvent, const struct FScriptDelegate& ProgressEvent);
 	void SetGlobalInputHandlerPriorityFilter(int InFilterPriority);
+	void ResumeStartingOperationProcessing();
 	void PushActivatablePanel(class UCommonActivatablePanel* ActivatablePanel, bool bIntroPanel, bool bOutroPanelBelow);
 	void PopActivatablePanel(class UCommonActivatablePanel* ActivatablePanel);
 	bool IsPanelOnStack(class UCommonActivatablePanel* InPanel);
@@ -909,6 +912,27 @@ public:
 		return ptr;
 	}
 
+};
+
+
+// Class CommonUI.CommonDateTimeTextBlock
+// 0x0020 (0x02B8 - 0x0298)
+class UCommonDateTimeTextBlock : public UCommonTextBlock
+{
+public:
+	unsigned char                                      UnknownData00[0x20];                                      // 0x0298(0x0020) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xde86618c);
+		return ptr;
+	}
+
+
+	void SetTimespanValue(const struct FTimespan& InTimespan);
+	void SetDateTimeValue(const struct FDateTime& InDateTime, bool bShowAsCountdown);
+	struct FDateTime GetDateTime();
 };
 
 

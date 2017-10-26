@@ -12,6 +12,29 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function QuestScreen.QuestScreen_C.HandleAbandonQuest
+// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           PassThrough                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UQuestScreen_C::HandleAbandonQuest(bool* PassThrough)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c9ede66);
+
+	UQuestScreen_C_HandleAbandonQuest_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (PassThrough != nullptr)
+		*PassThrough = params.PassThrough;
+}
+
+
 // Function QuestScreen.QuestScreen_C.ShouldShowPlayQuest
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -344,26 +367,24 @@ void UQuestScreen_C::SelectInitialQuest()
 }
 
 
-// Function QuestScreen.QuestScreen_C.AbandonQuest
-// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Function QuestScreen.QuestScreen_C.OnAbandonQuestConfirmed
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
-// bool                           PassThrough                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UFortQuestItem*          QuestToAbandon                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void UQuestScreen_C::AbandonQuest(bool* PassThrough)
+void UQuestScreen_C::OnAbandonQuestConfirmed(class UFortQuestItem* QuestToAbandon)
 {
 	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x5222da38);
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6dca1972);
 
-	UQuestScreen_C_AbandonQuest_Params params;
+	UQuestScreen_C_OnAbandonQuestConfirmed_Params params;
+	params.QuestToAbandon = QuestToAbandon;
 
 	auto flags = fn->FunctionFlags;
 
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
-
-	if (PassThrough != nullptr)
-		*PassThrough = params.PassThrough;
 }
 
 
@@ -493,6 +514,29 @@ TArray<class UObject*> UQuestScreen_C::OnGetChildrenForCategory(class UObject* I
 	fn->FunctionFlags = flags;
 
 	return params.ReturnValue;
+}
+
+
+// Function QuestScreen.QuestScreen_C.DialogResult_CE39442C4BCACCFD8414B495A3B27A21
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// EFortDialogResult              Result                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName                   ResultName                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UQuestScreen_C::DialogResult_CE39442C4BCACCFD8414B495A3B27A21(EFortDialogResult Result, const struct FName& ResultName)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfc92953c);
+
+	UQuestScreen_C_DialogResult_CE39442C4BCACCFD8414B495A3B27A21_Params params;
+	params.Result = Result;
+	params.ResultName = ResultName;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
 }
 
 
@@ -776,6 +820,27 @@ void UQuestScreen_C::OnItemSelected(class UObject* Item, bool bIsSelected)
 }
 
 
+// Function QuestScreen.QuestScreen_C.ShowAbandonQuestDialog
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UFortQuestItem*          QuestToAbandon                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UQuestScreen_C::ShowAbandonQuestDialog(class UFortQuestItem* QuestToAbandon)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa39256f);
+
+	UQuestScreen_C_ShowAbandonQuestDialog_Params params;
+	params.QuestToAbandon = QuestToAbandon;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function QuestScreen.QuestScreen_C.ExecuteUbergraph_QuestScreen
 // (FUNC_HasDefaults)
 // Parameters:
@@ -788,6 +853,27 @@ void UQuestScreen_C::ExecuteUbergraph_QuestScreen(int EntryPoint)
 
 	UQuestScreen_C_ExecuteUbergraph_QuestScreen_Params params;
 	params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function QuestScreen.QuestScreen_C.AbandonQuest__DelegateSignature
+// (FUNC_Public, FUNC_Delegate, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UFortQuestItem*          QuestToAbandon                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UQuestScreen_C::AbandonQuest__DelegateSignature(class UFortQuestItem* QuestToAbandon)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb7bc68a3);
+
+	UQuestScreen_C_AbandonQuest__DelegateSignature_Params params;
+	params.QuestToAbandon = QuestToAbandon;
 
 	auto flags = fn->FunctionFlags;
 

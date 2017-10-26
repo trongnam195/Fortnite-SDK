@@ -30,26 +30,8 @@ void UQuestTrackerEntry_C::Construct()
 }
 
 
-// Function QuestTrackerEntry.QuestTrackerEntry_C.OnSetup
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-
-void UQuestTrackerEntry_C::OnSetup()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xedff6a6f);
-
-	UQuestTrackerEntry_C_OnSetup_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function QuestTrackerEntry.QuestTrackerEntry_C.ExecuteUbergraph_QuestTrackerEntry
-// (FUNC_HasDefaults)
+// ()
 // Parameters:
 // int                            EntryPoint                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 

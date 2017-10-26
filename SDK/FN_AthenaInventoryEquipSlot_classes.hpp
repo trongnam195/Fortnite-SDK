@@ -36,6 +36,7 @@ public:
 	}
 
 
+	void TryAndShowDropTarget();
 	void IsSelected(bool* Selected);
 	struct FEventReply OnFocusReceived(struct FGeometry* MyGeometry, struct FFocusEvent* InFocusEvent);
 	void SetSelected(bool Selected);

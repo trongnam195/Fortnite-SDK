@@ -30,27 +30,6 @@ void UItemInspectEvolutionConfirmation_C::SetEvolutionRestrictions()
 }
 
 
-// Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.UnselectOtherEvolutions
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// int                            SelectedIndex                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UItemInspectEvolutionConfirmation_C::UnselectOtherEvolutions(int SelectedIndex)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xa61ccbf8);
-
-	UItemInspectEvolutionConfirmation_C_UnselectOtherEvolutions_Params params;
-	params.SelectedIndex = SelectedIndex;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.ClearEvolutionRepresented
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
@@ -187,50 +166,6 @@ void UItemInspectEvolutionConfirmation_C::HandleEvolutionOptionSelected(class UF
 }
 
 
-// Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.HandleEvolutionOptionUnhovered
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// class UFortItem*               Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UItemInspectEvolutionConfirmation_C::HandleEvolutionOptionUnhovered(class UFortItem* Item)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x6f0b0bfd);
-
-	UItemInspectEvolutionConfirmation_C_HandleEvolutionOptionUnhovered_Params params;
-	params.Item = Item;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.HandleEvolutionOptionHovered
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// class UFortItem*               Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// int                            RecipeIndex                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UItemInspectEvolutionConfirmation_C::HandleEvolutionOptionHovered(class UFortItem* Item, int RecipeIndex)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x5012c9ee);
-
-	UItemInspectEvolutionConfirmation_C_HandleEvolutionOptionHovered_Params params;
-	params.Item = Item;
-	params.RecipeIndex = RecipeIndex;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.SetEvolutionToRepresent
 // (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -287,6 +222,24 @@ void UItemInspectEvolutionConfirmation_C::BndEvt__UpgradeConfirmButton_K2Node_Co
 
 	UItemInspectEvolutionConfirmation_C_BndEvt__UpgradeConfirmButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ItemInspectEvolutionConfirmation.ItemInspectEvolutionConfirmation_C.Construct
+// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void UItemInspectEvolutionConfirmation_C::Construct()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd3b8e48c);
+
+	UItemInspectEvolutionConfirmation_C_Construct_Params params;
 
 	auto flags = fn->FunctionFlags;
 

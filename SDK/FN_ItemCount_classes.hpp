@@ -41,6 +41,9 @@ public:
 	}
 
 
+	void SetBrushAndTextStyle(TEnumAsByte<EFortBrushSize> InBrushSize, class UClass* InStyle);
+	void UpdateOverrideState();
+	void SetOverrideValue(int OverrrideValue);
 	void SetIsBeingPreviewed(bool BeingPreviewed);
 	void SetItemDefinition(class UFortItemDefinition* ItemDefinition);
 	void Construct();

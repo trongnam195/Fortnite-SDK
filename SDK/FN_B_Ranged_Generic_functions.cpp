@@ -12,6 +12,27 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function B_Ranged_Generic.B_Ranged_Generic_C.ActivateOrDeactivateWindParticle
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           bNewActive                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AB_Ranged_Generic_C::ActivateOrDeactivateWindParticle(bool bNewActive)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x64840939);
+
+	AB_Ranged_Generic_C_ActivateOrDeactivateWindParticle_Params params;
+	params.bNewActive = bNewActive;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function B_Ranged_Generic.B_Ranged_Generic_C.DeactivateMuzzleFX
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
@@ -165,15 +186,15 @@ void AB_Ranged_Generic_C::Muzzle_Play_Reload_FX(TEnumAsByte<EFortReloadFXState> 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.Muzzle Flash FX
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
-// bool                           Condition                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           Persistent_Fire                (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void AB_Ranged_Generic_C::Muzzle_Flash_FX(bool Condition)
+void AB_Ranged_Generic_C::Muzzle_Flash_FX(bool Persistent_Fire)
 {
 	static UFunction* fn = nullptr;
 	if (!fn) fn = UObject::FindObject<UFunction>(0xb5189530);
 
 	AB_Ranged_Generic_C_Muzzle_Flash_FX_Params params;
-	params.Condition = Condition;
+	params.Persistent_Fire = Persistent_Fire;
 
 	auto flags = fn->FunctionFlags;
 
@@ -237,15 +258,15 @@ void AB_Ranged_Generic_C::UserConstructionScript()
 }
 
 
-// Function B_Ranged_Generic.B_Ranged_Generic_C.Timeline_0__FinishedFunc
+// Function B_Ranged_Generic.B_Ranged_Generic_C.AnimateScopePostProcess__FinishedFunc
 // (FUNC_BlueprintEvent)
 
-void AB_Ranged_Generic_C::Timeline_0__FinishedFunc()
+void AB_Ranged_Generic_C::AnimateScopePostProcess__FinishedFunc()
 {
 	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xc82b1145);
+	if (!fn) fn = UObject::FindObject<UFunction>(0x29c55333);
 
-	AB_Ranged_Generic_C_Timeline_0__FinishedFunc_Params params;
+	AB_Ranged_Generic_C_AnimateScopePostProcess__FinishedFunc_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -255,15 +276,15 @@ void AB_Ranged_Generic_C::Timeline_0__FinishedFunc()
 }
 
 
-// Function B_Ranged_Generic.B_Ranged_Generic_C.Timeline_0__UpdateFunc
+// Function B_Ranged_Generic.B_Ranged_Generic_C.AnimateScopePostProcess__UpdateFunc
 // (FUNC_BlueprintEvent)
 
-void AB_Ranged_Generic_C::Timeline_0__UpdateFunc()
+void AB_Ranged_Generic_C::AnimateScopePostProcess__UpdateFunc()
 {
 	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xec331214);
+	if (!fn) fn = UObject::FindObject<UFunction>(0x97f810ee);
 
-	AB_Ranged_Generic_C_Timeline_0__UpdateFunc_Params params;
+	AB_Ranged_Generic_C_AnimateScopePostProcess__UpdateFunc_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -410,6 +431,63 @@ void AB_Ranged_Generic_C::OnPlayReloadFX(TEnumAsByte<EFortReloadFXState>* Reload
 
 	AB_Ranged_Generic_C_OnPlayReloadFX_Params params;
 	params.ReloadStage = ReloadStage;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.OnSetTargeting
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// bool*                          bNewIsTargeting                (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AB_Ranged_Generic_C::OnSetTargeting(bool* bNewIsTargeting)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d866a31);
+
+	AB_Ranged_Generic_C_OnSetTargeting_Params params;
+	params.bNewIsTargeting = bNewIsTargeting;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.K2_OnUnEquip
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void AB_Ranged_Generic_C::K2_OnUnEquip()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6cef4833);
+
+	AB_Ranged_Generic_C_K2_OnUnEquip_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function B_Ranged_Generic.B_Ranged_Generic_C.InitializeScopeVariables
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void AB_Ranged_Generic_C::InitializeScopeVariables()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf6687c6e);
+
+	AB_Ranged_Generic_C_InitializeScopeVariables_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -586,54 +664,15 @@ void AB_Ranged_Generic_C::SetWeaponPierceThrough_ClientRep(bool Enable, int Targ
 }
 
 
-// Function B_Ranged_Generic.B_Ranged_Generic_C.InitializeScopeVariables
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Function B_Ranged_Generic.B_Ranged_Generic_C.ReceiveBeginPlay
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
 
-void AB_Ranged_Generic_C::InitializeScopeVariables()
+void AB_Ranged_Generic_C::ReceiveBeginPlay()
 {
 	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xf6687c6e);
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3ad2005b);
 
-	AB_Ranged_Generic_C_InitializeScopeVariables_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function B_Ranged_Generic.B_Ranged_Generic_C.OnSetTargeting
-// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// bool*                          bNewIsTargeting                (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AB_Ranged_Generic_C::OnSetTargeting(bool* bNewIsTargeting)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x9d866a31);
-
-	AB_Ranged_Generic_C_OnSetTargeting_Params params;
-	params.bNewIsTargeting = bNewIsTargeting;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function B_Ranged_Generic.B_Ranged_Generic_C.K2_OnUnEquip
-// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-
-void AB_Ranged_Generic_C::K2_OnUnEquip()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x6cef4833);
-
-	AB_Ranged_Generic_C_K2_OnUnEquip_Params params;
+	AB_Ranged_Generic_C_ReceiveBeginPlay_Params params;
 
 	auto flags = fn->FunctionFlags;
 

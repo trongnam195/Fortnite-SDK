@@ -178,24 +178,6 @@ void UQuestTrackerSubEntry_C::PostCompletionDelay()
 }
 
 
-// Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.OnSetup
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-
-void UQuestTrackerSubEntry_C::OnSetup()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xf1cf667f);
-
-	UQuestTrackerSubEntry_C_OnSetup_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function QuestTrackerSubEntry.QuestTrackerSubEntry_C.ExecuteUbergraph_QuestTrackerSubEntry
 // (FUNC_HasDefaults)
 // Parameters:

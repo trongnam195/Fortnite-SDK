@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // WidgetBlueprintGeneratedClass SquadSlotItemPicker.SquadSlotItemPicker_C
-// 0x0000 (0x0370 - 0x0370)
+// 0x0000 (0x0380 - 0x0380)
 class USquadSlotItemPicker_C : public UFortSquadSlotItemPicker
 {
 public:

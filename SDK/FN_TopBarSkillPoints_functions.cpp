@@ -12,6 +12,51 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function TopBarSkillPoints.TopBarSkillPoints_C.GetMissionRewardBadgeTooltipWidget
+// (FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent, FUNC_BlueprintPure)
+// Parameters:
+// class UWidget*                 ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class UWidget* UTopBarSkillPoints_C::GetMissionRewardBadgeTooltipWidget()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x36971a8a);
+
+	UTopBarSkillPoints_C_GetMissionRewardBadgeTooltipWidget_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function TopBarSkillPoints.TopBarSkillPoints_C.Has Mission Reward Boost
+// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           Result                         (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UTopBarSkillPoints_C::Has_Mission_Reward_Boost(bool* Result)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f56c209);
+
+	UTopBarSkillPoints_C_Has_Mission_Reward_Boost_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (Result != nullptr)
+		*Result = params.Result;
+}
+
+
 // Function TopBarSkillPoints.TopBarSkillPoints_C.GetFounderBadgetTooltipWidget
 // (FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent, FUNC_BlueprintPure)
 // Parameters:

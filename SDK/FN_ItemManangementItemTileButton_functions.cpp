@@ -382,6 +382,24 @@ void UItemManangementItemTileButton_C::Construct()
 }
 
 
+// Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.HandleItemChangedBP
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UItemManangementItemTileButton_C::HandleItemChangedBP()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71b0ee7a);
+
+	UItemManangementItemTileButton_C_HandleItemChangedBP_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function ItemManangementItemTileButton.ItemManangementItemTileButton_C.ExecuteUbergraph_ItemManangementItemTileButton
 // (FUNC_HasDefaults)
 // Parameters:

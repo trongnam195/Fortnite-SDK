@@ -293,9 +293,9 @@ void UAthenaLeaderboardTab_C::OnUpdateTabButtonText(class UCommonButton** Button
 // Parameters:
 // bool*                          bWasSuccessful                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // class UFortLeaderboardRowProxyInstance** LocalUserRow                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FText*                  ErrorStr                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+// struct FText*                  QueryErrorStr                  (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
 
-void UAthenaLeaderboardTab_C::OnUpdateLeaderboardListUI(bool* bWasSuccessful, class UFortLeaderboardRowProxyInstance** LocalUserRow, struct FText* ErrorStr)
+void UAthenaLeaderboardTab_C::OnUpdateLeaderboardListUI(bool* bWasSuccessful, class UFortLeaderboardRowProxyInstance** LocalUserRow, struct FText* QueryErrorStr)
 {
 	static UFunction* fn = nullptr;
 	if (!fn) fn = UObject::FindObject<UFunction>(0x79129790);
@@ -303,7 +303,7 @@ void UAthenaLeaderboardTab_C::OnUpdateLeaderboardListUI(bool* bWasSuccessful, cl
 	UAthenaLeaderboardTab_C_OnUpdateLeaderboardListUI_Params params;
 	params.bWasSuccessful = bWasSuccessful;
 	params.LocalUserRow = LocalUserRow;
-	params.ErrorStr = ErrorStr;
+	params.QueryErrorStr = QueryErrorStr;
 
 	auto flags = fn->FunctionFlags;
 

@@ -125,27 +125,6 @@ void A_WaterMeshBlueprintMaster_C::UserConstructionScript()
 }
 
 
-// Function _WaterMeshBlueprintMaster._WaterMeshBlueprintMaster_C.ReturnWaterHitLocation
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// class APlayerPawn_Generic_C*   CallingActor                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void A_WaterMeshBlueprintMaster_C::ReturnWaterHitLocation(class APlayerPawn_Generic_C* CallingActor)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x5be95670);
-
-	A_WaterMeshBlueprintMaster_C_ReturnWaterHitLocation_Params params;
-	params.CallingActor = CallingActor;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function _WaterMeshBlueprintMaster._WaterMeshBlueprintMaster_C.BndEvt__CollisionMesh2_K2Node_ComponentBoundEvent_220_ComponentEndOverlapSignature__DelegateSignature
 // (FUNC_BlueprintEvent)
 // Parameters:

@@ -12,27 +12,6 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
-// Function TabGameOptionsHud.TabGameOptionsHud_C.Set Settings Tooltip
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// class UCommonTextBlock*        Tooltip_To_Display             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UTabGameOptionsHud_C::Set_Settings_Tooltip(class UCommonTextBlock* Tooltip_To_Display)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xc5880bbd);
-
-	UTabGameOptionsHud_C_Set_Settings_Tooltip_Params params;
-	params.Tooltip_To_Display = Tooltip_To_Display;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function TabGameOptionsHud.TabGameOptionsHud_C.Construct
 // (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
 

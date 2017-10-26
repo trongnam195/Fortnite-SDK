@@ -12,27 +12,6 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
-// Function TabGameOptionsMain.TabGameOptionsMain_C.Set Settings Tooltip
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// class UCommonTextBlock*        Tooltip_To_Display             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UTabGameOptionsMain_C::Set_Settings_Tooltip(class UCommonTextBlock* Tooltip_To_Display)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x57a05acd);
-
-	UTabGameOptionsMain_C_Set_Settings_Tooltip_Params params;
-	params.Tooltip_To_Display = Tooltip_To_Display;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function TabGameOptionsMain.TabGameOptionsMain_C.Initialize Data
 // (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
@@ -509,6 +488,69 @@ void UTabGameOptionsMain_C::BndEvt__TargetingMultiplier_K2Node_ComponentBoundEve
 	if (!fn) fn = UObject::FindObject<UFunction>(0xbcee6756);
 
 	UTabGameOptionsMain_C_BndEvt__TargetingMultiplier_K2Node_ComponentBoundEvent_219_SliderChanged__DelegateSignature_Params params;
+	params.Slider_Value = Slider_Value;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function TabGameOptionsMain.TabGameOptionsMain_C.BndEvt__ToggleTargeting_K2Node_ComponentBoundEvent_207_Selection Changed__DelegateSignature
+// (FUNC_BlueprintEvent)
+// Parameters:
+// int                            Selected_Index                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UTabGameOptionsMain_C::BndEvt__ToggleTargeting_K2Node_ComponentBoundEvent_207_Selection_Changed__DelegateSignature(int Selected_Index)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe56000ed);
+
+	UTabGameOptionsMain_C_BndEvt__ToggleTargeting_K2Node_ComponentBoundEvent_207_Selection_Changed__DelegateSignature_Params params;
+	params.Selected_Index = Selected_Index;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function TabGameOptionsMain.TabGameOptionsMain_C.BndEvt__GamepadScopedMultiplier_K2Node_ComponentBoundEvent_401_SliderChanged__DelegateSignature
+// (FUNC_BlueprintEvent)
+// Parameters:
+// float                          Slider_Value                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UTabGameOptionsMain_C::BndEvt__GamepadScopedMultiplier_K2Node_ComponentBoundEvent_401_SliderChanged__DelegateSignature(float Slider_Value)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf3809911);
+
+	UTabGameOptionsMain_C_BndEvt__GamepadScopedMultiplier_K2Node_ComponentBoundEvent_401_SliderChanged__DelegateSignature_Params params;
+	params.Slider_Value = Slider_Value;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function TabGameOptionsMain.TabGameOptionsMain_C.BndEvt__GamepadTargetingMultiplier_K2Node_ComponentBoundEvent_423_SliderChanged__DelegateSignature
+// (FUNC_BlueprintEvent)
+// Parameters:
+// float                          Slider_Value                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UTabGameOptionsMain_C::BndEvt__GamepadTargetingMultiplier_K2Node_ComponentBoundEvent_423_SliderChanged__DelegateSignature(float Slider_Value)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x925952f6);
+
+	UTabGameOptionsMain_C_BndEvt__GamepadTargetingMultiplier_K2Node_ComponentBoundEvent_423_SliderChanged__DelegateSignature_Params params;
 	params.Slider_Value = Slider_Value;
 
 	auto flags = fn->FunctionFlags;

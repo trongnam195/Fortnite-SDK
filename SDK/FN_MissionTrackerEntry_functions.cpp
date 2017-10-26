@@ -30,26 +30,8 @@ void UMissionTrackerEntry_C::Construct()
 }
 
 
-// Function MissionTrackerEntry.MissionTrackerEntry_C.OnMissionSet
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-
-void UMissionTrackerEntry_C::OnMissionSet()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x142999ca);
-
-	UMissionTrackerEntry_C_OnMissionSet_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function MissionTrackerEntry.MissionTrackerEntry_C.ExecuteUbergraph_MissionTrackerEntry
-// (FUNC_HasDefaults)
+// ()
 // Parameters:
 // int                            EntryPoint                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 

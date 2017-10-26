@@ -404,6 +404,24 @@ void UQuestTreeEntry_C::Destruct()
 }
 
 
+// Function QuestTreeEntry.QuestTreeEntry_C.OnDeselected
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UQuestTreeEntry_C::OnDeselected()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8207be42);
+
+	UQuestTreeEntry_C_OnDeselected_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function QuestTreeEntry.QuestTreeEntry_C.ExecuteUbergraph_QuestTreeEntry
 // (FUNC_HasDefaults)
 // Parameters:

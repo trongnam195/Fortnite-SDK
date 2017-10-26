@@ -187,6 +187,24 @@ void UAthenaPickupManager_C::Destruct()
 }
 
 
+// Function AthenaPickupManager.AthenaPickupManager_C.HandleBuildingMaterialChanged
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaPickupManager_C::HandleBuildingMaterialChanged()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1eb1e6a6);
+
+	UAthenaPickupManager_C_HandleBuildingMaterialChanged_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function AthenaPickupManager.AthenaPickupManager_C.ExecuteUbergraph_AthenaPickupManager
 // ()
 // Parameters:

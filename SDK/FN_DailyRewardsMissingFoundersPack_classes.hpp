@@ -32,6 +32,7 @@ public:
 	}
 
 
+	void CanUpgradeFoundersPack(bool* CanUpgrade);
 	void Construct();
 	void ExecuteUbergraph_DailyRewardsMissingFoundersPack(int EntryPoint);
 };

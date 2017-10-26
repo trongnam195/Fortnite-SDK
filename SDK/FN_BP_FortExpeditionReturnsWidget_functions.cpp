@@ -122,27 +122,6 @@ void UBP_FortExpeditionReturnsWidget_C::Refresh_In_Progress_Widgets(class UFortE
 }
 
 
-// Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.SetData
-// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// class UFortExpeditionItem**    InItem                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UBP_FortExpeditionReturnsWidget_C::SetData(class UFortExpeditionItem** InItem)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xc23563e9);
-
-	UBP_FortExpeditionReturnsWidget_C_SetData_Params params;
-	params.InItem = InItem;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.OnExpeditionInProgressUpdated
 // (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
 
@@ -170,6 +149,27 @@ void UBP_FortExpeditionReturnsWidget_C::Construct()
 	if (!fn) fn = UObject::FindObject<UFunction>(0xfe05a84e);
 
 	UBP_FortExpeditionReturnsWidget_C_Construct_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function BP_FortExpeditionReturnsWidget.BP_FortExpeditionReturnsWidget_C.SetData
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UFortExpeditionItem**    InItem                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UBP_FortExpeditionReturnsWidget_C::SetData(class UFortExpeditionItem** InItem)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc23563e9);
+
+	UBP_FortExpeditionReturnsWidget_C_SetData_Params params;
+	params.InItem = InItem;
 
 	auto flags = fn->FunctionFlags;
 

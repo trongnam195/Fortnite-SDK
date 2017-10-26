@@ -154,6 +154,29 @@ void UAthenaTabsScreen_C::OnDeactivated()
 }
 
 
+// Function AthenaTabsScreen.AthenaTabsScreen_C.HandleTabContentCreated
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// struct FName                   TabId                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UCommonUserWidget*       TabWidget                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UAthenaTabsScreen_C::HandleTabContentCreated(const struct FName& TabId, class UCommonUserWidget* TabWidget)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x46ba526d);
+
+	UAthenaTabsScreen_C_HandleTabContentCreated_Params params;
+	params.TabId = TabId;
+	params.TabWidget = TabWidget;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function AthenaTabsScreen.AthenaTabsScreen_C.ExecuteUbergraph_AthenaTabsScreen
 // ()
 // Parameters:

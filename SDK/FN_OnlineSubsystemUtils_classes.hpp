@@ -471,11 +471,11 @@ public:
 
 
 // Class OnlineSubsystemUtils.IpConnection
-// 0x0020 (0x33760 - 0x33740)
+// 0x0020 (0x337B0 - 0x33790)
 class UIpConnection : public UNetConnection
 {
 public:
-	unsigned char                                      UnknownData00[0x20];                                      // 0x33740(0x0020) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x20];                                      // 0x33790(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{

@@ -29,7 +29,6 @@ public:
 
 
 	void Construct();
-	void OnSetup();
 	void ExecuteUbergraph_QuestTrackerEntry(int EntryPoint);
 };
 

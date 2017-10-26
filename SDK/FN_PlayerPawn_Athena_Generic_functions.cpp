@@ -1165,72 +1165,6 @@ void APlayerPawn_Athena_Generic_C::OnDeathServer(float* Damage, struct FGameplay
 }
 
 
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.SetupAnimTrails
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// class UParticleSystem*         Particle_System_Reference      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FName                   First_Socket_Name              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FName                   Second_Socket_Name             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// float                          Width                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void APlayerPawn_Athena_Generic_C::SetupAnimTrails(class UParticleSystem* Particle_System_Reference, const struct FName& First_Socket_Name, const struct FName& Second_Socket_Name, float Width)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xb9dad7a6);
-
-	APlayerPawn_Athena_Generic_C_SetupAnimTrails_Params params;
-	params.Particle_System_Reference = Particle_System_Reference;
-	params.First_Socket_Name = First_Socket_Name;
-	params.Second_Socket_Name = Second_Socket_Name;
-	params.Width = Width;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsCE
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// bool                           Active                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void APlayerPawn_Athena_Generic_C::AnimTrailsCE(bool Active)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xcdd5a6cf);
-
-	APlayerPawn_Athena_Generic_C_AnimTrailsCE_Params params;
-	params.Active = Active;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.DisableAnimTrails
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-
-void APlayerPawn_Athena_Generic_C::DisableAnimTrails()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x7fb60aed);
-
-	APlayerPawn_Athena_Generic_C_DisableAnimTrails_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.Entered WaterVolume
 // (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
@@ -1297,6 +1231,72 @@ void APlayerPawn_Athena_Generic_C::FadeOutCapsuleShadow()
 	if (!fn) fn = UObject::FindObject<UFunction>(0x4cba1aa0);
 
 	APlayerPawn_Athena_Generic_C_FadeOutCapsuleShadow_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsNotify
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool*                          bActive                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void APlayerPawn_Athena_Generic_C::AnimTrailsNotify(bool* bActive)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x489abc94);
+
+	APlayerPawn_Athena_Generic_C_AnimTrailsNotify_Params params;
+	params.bActive = bActive;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsSetup
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UParticleSystem**        ParticleSystemReference        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName*                  FirstSocketName                (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName*                  SecondSocketName               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float*                         Width                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void APlayerPawn_Athena_Generic_C::AnimTrailsSetup(class UParticleSystem** ParticleSystemReference, struct FName* FirstSocketName, struct FName* SecondSocketName, float* Width)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55c4e2a2);
+
+	APlayerPawn_Athena_Generic_C_AnimTrailsSetup_Params params;
+	params.ParticleSystemReference = ParticleSystemReference;
+	params.FirstSocketName = FirstSocketName;
+	params.SecondSocketName = SecondSocketName;
+	params.Width = Width;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerPawn_Athena_Generic.PlayerPawn_Athena_Generic_C.AnimTrailsDisable
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void APlayerPawn_Athena_Generic_C::AnimTrailsDisable()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb56d7279);
+
+	APlayerPawn_Athena_Generic_C_AnimTrailsDisable_Params params;
 
 	auto flags = fn->FunctionFlags;
 

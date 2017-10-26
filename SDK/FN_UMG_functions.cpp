@@ -12,656 +12,6 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
-// Function UMG.AsyncTaskDownloadImage.DownloadImage
-// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// struct FString                 URL                            (CPF_Parm, CPF_ZeroConstructor)
-// class UAsyncTaskDownloadImage* ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-class UAsyncTaskDownloadImage* UAsyncTaskDownloadImage::STATIC_DownloadImage(const struct FString& URL)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x46ee0b93);
-
-	UAsyncTaskDownloadImage_DownloadImage_Params params;
-	params.URL = URL;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.DragDropOperation.Drop
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintEvent)
-// Parameters:
-// struct FPointerEvent           PointerEvent                   (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
-
-void UDragDropOperation::Drop(const struct FPointerEvent& PointerEvent)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x9e2aba91);
-
-	UDragDropOperation_Drop_Params params;
-	params.PointerEvent = PointerEvent;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function UMG.DragDropOperation.Dragged
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintEvent)
-// Parameters:
-// struct FPointerEvent           PointerEvent                   (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
-
-void UDragDropOperation::Dragged(const struct FPointerEvent& PointerEvent)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xfa44a694);
-
-	UDragDropOperation_Dragged_Params params;
-	params.PointerEvent = PointerEvent;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function UMG.DragDropOperation.DragCancelled
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintEvent)
-// Parameters:
-// struct FPointerEvent           PointerEvent                   (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
-
-void UDragDropOperation::DragCancelled(const struct FPointerEvent& PointerEvent)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x31048819);
-
-	UDragDropOperation_DragCancelled_Params params;
-	params.PointerEvent = PointerEvent;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function UMG.BoolBinding.GetValue
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
-// Parameters:
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool UBoolBinding::GetValue()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x3b71e8c4);
-
-	UBoolBinding_GetValue_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.BrushBinding.GetValue
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
-// Parameters:
-// struct FSlateBrush             ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm)
-
-struct FSlateBrush UBrushBinding::GetValue()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xa06a45f4);
-
-	UBrushBinding_GetValue_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.CheckedStateBinding.GetValue
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
-// Parameters:
-// ECheckBoxState                 ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-ECheckBoxState UCheckedStateBinding::GetValue()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x9d2f2b36);
-
-	UCheckedStateBinding_GetValue_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.ColorBinding.GetSlateValue
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
-// Parameters:
-// struct FSlateColor             ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm)
-
-struct FSlateColor UColorBinding::GetSlateValue()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x3ca9f470);
-
-	UColorBinding_GetSlateValue_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.ColorBinding.GetLinearValue
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasDefaults, FUNC_Const)
-// Parameters:
-// struct FLinearColor            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm, CPF_IsPlainOldData)
-
-struct FLinearColor UColorBinding::GetLinearValue()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x957a918c);
-
-	UColorBinding_GetLinearValue_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.FloatBinding.GetValue
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
-// Parameters:
-// float                          ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-float UFloatBinding::GetValue()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x7afe6026);
-
-	UFloatBinding_GetValue_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.Int32Binding.GetValue
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
-// Parameters:
-// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-int UInt32Binding::GetValue()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xd2e31e28);
-
-	UInt32Binding_GetValue_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.MouseCursorBinding.GetValue
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
-// Parameters:
-// TEnumAsByte<EMouseCursor>      ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-TEnumAsByte<EMouseCursor> UMouseCursorBinding::GetValue()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xd3ff2917);
-
-	UMouseCursorBinding_GetValue_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.TextBinding.GetTextValue
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
-// Parameters:
-// struct FText                   ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm)
-
-struct FText UTextBinding::GetTextValue()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x8ce6918e);
-
-	UTextBinding_GetTextValue_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.TextBinding.GetStringValue
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
-// Parameters:
-// struct FString                 ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
-
-struct FString UTextBinding::GetStringValue()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x700cca4);
-
-	UTextBinding_GetStringValue_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.VisibilityBinding.GetValue
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
-// Parameters:
-// ESlateVisibility               ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-ESlateVisibility UVisibilityBinding::GetValue()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x3c28ff58);
-
-	UVisibilityBinding_GetValue_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.WidgetBinding.GetValue
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
-// Parameters:
-// class UWidget*                 ReturnValue                    (CPF_ExportObject, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_InstancedReference, CPF_IsPlainOldData)
-
-class UWidget* UWidgetBinding::GetValue()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x83289378);
-
-	UWidgetBinding_GetValue_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.SlateBlueprintLibrary.ScreenToWidgetLocal
-// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults)
-// Parameters:
-// class UObject*                 WorldContextObject             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FGeometry               Geometry                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
-// struct FVector2D               ScreenPosition                 (CPF_Parm, CPF_IsPlainOldData)
-// struct FVector2D               LocalCoordinate                (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
-
-void USlateBlueprintLibrary::STATIC_ScreenToWidgetLocal(class UObject* WorldContextObject, const struct FGeometry& Geometry, const struct FVector2D& ScreenPosition, struct FVector2D* LocalCoordinate)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xca80d3cb);
-
-	USlateBlueprintLibrary_ScreenToWidgetLocal_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.Geometry = Geometry;
-	params.ScreenPosition = ScreenPosition;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (LocalCoordinate != nullptr)
-		*LocalCoordinate = params.LocalCoordinate;
-}
-
-
-// Function UMG.SlateBlueprintLibrary.ScreenToWidgetAbsolute
-// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults)
-// Parameters:
-// class UObject*                 WorldContextObject             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FVector2D               ScreenPosition                 (CPF_Parm, CPF_IsPlainOldData)
-// struct FVector2D               AbsoluteCoordinate             (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
-
-void USlateBlueprintLibrary::STATIC_ScreenToWidgetAbsolute(class UObject* WorldContextObject, const struct FVector2D& ScreenPosition, struct FVector2D* AbsoluteCoordinate)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xf293bd51);
-
-	USlateBlueprintLibrary_ScreenToWidgetAbsolute_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.ScreenPosition = ScreenPosition;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (AbsoluteCoordinate != nullptr)
-		*AbsoluteCoordinate = params.AbsoluteCoordinate;
-}
-
-
-// Function UMG.SlateBlueprintLibrary.ScreenToViewport
-// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults)
-// Parameters:
-// class UObject*                 WorldContextObject             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FVector2D               ScreenPosition                 (CPF_Parm, CPF_IsPlainOldData)
-// struct FVector2D               ViewportPosition               (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
-
-void USlateBlueprintLibrary::STATIC_ScreenToViewport(class UObject* WorldContextObject, const struct FVector2D& ScreenPosition, struct FVector2D* ViewportPosition)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x5ea532a8);
-
-	USlateBlueprintLibrary_ScreenToViewport_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.ScreenPosition = ScreenPosition;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (ViewportPosition != nullptr)
-		*ViewportPosition = params.ViewportPosition;
-}
-
-
-// Function UMG.SlateBlueprintLibrary.LocalToViewport
-// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure)
-// Parameters:
-// class UObject*                 WorldContextObject             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FGeometry               Geometry                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
-// struct FVector2D               LocalCoordinate                (CPF_Parm, CPF_IsPlainOldData)
-// struct FVector2D               PixelPosition                  (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
-// struct FVector2D               ViewportPosition               (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
-
-void USlateBlueprintLibrary::STATIC_LocalToViewport(class UObject* WorldContextObject, const struct FGeometry& Geometry, const struct FVector2D& LocalCoordinate, struct FVector2D* PixelPosition, struct FVector2D* ViewportPosition)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xa81994b3);
-
-	USlateBlueprintLibrary_LocalToViewport_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.Geometry = Geometry;
-	params.LocalCoordinate = LocalCoordinate;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (PixelPosition != nullptr)
-		*PixelPosition = params.PixelPosition;
-	if (ViewportPosition != nullptr)
-		*ViewportPosition = params.ViewportPosition;
-}
-
-
-// Function UMG.SlateBlueprintLibrary.LocalToAbsolute
-// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure)
-// Parameters:
-// struct FGeometry               Geometry                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
-// struct FVector2D               LocalCoordinate                (CPF_Parm, CPF_IsPlainOldData)
-// struct FVector2D               ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm, CPF_IsPlainOldData)
-
-struct FVector2D USlateBlueprintLibrary::STATIC_LocalToAbsolute(const struct FGeometry& Geometry, const struct FVector2D& LocalCoordinate)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xd837dc1a);
-
-	USlateBlueprintLibrary_LocalToAbsolute_Params params;
-	params.Geometry = Geometry;
-	params.LocalCoordinate = LocalCoordinate;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.SlateBlueprintLibrary.IsUnderLocation
-// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure)
-// Parameters:
-// struct FGeometry               Geometry                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
-// struct FVector2D               AbsoluteCoordinate             (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool USlateBlueprintLibrary::STATIC_IsUnderLocation(const struct FGeometry& Geometry, const struct FVector2D& AbsoluteCoordinate)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x86f08950);
-
-	USlateBlueprintLibrary_IsUnderLocation_Params params;
-	params.Geometry = Geometry;
-	params.AbsoluteCoordinate = AbsoluteCoordinate;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.SlateBlueprintLibrary.GetLocalSize
-// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure)
-// Parameters:
-// struct FGeometry               Geometry                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
-// struct FVector2D               ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm, CPF_IsPlainOldData)
-
-struct FVector2D USlateBlueprintLibrary::STATIC_GetLocalSize(const struct FGeometry& Geometry)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x2ea1a12f);
-
-	USlateBlueprintLibrary_GetLocalSize_Params params;
-	params.Geometry = Geometry;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.SlateBlueprintLibrary.EqualEqual_SlateBrush
-// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintPure)
-// Parameters:
-// struct FSlateBrush             A                              (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
-// struct FSlateBrush             B                              (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool USlateBlueprintLibrary::STATIC_EqualEqual_SlateBrush(const struct FSlateBrush& A, const struct FSlateBrush& B)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xf4c2b6d1);
-
-	USlateBlueprintLibrary_EqualEqual_SlateBrush_Params params;
-	params.A = A;
-	params.B = B;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function UMG.SlateBlueprintLibrary.AbsoluteToViewport
-// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure)
-// Parameters:
-// class UObject*                 WorldContextObject             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FVector2D               AbsoluteDesktopCoordinate      (CPF_Parm, CPF_IsPlainOldData)
-// struct FVector2D               PixelPosition                  (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
-// struct FVector2D               ViewportPosition               (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
-
-void USlateBlueprintLibrary::STATIC_AbsoluteToViewport(class UObject* WorldContextObject, const struct FVector2D& AbsoluteDesktopCoordinate, struct FVector2D* PixelPosition, struct FVector2D* ViewportPosition)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xcb352a47);
-
-	USlateBlueprintLibrary_AbsoluteToViewport_Params params;
-	params.WorldContextObject = WorldContextObject;
-	params.AbsoluteDesktopCoordinate = AbsoluteDesktopCoordinate;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	if (PixelPosition != nullptr)
-		*PixelPosition = params.PixelPosition;
-	if (ViewportPosition != nullptr)
-		*ViewportPosition = params.ViewportPosition;
-}
-
-
-// Function UMG.SlateBlueprintLibrary.AbsoluteToLocal
-// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure)
-// Parameters:
-// struct FGeometry               Geometry                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
-// struct FVector2D               AbsoluteCoordinate             (CPF_Parm, CPF_IsPlainOldData)
-// struct FVector2D               ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm, CPF_IsPlainOldData)
-
-struct FVector2D USlateBlueprintLibrary::STATIC_AbsoluteToLocal(const struct FGeometry& Geometry, const struct FVector2D& AbsoluteCoordinate)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xcaa85622);
-
-	USlateBlueprintLibrary_AbsoluteToLocal_Params params;
-	params.Geometry = Geometry;
-	params.AbsoluteCoordinate = AbsoluteCoordinate;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
 // Function UMG.Widget.SetVisibility
 // (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
 // Parameters:
@@ -3557,6 +2907,656 @@ bool UUserWidget::AddToPlayerScreen(int ZOrder)
 
 	UUserWidget_AddToPlayerScreen_Params params;
 	params.ZOrder = ZOrder;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.AsyncTaskDownloadImage.DownloadImage
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FString                 URL                            (CPF_Parm, CPF_ZeroConstructor)
+// class UAsyncTaskDownloadImage* ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class UAsyncTaskDownloadImage* UAsyncTaskDownloadImage::STATIC_DownloadImage(const struct FString& URL)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x46ee0b93);
+
+	UAsyncTaskDownloadImage_DownloadImage_Params params;
+	params.URL = URL;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.DragDropOperation.Drop
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintEvent)
+// Parameters:
+// struct FPointerEvent           PointerEvent                   (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+
+void UDragDropOperation::Drop(const struct FPointerEvent& PointerEvent)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e2aba91);
+
+	UDragDropOperation_Drop_Params params;
+	params.PointerEvent = PointerEvent;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function UMG.DragDropOperation.Dragged
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintEvent)
+// Parameters:
+// struct FPointerEvent           PointerEvent                   (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+
+void UDragDropOperation::Dragged(const struct FPointerEvent& PointerEvent)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xfa44a694);
+
+	UDragDropOperation_Dragged_Params params;
+	params.PointerEvent = PointerEvent;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function UMG.DragDropOperation.DragCancelled
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintEvent)
+// Parameters:
+// struct FPointerEvent           PointerEvent                   (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+
+void UDragDropOperation::DragCancelled(const struct FPointerEvent& PointerEvent)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x31048819);
+
+	UDragDropOperation_DragCancelled_Params params;
+	params.PointerEvent = PointerEvent;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function UMG.BoolBinding.GetValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool UBoolBinding::GetValue()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3b71e8c4);
+
+	UBoolBinding_GetValue_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.BrushBinding.GetValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
+// Parameters:
+// struct FSlateBrush             ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm)
+
+struct FSlateBrush UBrushBinding::GetValue()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa06a45f4);
+
+	UBrushBinding_GetValue_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.CheckedStateBinding.GetValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
+// Parameters:
+// ECheckBoxState                 ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+ECheckBoxState UCheckedStateBinding::GetValue()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9d2f2b36);
+
+	UCheckedStateBinding_GetValue_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.ColorBinding.GetSlateValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
+// Parameters:
+// struct FSlateColor             ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm)
+
+struct FSlateColor UColorBinding::GetSlateValue()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3ca9f470);
+
+	UColorBinding_GetSlateValue_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.ColorBinding.GetLinearValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_HasDefaults, FUNC_Const)
+// Parameters:
+// struct FLinearColor            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm, CPF_IsPlainOldData)
+
+struct FLinearColor UColorBinding::GetLinearValue()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x957a918c);
+
+	UColorBinding_GetLinearValue_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.FloatBinding.GetValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
+// Parameters:
+// float                          ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+float UFloatBinding::GetValue()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7afe6026);
+
+	UFloatBinding_GetValue_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.Int32Binding.GetValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
+// Parameters:
+// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+int UInt32Binding::GetValue()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd2e31e28);
+
+	UInt32Binding_GetValue_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.MouseCursorBinding.GetValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
+// Parameters:
+// TEnumAsByte<EMouseCursor>      ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+TEnumAsByte<EMouseCursor> UMouseCursorBinding::GetValue()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd3ff2917);
+
+	UMouseCursorBinding_GetValue_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.TextBinding.GetTextValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
+// Parameters:
+// struct FText                   ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm)
+
+struct FText UTextBinding::GetTextValue()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8ce6918e);
+
+	UTextBinding_GetTextValue_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.TextBinding.GetStringValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
+// Parameters:
+// struct FString                 ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm)
+
+struct FString UTextBinding::GetStringValue()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x700cca4);
+
+	UTextBinding_GetStringValue_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.VisibilityBinding.GetValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
+// Parameters:
+// ESlateVisibility               ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+ESlateVisibility UVisibilityBinding::GetValue()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x3c28ff58);
+
+	UVisibilityBinding_GetValue_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.WidgetBinding.GetValue
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_Const)
+// Parameters:
+// class UWidget*                 ReturnValue                    (CPF_ExportObject, CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_InstancedReference, CPF_IsPlainOldData)
+
+class UWidget* UWidgetBinding::GetValue()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x83289378);
+
+	UWidgetBinding_GetValue_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.SlateBlueprintLibrary.ScreenToWidgetLocal
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults)
+// Parameters:
+// class UObject*                 WorldContextObject             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FGeometry               Geometry                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+// struct FVector2D               ScreenPosition                 (CPF_Parm, CPF_IsPlainOldData)
+// struct FVector2D               LocalCoordinate                (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
+
+void USlateBlueprintLibrary::STATIC_ScreenToWidgetLocal(class UObject* WorldContextObject, const struct FGeometry& Geometry, const struct FVector2D& ScreenPosition, struct FVector2D* LocalCoordinate)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca80d3cb);
+
+	USlateBlueprintLibrary_ScreenToWidgetLocal_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.Geometry = Geometry;
+	params.ScreenPosition = ScreenPosition;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (LocalCoordinate != nullptr)
+		*LocalCoordinate = params.LocalCoordinate;
+}
+
+
+// Function UMG.SlateBlueprintLibrary.ScreenToWidgetAbsolute
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults)
+// Parameters:
+// class UObject*                 WorldContextObject             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FVector2D               ScreenPosition                 (CPF_Parm, CPF_IsPlainOldData)
+// struct FVector2D               AbsoluteCoordinate             (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
+
+void USlateBlueprintLibrary::STATIC_ScreenToWidgetAbsolute(class UObject* WorldContextObject, const struct FVector2D& ScreenPosition, struct FVector2D* AbsoluteCoordinate)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf293bd51);
+
+	USlateBlueprintLibrary_ScreenToWidgetAbsolute_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.ScreenPosition = ScreenPosition;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (AbsoluteCoordinate != nullptr)
+		*AbsoluteCoordinate = params.AbsoluteCoordinate;
+}
+
+
+// Function UMG.SlateBlueprintLibrary.ScreenToViewport
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults)
+// Parameters:
+// class UObject*                 WorldContextObject             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FVector2D               ScreenPosition                 (CPF_Parm, CPF_IsPlainOldData)
+// struct FVector2D               ViewportPosition               (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
+
+void USlateBlueprintLibrary::STATIC_ScreenToViewport(class UObject* WorldContextObject, const struct FVector2D& ScreenPosition, struct FVector2D* ViewportPosition)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ea532a8);
+
+	USlateBlueprintLibrary_ScreenToViewport_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.ScreenPosition = ScreenPosition;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (ViewportPosition != nullptr)
+		*ViewportPosition = params.ViewportPosition;
+}
+
+
+// Function UMG.SlateBlueprintLibrary.LocalToViewport
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// class UObject*                 WorldContextObject             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FGeometry               Geometry                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+// struct FVector2D               LocalCoordinate                (CPF_Parm, CPF_IsPlainOldData)
+// struct FVector2D               PixelPosition                  (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
+// struct FVector2D               ViewportPosition               (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
+
+void USlateBlueprintLibrary::STATIC_LocalToViewport(class UObject* WorldContextObject, const struct FGeometry& Geometry, const struct FVector2D& LocalCoordinate, struct FVector2D* PixelPosition, struct FVector2D* ViewportPosition)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa81994b3);
+
+	USlateBlueprintLibrary_LocalToViewport_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.Geometry = Geometry;
+	params.LocalCoordinate = LocalCoordinate;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (PixelPosition != nullptr)
+		*PixelPosition = params.PixelPosition;
+	if (ViewportPosition != nullptr)
+		*ViewportPosition = params.ViewportPosition;
+}
+
+
+// Function UMG.SlateBlueprintLibrary.LocalToAbsolute
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// struct FGeometry               Geometry                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+// struct FVector2D               LocalCoordinate                (CPF_Parm, CPF_IsPlainOldData)
+// struct FVector2D               ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm, CPF_IsPlainOldData)
+
+struct FVector2D USlateBlueprintLibrary::STATIC_LocalToAbsolute(const struct FGeometry& Geometry, const struct FVector2D& LocalCoordinate)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd837dc1a);
+
+	USlateBlueprintLibrary_LocalToAbsolute_Params params;
+	params.Geometry = Geometry;
+	params.LocalCoordinate = LocalCoordinate;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.SlateBlueprintLibrary.IsUnderLocation
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// struct FGeometry               Geometry                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+// struct FVector2D               AbsoluteCoordinate             (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool USlateBlueprintLibrary::STATIC_IsUnderLocation(const struct FGeometry& Geometry, const struct FVector2D& AbsoluteCoordinate)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x86f08950);
+
+	USlateBlueprintLibrary_IsUnderLocation_Params params;
+	params.Geometry = Geometry;
+	params.AbsoluteCoordinate = AbsoluteCoordinate;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.SlateBlueprintLibrary.GetLocalSize
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// struct FGeometry               Geometry                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+// struct FVector2D               ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm, CPF_IsPlainOldData)
+
+struct FVector2D USlateBlueprintLibrary::STATIC_GetLocalSize(const struct FGeometry& Geometry)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2ea1a12f);
+
+	USlateBlueprintLibrary_GetLocalSize_Params params;
+	params.Geometry = Geometry;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.SlateBlueprintLibrary.EqualEqual_SlateBrush
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// struct FSlateBrush             A                              (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+// struct FSlateBrush             B                              (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool USlateBlueprintLibrary::STATIC_EqualEqual_SlateBrush(const struct FSlateBrush& A, const struct FSlateBrush& B)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf4c2b6d1);
+
+	USlateBlueprintLibrary_EqualEqual_SlateBrush_Params params;
+	params.A = A;
+	params.B = B;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.SlateBlueprintLibrary.AbsoluteToViewport
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// class UObject*                 WorldContextObject             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FVector2D               AbsoluteDesktopCoordinate      (CPF_Parm, CPF_IsPlainOldData)
+// struct FVector2D               PixelPosition                  (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
+// struct FVector2D               ViewportPosition               (CPF_Parm, CPF_OutParm, CPF_IsPlainOldData)
+
+void USlateBlueprintLibrary::STATIC_AbsoluteToViewport(class UObject* WorldContextObject, const struct FVector2D& AbsoluteDesktopCoordinate, struct FVector2D* PixelPosition, struct FVector2D* ViewportPosition)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcb352a47);
+
+	USlateBlueprintLibrary_AbsoluteToViewport_Params params;
+	params.WorldContextObject = WorldContextObject;
+	params.AbsoluteDesktopCoordinate = AbsoluteDesktopCoordinate;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (PixelPosition != nullptr)
+		*PixelPosition = params.PixelPosition;
+	if (ViewportPosition != nullptr)
+		*ViewportPosition = params.ViewportPosition;
+}
+
+
+// Function UMG.SlateBlueprintLibrary.AbsoluteToLocal
+// (FUNC_Final, FUNC_Native, FUNC_Static, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// struct FGeometry               Geometry                       (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+// struct FVector2D               AbsoluteCoordinate             (CPF_Parm, CPF_IsPlainOldData)
+// struct FVector2D               ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ReturnParm, CPF_IsPlainOldData)
+
+struct FVector2D USlateBlueprintLibrary::STATIC_AbsoluteToLocal(const struct FGeometry& Geometry, const struct FVector2D& AbsoluteCoordinate)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcaa85622);
+
+	USlateBlueprintLibrary_AbsoluteToLocal_Params params;
+	params.Geometry = Geometry;
+	params.AbsoluteCoordinate = AbsoluteCoordinate;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;
@@ -9476,6 +9476,52 @@ struct FText UTextBlock::GetText()
 	if (!fn) fn = UObject::FindObject<UFunction>(0xfe937f2f);
 
 	UTextBlock_GetText_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.TextBlock.GetDynamicOutlineMaterial
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UMaterialInstanceDynamic* ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class UMaterialInstanceDynamic* UTextBlock::GetDynamicOutlineMaterial()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x21c40dda);
+
+	UTextBlock_GetDynamicOutlineMaterial_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function UMG.TextBlock.GetDynamicFontMaterial
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class UMaterialInstanceDynamic* ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class UMaterialInstanceDynamic* UTextBlock::GetDynamicFontMaterial()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2c1774ed);
+
+	UTextBlock_GetDynamicFontMaterial_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;

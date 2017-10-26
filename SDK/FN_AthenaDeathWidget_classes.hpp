@@ -66,7 +66,6 @@ public:
 	void Construct();
 	void On_Kill_Feed_Updated();
 	void TeamMemberChanged();
-	void PreConstruct(bool* IsDesignTime);
 	void BndEvt__FollowNextTeammate_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void ExecuteUbergraph_AthenaDeathWidget(int EntryPoint);
 };

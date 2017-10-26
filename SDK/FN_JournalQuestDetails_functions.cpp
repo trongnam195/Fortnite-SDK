@@ -170,14 +170,16 @@ void UJournalQuestDetails_C::StopConversation()
 // Function JournalQuestDetails.JournalQuestDetails_C.AbandonQuest
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
+// class UFortQuestItem*          QuestToAbandon                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // bool                           questAbandoned_                (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void UJournalQuestDetails_C::AbandonQuest(bool* questAbandoned_)
+void UJournalQuestDetails_C::AbandonQuest(class UFortQuestItem* QuestToAbandon, bool* questAbandoned_)
 {
 	static UFunction* fn = nullptr;
 	if (!fn) fn = UObject::FindObject<UFunction>(0x76ce08ec);
 
 	UJournalQuestDetails_C_AbandonQuest_Params params;
+	params.QuestToAbandon = QuestToAbandon;
 
 	auto flags = fn->FunctionFlags;
 

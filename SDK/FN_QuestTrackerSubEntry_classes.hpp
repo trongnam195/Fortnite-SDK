@@ -47,7 +47,6 @@ public:
 	void OnPlayObjectiveCompletedAnimation();
 	void OnCompletionFlashFInished();
 	void PostCompletionDelay();
-	void OnSetup();
 	void ExecuteUbergraph_QuestTrackerSubEntry(int EntryPoint);
 };
 

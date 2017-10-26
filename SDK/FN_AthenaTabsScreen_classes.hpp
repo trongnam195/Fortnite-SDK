@@ -39,6 +39,7 @@ public:
 	void BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabButtonCreated__DelegateSignature(const struct FName& TabId, class UCommonButton* TabButton);
 	void BndEvt__TopTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature(const struct FName& TabId);
 	void OnDeactivated();
+	void HandleTabContentCreated(const struct FName& TabId, class UCommonUserWidget* TabWidget);
 	void ExecuteUbergraph_AthenaTabsScreen(int EntryPoint);
 };
 

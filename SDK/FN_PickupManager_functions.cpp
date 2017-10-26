@@ -187,6 +187,24 @@ void UPickupManager_C::Destruct()
 }
 
 
+// Function PickupManager.PickupManager_C.HandleBuildingMaterialChanged
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UPickupManager_C::HandleBuildingMaterialChanged()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xdf866606);
+
+	UPickupManager_C_HandleBuildingMaterialChanged_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function PickupManager.PickupManager_C.ExecuteUbergraph_PickupManager
 // ()
 // Parameters:

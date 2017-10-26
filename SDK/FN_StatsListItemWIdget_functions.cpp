@@ -12,6 +12,27 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function StatsListItemWIdget.StatsListItemWIdget_C.SetTextAndBorderHighlight
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           bHightlight                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UStatsListItemWIdget_C::SetTextAndBorderHighlight(bool bHightlight)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x41c8dc7b);
+
+	UStatsListItemWIdget_C_SetTextAndBorderHighlight_Params params;
+	params.bHightlight = bHightlight;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function StatsListItemWIdget.StatsListItemWIdget_C.GetListItemTooltipWidget
 // (FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent, FUNC_BlueprintPure)
 // Parameters:
@@ -178,60 +199,6 @@ void UStatsListItemWIdget_C::Update()
 }
 
 
-// Function StatsListItemWIdget.StatsListItemWIdget_C.DisplayAttributeChanged
-// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-
-void UStatsListItemWIdget_C::DisplayAttributeChanged()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x17e4c82b);
-
-	UStatsListItemWIdget_C_DisplayAttributeChanged_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function StatsListItemWIdget.StatsListItemWIdget_C.PreviewStarted
-// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-
-void UStatsListItemWIdget_C::PreviewStarted()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x93767390);
-
-	UStatsListItemWIdget_C_PreviewStarted_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function StatsListItemWIdget.StatsListItemWIdget_C.PreviewEnded
-// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-
-void UStatsListItemWIdget_C::PreviewEnded()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x71e3560b);
-
-	UStatsListItemWIdget_C_PreviewEnded_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function StatsListItemWIdget.StatsListItemWIdget_C.ValueChanged
 // (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
 // Parameters:
@@ -262,6 +229,60 @@ void UStatsListItemWIdget_C::Construct()
 	if (!fn) fn = UObject::FindObject<UFunction>(0x98d10b9a);
 
 	UStatsListItemWIdget_C_Construct_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function StatsListItemWIdget.StatsListItemWIdget_C.PreviewEnded
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void UStatsListItemWIdget_C::PreviewEnded()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71e3560b);
+
+	UStatsListItemWIdget_C_PreviewEnded_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function StatsListItemWIdget.StatsListItemWIdget_C.PreviewStarted
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void UStatsListItemWIdget_C::PreviewStarted()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x93767390);
+
+	UStatsListItemWIdget_C_PreviewStarted_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function StatsListItemWIdget.StatsListItemWIdget_C.DisplayAttributeChanged
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void UStatsListItemWIdget_C::DisplayAttributeChanged()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x17e4c82b);
+
+	UStatsListItemWIdget_C_DisplayAttributeChanged_Params params;
 
 	auto flags = fn->FunctionFlags;
 

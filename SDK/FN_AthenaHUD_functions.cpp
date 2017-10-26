@@ -12,6 +12,24 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function AthenaHUD.AthenaHUD_C.SetupCameraMode
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaHUD_C::SetupCameraMode()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x24f3642);
+
+	UAthenaHUD_C_SetupCameraMode_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function AthenaHUD.AthenaHUD_C.AddTeamMemberIndicator
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -830,6 +848,24 @@ void UAthenaHUD_C::TeamMembersChanged()
 	if (!fn) fn = UObject::FindObject<UFunction>(0x9846fe33);
 
 	UAthenaHUD_C_TeamMembersChanged_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaHUD.AthenaHUD_C.ShowGameOverLayer
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaHUD_C::ShowGameOverLayer()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf5b9837f);
+
+	UAthenaHUD_C_ShowGameOverLayer_Params params;
 
 	auto flags = fn->FunctionFlags;
 

@@ -12,6 +12,27 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.UpdateTypeIconOffset
+// (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// float                          VerticalOffset                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void USimpleSquadSlotButton_C::UpdateTypeIconOffset(float VerticalOffset)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9e2e5bba);
+
+	USimpleSquadSlotButton_C_UpdateTypeIconOffset_Params params;
+	params.VerticalOffset = VerticalOffset;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function SimpleSquadSlotButton.SimpleSquadSlotButton_C.Update SubType Icon Glow
 // (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:

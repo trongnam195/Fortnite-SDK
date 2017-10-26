@@ -35,8 +35,8 @@ public:
 
 
 	void UserConstructionScript();
-	void OnDeactivated();
 	void OnActivated();
+	void OnDeactivated();
 	void ExecuteUbergraph_FortnitePartyBackdrop_Camera(int EntryPoint);
 };
 

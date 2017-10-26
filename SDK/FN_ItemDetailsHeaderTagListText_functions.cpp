@@ -74,24 +74,6 @@ void UItemDetailsHeaderTagListText_C::HandlePostDifferentItemToCompareWithSet()
 }
 
 
-// Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.Construct
-// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-
-void UItemDetailsHeaderTagListText_C::Construct()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x4c378510);
-
-	UItemDetailsHeaderTagListText_C_Construct_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.ExecuteUbergraph_ItemDetailsHeaderTagListText
 // (FUNC_HasDefaults)
 // Parameters:

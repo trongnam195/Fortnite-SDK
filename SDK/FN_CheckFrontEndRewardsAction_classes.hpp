@@ -31,6 +31,7 @@ public:
 	}
 
 
+	void HandleRewardsIgnored(class UFrontEndRewards_Widget_C* RewardsWidget);
 	bool CanShowFrontendRewards();
 	void Is_FrontEndRewards_Running(bool* bRunning);
 	void PopulateMissionAlertRewards();

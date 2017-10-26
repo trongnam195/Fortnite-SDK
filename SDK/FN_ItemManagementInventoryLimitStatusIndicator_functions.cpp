@@ -66,15 +66,15 @@ void UItemManagementInventoryLimitStatusIndicator_C::RefreshWorldInventoryStatus
 }
 
 
-// Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.TrackVaultInventory
+// Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.TrackAccountInventory
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
-void UItemManagementInventoryLimitStatusIndicator_C::TrackVaultInventory()
+void UItemManagementInventoryLimitStatusIndicator_C::TrackAccountInventory()
 {
 	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xdfa25ccc);
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6bac9eaf);
 
-	UItemManagementInventoryLimitStatusIndicator_C_TrackVaultInventory_Params params;
+	UItemManagementInventoryLimitStatusIndicator_C_TrackAccountInventory_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -193,6 +193,27 @@ void UItemManagementInventoryLimitStatusIndicator_C::HandleOutpostItemListChange
 	UItemManagementInventoryLimitStatusIndicator_C_HandleOutpostItemListChanged_Params params;
 	params.ItemsAdded = ItemsAdded;
 	params.ItemsRemoved = ItemsRemoved;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ItemManagementInventoryLimitStatusIndicator.ItemManagementInventoryLimitStatusIndicator_C.HandleDeployableBaseInventoryChanged
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class ADeployableBasePlot*     Plot                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UItemManagementInventoryLimitStatusIndicator_C::HandleDeployableBaseInventoryChanged(class ADeployableBasePlot* Plot)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4c8cd3af);
+
+	UItemManagementInventoryLimitStatusIndicator_C_HandleDeployableBaseInventoryChanged_Params params;
+	params.Plot = Plot;
 
 	auto flags = fn->FunctionFlags;
 

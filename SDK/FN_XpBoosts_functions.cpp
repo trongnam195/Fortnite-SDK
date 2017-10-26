@@ -183,15 +183,15 @@ void UXpBoosts_C::Construct()
 // Function XpBoosts.XpBoosts_C.Give Boost Clicked
 // (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl        Player_To_Boost                (CPF_Parm)
+// struct FUniqueNetIdRepl        Player_to_Boost                (CPF_Parm)
 
-void UXpBoosts_C::Give_Boost_Clicked(const struct FUniqueNetIdRepl& Player_To_Boost)
+void UXpBoosts_C::Give_Boost_Clicked(const struct FUniqueNetIdRepl& Player_to_Boost)
 {
 	static UFunction* fn = nullptr;
 	if (!fn) fn = UObject::FindObject<UFunction>(0x266b1a8a);
 
 	UXpBoosts_C_Give_Boost_Clicked_Params params;
-	params.Player_To_Boost = Player_To_Boost;
+	params.Player_to_Boost = Player_to_Boost;
 
 	auto flags = fn->FunctionFlags;
 

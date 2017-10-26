@@ -141,7 +141,7 @@ void UItemTransformSlotEntry_C::BndEvt__PanelButton_K2Node_ComponentBoundEvent_1
 
 
 // Function ItemTransformSlotEntry.ItemTransformSlotEntry_C.ExecuteUbergraph_ItemTransformSlotEntry
-// (FUNC_HasDefaults)
+// ()
 // Parameters:
 // int                            EntryPoint                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 

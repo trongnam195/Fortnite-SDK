@@ -18,7 +18,7 @@ class UTabGameOptionsHud_C : public UTabGameOptions_C
 {
 public:
 	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x02A8(0x0008) (CPF_Transient, CPF_DuplicateTransient)
-	class UCommonTextBlock*                            Tooltip_Display;                                          // 0x02B0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_DisableEditOnInstance, CPF_IsPlainOldData)
+	class UCommonTextBlock*                            TooltipDisplayReference;                                  // 0x02B0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -28,7 +28,6 @@ public:
 	}
 
 
-	void Set_Settings_Tooltip(class UCommonTextBlock* Tooltip_To_Display);
 	void Construct();
 	void UpdateOptionsTab();
 	void CenterOnTab();

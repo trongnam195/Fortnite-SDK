@@ -30,24 +30,6 @@ void UAthenaQuickbarPrimary_C::HandleShowHideWeaponRail()
 }
 
 
-// Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.HandleUpdateSlots
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-
-void UAthenaQuickbarPrimary_C::HandleUpdateSlots()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x60707e8d);
-
-	UAthenaQuickbarPrimary_C_HandleUpdateSlots_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function AthenaQuickbarPrimary.AthenaQuickbarPrimary_C.HasOneNonHarvestWeapon
 // (FUNC_Private, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent, FUNC_BlueprintPure)
 // Parameters:

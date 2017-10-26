@@ -29,7 +29,6 @@ public:
 
 
 	void Construct();
-	void OnMissionSet();
 	void ExecuteUbergraph_MissionTrackerEntry(int EntryPoint);
 	void WidgetVisibilityChanged__DelegateSignature();
 };

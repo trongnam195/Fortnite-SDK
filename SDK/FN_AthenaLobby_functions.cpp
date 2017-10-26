@@ -12,6 +12,47 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function AthenaLobby.AthenaLobby_C.ShowModalNews
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaLobby_C::ShowModalNews()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd2e6124a);
+
+	UAthenaLobby_C_ShowModalNews_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.OnInputNews
+// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           bPassThrough                   (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UAthenaLobby_C::OnInputNews(bool* bPassThrough)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6a39c7b9);
+
+	UAthenaLobby_C_OnInputNews_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (bPassThrough != nullptr)
+		*bPassThrough = params.bPassThrough;
+}
+
+
 // Function AthenaLobby.AthenaLobby_C.OnInputFillChangeGamepad
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -675,6 +716,42 @@ void UAthenaLobby_C::DialogResult_156754AE468EF93DCA2009A412591BA7(EFortDialogRe
 }
 
 
+// Function AthenaLobby.AthenaLobby_C.OnFailure_DA5E62624D068772EA890193344BA4AE
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaLobby_C::OnFailure_DA5E62624D068772EA890193344BA4AE()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xda4df71c);
+
+	UAthenaLobby_C_OnFailure_DA5E62624D068772EA890193344BA4AE_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.OnSuccess_DA5E62624D068772EA890193344BA4AE
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaLobby_C::OnSuccess_DA5E62624D068772EA890193344BA4AE()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x45f9f71);
+
+	UAthenaLobby_C_OnSuccess_DA5E62624D068772EA890193344BA4AE_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function AthenaLobby.AthenaLobby_C.BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature
 // (FUNC_BlueprintEvent)
 // Parameters:
@@ -698,24 +775,6 @@ void UAthenaLobby_C::BndEvt__SwitcherDetails_K2Node_ComponentBoundEvent_0_OnActi
 }
 
 
-// Function AthenaLobby.AthenaLobby_C.Event Abandon
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-
-void UAthenaLobby_C::Event_Abandon()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x73d592fa);
-
-	UAthenaLobby_C_Event_Abandon_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function AthenaLobby.AthenaLobby_C.OnEndCursorOverPlayer
 // (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
 // Parameters:
@@ -728,6 +787,24 @@ void UAthenaLobby_C::OnEndCursorOverPlayer(int* PlayerIndex)
 
 	UAthenaLobby_C_OnEndCursorOverPlayer_Params params;
 	params.PlayerIndex = PlayerIndex;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.Event Abandon
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaLobby_C::Event_Abandon()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x73d592fa);
+
+	UAthenaLobby_C_Event_Abandon_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -812,24 +889,6 @@ void UAthenaLobby_C::Construct()
 }
 
 
-// Function AthenaLobby.AthenaLobby_C.OnActivated
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-
-void UAthenaLobby_C::OnActivated()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x5950ed2d);
-
-	UAthenaLobby_C_OnActivated_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function AthenaLobby.AthenaLobby_C.OnPlayerClicked
 // (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -881,6 +940,24 @@ void UAthenaLobby_C::BndEvt__PlayerPanel_K2Node_ComponentBoundEvent_308_OnClosed
 	if (!fn) fn = UObject::FindObject<UFunction>(0x6f213252);
 
 	UAthenaLobby_C_BndEvt__PlayerPanel_K2Node_ComponentBoundEvent_308_OnClosed__DelegateSignature_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function AthenaLobby.AthenaLobby_C.OnActivated
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UAthenaLobby_C::OnActivated()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5950ed2d);
+
+	UAthenaLobby_C_OnActivated_Params params;
 
 	auto flags = fn->FunctionFlags;
 

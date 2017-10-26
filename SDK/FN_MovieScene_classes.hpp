@@ -195,7 +195,9 @@ public:
 	unsigned char                                      bIsActive : 1;                                            // 0x00C4(0x0001) (CPF_Edit)
 	unsigned char                                      bIsLocked : 1;                                            // 0x00C4(0x0001) (CPF_Edit)
 	unsigned char                                      bIsInfinite : 1;                                          // 0x00C4(0x0001) (CPF_Edit)
-	unsigned char                                      UnknownData01[0xB];                                       // 0x00C5(0x000B) MISSED OFFSET
+	unsigned char                                      UnknownData01[0x3];                                       // 0x00C5(0x0003) MISSED OFFSET
+	float                                              PrerollTime;                                              // 0x00C8(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              PostrollTime;                                             // 0x00CC(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{

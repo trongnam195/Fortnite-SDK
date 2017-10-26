@@ -12,6 +12,24 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.TryAndShowDropTarget
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaInventoryEquipSlot_C::TryAndShowDropTarget()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcde33084);
+
+	UAthenaInventoryEquipSlot_C_TryAndShowDropTarget_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function AthenaInventoryEquipSlot.AthenaInventoryEquipSlot_C.IsSelected
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:

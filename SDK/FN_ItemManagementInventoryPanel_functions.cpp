@@ -83,68 +83,6 @@ void UItemManagementInventoryPanel_C::SelectTrapByTag(const struct FGameplayTag&
 }
 
 
-// Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.HandleMulchQuantityCallback
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// int                            Quantity                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class UFortItem*               Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UItemManagementInventoryPanel_C::HandleMulchQuantityCallback(int Quantity, class UFortItem* Item)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xcd3e23da);
-
-	UItemManagementInventoryPanel_C_HandleMulchQuantityCallback_Params params;
-	params.Quantity = Quantity;
-	params.Item = Item;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.DestroyMulchQuantitySelector
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-
-void UItemManagementInventoryPanel_C::DestroyMulchQuantitySelector()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x6eb1c2a6);
-
-	UItemManagementInventoryPanel_C_DestroyMulchQuantitySelector_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.CreateMulchQuantitySelector
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// class UFortItem*               Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UItemManagementInventoryPanel_C::CreateMulchQuantitySelector(class UFortItem* Item)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x7674551e);
-
-	UItemManagementInventoryPanel_C_CreateMulchQuantitySelector_Params params;
-	params.Item = Item;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.HideEquipSlotDragTargets
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
@@ -494,27 +432,6 @@ void UItemManagementInventoryPanel_C::HandleQuickBarChangedBP(EFortQuickBars* Qu
 
 	UItemManagementInventoryPanel_C_HandleQuickBarChangedBP_Params params;
 	params.QuickBarType = QuickBarType;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemManagementInventoryPanel.ItemManagementInventoryPanel_C.HandleMulchQuantitySelection
-// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// class UFortItem**              Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UItemManagementInventoryPanel_C::HandleMulchQuantitySelection(class UFortItem** Item)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x10453637);
-
-	UItemManagementInventoryPanel_C_HandleMulchQuantitySelection_Params params;
-	params.Item = Item;
 
 	auto flags = fn->FunctionFlags;
 

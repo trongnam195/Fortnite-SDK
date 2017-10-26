@@ -30,24 +30,6 @@ void AFortnitePartyBackdrop_Camera_C::UserConstructionScript()
 }
 
 
-// Function FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.OnDeactivated
-// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-
-void AFortnitePartyBackdrop_Camera_C::OnDeactivated()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x38d54fd8);
-
-	AFortnitePartyBackdrop_Camera_C_OnDeactivated_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.OnActivated
 // (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
 
@@ -57,6 +39,24 @@ void AFortnitePartyBackdrop_Camera_C::OnActivated()
 	if (!fn) fn = UObject::FindObject<UFunction>(0x6c7f4a53);
 
 	AFortnitePartyBackdrop_Camera_C_OnActivated_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.OnDeactivated
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void AFortnitePartyBackdrop_Camera_C::OnDeactivated()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x38d54fd8);
+
+	AFortnitePartyBackdrop_Camera_C_OnDeactivated_Params params;
 
 	auto flags = fn->FunctionFlags;
 

@@ -12,6 +12,129 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.Orphaned
+// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           IsOrphaned                     (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class AFortPawn*               AttachedPawn                   (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AEnemyPawn_Parent_C::Orphaned(bool* IsOrphaned, class AFortPawn** AttachedPawn)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6b808520);
+
+	AEnemyPawn_Parent_C_Orphaned_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (IsOrphaned != nullptr)
+		*IsOrphaned = params.IsOrphaned;
+	if (AttachedPawn != nullptr)
+		*AttachedPawn = params.AttachedPawn;
+}
+
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.OnRep_SpecialEventHalloweenPumpkinHeadApplied
+// (FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void AEnemyPawn_Parent_C::OnRep_SpecialEventHalloweenPumpkinHeadApplied()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6f5753df);
+
+	AEnemyPawn_Parent_C_OnRep_SpecialEventHalloweenPumpkinHeadApplied_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SpecialEventHalloweenPumpkinHeadHusk
+// (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           ApplyPumpkinHeadMesh           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           DebugApplicationOrRemoval_     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AEnemyPawn_Parent_C::SpecialEventHalloweenPumpkinHeadHusk(bool ApplyPumpkinHeadMesh, bool DebugApplicationOrRemoval_)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x69a702e8);
+
+	AEnemyPawn_Parent_C_SpecialEventHalloweenPumpkinHeadHusk_Params params;
+	params.ApplyPumpkinHeadMesh = ApplyPumpkinHeadMesh;
+	params.DebugApplicationOrRemoval_ = DebugApplicationOrRemoval_;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SpawnMeshAttachedToCharacter
+// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UStaticMesh*             Static_Mesh                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName                   Socket_Name                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FTransform              Relative_Transform             (CPF_Parm, CPF_IsPlainOldData)
+// bool                           Absolute_Location              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           Absolute_Rotation              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           Absolute_Scale                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UStaticMeshComponent*    Static_Mesh_Component_Reference (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AEnemyPawn_Parent_C::SpawnMeshAttachedToCharacter(class UStaticMesh* Static_Mesh, const struct FName& Socket_Name, const struct FTransform& Relative_Transform, bool Absolute_Location, bool Absolute_Rotation, bool Absolute_Scale, class UStaticMeshComponent** Static_Mesh_Component_Reference)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xbb824e17);
+
+	AEnemyPawn_Parent_C_SpawnMeshAttachedToCharacter_Params params;
+	params.Static_Mesh = Static_Mesh;
+	params.Socket_Name = Socket_Name;
+	params.Relative_Transform = Relative_Transform;
+	params.Absolute_Location = Absolute_Location;
+	params.Absolute_Rotation = Absolute_Rotation;
+	params.Absolute_Scale = Absolute_Scale;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (Static_Mesh_Component_Reference != nullptr)
+		*Static_Mesh_Component_Reference = params.Static_Mesh_Component_Reference;
+}
+
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.RestorePreviousMaterialOnCharacterMesh
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// float                          Delay_in_Seconds               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AEnemyPawn_Parent_C::RestorePreviousMaterialOnCharacterMesh(float Delay_in_Seconds)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc98fb56c);
+
+	AEnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterMesh_Params params;
+	params.Delay_in_Seconds = Delay_in_Seconds;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.CharacterSpawnInSafetyCheck
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
@@ -76,30 +199,49 @@ void AEnemyPawn_Parent_C::SetCharacterFresnelGlowColors(const struct FLinearColo
 }
 
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SpawnParticleSystemAttachedToCharacterMesh
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SpawnParticleSystemOnCharacterMesh
+// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
-// class UParticleSystem*         Particle_System                (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FName                   Attach_Point_Name              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UParticleSystem*         ParticleSystemTemplate         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UParticleSystemComponent* ParticleSystemComponentReferenceVar (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName                   AttachPointName                (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // struct FVector                 Location                       (CPF_Parm, CPF_IsPlainOldData)
 // struct FRotator                Rotation                       (CPF_Parm, CPF_IsPlainOldData)
+// TArray<struct FParticleSysParam> InstanceParameters             (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReferenceParm)
+// bool                           AutoActivate                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           AutoDestroy                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           AbsoluteLocation               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           AbsoluteRotation               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           AbsoluteScale                  (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UParticleSystemComponent* PSComponentReference           (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void AEnemyPawn_Parent_C::SpawnParticleSystemAttachedToCharacterMesh(class UParticleSystem* Particle_System, const struct FName& Attach_Point_Name, const struct FVector& Location, const struct FRotator& Rotation)
+void AEnemyPawn_Parent_C::SpawnParticleSystemOnCharacterMesh(class UParticleSystem* ParticleSystemTemplate, class UParticleSystemComponent* ParticleSystemComponentReferenceVar, const struct FName& AttachPointName, const struct FVector& Location, const struct FRotator& Rotation, bool AutoActivate, bool AutoDestroy, bool AbsoluteLocation, bool AbsoluteRotation, bool AbsoluteScale, TArray<struct FParticleSysParam>* InstanceParameters, class UParticleSystemComponent** PSComponentReference)
 {
 	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x2b6a2b02);
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf1c5126e);
 
-	AEnemyPawn_Parent_C_SpawnParticleSystemAttachedToCharacterMesh_Params params;
-	params.Particle_System = Particle_System;
-	params.Attach_Point_Name = Attach_Point_Name;
+	AEnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh_Params params;
+	params.ParticleSystemTemplate = ParticleSystemTemplate;
+	params.ParticleSystemComponentReferenceVar = ParticleSystemComponentReferenceVar;
+	params.AttachPointName = AttachPointName;
 	params.Location = Location;
 	params.Rotation = Rotation;
+	params.AutoActivate = AutoActivate;
+	params.AutoDestroy = AutoDestroy;
+	params.AbsoluteLocation = AbsoluteLocation;
+	params.AbsoluteRotation = AbsoluteRotation;
+	params.AbsoluteScale = AbsoluteScale;
 
 	auto flags = fn->FunctionFlags;
 
 	UObject::ProcessEvent(fn, &params);
 
 	fn->FunctionFlags = flags;
+
+	if (InstanceParameters != nullptr)
+		*InstanceParameters = params.InstanceParameters;
+	if (PSComponentReference != nullptr)
+		*PSComponentReference = params.PSComponentReference;
 }
 
 
@@ -163,24 +305,6 @@ void AEnemyPawn_Parent_C::OverrideMaterialAndCopyParametersOnCharacterMesh(class
 }
 
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.OnRep_PumpkinHeadActiveGE
-// (FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-
-void AEnemyPawn_Parent_C::OnRep_PumpkinHeadActiveGE()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x1e0b343e);
-
-	AEnemyPawn_Parent_C_OnRep_PumpkinHeadActiveGE_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.PlayAdditiveHitReacts
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -204,18 +328,18 @@ void AEnemyPawn_Parent_C::PlayAdditiveHitReacts(const struct FVector& Hit_Direct
 }
 
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetActiveElementalAmbientParticles
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetActiveParticlesOnCharacterMesh
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
 // bool                           Active                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // bool                           Reset                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void AEnemyPawn_Parent_C::SetActiveElementalAmbientParticles(bool Active, bool Reset)
+void AEnemyPawn_Parent_C::SetActiveParticlesOnCharacterMesh(bool Active, bool Reset)
 {
 	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xaac26335);
+	if (!fn) fn = UObject::FindObject<UFunction>(0x2aaccd6d);
 
-	AEnemyPawn_Parent_C_SetActiveElementalAmbientParticles_Params params;
+	AEnemyPawn_Parent_C_SetActiveParticlesOnCharacterMesh_Params params;
 	params.Active = Active;
 	params.Reset = Reset;
 
@@ -227,18 +351,18 @@ void AEnemyPawn_Parent_C::SetActiveElementalAmbientParticles(bool Active, bool R
 }
 
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetScalarParameterOnAllMIDs
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetScalarParameterOnAllCharacterMIDs
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
 // struct FName                   Parameter_Name                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // float                          Scalar_Value                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 
-void AEnemyPawn_Parent_C::SetScalarParameterOnAllMIDs(const struct FName& Parameter_Name, float Scalar_Value)
+void AEnemyPawn_Parent_C::SetScalarParameterOnAllCharacterMIDs(const struct FName& Parameter_Name, float Scalar_Value)
 {
 	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xf0bbbcd9);
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ba30180);
 
-	AEnemyPawn_Parent_C_SetScalarParameterOnAllMIDs_Params params;
+	AEnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs_Params params;
 	params.Parameter_Name = Parameter_Name;
 	params.Scalar_Value = Scalar_Value;
 
@@ -250,18 +374,18 @@ void AEnemyPawn_Parent_C::SetScalarParameterOnAllMIDs(const struct FName& Parame
 }
 
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetVectorParameterOnAllMIDs
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetVectorParameterOnAllCharacterMIDs
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
 // struct FName                   Parameter_Name                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // struct FLinearColor            Linear_Color                   (CPF_Parm, CPF_IsPlainOldData)
 
-void AEnemyPawn_Parent_C::SetVectorParameterOnAllMIDs(const struct FName& Parameter_Name, const struct FLinearColor& Linear_Color)
+void AEnemyPawn_Parent_C::SetVectorParameterOnAllCharacterMIDs(const struct FName& Parameter_Name, const struct FLinearColor& Linear_Color)
 {
 	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xdd996f14);
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a1382d3);
 
-	AEnemyPawn_Parent_C_SetVectorParameterOnAllMIDs_Params params;
+	AEnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs_Params params;
 	params.Parameter_Name = Parameter_Name;
 	params.Linear_Color = Linear_Color;
 
@@ -571,33 +695,15 @@ void AEnemyPawn_Parent_C::BeginDeathFX()
 }
 
 
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.DeactivateEffectsPreDespawn
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.PostSpawnIn
 // (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
-void AEnemyPawn_Parent_C::DeactivateEffectsPreDespawn()
+void AEnemyPawn_Parent_C::PostSpawnIn()
 {
 	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x9e39eea4);
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5a69b49);
 
-	AEnemyPawn_Parent_C_DeactivateEffectsPreDespawn_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function EnemyPawn_Parent.EnemyPawn_Parent_C.ActivateEffectsPostSpawnIn
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-
-void AEnemyPawn_Parent_C::ActivateEffectsPostSpawnIn()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x9a29481a);
-
-	AEnemyPawn_Parent_C_ActivateEffectsPostSpawnIn_Params params;
+	AEnemyPawn_Parent_C_PostSpawnIn_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -778,6 +884,66 @@ void AEnemyPawn_Parent_C::OnEndSleepEffects()
 	if (!fn) fn = UObject::FindObject<UFunction>(0xdab91154);
 
 	AEnemyPawn_Parent_C_OnEndSleepEffects_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.RestorePreviousMaterialDelayCompleted
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void AEnemyPawn_Parent_C::RestorePreviousMaterialDelayCompleted()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6cdd70a9);
+
+	AEnemyPawn_Parent_C_RestorePreviousMaterialDelayCompleted_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.RestorePreviousMaterialDelay
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// float                          Delay_Amount                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AEnemyPawn_Parent_C::RestorePreviousMaterialDelay(float Delay_Amount)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd42e251a);
+
+	AEnemyPawn_Parent_C_RestorePreviousMaterialDelay_Params params;
+	params.Delay_Amount = Delay_Amount;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function EnemyPawn_Parent.EnemyPawn_Parent_C.OnCheatUpdateSpecialEventGE
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// bool*                          bShouldUseSpecialEventGE       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AEnemyPawn_Parent_C::OnCheatUpdateSpecialEventGE(bool* bShouldUseSpecialEventGE)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd8c05187);
+
+	AEnemyPawn_Parent_C_OnCheatUpdateSpecialEventGE_Params params;
+	params.bShouldUseSpecialEventGE = bShouldUseSpecialEventGE;
 
 	auto flags = fn->FunctionFlags;
 

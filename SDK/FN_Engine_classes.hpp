@@ -1145,119 +1145,6 @@ public:
 };
 
 
-// Class Engine.AnimNotify
-// 0x0010 (0x0038 - 0x0028)
-class UAnimNotify : public UObject
-{
-public:
-	unsigned char                                      UnknownData00[0x10];                                      // 0x0028(0x0010) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr) ptr = UObject::FindClass(0xff5f5471);
-		return ptr;
-	}
-
-
-	bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation);
-	struct FString GetNotifyName();
-};
-
-
-// Class Engine.AnimNotify_PlaySound
-// 0x0020 (0x0058 - 0x0038)
-class UAnimNotify_PlaySound : public UAnimNotify
-{
-public:
-	class USoundBase*                                  Sound;                                                    // 0x0038(0x0008) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              VolumeMultiplier;                                         // 0x0040(0x0004) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              PitchMultiplier;                                          // 0x0044(0x0004) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      bFollow : 1;                                              // 0x0048(0x0001) (CPF_Edit, CPF_BlueprintReadOnly)
-	unsigned char                                      UnknownData00[0x7];                                       // 0x0049(0x0007) MISSED OFFSET
-	struct FName                                       AttachName;                                               // 0x0050(0x0008) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr) ptr = UObject::FindClass(0x2ed1b44f);
-		return ptr;
-	}
-
-};
-
-
-// Class Engine.AnimNotify_PlayParticleEffect
-// 0x0048 (0x0080 - 0x0038)
-class UAnimNotify_PlayParticleEffect : public UAnimNotify
-{
-public:
-	class UParticleSystem*                             PSTemplate;                                               // 0x0038(0x0008) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	struct FVector                                     LocationOffset;                                           // 0x0040(0x000C) (CPF_Edit, CPF_BlueprintReadOnly, CPF_IsPlainOldData)
-	struct FRotator                                    RotationOffset;                                           // 0x004C(0x000C) (CPF_Edit, CPF_BlueprintReadOnly, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x18];                                      // 0x0058(0x0018) MISSED OFFSET
-	unsigned char                                      Attached : 1;                                             // 0x0070(0x0001) (CPF_Edit, CPF_BlueprintReadOnly)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0071(0x0007) MISSED OFFSET
-	struct FName                                       SocketName;                                               // 0x0078(0x0008) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr) ptr = UObject::FindClass(0x5ef747ab);
-		return ptr;
-	}
-
-};
-
-
-// Class Engine.AnimNotifyState
-// 0x0008 (0x0030 - 0x0028)
-class UAnimNotifyState : public UObject
-{
-public:
-	unsigned char                                      UnknownData00[0x8];                                       // 0x0028(0x0008) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr) ptr = UObject::FindClass(0x6080b504);
-		return ptr;
-	}
-
-
-	bool Received_NotifyTick(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float FrameDeltaTime);
-	bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation);
-	bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration);
-	struct FString GetNotifyName();
-};
-
-
-// Class Engine.AssetManager
-// 0x0388 (0x03B0 - 0x0028)
-class UAssetManager : public UObject
-{
-public:
-	unsigned char                                      UnknownData00[0x270];                                     // 0x0028(0x0270) MISSED OFFSET
-	TArray<class UObject*>                             ObjectReferenceList;                                      // 0x0298(0x0010) (CPF_ZeroConstructor)
-	bool                                               bIsGlobalAsyncScanEnvironment;                            // 0x02A8(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bShouldKeepHardRefs;                                      // 0x02A9(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bShouldGuessTypeAndName;                                  // 0x02AA(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bShouldUseSynchronousLoad;                                // 0x02AB(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bIsBulkScanning;                                          // 0x02AC(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bIsManagementDatabaseCurrent;                             // 0x02AD(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bUpdateManagementDatabaseAfterScan;                       // 0x02AE(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x101];                                     // 0x02AF(0x0101) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr) ptr = UObject::FindClass(0x5a6aca20);
-		return ptr;
-	}
-
-};
-
-
 // Class Engine.BlueprintAsyncActionBase
 // 0x0000 (0x0028 - 0x0028)
 class UBlueprintAsyncActionBase : public UObject
@@ -1554,6 +1441,225 @@ public:
 	{
 		static UClass* ptr = nullptr;
 		if (!ptr) ptr = UObject::FindClass(0x749a39fd);
+		return ptr;
+	}
+
+};
+
+
+// Class Engine.GameModeBase
+// 0x00A0 (0x0428 - 0x0388)
+class AGameModeBase : public AInfo
+{
+public:
+	struct FString                                     OptionsString;                                            // 0x0388(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
+	class UClass*                                      GameSessionClass;                                         // 0x0398(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UClass*                                      GameStateClass;                                           // 0x03A0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_NoClear, CPF_IsPlainOldData)
+	class UClass*                                      PlayerControllerClass;                                    // 0x03A8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_NoClear, CPF_IsPlainOldData)
+	class UClass*                                      PlayerStateClass;                                         // 0x03B0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_NoClear, CPF_IsPlainOldData)
+	class UClass*                                      HUDClass;                                                 // 0x03B8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UClass*                                      DefaultPawnClass;                                         // 0x03C0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UClass*                                      SpectatorClass;                                           // 0x03C8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_NoClear, CPF_IsPlainOldData)
+	class UClass*                                      ReplaySpectatorPlayerControllerClass;                     // 0x03D0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_NoClear, CPF_IsPlainOldData)
+	class UClass*                                      ServerStatReplicatorClass;                                // 0x03D8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_NoClear, CPF_IsPlainOldData)
+	class AGameSession*                                GameSession;                                              // 0x03E0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class AGameStateBase*                              GameState;                                                // 0x03E8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class AServerStatReplicator*                       ServerStatReplicator;                                     // 0x03F0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	struct FText                                       DefaultPlayerName;                                        // 0x03F8(0x0018) (CPF_Edit)
+	unsigned char                                      bUseSeamlessTravel : 1;                                   // 0x0410(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      bStartPlayersAsSpectators : 1;                            // 0x0410(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      bPauseable : 1;                                           // 0x0410(0x0001) (CPF_Edit, CPF_BlueprintVisible)
+	unsigned char                                      UnknownData00[0x17];                                      // 0x0411(0x0017) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x79c977b5);
+		return ptr;
+	}
+
+
+	void StartPlay();
+	class APawn* SpawnDefaultPawnFor(class AController* NewPlayer, class AActor* StartSpot);
+	class APawn* SpawnDefaultPawnAtTransform(class AController* NewPlayer, const struct FTransform& SpawnTransform);
+	bool ShouldReset(class AActor* ActorToReset);
+	void ReturnToMainMenuHost();
+	void RestartPlayerAtTransform(class AController* NewPlayer, const struct FTransform& SpawnTransform);
+	void RestartPlayerAtPlayerStart(class AController* NewPlayer, class AActor* StartSpot);
+	void RestartPlayer(class AController* NewPlayer);
+	void ResetLevel();
+	bool PlayerCanRestart(class APlayerController* Player);
+	bool MustSpectate(class APlayerController* NewPlayerController);
+	void K2_PostLogin(class APlayerController* NewPlayer);
+	void K2_OnSwapPlayerControllers(class APlayerController* OldPC, class APlayerController* NewPC);
+	void K2_OnRestartPlayer(class AController* NewPlayer);
+	void K2_OnLogout(class AController* ExitingController);
+	void K2_OnChangeName(class AController* Other, const struct FString& NewName, bool bNameChange);
+	class AActor* K2_FindPlayerStart(class AController* Player, const struct FString& IncomingName);
+	void InitStartSpot(class AActor* StartSpot, class AController* NewPlayer);
+	void InitializeHUDForPlayer(class APlayerController* NewPlayer);
+	bool HasMatchStarted();
+	void HandleStartingNewPlayer(class APlayerController* NewPlayer);
+	int GetNumSpectators();
+	int GetNumPlayers();
+	class UClass* GetDefaultPawnClassForController(class AController* InController);
+	class AActor* FindPlayerStart(class AController* Player, const struct FString& IncomingName);
+	class AActor* ChoosePlayerStart(class AController* Player);
+	void ChangeName(class AController* Controller, const struct FString& NewName, bool bNameChange);
+	bool CanSpectate(class APlayerController* Viewer, class APlayerState* ViewTarget);
+};
+
+
+// Class Engine.GameMode
+// 0x0048 (0x0470 - 0x0428)
+class AGameMode : public AGameModeBase
+{
+public:
+	struct FName                                       MatchState;                                               // 0x0428(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	unsigned char                                      bDelayedStart : 1;                                        // 0x0430(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
+	unsigned char                                      UnknownData00[0x3];                                       // 0x0431(0x0003) MISSED OFFSET
+	int                                                NumSpectators;                                            // 0x0434(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                NumPlayers;                                               // 0x0438(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                NumBots;                                                  // 0x043C(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              MinRespawnDelay;                                          // 0x0440(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                NumTravellingPlayers;                                     // 0x0444(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	class UClass*                                      EngineMessageClass;                                       // 0x0448(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	TArray<class APlayerState*>                        InactivePlayerArray;                                      // 0x0450(0x0010) (CPF_ZeroConstructor)
+	float                                              InactivePlayerStateLifeSpan;                              // 0x0460(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	int                                                MaxInactivePlayers;                                       // 0x0464(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bHandleDedicatedServerReplays;                            // 0x0468(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0469(0x0007) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x57a5074e);
+		return ptr;
+	}
+
+
+	void StartMatch();
+	void SetBandwidthLimit(float AsyncIOBandwidthLimit);
+	void Say(const struct FString& Msg);
+	void RestartGame();
+	bool ReadyToStartMatch();
+	bool ReadyToEndMatch();
+	void K2_OnSetMatchState(const struct FName& NewState);
+	bool IsMatchInProgress();
+	bool HasMatchEnded();
+	struct FName GetMatchState();
+	void EndMatch();
+	void AbortMatch();
+};
+
+
+// Class Engine.AnimNotify
+// 0x0010 (0x0038 - 0x0028)
+class UAnimNotify : public UObject
+{
+public:
+	unsigned char                                      UnknownData00[0x10];                                      // 0x0028(0x0010) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0xff5f5471);
+		return ptr;
+	}
+
+
+	bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation);
+	struct FString GetNotifyName();
+};
+
+
+// Class Engine.AnimNotify_PlaySound
+// 0x0020 (0x0058 - 0x0038)
+class UAnimNotify_PlaySound : public UAnimNotify
+{
+public:
+	class USoundBase*                                  Sound;                                                    // 0x0038(0x0008) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              VolumeMultiplier;                                         // 0x0040(0x0004) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	float                                              PitchMultiplier;                                          // 0x0044(0x0004) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      bFollow : 1;                                              // 0x0048(0x0001) (CPF_Edit, CPF_BlueprintReadOnly)
+	unsigned char                                      UnknownData00[0x7];                                       // 0x0049(0x0007) MISSED OFFSET
+	struct FName                                       AttachName;                                               // 0x0050(0x0008) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x2ed1b44f);
+		return ptr;
+	}
+
+};
+
+
+// Class Engine.AnimNotify_PlayParticleEffect
+// 0x0048 (0x0080 - 0x0038)
+class UAnimNotify_PlayParticleEffect : public UAnimNotify
+{
+public:
+	class UParticleSystem*                             PSTemplate;                                               // 0x0038(0x0008) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+	struct FVector                                     LocationOffset;                                           // 0x0040(0x000C) (CPF_Edit, CPF_BlueprintReadOnly, CPF_IsPlainOldData)
+	struct FRotator                                    RotationOffset;                                           // 0x004C(0x000C) (CPF_Edit, CPF_BlueprintReadOnly, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData00[0x18];                                      // 0x0058(0x0018) MISSED OFFSET
+	unsigned char                                      Attached : 1;                                             // 0x0070(0x0001) (CPF_Edit, CPF_BlueprintReadOnly)
+	unsigned char                                      UnknownData01[0x7];                                       // 0x0071(0x0007) MISSED OFFSET
+	struct FName                                       SocketName;                                               // 0x0078(0x0008) (CPF_Edit, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5ef747ab);
+		return ptr;
+	}
+
+};
+
+
+// Class Engine.AnimNotifyState
+// 0x0008 (0x0030 - 0x0028)
+class UAnimNotifyState : public UObject
+{
+public:
+	unsigned char                                      UnknownData00[0x8];                                       // 0x0028(0x0008) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x6080b504);
+		return ptr;
+	}
+
+
+	bool Received_NotifyTick(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float FrameDeltaTime);
+	bool Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation);
+	bool Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration);
+	struct FString GetNotifyName();
+};
+
+
+// Class Engine.AssetManager
+// 0x0388 (0x03B0 - 0x0028)
+class UAssetManager : public UObject
+{
+public:
+	unsigned char                                      UnknownData00[0x270];                                     // 0x0028(0x0270) MISSED OFFSET
+	TArray<class UObject*>                             ObjectReferenceList;                                      // 0x0298(0x0010) (CPF_ZeroConstructor)
+	bool                                               bIsGlobalAsyncScanEnvironment;                            // 0x02A8(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bShouldKeepHardRefs;                                      // 0x02A9(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bShouldGuessTypeAndName;                                  // 0x02AA(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bShouldUseSynchronousLoad;                                // 0x02AB(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bIsBulkScanning;                                          // 0x02AC(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bIsManagementDatabaseCurrent;                             // 0x02AD(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	bool                                               bUpdateManagementDatabaseAfterScan;                       // 0x02AE(0x0001) (CPF_ZeroConstructor, CPF_IsPlainOldData)
+	unsigned char                                      UnknownData01[0x101];                                     // 0x02AF(0x0101) MISSED OFFSET
+
+	static UClass* StaticClass()
+	{
+		static UClass* ptr = nullptr;
+		if (!ptr) ptr = UObject::FindClass(0x5a6aca20);
 		return ptr;
 	}
 
@@ -1976,112 +2082,6 @@ public:
 	void BugItStringCreator(const struct FVector& ViewLocation, const struct FRotator& ViewRotation, struct FString* GoString, struct FString* LocString);
 	void BugItGo(float X, float Y, float Z, float Pitch, float Yaw, float Roll);
 	void BugIt(const struct FString& ScreenShotDescription);
-};
-
-
-// Class Engine.GameModeBase
-// 0x00A0 (0x0428 - 0x0388)
-class AGameModeBase : public AInfo
-{
-public:
-	struct FString                                     OptionsString;                                            // 0x0388(0x0010) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor)
-	class UClass*                                      GameSessionClass;                                         // 0x0398(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UClass*                                      GameStateClass;                                           // 0x03A0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_NoClear, CPF_IsPlainOldData)
-	class UClass*                                      PlayerControllerClass;                                    // 0x03A8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_NoClear, CPF_IsPlainOldData)
-	class UClass*                                      PlayerStateClass;                                         // 0x03B0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_NoClear, CPF_IsPlainOldData)
-	class UClass*                                      HUDClass;                                                 // 0x03B8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UClass*                                      DefaultPawnClass;                                         // 0x03C0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UClass*                                      SpectatorClass;                                           // 0x03C8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_NoClear, CPF_IsPlainOldData)
-	class UClass*                                      ReplaySpectatorPlayerControllerClass;                     // 0x03D0(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_NoClear, CPF_IsPlainOldData)
-	class UClass*                                      ServerStatReplicatorClass;                                // 0x03D8(0x0008) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_NoClear, CPF_IsPlainOldData)
-	class AGameSession*                                GameSession;                                              // 0x03E0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class AGameStateBase*                              GameState;                                                // 0x03E8(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	class AServerStatReplicator*                       ServerStatReplicator;                                     // 0x03F0(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	struct FText                                       DefaultPlayerName;                                        // 0x03F8(0x0018) (CPF_Edit)
-	unsigned char                                      bUseSeamlessTravel : 1;                                   // 0x0410(0x0001) (CPF_Edit, CPF_BlueprintVisible)
-	unsigned char                                      bStartPlayersAsSpectators : 1;                            // 0x0410(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      bPauseable : 1;                                           // 0x0410(0x0001) (CPF_Edit, CPF_BlueprintVisible)
-	unsigned char                                      UnknownData00[0x17];                                      // 0x0411(0x0017) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr) ptr = UObject::FindClass(0x79c977b5);
-		return ptr;
-	}
-
-
-	void StartPlay();
-	class APawn* SpawnDefaultPawnFor(class AController* NewPlayer, class AActor* StartSpot);
-	class APawn* SpawnDefaultPawnAtTransform(class AController* NewPlayer, const struct FTransform& SpawnTransform);
-	bool ShouldReset(class AActor* ActorToReset);
-	void ReturnToMainMenuHost();
-	void RestartPlayerAtTransform(class AController* NewPlayer, const struct FTransform& SpawnTransform);
-	void RestartPlayerAtPlayerStart(class AController* NewPlayer, class AActor* StartSpot);
-	void RestartPlayer(class AController* NewPlayer);
-	void ResetLevel();
-	bool PlayerCanRestart(class APlayerController* Player);
-	bool MustSpectate(class APlayerController* NewPlayerController);
-	void K2_PostLogin(class APlayerController* NewPlayer);
-	void K2_OnSwapPlayerControllers(class APlayerController* OldPC, class APlayerController* NewPC);
-	void K2_OnRestartPlayer(class AController* NewPlayer);
-	void K2_OnLogout(class AController* ExitingController);
-	void K2_OnChangeName(class AController* Other, const struct FString& NewName, bool bNameChange);
-	class AActor* K2_FindPlayerStart(class AController* Player, const struct FString& IncomingName);
-	void InitStartSpot(class AActor* StartSpot, class AController* NewPlayer);
-	void InitializeHUDForPlayer(class APlayerController* NewPlayer);
-	bool HasMatchStarted();
-	void HandleStartingNewPlayer(class APlayerController* NewPlayer);
-	int GetNumSpectators();
-	int GetNumPlayers();
-	class UClass* GetDefaultPawnClassForController(class AController* InController);
-	class AActor* FindPlayerStart(class AController* Player, const struct FString& IncomingName);
-	class AActor* ChoosePlayerStart(class AController* Player);
-	void ChangeName(class AController* Controller, const struct FString& NewName, bool bNameChange);
-	bool CanSpectate(class APlayerController* Viewer, class APlayerState* ViewTarget);
-};
-
-
-// Class Engine.GameMode
-// 0x0048 (0x0470 - 0x0428)
-class AGameMode : public AGameModeBase
-{
-public:
-	struct FName                                       MatchState;                                               // 0x0428(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
-	unsigned char                                      bDelayedStart : 1;                                        // 0x0430(0x0001) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly)
-	unsigned char                                      UnknownData00[0x3];                                       // 0x0431(0x0003) MISSED OFFSET
-	int                                                NumSpectators;                                            // 0x0434(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                NumPlayers;                                               // 0x0438(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                NumBots;                                                  // 0x043C(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	float                                              MinRespawnDelay;                                          // 0x0440(0x0004) (CPF_Edit, CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                NumTravellingPlayers;                                     // 0x0444(0x0004) (CPF_BlueprintVisible, CPF_BlueprintReadOnly, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	class UClass*                                      EngineMessageClass;                                       // 0x0448(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	TArray<class APlayerState*>                        InactivePlayerArray;                                      // 0x0450(0x0010) (CPF_ZeroConstructor)
-	float                                              InactivePlayerStateLifeSpan;                              // 0x0460(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	int                                                MaxInactivePlayers;                                       // 0x0464(0x0004) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
-	bool                                               bHandleDedicatedServerReplays;                            // 0x0468(0x0001) (CPF_ZeroConstructor, CPF_Config, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData01[0x7];                                       // 0x0469(0x0007) MISSED OFFSET
-
-	static UClass* StaticClass()
-	{
-		static UClass* ptr = nullptr;
-		if (!ptr) ptr = UObject::FindClass(0x57a5074e);
-		return ptr;
-	}
-
-
-	void StartMatch();
-	void SetBandwidthLimit(float AsyncIOBandwidthLimit);
-	void Say(const struct FString& Msg);
-	void RestartGame();
-	bool ReadyToStartMatch();
-	bool ReadyToEndMatch();
-	void K2_OnSetMatchState(const struct FName& NewState);
-	bool IsMatchInProgress();
-	bool HasMatchEnded();
-	struct FName GetMatchState();
-	void EndMatch();
-	void AbortMatch();
 };
 
 
@@ -11092,7 +11092,9 @@ class UActorChannel : public UChannel
 {
 public:
 	class AActor*                                      Actor;                                                    // 0x0068(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData00[0x1C0];                                     // 0x0070(0x01C0) MISSED OFFSET
+	unsigned char                                      UnknownData00[0xE0];                                      // 0x0070(0x00E0) MISSED OFFSET
+	TArray<class UObject*>                             CreateSubObjects;                                         // 0x0150(0x0010) (CPF_ZeroConstructor)
+	unsigned char                                      UnknownData01[0xD0];                                      // 0x0160(0x00D0) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -12535,7 +12537,7 @@ public:
 
 
 // Class Engine.NetConnection
-// 0x336F8 (0x33740 - 0x0048)
+// 0x33748 (0x33790 - 0x0048)
 class UNetConnection : public UPlayer
 {
 public:
@@ -12552,9 +12554,9 @@ public:
 	struct FUniqueNetIdRepl                            PlayerID;                                                 // 0x0150(0x0018)
 	unsigned char                                      UnknownData01[0x68];                                      // 0x0168(0x0068) MISSED OFFSET
 	double                                             LastReceiveTime;                                          // 0x01D0(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData02[0x33530];                                   // 0x01D8(0x33530) MISSED OFFSET
-	TArray<class UChannel*>                            ChannelsToTick;                                           // 0x33708(0x0010) (CPF_ZeroConstructor)
-	unsigned char                                      UnknownData03[0x28];                                      // 0x33718(0x0028) MISSED OFFSET
+	unsigned char                                      UnknownData02[0x33528];                                   // 0x01D8(0x33528) MISSED OFFSET
+	TArray<class UChannel*>                            ChannelsToTick;                                           // 0x33700(0x0010) (CPF_ZeroConstructor)
+	unsigned char                                      UnknownData03[0x80];                                      // 0x33710(0x0080) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -12567,11 +12569,11 @@ public:
 
 
 // Class Engine.DemoNetConnection
-// 0x0020 (0x33760 - 0x33740)
+// 0x0020 (0x337B0 - 0x33790)
 class UDemoNetConnection : public UNetConnection
 {
 public:
-	unsigned char                                      UnknownData00[0x20];                                      // 0x33740(0x0020) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x20];                                      // 0x33790(0x0020) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -12584,13 +12586,13 @@ public:
 
 
 // Class Engine.DemoNetDriver
-// 0x0520 (0x0930 - 0x0410)
+// 0x0590 (0x09A0 - 0x0410)
 class UDemoNetDriver : public UNetDriver
 {
 public:
 	unsigned char                                      UnknownData00[0xF8];                                      // 0x0410(0x00F8) MISSED OFFSET
 	TMap<struct FString, struct FRollbackNetStartupActorInfo> RollbackNetStartupActors;                                 // 0x0508(0x0050) (CPF_ZeroConstructor, CPF_Transient)
-	unsigned char                                      UnknownData01[0x3D8];                                     // 0x0558(0x03D8) MISSED OFFSET
+	unsigned char                                      UnknownData01[0x448];                                     // 0x0558(0x0448) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -20489,11 +20491,11 @@ public:
 
 
 // Class Engine.ChildConnection
-// 0x0008 (0x33748 - 0x33740)
+// 0x0008 (0x33798 - 0x33790)
 class UChildConnection : public UNetConnection
 {
 public:
-	class UNetConnection*                              Parent;                                                   // 0x33740(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
+	class UNetConnection*                              Parent;                                                   // 0x33790(0x0008) (CPF_ZeroConstructor, CPF_Transient, CPF_IsPlainOldData)
 
 	static UClass* StaticClass()
 	{
@@ -20934,7 +20936,7 @@ public:
 
 
 // Class Engine.SoundWave
-// 0x01D8 (0x0268 - 0x0090)
+// 0x01E0 (0x0270 - 0x0090)
 class USoundWave : public USoundBase
 {
 public:
@@ -20962,7 +20964,7 @@ public:
 	TArray<struct FLocalizedSubtitle>                  LocalizedSubtitles;                                       // 0x00E0(0x0010) (CPF_ZeroConstructor)
 	class UCurveTable*                                 Curves;                                                   // 0x00F0(0x0008) (CPF_Edit, CPF_ZeroConstructor, CPF_IsPlainOldData)
 	class UCurveTable*                                 InternalCurves;                                           // 0x00F8(0x0008) (CPF_ZeroConstructor, CPF_IsPlainOldData)
-	unsigned char                                      UnknownData04[0x168];                                     // 0x0100(0x0168) MISSED OFFSET
+	unsigned char                                      UnknownData04[0x170];                                     // 0x0100(0x0170) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{
@@ -20975,11 +20977,11 @@ public:
 
 
 // Class Engine.SoundWaveProcedural
-// 0x0088 (0x02F0 - 0x0268)
+// 0x0080 (0x02F0 - 0x0270)
 class USoundWaveProcedural : public USoundWave
 {
 public:
-	unsigned char                                      UnknownData00[0x88];                                      // 0x0268(0x0088) MISSED OFFSET
+	unsigned char                                      UnknownData00[0x80];                                      // 0x0270(0x0080) MISSED OFFSET
 
 	static UClass* StaticClass()
 	{

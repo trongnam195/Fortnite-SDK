@@ -31,6 +31,7 @@ public:
 	}
 
 
+	void RefreshBanner();
 	void SetTeamMemberInfo(const struct FFortTeamMemberInfo& TeamMemberInfo);
 	void InitializeContextEvents();
 	void OnActiveFriendsCountUpdated(int ActiveFriendsCount);

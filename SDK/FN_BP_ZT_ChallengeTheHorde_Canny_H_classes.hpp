@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // BlueprintGeneratedClass BP_ZT_ChallengeTheHorde_Canny_H.BP_ZT_ChallengeTheHorde_Canny_H_C
-// 0x0000 (0x0270 - 0x0270)
+// 0x0000 (0x0290 - 0x0290)
 class UBP_ZT_ChallengeTheHorde_Canny_H_C : public UFortZoneTheme
 {
 public:

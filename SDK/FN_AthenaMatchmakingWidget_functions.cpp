@@ -72,24 +72,6 @@ void UAthenaMatchmakingWidget_C::SetAutoFillOptions()
 }
 
 
-// Function AthenaMatchmakingWidget.AthenaMatchmakingWidget_C.RefreshInput
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-
-void UAthenaMatchmakingWidget_C::RefreshInput()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x1f73f3f4);
-
-	UAthenaMatchmakingWidget_C_RefreshInput_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function AthenaMatchmakingWidget.AthenaMatchmakingWidget_C.BndEvt__BP_PlayButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // (FUNC_BlueprintEvent)
 // Parameters:
@@ -123,24 +105,6 @@ void UAthenaMatchmakingWidget_C::BndEvt__BP_CancelButton_K2Node_ComponentBoundEv
 
 	UAthenaMatchmakingWidget_C_BndEvt__BP_CancelButton_K2Node_ComponentBoundEvent_19_CommonButtonClicked__DelegateSignature_Params params;
 	params.Button = Button;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AthenaMatchmakingWidget.AthenaMatchmakingWidget_C.OnActivated
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-
-void UAthenaMatchmakingWidget_C::OnActivated()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xc8e91359);
-
-	UAthenaMatchmakingWidget_C_OnActivated_Params params;
 
 	auto flags = fn->FunctionFlags;
 

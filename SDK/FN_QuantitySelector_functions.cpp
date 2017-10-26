@@ -12,6 +12,50 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function QuantitySelector.QuantitySelector_C.SetCurrentValue
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// int                            NewValue                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UQuantitySelector_C::SetCurrentValue(int NewValue)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x57cd1f67);
+
+	UQuantitySelector_C_SetCurrentValue_Params params;
+	params.NewValue = NewValue;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function QuantitySelector.QuantitySelector_C.GetCurrentValue
+// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// int                            CurrentValue                   (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UQuantitySelector_C::GetCurrentValue(int* CurrentValue)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd787ac3);
+
+	UQuantitySelector_C_GetCurrentValue_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (CurrentValue != nullptr)
+		*CurrentValue = params.CurrentValue;
+}
+
+
 // Function QuantitySelector.QuantitySelector_C.SetupForInputMode
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:

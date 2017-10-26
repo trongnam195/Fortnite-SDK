@@ -12,6 +12,83 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.UnbindEvents
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UItemManagementDetailsModeBox_C::UnbindEvents()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x53994420);
+
+	UItemManagementDetailsModeBox_C_UnbindEvents_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RefreshTransferAction
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UItemManagementDetailsModeBox_C::RefreshTransferAction()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x71164cc7);
+
+	UItemManagementDetailsModeBox_C_RefreshTransferAction_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleTransfer
+// (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           PassThrough                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UItemManagementDetailsModeBox_C::HandleTransfer(bool* PassThrough)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x368430a8);
+
+	UItemManagementDetailsModeBox_C_HandleTransfer_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	if (PassThrough != nullptr)
+		*PassThrough = params.PassThrough;
+}
+
+
+// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterTransfer
+// (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UItemManagementDetailsModeBox_C::RegisterTransfer()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x72d8be79);
+
+	UItemManagementDetailsModeBox_C_RegisterTransfer_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterInspectUpgrade
 // (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
@@ -78,132 +155,6 @@ void UItemManagementDetailsModeBox_C::RefreshMulchAction()
 	if (!fn) fn = UObject::FindObject<UFunction>(0x4e3c17d9);
 
 	UItemManagementDetailsModeBox_C_RefreshMulchAction_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.ForceRefreshTab
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// class UHorizontalTabList_C*    TabList                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UItemManagementDetailsModeBox_C::ForceRefreshTab(class UHorizontalTabList_C* TabList)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xb0f66b92);
-
-	UItemManagementDetailsModeBox_C_ForceRefreshTab_Params params;
-	params.TabList = TabList;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.RegisterCraftingCompare
-// (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-
-void UItemManagementDetailsModeBox_C::RegisterCraftingCompare()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x7405391f);
-
-	UItemManagementDetailsModeBox_C_RegisterCraftingCompare_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.HandleDropItemCallback
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// int                            ChosenQuantity                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class UFortItem*               Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UItemManagementDetailsModeBox_C::HandleDropItemCallback(int ChosenQuantity, class UFortItem* Item)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xb5e13dc6);
-
-	UItemManagementDetailsModeBox_C_HandleDropItemCallback_Params params;
-	params.ChosenQuantity = ChosenQuantity;
-	params.Item = Item;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.DropItem
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// class UFortWorldItem*          Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// int                            Quantity                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UItemManagementDetailsModeBox_C::DropItem(class UFortWorldItem* Item, int Quantity)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x16be6b19);
-
-	UItemManagementDetailsModeBox_C_DropItem_Params params;
-	params.Item = Item;
-	params.Quantity = Quantity;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.CreateQuantitySelectorWidget
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// class UFortWorldItem*          Item                           (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FText                   ConfirmationText               (CPF_Parm)
-
-void UItemManagementDetailsModeBox_C::CreateQuantitySelectorWidget(class UFortWorldItem* Item, const struct FText& ConfirmationText)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x76edfaaf);
-
-	UItemManagementDetailsModeBox_C_CreateQuantitySelectorWidget_Params params;
-	params.Item = Item;
-	params.ConfirmationText = ConfirmationText;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.DestroyQuantitySelectorWidget
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-
-void UItemManagementDetailsModeBox_C::DestroyQuantitySelectorWidget()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x10d7f7e7);
-
-	UItemManagementDetailsModeBox_C_DestroyQuantitySelectorWidget_Params params;
 
 	auto flags = fn->FunctionFlags;
 
@@ -1043,24 +994,6 @@ void UItemManagementDetailsModeBox_C::HandleConsumeItemProgressChangedBP()
 }
 
 
-// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.Construct
-// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-
-void UItemManagementDetailsModeBox_C::Construct()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xd0fffed6);
-
-	UItemManagementDetailsModeBox_C_Construct_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.BndEvt__DetailPanelTabList-MSB_K2Node_ComponentBoundEvent_18_OnTabButtonCreated__DelegateSignature
 // (FUNC_BlueprintEvent)
 // Parameters:
@@ -1075,6 +1008,42 @@ void UItemManagementDetailsModeBox_C::BndEvt__DetailPanelTabList_MSB_K2Node_Comp
 	UItemManagementDetailsModeBox_C_BndEvt__DetailPanelTabList_MSB_K2Node_ComponentBoundEvent_18_OnTabButtonCreated__DelegateSignature_Params params;
 	params.TabId = TabId;
 	params.TabButton = TabButton;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.OnDeactivated
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+
+void UItemManagementDetailsModeBox_C::OnDeactivated()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9bf62f12);
+
+	UItemManagementDetailsModeBox_C_OnDeactivated_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ItemManagementDetailsModeBox.ItemManagementDetailsModeBox_C.Construct
+// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+
+void UItemManagementDetailsModeBox_C::Construct()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd0fffed6);
+
+	UItemManagementDetailsModeBox_C_Construct_Params params;
 
 	auto flags = fn->FunctionFlags;
 

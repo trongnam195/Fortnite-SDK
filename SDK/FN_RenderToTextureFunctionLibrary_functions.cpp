@@ -58,7 +58,7 @@ void URenderToTextureFunctionLibrary_C::STATIC_Set_Canvas_Material_Scale_and_Pos
 // class UObject*                 __WorldContext                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 // struct FString                 String                         (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor)
 
-void URenderToTextureFunctionLibrary_C::STATIC_Array_to_HLSL_Int_Array(TEnumAsByte<EIntTypes> Type, class UObject* __WorldContext, struct FString* Variable_Name, TArray<int>* int, TArray<struct FVector2D>* int2, TArray<struct FVector>* int3, TArray<struct FLinearColor>* int4, struct FString* String)
+void URenderToTextureFunctionLibrary_C::STATIC_Array_to_HLSL_Int_Array(TEnumAsByte<EIntTypes> Type, class UObject* __WorldContext, struct FString* Variable_Name, TArray<int>* int1, TArray<struct FVector2D>* int2, TArray<struct FVector>* int3, TArray<struct FLinearColor>* int4, struct FString* String)
 {
 	static UFunction* fn = nullptr;
 	if (!fn) fn = UObject::FindObject<UFunction>(0x5e285df0);

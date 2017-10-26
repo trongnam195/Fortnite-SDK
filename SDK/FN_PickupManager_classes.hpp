@@ -51,6 +51,7 @@ public:
 	void HandleWorldItemsChanged();
 	void HandleWorldItemListChanged(TArray<class UFortWorldItem*> ItemsAdded, TArray<class UFortWorldItem*> ItemsRemoved);
 	void Destruct();
+	void HandleBuildingMaterialChanged();
 	void ExecuteUbergraph_PickupManager(int EntryPoint);
 };
 

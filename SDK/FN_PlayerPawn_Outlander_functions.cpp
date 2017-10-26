@@ -605,7 +605,7 @@ void APlayerPawn_Outlander_C::GameplayCue_Abilities_Activation_Outlander_AntiMat
 
 
 // Function PlayerPawn_Outlander.PlayerPawn_Outlander_C.SetTeleportEffects
-// (FUNC_Net, FUNC_NetMulticast, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// (FUNC_Net, FUNC_NetReliable, FUNC_NetMulticast, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
 // bool                           On                             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 

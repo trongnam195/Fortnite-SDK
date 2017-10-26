@@ -11251,6 +11251,942 @@ void UAnimInstance::BlueprintInitializeAnimation()
 }
 
 
+// Function Engine.BlueprintAsyncActionBase.Activate
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void UBlueprintAsyncActionBase::Activate()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xecad8cf2);
+
+	UBlueprintAsyncActionBase_Activate_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.StartPlay
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void AGameModeBase::StartPlay()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe5b6e1af);
+
+	AGameModeBase_StartPlay_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.SpawnDefaultPawnFor
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AController*             NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class AActor*                  StartSpot                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class APawn*                   ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class APawn* AGameModeBase::SpawnDefaultPawnFor(class AController* NewPlayer, class AActor* StartSpot)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x13721932);
+
+	AGameModeBase_SpawnDefaultPawnFor_Params params;
+	params.NewPlayer = NewPlayer;
+	params.StartSpot = StartSpot;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameModeBase.SpawnDefaultPawnAtTransform
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintEvent)
+// Parameters:
+// class AController*             NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FTransform              SpawnTransform                 (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+// class APawn*                   ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class APawn* AGameModeBase::SpawnDefaultPawnAtTransform(class AController* NewPlayer, const struct FTransform& SpawnTransform)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5e58e6ca);
+
+	AGameModeBase_SpawnDefaultPawnAtTransform_Params params;
+	params.NewPlayer = NewPlayer;
+	params.SpawnTransform = SpawnTransform;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameModeBase.ShouldReset
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AActor*                  ActorToReset                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AGameModeBase::ShouldReset(class AActor* ActorToReset)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1a30687f);
+
+	AGameModeBase_ShouldReset_Params params;
+	params.ActorToReset = ActorToReset;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameModeBase.ReturnToMainMenuHost
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void AGameModeBase::ReturnToMainMenuHost()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x57ec53fa);
+
+	AGameModeBase_ReturnToMainMenuHost_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.RestartPlayerAtTransform
+// (FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable)
+// Parameters:
+// class AController*             NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FTransform              SpawnTransform                 (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+
+void AGameModeBase::RestartPlayerAtTransform(class AController* NewPlayer, const struct FTransform& SpawnTransform)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x680cd510);
+
+	AGameModeBase_RestartPlayerAtTransform_Params params;
+	params.NewPlayer = NewPlayer;
+	params.SpawnTransform = SpawnTransform;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.RestartPlayerAtPlayerStart
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class AController*             NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class AActor*                  StartSpot                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AGameModeBase::RestartPlayerAtPlayerStart(class AController* NewPlayer, class AActor* StartSpot)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf60027c1);
+
+	AGameModeBase_RestartPlayerAtPlayerStart_Params params;
+	params.NewPlayer = NewPlayer;
+	params.StartSpot = StartSpot;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.RestartPlayer
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class AController*             NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AGameModeBase::RestartPlayer(class AController* NewPlayer)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd379e64b);
+
+	AGameModeBase_RestartPlayer_Params params;
+	params.NewPlayer = NewPlayer;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.ResetLevel
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void AGameModeBase::ResetLevel()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5ea91f7a);
+
+	AGameModeBase_ResetLevel_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.PlayerCanRestart
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class APlayerController*       Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AGameModeBase::PlayerCanRestart(class APlayerController* Player)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xd002f347);
+
+	AGameModeBase_PlayerCanRestart_Params params;
+	params.Player = Player;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameModeBase.MustSpectate
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent, FUNC_Const)
+// Parameters:
+// class APlayerController*       NewPlayerController            (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AGameModeBase::MustSpectate(class APlayerController* NewPlayerController)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x979d659d);
+
+	AGameModeBase_MustSpectate_Params params;
+	params.NewPlayerController = NewPlayerController;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameModeBase.K2_PostLogin
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class APlayerController*       NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AGameModeBase::K2_PostLogin(class APlayerController* NewPlayer)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6a4681ac);
+
+	AGameModeBase_K2_PostLogin_Params params;
+	params.NewPlayer = NewPlayer;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.K2_OnSwapPlayerControllers
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+// Parameters:
+// class APlayerController*       OldPC                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class APlayerController*       NewPC                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AGameModeBase::K2_OnSwapPlayerControllers(class APlayerController* OldPC, class APlayerController* NewPC)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x573fec99);
+
+	AGameModeBase_K2_OnSwapPlayerControllers_Params params;
+	params.OldPC = OldPC;
+	params.NewPC = NewPC;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.K2_OnRestartPlayer
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AController*             NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AGameModeBase::K2_OnRestartPlayer(class AController* NewPlayer)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x5dc651d6);
+
+	AGameModeBase_K2_OnRestartPlayer_Params params;
+	params.NewPlayer = NewPlayer;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.K2_OnLogout
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AController*             ExitingController              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AGameModeBase::K2_OnLogout(class AController* ExitingController)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x690e582a);
+
+	AGameModeBase_K2_OnLogout_Params params;
+	params.ExitingController = ExitingController;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.K2_OnChangeName
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AController*             Other                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FString                 NewName                        (CPF_Parm, CPF_ZeroConstructor)
+// bool                           bNameChange                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AGameModeBase::K2_OnChangeName(class AController* Other, const struct FString& NewName, bool bNameChange)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa1111019);
+
+	AGameModeBase_K2_OnChangeName_Params params;
+	params.Other = Other;
+	params.NewName = NewName;
+	params.bNameChange = bNameChange;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.K2_FindPlayerStart
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure)
+// Parameters:
+// class AController*             Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FString                 IncomingName                   (CPF_Parm, CPF_ZeroConstructor)
+// class AActor*                  ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class AActor* AGameModeBase::K2_FindPlayerStart(class AController* Player, const struct FString& IncomingName)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe5ce7dcb);
+
+	AGameModeBase_K2_FindPlayerStart_Params params;
+	params.Player = Player;
+	params.IncomingName = IncomingName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameModeBase.InitStartSpot
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AActor*                  StartSpot                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class AController*             NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AGameModeBase::InitStartSpot(class AActor* StartSpot, class AController* NewPlayer)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x54f2b2e3);
+
+	AGameModeBase_InitStartSpot_Params params;
+	params.StartSpot = StartSpot;
+	params.NewPlayer = NewPlayer;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.InitializeHUDForPlayer
+// (FUNC_Native, FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+// Parameters:
+// class APlayerController*       NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AGameModeBase::InitializeHUDForPlayer(class APlayerController* NewPlayer)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xabd00ac2);
+
+	AGameModeBase_InitializeHUDForPlayer_Params params;
+	params.NewPlayer = NewPlayer;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.HasMatchStarted
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AGameModeBase::HasMatchStarted()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcdbd4463);
+
+	AGameModeBase_HasMatchStarted_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameModeBase.HandleStartingNewPlayer
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class APlayerController*       NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AGameModeBase::HandleStartingNewPlayer(class APlayerController* NewPlayer)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x55fc7112);
+
+	AGameModeBase_HandleStartingNewPlayer_Params params;
+	params.NewPlayer = NewPlayer;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.GetNumSpectators
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+int AGameModeBase::GetNumSpectators()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6acbc599);
+
+	AGameModeBase_GetNumSpectators_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameModeBase.GetNumPlayers
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+int AGameModeBase::GetNumPlayers()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb64e0b83);
+
+	AGameModeBase_GetNumPlayers_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameModeBase.GetDefaultPawnClassForController
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AController*             InController                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UClass*                  ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class UClass* AGameModeBase::GetDefaultPawnClassForController(class AController* InController)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x54379b13);
+
+	AGameModeBase_GetDefaultPawnClassForController_Params params;
+	params.InController = InController;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameModeBase.FindPlayerStart
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AController*             Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FString                 IncomingName                   (CPF_Parm, CPF_ZeroConstructor)
+// class AActor*                  ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class AActor* AGameModeBase::FindPlayerStart(class AController* Player, const struct FString& IncomingName)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6c12366b);
+
+	AGameModeBase_FindPlayerStart_Params params;
+	params.Player = Player;
+	params.IncomingName = IncomingName;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameModeBase.ChoosePlayerStart
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class AController*             Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class AActor*                  ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+class AActor* AGameModeBase::ChoosePlayerStart(class AController* Player)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x4872fc85);
+
+	AGameModeBase_ChoosePlayerStart_Params params;
+	params.Player = Player;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameModeBase.ChangeName
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// class AController*             Controller                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FString                 NewName                        (CPF_Parm, CPF_ZeroConstructor)
+// bool                           bNameChange                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AGameModeBase::ChangeName(class AController* Controller, const struct FString& NewName, bool bNameChange)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb5826002);
+
+	AGameModeBase_ChangeName_Params params;
+	params.Controller = Controller;
+	params.NewName = NewName;
+	params.bNameChange = bNameChange;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameModeBase.CanSpectate
+// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
+// Parameters:
+// class APlayerController*       Viewer                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class APlayerState*            ViewTarget                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AGameModeBase::CanSpectate(class APlayerController* Viewer, class APlayerState* ViewTarget)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xca3c7a76);
+
+	AGameModeBase_CanSpectate_Params params;
+	params.Viewer = Viewer;
+	params.ViewTarget = ViewTarget;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameMode.StartMatch
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void AGameMode::StartMatch()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa4b57f75);
+
+	AGameMode_StartMatch_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameMode.SetBandwidthLimit
+// (FUNC_Exec, FUNC_Native, FUNC_Public)
+// Parameters:
+// float                          AsyncIOBandwidthLimit          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AGameMode::SetBandwidthLimit(float AsyncIOBandwidthLimit)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc7b551e6);
+
+	AGameMode_SetBandwidthLimit_Params params;
+	params.AsyncIOBandwidthLimit = AsyncIOBandwidthLimit;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameMode.Say
+// (FUNC_Exec, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+// Parameters:
+// struct FString                 Msg                            (CPF_Parm, CPF_ZeroConstructor)
+
+void AGameMode::Say(const struct FString& Msg)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x247c87e3);
+
+	AGameMode_Say_Params params;
+	params.Msg = Msg;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameMode.RestartGame
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void AGameMode::RestartGame()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x157bf021);
+
+	AGameMode_RestartGame_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameMode.ReadyToStartMatch
+// (FUNC_Native, FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AGameMode::ReadyToStartMatch()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x13a2b5c3);
+
+	AGameMode_ReadyToStartMatch_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameMode.ReadyToEndMatch
+// (FUNC_Native, FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AGameMode::ReadyToEndMatch()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8a68d4fe);
+
+	AGameMode_ReadyToEndMatch_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameMode.K2_OnSetMatchState
+// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
+// Parameters:
+// struct FName                   NewState                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void AGameMode::K2_OnSetMatchState(const struct FName& NewState)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xed7aaaef);
+
+	AGameMode_K2_OnSetMatchState_Params params;
+	params.NewState = NewState;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameMode.IsMatchInProgress
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AGameMode::IsMatchInProgress()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x93a90b89);
+
+	AGameMode_IsMatchInProgress_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameMode.HasMatchEnded
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+bool AGameMode::HasMatchEnded()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x6466c9df);
+
+	AGameMode_HasMatchEnded_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameMode.GetMatchState
+// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
+// Parameters:
+// struct FName                   ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
+
+struct FName AGameMode::GetMatchState()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xc29fdea4);
+
+	AGameMode_GetMatchState_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+
+	return params.ReturnValue;
+}
+
+
+// Function Engine.GameMode.EndMatch
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void AGameMode::EndMatch()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9a79fa84);
+
+	AGameMode_EndMatch_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function Engine.GameMode.AbortMatch
+// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
+
+void AGameMode::AbortMatch()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x1a598acb);
+
+	AGameMode_AbortMatch_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function Engine.AnimNotify.Received_Notify
 // (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent, FUNC_Const)
 // Parameters:
@@ -11402,25 +12338,6 @@ struct FString UAnimNotifyState::GetNotifyName()
 	fn->FunctionFlags = flags;
 
 	return params.ReturnValue;
-}
-
-
-// Function Engine.BlueprintAsyncActionBase.Activate
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void UBlueprintAsyncActionBase::Activate()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xecad8cf2);
-
-	UBlueprintAsyncActionBase_Activate_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
 }
 
 
@@ -16370,923 +17287,6 @@ void UCheatManager::BugIt(const struct FString& ScreenShotDescription)
 
 	UCheatManager_BugIt_Params params;
 	params.ScreenShotDescription = ScreenShotDescription;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.StartPlay
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void AGameModeBase::StartPlay()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xe5b6e1af);
-
-	AGameModeBase_StartPlay_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.SpawnDefaultPawnFor
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// class AController*             NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class AActor*                  StartSpot                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class APawn*                   ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-class APawn* AGameModeBase::SpawnDefaultPawnFor(class AController* NewPlayer, class AActor* StartSpot)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x13721932);
-
-	AGameModeBase_SpawnDefaultPawnFor_Params params;
-	params.NewPlayer = NewPlayer;
-	params.StartSpot = StartSpot;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameModeBase.SpawnDefaultPawnAtTransform
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintEvent)
-// Parameters:
-// class AController*             NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FTransform              SpawnTransform                 (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
-// class APawn*                   ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-class APawn* AGameModeBase::SpawnDefaultPawnAtTransform(class AController* NewPlayer, const struct FTransform& SpawnTransform)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x5e58e6ca);
-
-	AGameModeBase_SpawnDefaultPawnAtTransform_Params params;
-	params.NewPlayer = NewPlayer;
-	params.SpawnTransform = SpawnTransform;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameModeBase.ShouldReset
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// class AActor*                  ActorToReset                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool AGameModeBase::ShouldReset(class AActor* ActorToReset)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x1a30687f);
-
-	AGameModeBase_ShouldReset_Params params;
-	params.ActorToReset = ActorToReset;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameModeBase.ReturnToMainMenuHost
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void AGameModeBase::ReturnToMainMenuHost()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x57ec53fa);
-
-	AGameModeBase_ReturnToMainMenuHost_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.RestartPlayerAtTransform
-// (FUNC_Native, FUNC_Public, FUNC_HasOutParms, FUNC_HasDefaults, FUNC_BlueprintCallable)
-// Parameters:
-// class AController*             NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FTransform              SpawnTransform                 (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
-
-void AGameModeBase::RestartPlayerAtTransform(class AController* NewPlayer, const struct FTransform& SpawnTransform)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x680cd510);
-
-	AGameModeBase_RestartPlayerAtTransform_Params params;
-	params.NewPlayer = NewPlayer;
-	params.SpawnTransform = SpawnTransform;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.RestartPlayerAtPlayerStart
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// class AController*             NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class AActor*                  StartSpot                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AGameModeBase::RestartPlayerAtPlayerStart(class AController* NewPlayer, class AActor* StartSpot)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xf60027c1);
-
-	AGameModeBase_RestartPlayerAtPlayerStart_Params params;
-	params.NewPlayer = NewPlayer;
-	params.StartSpot = StartSpot;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.RestartPlayer
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// class AController*             NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AGameModeBase::RestartPlayer(class AController* NewPlayer)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xd379e64b);
-
-	AGameModeBase_RestartPlayer_Params params;
-	params.NewPlayer = NewPlayer;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.ResetLevel
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void AGameModeBase::ResetLevel()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x5ea91f7a);
-
-	AGameModeBase_ResetLevel_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.PlayerCanRestart
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// class APlayerController*       Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool AGameModeBase::PlayerCanRestart(class APlayerController* Player)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xd002f347);
-
-	AGameModeBase_PlayerCanRestart_Params params;
-	params.Player = Player;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameModeBase.MustSpectate
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent, FUNC_Const)
-// Parameters:
-// class APlayerController*       NewPlayerController            (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool AGameModeBase::MustSpectate(class APlayerController* NewPlayerController)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x979d659d);
-
-	AGameModeBase_MustSpectate_Params params;
-	params.NewPlayerController = NewPlayerController;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameModeBase.K2_PostLogin
-// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// class APlayerController*       NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AGameModeBase::K2_PostLogin(class APlayerController* NewPlayer)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x6a4681ac);
-
-	AGameModeBase_K2_PostLogin_Params params;
-	params.NewPlayer = NewPlayer;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.K2_OnSwapPlayerControllers
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-// Parameters:
-// class APlayerController*       OldPC                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class APlayerController*       NewPC                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AGameModeBase::K2_OnSwapPlayerControllers(class APlayerController* OldPC, class APlayerController* NewPC)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x573fec99);
-
-	AGameModeBase_K2_OnSwapPlayerControllers_Params params;
-	params.OldPC = OldPC;
-	params.NewPC = NewPC;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.K2_OnRestartPlayer
-// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// class AController*             NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AGameModeBase::K2_OnRestartPlayer(class AController* NewPlayer)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x5dc651d6);
-
-	AGameModeBase_K2_OnRestartPlayer_Params params;
-	params.NewPlayer = NewPlayer;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.K2_OnLogout
-// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// class AController*             ExitingController              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AGameModeBase::K2_OnLogout(class AController* ExitingController)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x690e582a);
-
-	AGameModeBase_K2_OnLogout_Params params;
-	params.ExitingController = ExitingController;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.K2_OnChangeName
-// (FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// class AController*             Other                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FString                 NewName                        (CPF_Parm, CPF_ZeroConstructor)
-// bool                           bNameChange                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AGameModeBase::K2_OnChangeName(class AController* Other, const struct FString& NewName, bool bNameChange)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xa1111019);
-
-	AGameModeBase_K2_OnChangeName_Params params;
-	params.Other = Other;
-	params.NewName = NewName;
-	params.bNameChange = bNameChange;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.K2_FindPlayerStart
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure)
-// Parameters:
-// class AController*             Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FString                 IncomingName                   (CPF_Parm, CPF_ZeroConstructor)
-// class AActor*                  ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-class AActor* AGameModeBase::K2_FindPlayerStart(class AController* Player, const struct FString& IncomingName)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xe5ce7dcb);
-
-	AGameModeBase_K2_FindPlayerStart_Params params;
-	params.Player = Player;
-	params.IncomingName = IncomingName;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameModeBase.InitStartSpot
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// class AActor*                  StartSpot                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class AController*             NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AGameModeBase::InitStartSpot(class AActor* StartSpot, class AController* NewPlayer)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x54f2b2e3);
-
-	AGameModeBase_InitStartSpot_Params params;
-	params.StartSpot = StartSpot;
-	params.NewPlayer = NewPlayer;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.InitializeHUDForPlayer
-// (FUNC_Native, FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-// Parameters:
-// class APlayerController*       NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AGameModeBase::InitializeHUDForPlayer(class APlayerController* NewPlayer)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xabd00ac2);
-
-	AGameModeBase_InitializeHUDForPlayer_Params params;
-	params.NewPlayer = NewPlayer;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.HasMatchStarted
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool AGameModeBase::HasMatchStarted()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xcdbd4463);
-
-	AGameModeBase_HasMatchStarted_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameModeBase.HandleStartingNewPlayer
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// class APlayerController*       NewPlayer                      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AGameModeBase::HandleStartingNewPlayer(class APlayerController* NewPlayer)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x55fc7112);
-
-	AGameModeBase_HandleStartingNewPlayer_Params params;
-	params.NewPlayer = NewPlayer;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.GetNumSpectators
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-int AGameModeBase::GetNumSpectators()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x6acbc599);
-
-	AGameModeBase_GetNumSpectators_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameModeBase.GetNumPlayers
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// int                            ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-int AGameModeBase::GetNumPlayers()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xb64e0b83);
-
-	AGameModeBase_GetNumPlayers_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameModeBase.GetDefaultPawnClassForController
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// class AController*             InController                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class UClass*                  ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-class UClass* AGameModeBase::GetDefaultPawnClassForController(class AController* InController)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x54379b13);
-
-	AGameModeBase_GetDefaultPawnClassForController_Params params;
-	params.InController = InController;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameModeBase.FindPlayerStart
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// class AController*             Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FString                 IncomingName                   (CPF_Parm, CPF_ZeroConstructor)
-// class AActor*                  ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-class AActor* AGameModeBase::FindPlayerStart(class AController* Player, const struct FString& IncomingName)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x6c12366b);
-
-	AGameModeBase_FindPlayerStart_Params params;
-	params.Player = Player;
-	params.IncomingName = IncomingName;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameModeBase.ChoosePlayerStart
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// class AController*             Player                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class AActor*                  ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-class AActor* AGameModeBase::ChoosePlayerStart(class AController* Player)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x4872fc85);
-
-	AGameModeBase_ChoosePlayerStart_Params params;
-	params.Player = Player;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameModeBase.ChangeName
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// class AController*             Controller                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FString                 NewName                        (CPF_Parm, CPF_ZeroConstructor)
-// bool                           bNameChange                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AGameModeBase::ChangeName(class AController* Controller, const struct FString& NewName, bool bNameChange)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xb5826002);
-
-	AGameModeBase_ChangeName_Params params;
-	params.Controller = Controller;
-	params.NewName = NewName;
-	params.bNameChange = bNameChange;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameModeBase.CanSpectate
-// (FUNC_Native, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// class APlayerController*       Viewer                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// class APlayerState*            ViewTarget                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool AGameModeBase::CanSpectate(class APlayerController* Viewer, class APlayerState* ViewTarget)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xca3c7a76);
-
-	AGameModeBase_CanSpectate_Params params;
-	params.Viewer = Viewer;
-	params.ViewTarget = ViewTarget;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameMode.StartMatch
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void AGameMode::StartMatch()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xa4b57f75);
-
-	AGameMode_StartMatch_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameMode.SetBandwidthLimit
-// (FUNC_Exec, FUNC_Native, FUNC_Public)
-// Parameters:
-// float                          AsyncIOBandwidthLimit          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AGameMode::SetBandwidthLimit(float AsyncIOBandwidthLimit)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xc7b551e6);
-
-	AGameMode_SetBandwidthLimit_Params params;
-	params.AsyncIOBandwidthLimit = AsyncIOBandwidthLimit;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameMode.Say
-// (FUNC_Exec, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-// Parameters:
-// struct FString                 Msg                            (CPF_Parm, CPF_ZeroConstructor)
-
-void AGameMode::Say(const struct FString& Msg)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x247c87e3);
-
-	AGameMode_Say_Params params;
-	params.Msg = Msg;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameMode.RestartGame
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void AGameMode::RestartGame()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x157bf021);
-
-	AGameMode_RestartGame_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameMode.ReadyToStartMatch
-// (FUNC_Native, FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-// Parameters:
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool AGameMode::ReadyToStartMatch()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x13a2b5c3);
-
-	AGameMode_ReadyToStartMatch_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameMode.ReadyToEndMatch
-// (FUNC_Native, FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-// Parameters:
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool AGameMode::ReadyToEndMatch()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x8a68d4fe);
-
-	AGameMode_ReadyToEndMatch_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameMode.K2_OnSetMatchState
-// (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
-// Parameters:
-// struct FName                   NewState                       (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void AGameMode::K2_OnSetMatchState(const struct FName& NewState)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xed7aaaef);
-
-	AGameMode_K2_OnSetMatchState_Params params;
-	params.NewState = NewState;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameMode.IsMatchInProgress
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool AGameMode::IsMatchInProgress()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x93a90b89);
-
-	AGameMode_IsMatchInProgress_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameMode.HasMatchEnded
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// bool                           ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-bool AGameMode::HasMatchEnded()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x6466c9df);
-
-	AGameMode_HasMatchEnded_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameMode.GetMatchState
-// (FUNC_Final, FUNC_Native, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintPure, FUNC_Const)
-// Parameters:
-// struct FName                   ReturnValue                    (CPF_Parm, CPF_OutParm, CPF_ZeroConstructor, CPF_ReturnParm, CPF_IsPlainOldData)
-
-struct FName AGameMode::GetMatchState()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xc29fdea4);
-
-	AGameMode_GetMatchState_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-
-	return params.ReturnValue;
-}
-
-
-// Function Engine.GameMode.EndMatch
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void AGameMode::EndMatch()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x9a79fa84);
-
-	AGameMode_EndMatch_Params params;
-
-	auto flags = fn->FunctionFlags;
-	fn->FunctionFlags |= 0x400;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function Engine.GameMode.AbortMatch
-// (FUNC_Native, FUNC_Public, FUNC_BlueprintCallable)
-
-void AGameMode::AbortMatch()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x1a598acb);
-
-	AGameMode_AbortMatch_Params params;
 
 	auto flags = fn->FunctionFlags;
 	fn->FunctionFlags |= 0x400;

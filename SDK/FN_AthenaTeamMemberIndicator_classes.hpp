@@ -31,6 +31,7 @@ public:
 	}
 
 
+	void On_Team_Talking_Changed(TArray<bool>* Team_Talking);
 	void On_Team_Reviving_Changed(TArray<bool>* Team_Reviving);
 	void On_Team_DBNO_Changed(TArray<bool>* DBNOStates);
 	void Construct();

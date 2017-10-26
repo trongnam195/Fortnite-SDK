@@ -58,6 +58,7 @@ public:
 	}
 
 
+	void GetMeshForCurrentDisplayedItem(class UMeshComponent** OutDisplayedMesh);
 	void GetItemDefinitionToShow(class UFortItemDefinition** ItemDefinition);
 	void SetUIOverrideVisuals(class UTexture2D* Large_Texture, class UFortItemDefinition* Item, EFortRarity Rarity);
 	struct FTransform GetWeaponPlacementTransform();

@@ -34,7 +34,7 @@ void UMiniCraftingIngredientList_C::AddListEntry(class UFortItemQuantityListEntr
 
 
 // Function MiniCraftingIngredientList.MiniCraftingIngredientList_C.ExecuteUbergraph_MiniCraftingIngredientList
-// ()
+// (FUNC_HasDefaults)
 // Parameters:
 // int                            EntryPoint                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 

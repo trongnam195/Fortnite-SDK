@@ -66,27 +66,6 @@ void UItemDetailsHeader_C::Construct()
 }
 
 
-// Function ItemDetailsHeader.ItemDetailsHeader_C.PreConstruct
-// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-// Parameters:
-// bool*                          IsDesignTime                   (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UItemDetailsHeader_C::PreConstruct(bool* IsDesignTime)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x7729d515);
-
-	UItemDetailsHeader_C_PreConstruct_Params params;
-	params.IsDesignTime = IsDesignTime;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 // Function ItemDetailsHeader.ItemDetailsHeader_C.HandleDifferentItemToDetailSet
 // (FUNC_Event, FUNC_Protected, FUNC_BlueprintEvent)
 

@@ -67,6 +67,7 @@ public:
 	void OnHovered();
 	void OnQuestSeen_Event_1(class UFortQuestItem* Quest);
 	void Destruct();
+	void OnDeselected();
 	void ExecuteUbergraph_QuestTreeEntry(int EntryPoint);
 };
 

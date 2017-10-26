@@ -223,15 +223,15 @@ void UXpBoostRow_C::ExecuteUbergraph_XpBoostRow(int EntryPoint)
 // Function XpBoostRow.XpBoostRow_C.Give Boost Clicked__DelegateSignature
 // (FUNC_Public, FUNC_Delegate, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
-// struct FUniqueNetIdRepl        Player_To_Boost                (CPF_Parm)
+// struct FUniqueNetIdRepl        Player_to_Boost                (CPF_Parm)
 
-void UXpBoostRow_C::Give_Boost_Clicked__DelegateSignature(const struct FUniqueNetIdRepl& Player_To_Boost)
+void UXpBoostRow_C::Give_Boost_Clicked__DelegateSignature(const struct FUniqueNetIdRepl& Player_to_Boost)
 {
 	static UFunction* fn = nullptr;
 	if (!fn) fn = UObject::FindObject<UFunction>(0xa1620e53);
 
 	UXpBoostRow_C_Give_Boost_Clicked__DelegateSignature_Params params;
-	params.Player_To_Boost = Player_To_Boost;
+	params.Player_to_Boost = Player_to_Boost;
 
 	auto flags = fn->FunctionFlags;
 

@@ -35,6 +35,27 @@ void APlayerPawn_Generic_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 }
 
 
+// Function PlayerPawn_Generic.PlayerPawn_Generic_C.TriggerGameplayWindEmitter
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// TEnumAsByte<EPlayerWindParticleEmitters> Player_Wind_Particle_Emitter_To_Fire (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void APlayerPawn_Generic_C::TriggerGameplayWindEmitter(TEnumAsByte<EPlayerWindParticleEmitters> Player_Wind_Particle_Emitter_To_Fire)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xa66a76dd);
+
+	APlayerPawn_Generic_C_TriggerGameplayWindEmitter_Params params;
+	params.Player_Wind_Particle_Emitter_To_Fire = Player_Wind_Particle_Emitter_To_Fire;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function PlayerPawn_Generic.PlayerPawn_Generic_C.Are the wind and water RTT passes enabled
 // (FUNC_Public, FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -1302,6 +1323,48 @@ void APlayerPawn_Generic_C::SpawnDBNOParticles(const struct FVector& ParticleLoc
 }
 
 
+// Function PlayerPawn_Generic.PlayerPawn_Generic_C.PlayGameplayWindEffect
+// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// TEnumAsByte<EPlayerWindParticleEmitters> Player_Wind_Particle_Emitter_To_Fire (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void APlayerPawn_Generic_C::PlayGameplayWindEffect(TEnumAsByte<EPlayerWindParticleEmitters> Player_Wind_Particle_Emitter_To_Fire)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x8b7f8102);
+
+	APlayerPawn_Generic_C_PlayGameplayWindEffect_Params params;
+	params.Player_Wind_Particle_Emitter_To_Fire = Player_Wind_Particle_Emitter_To_Fire;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerPawn_Generic.PlayerPawn_Generic_C.Player Creates a Splash
+// (FUNC_HasOutParms, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// struct FTransform              NewTransform                   (CPF_ConstParm, CPF_Parm, CPF_OutParm, CPF_ReferenceParm, CPF_IsPlainOldData)
+
+void APlayerPawn_Generic_C::Player_Creates_a_Splash(const struct FTransform& NewTransform)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xf18f2635);
+
+	APlayerPawn_Generic_C_Player_Creates_a_Splash_Params params;
+	params.NewTransform = NewTransform;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnLand_CE
 // (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
@@ -1476,6 +1539,72 @@ void APlayerPawn_Generic_C::GameplayCue_Shield_Reapplied(TEnumAsByte<EGameplayCu
 }
 
 
+// Function PlayerPawn_Generic.PlayerPawn_Generic_C.AnimTrailsSetup
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// class UParticleSystem**        ParticleSystemReference        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName*                  FirstSocketName                (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// struct FName*                  SecondSocketName               (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// float*                         Width                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void APlayerPawn_Generic_C::AnimTrailsSetup(class UParticleSystem** ParticleSystemReference, struct FName* FirstSocketName, struct FName* SecondSocketName, float* Width)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xcc120748);
+
+	APlayerPawn_Generic_C_AnimTrailsSetup_Params params;
+	params.ParticleSystemReference = ParticleSystemReference;
+	params.FirstSocketName = FirstSocketName;
+	params.SecondSocketName = SecondSocketName;
+	params.Width = Width;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerPawn_Generic.PlayerPawn_Generic_C.AnimTrailsDisable
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void APlayerPawn_Generic_C::AnimTrailsDisable()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe98ebaab);
+
+	APlayerPawn_Generic_C_AnimTrailsDisable_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function PlayerPawn_Generic.PlayerPawn_Generic_C.AnimTrailsNotify
+// (FUNC_Event, FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// bool*                          bActive                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void APlayerPawn_Generic_C::AnimTrailsNotify(bool* bActive)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xe808bb66);
+
+	APlayerPawn_Generic_C_AnimTrailsNotify_Params params;
+	params.bActive = bActive;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function PlayerPawn_Generic.PlayerPawn_Generic_C.MultiEndAnimTrails
 // (FUNC_Net, FUNC_NetMulticast, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
@@ -1485,72 +1614,6 @@ void APlayerPawn_Generic_C::MultiEndAnimTrails()
 	if (!fn) fn = UObject::FindObject<UFunction>(0x566d9d63);
 
 	APlayerPawn_Generic_C_MultiEndAnimTrails_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PlayerPawn_Generic.PlayerPawn_Generic_C.DisableAnimTrails
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-
-void APlayerPawn_Generic_C::DisableAnimTrails()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xf42e5a67);
-
-	APlayerPawn_Generic_C_DisableAnimTrails_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PlayerPawn_Generic.PlayerPawn_Generic_C.AnimTrailsCE
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// bool                           Active                         (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void APlayerPawn_Generic_C::AnimTrailsCE(bool Active)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x61a8d811);
-
-	APlayerPawn_Generic_C_AnimTrailsCE_Params params;
-	params.Active = Active;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function PlayerPawn_Generic.PlayerPawn_Generic_C.SetupAnimTrails
-// (FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-// Parameters:
-// class UParticleSystem*         Particle_System_Reference      (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FName                   First_Socket_Name              (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// struct FName                   Second_Socket_Name             (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-// float                          Width                          (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void APlayerPawn_Generic_C::SetupAnimTrails(class UParticleSystem* Particle_System_Reference, const struct FName& First_Socket_Name, const struct FName& Second_Socket_Name, float Width)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x9495ddbc);
-
-	APlayerPawn_Generic_C_SetupAnimTrails_Params params;
-	params.Particle_System_Reference = Particle_System_Reference;
-	params.First_Socket_Name = First_Socket_Name;
-	params.Second_Socket_Name = Second_Socket_Name;
-	params.Width = Width;
 
 	auto flags = fn->FunctionFlags;
 

@@ -13,7 +13,7 @@ namespace SDK
 //---------------------------------------------------------------------------
 
 // Function AthenaMainStatTile.AthenaMainStatTile_C.SetStatValue
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
 // struct FText                   StatValueAsText                (CPF_Parm)
 
@@ -34,7 +34,7 @@ void UAthenaMainStatTile_C::SetStatValue(const struct FText& StatValueAsText)
 
 
 // Function AthenaMainStatTile.AthenaMainStatTile_C.SetTagAndDisplayName
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// (FUNC_Public, FUNC_HasDefaults, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
 // struct FString                 Tag                            (CPF_Parm, CPF_ZeroConstructor)
 // struct FText                   DisplayName                    (CPF_Parm)
@@ -78,7 +78,7 @@ void UAthenaMainStatTile_C::PreConstruct(bool* IsDesignTime)
 
 
 // Function AthenaMainStatTile.AthenaMainStatTile_C.ExecuteUbergraph_AthenaMainStatTile
-// ()
+// (FUNC_HasDefaults)
 // Parameters:
 // int                            EntryPoint                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 

@@ -12,6 +12,24 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleMaximizeShowing
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UAthenaQuickbarSecondary_C::HandleMaximizeShowing()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x47dbf630);
+
+	UAthenaQuickbarSecondary_C_HandleMaximizeShowing_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleShowHideRail
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 
@@ -39,24 +57,6 @@ void UAthenaQuickbarSecondary_C::HandleMinimizeHiding()
 	if (!fn) fn = UObject::FindObject<UFunction>(0x6583b1b4);
 
 	UAthenaQuickbarSecondary_C_HandleMinimizeHiding_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function AthenaQuickbarSecondary.AthenaQuickbarSecondary_C.HandleUpdateSlots
-// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
-
-void UAthenaQuickbarSecondary_C::HandleUpdateSlots()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x947a7c85);
-
-	UAthenaQuickbarSecondary_C_HandleUpdateSlots_Params params;
 
 	auto flags = fn->FunctionFlags;
 

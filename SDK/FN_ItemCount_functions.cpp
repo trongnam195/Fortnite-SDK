@@ -12,6 +12,68 @@ namespace SDK
 //Functions
 //---------------------------------------------------------------------------
 
+// Function ItemCount.ItemCount_C.SetBrushAndTextStyle
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// TEnumAsByte<EFortBrushSize>    InBrushSize                    (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+// class UClass*                  InStyle                        (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UItemCount_C::SetBrushAndTextStyle(TEnumAsByte<EFortBrushSize> InBrushSize, class UClass* InStyle)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0xb2fab4a6);
+
+	UItemCount_C_SetBrushAndTextStyle_Params params;
+	params.InBrushSize = InBrushSize;
+	params.InStyle = InStyle;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ItemCount.ItemCount_C.UpdateOverrideState
+// (FUNC_Private, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+
+void UItemCount_C::UpdateOverrideState()
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x7a837bf3);
+
+	UItemCount_C_UpdateOverrideState_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function ItemCount.ItemCount_C.SetOverrideValue
+// (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
+// Parameters:
+// int                            OverrrideValue                 (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
+
+void UItemCount_C::SetOverrideValue(int OverrrideValue)
+{
+	static UFunction* fn = nullptr;
+	if (!fn) fn = UObject::FindObject<UFunction>(0x9db42e38);
+
+	UItemCount_C_SetOverrideValue_Params params;
+	params.OverrrideValue = OverrrideValue;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
 // Function ItemCount.ItemCount_C.SetIsBeingPreviewed
 // (FUNC_Public, FUNC_BlueprintCallable, FUNC_BlueprintEvent)
 // Parameters:
@@ -94,7 +156,7 @@ void UItemCount_C::PreConstruct(bool* IsDesignTime)
 
 
 // Function ItemCount.ItemCount_C.ExecuteUbergraph_ItemCount
-// ()
+// (FUNC_HasDefaults)
 // Parameters:
 // int                            EntryPoint                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
 

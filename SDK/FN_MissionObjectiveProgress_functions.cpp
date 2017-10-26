@@ -58,45 +58,6 @@ void UMissionObjectiveProgress_C::Update(class AFortObjectiveBase* Objective, in
 }
 
 
-// Function MissionObjectiveProgress.MissionObjectiveProgress_C.Construct
-// (FUNC_BlueprintCosmetic, FUNC_Event, FUNC_Public, FUNC_BlueprintEvent)
-
-void UMissionObjectiveProgress_C::Construct()
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0x520678ce);
-
-	UMissionObjectiveProgress_C_Construct_Params params;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
-// Function MissionObjectiveProgress.MissionObjectiveProgress_C.ExecuteUbergraph_MissionObjectiveProgress
-// ()
-// Parameters:
-// int                            EntryPoint                     (CPF_Parm, CPF_ZeroConstructor, CPF_IsPlainOldData)
-
-void UMissionObjectiveProgress_C::ExecuteUbergraph_MissionObjectiveProgress(int EntryPoint)
-{
-	static UFunction* fn = nullptr;
-	if (!fn) fn = UObject::FindObject<UFunction>(0xff64ef7d);
-
-	UMissionObjectiveProgress_C_ExecuteUbergraph_MissionObjectiveProgress_Params params;
-	params.EntryPoint = EntryPoint;
-
-	auto flags = fn->FunctionFlags;
-
-	UObject::ProcessEvent(fn, &params);
-
-	fn->FunctionFlags = flags;
-}
-
-
 }
 
 #ifdef _MSC_VER
